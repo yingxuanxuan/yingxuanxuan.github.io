@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="英旋">
+        <link rel="canonical" href="https://yingxuanxuan.com/nginx/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Ningx - 学习笔记</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-92401539-1', 'yingxuanxuan.com');
+            ga('send', 'pageview');
+        </script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="..">学习笔记</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Linux <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../linux/">Linux</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Ningx</a>
+</li>
+                            
+<li >
+    <a href="../nginx-vod-module/">Nginx-vod-module</a>
+</li>
+                            
+<li >
+    <a href="../ffmpeg/">FFmpeg</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Python <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../python/">Python</a>
+</li>
+                            
+<li >
+    <a href="../pyqt/">PyQt/Qt</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Android <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../android/">Android</a>
+</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Javascript <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../javascript/">Javascript</a>
+</li>
+                            
+<li >
+    <a href="../vue/">Vue</a>
+</li>
+                        </ul>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../linux/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../nginx-vod-module/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/yingxuanxuan">
+                                <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">文档</a></li>
+        <li class="main "><a href="#_2">安装</a></li>
+            <li><a href="#repo">repo 安装</a></li>
+            <li><a href="#_3">编译安装</a></li>
+        <li class="main "><a href="#_4">操作命令</a></li>
+            <li><a href="#_5">信号</a></li>
+            <li><a href="#_6">命令</a></li>
+            <li><a href="#_11">服务</a></li>
+        <li class="main "><a href="#_12">配置</a></li>
+            <li><a href="#_13">配置概述</a></li>
+            <li><a href="#_23">配置示例</a></li>
+            <li><a href="#core-functionality">全局配置（core functionality)</a></li>
+            <li><a href="#httpngx_http_core_module">HTTP核心配置（ngx_http_core_module）</a></li>
+            <li><a href="#httpngx_http_log_module">HTTP日志配置（ngx_http_log_module）</a></li>
+            <li><a href="#httpngx_http_charset_module">HTTP字符集配置（ngx_http_charset_module）</a></li>
+            <li><a href="#http-gzipngx_http_gzip_module">HTTP gzip配置（ngx_http_gzip_module）</a></li>
+            <li><a href="#http-ngx_http_rewrite_module">HTTP 重定向配置（ngx_http_rewrite_module）</a></li>
+        <li class="main "><a href="#web-server">Web Server</a></li>
+            <li><a href="#server-name">Server name</a></li>
+            <li><a href="#location_1">Location</a></li>
+            <li><a href="#_31">返回状态码</a></li>
+            <li><a href="#urlrewrite">重写URL（rewrite）</a></li>
+            <li><a href="#http">重写HTTP</a></li>
+            <li><a href="#_34">错误处理</a></li>
+        <li class="main "><a href="#reverse-proxy">反向代理 Reverse Proxy</a></li>
+            <li><a href="#_38">转发请求</a></li>
+            <li><a href="#_40">修改转发请求头部</a></li>
+            <li><a href="#_42">配置缓存</a></li>
+            <li><a href="#ip_1">绑定出口IP</a></li>
+        <li class="main "><a href="#content-caching">内容缓存 Content Caching</a></li>
+            <li><a href="#_44">开启响应缓存</a></li>
+            <li><a href="#_45">设置缓存加载</a></li>
+            <li><a href="#_47">缓存设置</a></li>
+            <li><a href="#_52">限制或绕过缓存</a></li>
+            <li><a href="#purge">缓存手动老化 PURGE</a></li>
+            <li><a href="#_55">缓存分段</a></li>
+            <li><a href="#_56">综合配置示例</a></li>
+        <li class="main "><a href="#_57">静态文件</a></li>
+            <li><a href="#rootindex">root目录和Index文件</a></li>
+            <li><a href="#try_file">try_file</a></li>
+            <li><a href="#_59">性能优化</a></li>
+        <li class="main "><a href="#_60">正向代理配置示例</a></li>
+        <li class="main "><a href="#_61">反向代理配置示例</a></li>
+            <li><a href="#1">例1：</a></li>
+            <li><a href="#2">例2：</a></li>
+            <li><a href="#3">例3：</a></li>
+        <li class="main "><a href="#ssl">ssl</a></li>
+            <li><a href="#ssl_protocols-ssl">ssl_protocols SSL协议</a></li>
+            <li><a href="#ssl_ciphers-ssl">ssl_ciphers SSL加密</a></li>
+            <li><a href="#ssl_session_cache-sslcache">ssl_session_cache SSL会话Cache性能优化</a></li>
+            <li><a href="#ssl_session_time-ssl">ssl_session_time SSL会话超时时间</a></li>
+            <li><a href="#crt">为缺少中间证书的浏览器添加crt中间证书</a></li>
+            <li><a href="#_62">配置示例</a></li>
+            <li><a href="#_63">消息转发</a></li>
+            <li><a href="#_64">生成方法</a></li>
+            <li><a href="#_65">分解生成方法</a></li>
+        <li class="main "><a href="#_66">负载均衡</a></li>
+            <li><a href="#dns">DNS负载均衡</a></li>
+        <li class="main "><a href="#_67">重定向</a></li>
+        <li class="main "><a href="#websocket">websocket代理</a></li>
+        <li class="main "><a href="#nginx-httl-hls-module">nginx httl hls module</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="_1">文档</h1>
+<p><a href="http://nginx.org/en/docs/">http://nginx.org/en/docs/</a></p>
+<h1 id="_2">安装</h1>
+<p><a href="http://nginx.org/en/linux_packages.html">http://nginx.org/en/linux_packages.html</a></p>
+<h2 id="repo">repo 安装</h2>
+<h3 id="repo_1">repo</h3>
+<p>/etc/yum.repos.d/nginx.repo   </p>
+<pre><code>[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/mainline/OS/OSRELEASE/$basearch/
+gpgcheck=0/1
+enabled=1
+</code></pre>
+
+<p>参数说明：<br />
+OS: rhel/centos<br />
+OSRELEASE: 5/6/7  </p>
+<h3 id="repo_2">导入repo签名</h3>
+<pre><code class="sh">wget http://nginx.org/keys/nginx_signing.key  
+sudo rpm --import nginx_signing.key  
+</code></pre>
+
+<h2 id="_3">编译安装</h2>
+<p>--prefix=/etc/nginx<br />
+--sbin-path=/usr/sbin/nginx<br />
+--conf-path=/etc/nginx/nginx.conf<br />
+--error-log-path=/var/log/nginx/error.log<br />
+--http-log-path=/var/log/nginx/access.log<br />
+--pid-path=/var/run/nginx.pid<br />
+--lock-path=/var/run/nginx.lock<br />
+--http-client-body-temp-path=/var/cache/nginx/client_temp<br />
+--http-proxy-temp-path=/var/cache/nginx/proxy_temp<br />
+--http-fastcgi-temp-path=/var/cache/nginx/fastcgi_temp<br />
+--http-uwsgi-temp-path=/var/cache/nginx/uwsgi_temp<br />
+--http-scgi-temp-path=/var/cache/nginx/scgi_temp<br />
+--user=nginx<br />
+--group=nginx  </p>
+<h1 id="_4">操作命令</h1>
+<h2 id="_5">信号</h2>
+<pre><code class="sh">nginx -s stop # fast shutdown  
+nginx -s quit # graceful shutdown  
+nginx -s reload # reloading config  
+nginx -s reopen # reopen log  
+</code></pre>
+
+<h2 id="_6">命令</h2>
+<h3 id="_7">测试配置</h3>
+<pre><code class="sh">sudo nginx -t  
+sudo nginx -T 测试并打印配置  
+</code></pre>
+
+<h3 id="_8">查看编译选项</h3>
+<pre><code class="sh">sudo nginx -V  
+</code></pre>
+
+<h3 id="_9">使用新配置</h3>
+<pre><code class="sh">sudo nginx -c new.conf  
+</code></pre>
+
+<h3 id="_10">动态改变配置</h3>
+<pre><code class="sh">sudo nginx -g &quot;pid /var/run/nginx/pid; worker_process `sysctl -n hw.ncpu`;&quot;  
+</code></pre>
+
+<h2 id="_11">服务</h2>
+<pre><code class="sh">service nginx {start|stop|status|restart|reload|configtest}   
+</code></pre>
+
+<h1 id="_12">配置</h1>
+<h2 id="_13">配置概述</h2>
+<h3 id="_14">注释</h3>
+<p>行内从'#'开始都是注释  </p>
+<h3 id="_15">指令</h3>
+<p>指令是一个字符串，可以使用单引号或双引号引起来，一般不用除非指令包含空格  </p>
+<h3 id="_16">指令参数</h3>
+<p>使用空格和TAB分开，参数包含复合配置块的使用大括号括起来。  </p>
+<h3 id="_17">指令上下文</h3>
+<p>main：业务功能无关参数<br />
+http：http服务相关配置参数<br />
+location：特定URL配置参数<br />
+mail：email相关代理共享配置项  </p>
+<h3 id="_18">单位</h3>
+<p>千字节：k,K<br />
+兆字节：m,M<br />
+毫秒：ms<br />
+秒：s<br />
+分钟：m<br />
+小时：h<br />
+日：d<br />
+周：w<br />
+月，30天：M<br />
+年，365天：y  </p>
+<h3 id="_19">正则表达式</h3>
+<p>.：匹配除换行符以外的任意字符<br />
+?：重复0次或1次<br />
++：重复1次或更多次<br />
+*：重复0次或更多次<br />
+\d：匹配数字 <br />
+^：开头<br />
+$：末尾<br />
+{n}：重复n次<br />
+{n,}：重复n次或更多次<br />
+[c]：匹配单个字符c<br />
+[a-c]：匹配a-z任意  </p>
+<p>()：使用$1, $2引用括号中内容<br />
+\：转译特殊字符  </p>
+<p>".(mp4|mov|avi)$"：mp4或mov或avi  </p>
+<h3 id="_20">常用内置变量</h3>
+<p><a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#variables">http://nginx.org/en/docs/http/ngx_http_core_module.html#variables</a><br />
+$arg_name：请求 uri 中的 name 参数至<br />
+$args：请求 uri 的所有参数，和 $query_string 相同<br />
+$uri：当前请求的 uri，不带参数<br />
+$request_uri：请求的 uri，带完整参数<br />
+$host：http 请求报文中 host 首部，如果没有 host 首部，则以处理此请求的虚拟主机的主机名替代<br />
+$hostname：nginx 服务运行在主机的主机名<br />
+$remote_addr：客户端 IP<br />
+$remote_port：客户端 port<br />
+$remote_user：使用用户认证时客户端用户输入的用户名<br />
+$request_filename：用户请求中的 URI 经过本地 root  或 alias 转换后映射的本地的文件路径<br />
+$request_method：请求方法<br />
+$server_addr：服务器地址<br />
+$server_name：服务器名称<br />
+$server_port：服务器端口<br />
+$server_protocol：服务器向客户端发送响应时的协议，如 http/1.1，http/1.0<br />
+$scheme：在请求中使用的 scheme，如 https://www.magedu.com/ 中的 https<br />
+$http_name：匹配请求报文中的指定 HEADER，如 $http_host 匹配请求报文中的 host 首部<br />
+$sent_http_name：匹配响应报文中指定的 HEADER，例如 $sent_content_type 匹配响应报文中的 content-type 首部<br />
+$status：响应状态  </p>
+<h3 id="_21">自定义变量</h3>
+<p><a href="http://nginx.org/en/docs/http/ngx_http_rewrite_module.html#set">set</a><br />
+<a href="http://nginx.org/en/docs/http/ngx_http_map_module.html#map">map</a><br />
+<a href="http://nginx.org/en/docs/http/ngx_http_geo_module.html#geo">geo</a>  </p>
+<h3 id="_22">包含配置目录</h3>
+<pre><code>http {
+    include /etc/nginx/conf.d/*.conf;
+    include /etc/nginx/sites-enabled/*.conf;
+    include /etc/nginx/sites-enabled/my_own_conf;
+    ...
+}
+</code></pre>
+
+<h2 id="_23">配置示例</h2>
+<pre><code class="nginx">http{
+    # http1
+    server {
+        listen 80;
+
+        # 指定监听IP
+        listen 192.168.1.1:80;
+
+        # 指定默认服务器
+        listen 80 default_server; 
+
+        # 指定Host
+        server_name www.com www.www.com; 
+
+        # 拒绝没有Host的请求
+        server_name &quot;&quot;;
+        return 444;
+
+        # URL相对地址
+        location / { 
+            root /linux/path; # 静态网页地址
+        } 
+
+        # 代理转发
+        location /proxy/ { 
+            proxy_pass http://localhost:8080;
+        }
+
+        # 正则表达式（~开头）
+        location ~ \.(gif|jpg|png)$ {
+            root /data/images;
+        }
+    }
+
+    # http2
+    server {
+        listen 8080;     
+    }
+}
+</code></pre>
+
+<h2 id="core-functionality">全局配置（core functionality)</h2>
+<h3 id="user">user # 用户，用户组配置</h3>
+<p>语法：user nginx nginx;</p>
+<h3 id="worker_processes">worker_processes # 工作线程数</h3>
+<p>语法：worker_processes 2<br />
+默认值：与CPU核数相同<br />
+上下文：main  </p>
+<p>CPU核数：<code>grep ^processor /proc/cpuinfo | wc -l</code>
+若开启ssl和gzip应该设置为CPU核数2倍，可以减少I/O操作  </p>
+<h3 id="worker_cpu_affinity-cpu">worker_cpu_affinity # CPU绑定</h3>
+<p>语法：worker_cpu_affinity 0001 0010 0100 1000<br />
+上下文：main  </p>
+<h3 id="worker_connections">worker_connections # 单工作线程最大连接数</h3>
+<p>语法：worker_connections number<br />
+默认：worker_connections 512<br />
+上下文：events  </p>
+<p>最大连接数是 worker_connections * worker_processes<br />
+反响代理会占用两个连接，最大连接数是 worker_connections * worker_processes / 2  </p>
+<h3 id="worker_rlimit_nofile">worker_rlimit_nofile # 最大文件描述符</h3>
+<p>语法：worker_rlimit_nofile 10240<br />
+默认值：N/A<br />
+上下文：main  </p>
+<p>与ulimit -n最大可能值相同，超过会返回502错误  </p>
+<h3 id="use">use # 事件模型</h3>
+<p>语法：use {epoll|kqueue|select|poll|/dev/poll|eventport}<br />
+默认值：Linux下默认为epoll，Unix为kqueue，操作系统不支持时使用select<br />
+上下文：event  </p>
+<h3 id="error_log">error_log # 日志存储位置</h3>
+<p>语法：error_log file [level];<br />
+默认：error_log logs/error.log error;<br />
+上下文：main, http, mail, stream, server, location  </p>
+<p>日志级别：<br />
+debug, info, notice, warn, error, crit, alert, or emerg  </p>
+<p>debug需要开启--with-debug编译选项<br />
+1.7.11以上可以设置stream日志级别<br />
+1.9.0以上可以设置mail日志级别  </p>
+<h3 id="pid-pid">pid # PID存储位置</h3>
+<p>语法：pid /path/to/pid;  </p>
+<h2 id="httpngx_http_core_module">HTTP核心配置（ngx_http_core_module）</h2>
+<h3 id="client_header_buffer_size">client_header_buffer_size</h3>
+<p>语法：client_header_buffer_size size;<br />
+默认：1K<br />
+上下文：http, server  </p>
+<p>使用getconf PAGESIZE获取linux系统分页大小，一般设置为系统分页的整数倍。  </p>
+<h3 id="client_body_buffer_size">client_body_buffer_size</h3>
+<p>语法：client_body_buffer_size size;<br />
+默认：32bit 8k | 64bit 16k<br />
+上下文：http, server, location  </p>
+<h3 id="listen">listen</h3>
+<p>语法：listen address[:port] [default_server] [ssl] <br />
+          listen port [default_server] [ssl] <br />
+默认：listen <em>:80 | </em>:8000;<br />
+上下文：server  </p>
+<p>不配置listen时，默认使用80端口，若nginx有root权限则使用8000端口<br />
+default_server，一个端口下host不匹配时默认的服务器<br />
+ssl，0.7.14以前的版本，一个Server必须全部是http或https，ssl使一个server可以同时是http和https  </p>
+<h3 id="server_name">server_name</h3>
+<p>语法：server_name name ...;<br />
+默认：server_name "";<br />
+上下文：server  </p>
+<p>server_name example.com www.example.com;<br />
+server_name example.com <em>.example.com www.example.</em>;<br />
+server_name .example.com;<br />
+server_name ~^www\d+.example.com$;<br />
+server_name _; （使用上一个server_name）<br />
+server_name ""; （接受不存在Host字段的请求）  </p>
+<h3 id="location">location</h3>
+<p>语法：location [ = | ~ | ~* | ^~ ] uri { ... }<br />
+            location @name { ... }<br />
+默认：    —<br />
+上下文：server, location  </p>
+<p>会解析%xx格式文字
+会解析相对路径 . 或 .. 
+默认会合并相邻斜杠（merge_slashes on）</p>
+<p>如果location请求被proxy_pass、fastcgi_pass、uwsgi_pass、scgi_pass、memcached_pass处理，若如”location /user/“带斜杠，则会正常处理。若如”location /user“不带斜杠，ngxin会发送一个301重定向到"location /user/"。若这并不是所要的，需要分别定义“location /user/”和“location /user”。</p>
+<p>URL带斜杠\表示目录，不带斜杠表示文件。不加斜杠访问会尝试访问文件，不存在时返回301重定向到带斜杠\的地址。<br />
+如http://www.example.com/后可以直接加斜杠。但是"http://www.example.com/user"不知道是否加斜杠，可能会造成一次不必要的请求。  </p>
+<h3 id="root">root</h3>
+<p>语法：root path;<br />
+默认：root html;<br />
+上下文：http, server, location, if in location  </p>
+<h3 id="alias">alias</h3>
+<p>语法：alias path<br />
+默认：-<br />
+上下文：location  </p>
+<p>可以使用正则表达式：  </p>
+<pre><code class="nginx">location ~ ^/users/(.+\.(?:gif|jpe?g|png))$ {  
+    alias /data/w3/images/$1;  
+}  
+</code></pre>
+
+<p>root与alias比较：<br />
+使用root指令，location的完整地址会附加到root的地址后面<br />
+使用alias指令，location中不匹配的部分会附加到alias的地址后面  </p>
+<h3 id="client_max_body_size-http-413">client_max_body_size # 大文件上传限制，超出返回HTTP 413</h3>
+<p>语法：client_max_body_size size;<br />
+默认：client_max_body_size 1m;<br />
+上下文：http, server, location  </p>
+<h3 id="send_file">send_file # 直接发送文件</h3>
+<p>语法：sendfile on | off;<br />
+默认：sendfile off;<br />
+上下文：http, server, location, if in location<br />
+默认nginx会把文件copy到内存后再发送，打开send_file后会直接从文件fd复制到socket fd。  </p>
+<h3 id="tcp_nopush">tcp_nopush</h3>
+<p>语法：tcp_nopush on | off;<br />
+默认：tcp_nopush off;<br />
+上下文：http, server, location  </p>
+<p>在一个包中发送响应头和文件<br />
+数据包累积满时才发送<br />
+依赖于sendfile打开   </p>
+<h3 id="keepalive_timeout">keepalive_timeout # 连接超时时间</h3>
+<p>语法：keepalive_timeout timeout [header_timeout];<br />
+默认：keepalive_timeout 75s;<br />
+上下文：http, server, location  </p>
+<p>设置为0即关闭<br />
+header_timeout：设置响应头"Keep-Alive: timeout=time"，可以和服务器端不一致  </p>
+<h3 id="open_file_cache">open_file_cache # 文件句柄池</h3>
+<p>语法：open_file_cache off;<br />
+          open_file_cache max=N [inactive=time];<br />
+默认：open_file_cache off;<br />
+上下文：http, server, location  </p>
+<h3 id="open_file_cache_1">open_file_cache # 句柄有效时长</h3>
+<p>语法：open_file_cache_valid time;<br />
+默认：open_file_cache_valid 60s;<br />
+上下文：http, server, location  </p>
+<h3 id="open_file_min_uses">open_file_min_uses # 去激活前最低使用次数</h3>
+<p>语法：open_file_cache_min_uses number;<br />
+默认：open_file_cache_min_uses 1;<br />
+上下文：http, server, location  </p>
+<h3 id="open_file_cache_error">open_file_cache_error # 是否缓存文件错误</h3>
+<p>语法：open_file_cache_errors on | off;<br />
+默认：open_file_cache_errors off;<br />
+上下文：http, server, location  </p>
+<h3 id="aio-io">aio # 异步IO</h3>
+<p>语法：aio on | off | threads[=pool];<br />
+默认：aio off;<br />
+上下文：http, server, location  </p>
+<h2 id="httpngx_http_log_module">HTTP日志配置（ngx_http_log_module）</h2>
+<h3 id="access_log">access_log</h3>
+<p>语法：access_log path [format [buffer=size] [gzip[=level]] [flush=time] [if=condition]];<br />
+          access_log off;<br />
+默认：access_log logs/access.log combined;<br />
+上下文：http, server, location, if in location, limit_except  </p>
+<h3 id="log_format">log_format</h3>
+<p>语法：log_format name string ...;<br />
+默认：log_format combined "...";<br />
+上下文：http  </p>
+<p>系统变量：<br />
+<a href="http://nginx.org/en/docs/varindex.html">http://nginx.org/en/docs/varindex.html</a></p>
+<p>日志变量：<br />
+$bytes_sent：发送给客户端的字节数<br />
+$connection：连接序号<br />
+$connection_requests：当前连接请求序号<br />
+$msec：日志写入millisecond时间戳<br />
+$pipe：“p” if request was pipelined, “.” otherwise<br />
+$request_length：请求长度 (包含request line, header, and request body)<br />
+$request_time：请求时间，从收到第一个字节到响应最后一个字节的时间段 <br />
+$status：响应状态<br />
+$time_iso8601：ISO 8601格式的本地实际<br />
+$time_local：本地时间  </p>
+<p>预定义combined日志格式：  </p>
+<pre><code>log_format combined '$remote_addr - $remote_user [$time_local] '  
+                    '&quot;$request&quot; $status $body_bytes_sent '  
+                    '&quot;$http_referer&quot; &quot;$http_user_agent&quot;';  
+</code></pre>
+
+<h3 id="open_log_file">open_log_file</h3>
+<p>语法：open_log_file_cache max=N [inactive=time] [min_uses=N] [valid=time];<br />
+          open_log_file_cache off;<br />
+默认：open_log_file_cache off;<br />
+上下文：http, server, location  </p>
+<h2 id="httpngx_http_charset_module">HTTP字符集配置（ngx_http_charset_module）</h2>
+<h3 id="charset">charset</h3>
+<p>语法：charset charset | off;<br />
+默认：charset off;<br />
+上下文：http, server, location, if in location  </p>
+<h3 id="source_charset">source_charset</h3>
+<p>语法：source_charset charset;<br />
+默认：—<br />
+上下文：http, server, location, if in location  </p>
+<h2 id="http-gzipngx_http_gzip_module">HTTP gzip配置（ngx_http_gzip_module）</h2>
+<h3 id="gzip-gzip">gzip # gzip开关</h3>
+<p>语法：gzip on | off;<br />
+默认：gzip off;<br />
+上下文：http, server, location, if in location  </p>
+<h3 id="gzip_buffers-number">gzip_buffers number # 缓冲区大小</h3>
+<p>语法：gzip_buffers number size;<br />
+默认：gzip_buffers 32 4k|16 8k;<br />
+上下文：http, server, location  </p>
+<h3 id="gzip_comp_level">gzip_comp_level # 压缩级别</h3>
+<p>语法：gzip_comp_level level;<br />
+默认：gzip_comp_level 1;<br />
+上下文：http, server, location  </p>
+<p>压缩级别：1-9  </p>
+<h3 id="gzip_disable-user-agent">gzip_disable User-Agent过滤</h3>
+<p>语法：gzip_disable regex ...;<br />
+默认：—<br />
+上下文：http, server, location  </p>
+<p>例如：<code>gzip_disable "MSIE [4-6]\."</code></p>
+<h3 id="gzip_min_length">gzip_min_length 压缩最小长度</h3>
+<p>语法：gzip_min_length length;<br />
+默认：gzip_min_length 20;<br />
+上下文：http, server, location  </p>
+<h3 id="gzip_types-mime">gzip_types 压缩mime类型</h3>
+<p>语法：gzip_types mime-type ...;<br />
+默认：gzip_types text/html;<br />
+上下文：http, server, location  </p>
+<p>text/html总是会被压缩<br />
+使用"*"压缩所有类型   </p>
+<h2 id="http-ngx_http_rewrite_module">HTTP 重定向配置（ngx_http_rewrite_module）</h2>
+<p><a href="http://nginx.org/en/docs/http/ngx_http_rewrite_module.html">http://nginx.org/en/docs/http/ngx_http_rewrite_module.html</a></p>
+<h1 id="web-server">Web Server</h1>
+<h2 id="server-name">Server name</h2>
+<h3 id="_24">匹配顺序</h3>
+<p>1、Exact name<br />
+2、Longest wildcard starting with an asterisk, such as <em>.example.org<br />
+3、Longest wildcard ending with an asterisk, such as mail.</em><br />
+4、First matching regular expression (in order of appearance in the configuration file)<br />
+5、default_server  </p>
+<h2 id="location_1">Location</h2>
+<h3 id="_25">普通匹配</h3>
+<p>location /<br />
+location /image<br />
+按最长匹配规则，所有URI都会匹配（location /）规则，正则表达式和比（location /）长的匹配（如 location /image）会优先匹配  </p>
+<h3 id="_26">精确匹配（=）</h3>
+<p>location = /<br />
+location = /test<br />
+最长匹配，匹配后不再检查其他规则  </p>
+<h3 id="_27">正则匹配（~）</h3>
+<p>tilde（~）：默认正则大小写敏感匹配<br />
+tilde-asterisk（~*）：忽略大小写  </p>
+<p>忽略大小写匹配.html 和.htm  </p>
+<pre><code>location ~* \.html?  
+</code></pre>
+
+<h3 id="_28">停止正则匹配（^~）</h3>
+<p>在路径中找到最长匹配后，不再检查正则表达式  </p>
+<h3 id="locationnameredirect">@locationname内部redirect匹配</h3>
+<p>location @locationname  </p>
+<pre><code class="nginx">error_page 404 = @fetch;
+
+location @fetch{
+  proxy_pass http://fetch;
+}
+</code></pre>
+
+<h3 id="_29">匹配顺序</h3>
+<p>1、Test the URI against all prefix strings (pathnames).<br />
+      使用（against）全部路径检查URI<br />
+2、The = (equals sign) modifier defines an exact match of the URI and a prefix string (pathnames). <br />
+      If the exact match is found, the search stops.<br />
+      检查是否有精确匹配（=），如果精确匹配被找到则停止搜索<br />
+3、If the ^~ (caret-tilde) modifier prepends the longest matching prefix string (pathnames), the regular expressions are not checked.<br />
+      检查最长匹配中，如果有最短匹配（^~）符号，则忽略正则表达式（已经是最长匹配）<br />
+4、Store the longest matching prefix string (pathnames).<br />
+      存储最长匹配的路径<br />
+5、Test the URI against regular expressions.<br />
+      使用（against）全部正则表达式检查URI<br />
+6、Break on the first matching regular expression and use the corresponding location.<br />
+      正则表达式中按配置顺序匹配<br />
+7、If no regular expression matches, use the location corresponding to the stored prefix string (pathnames).<br />
+      没有正则表达式匹配则使用前面存储的路径  </p>
+<h3 id="_30">性能优化</h3>
+<p>一般首页最常用，配置为：  </p>
+<pre><code class="nginx">location = / {
+    proxy_pass http://example.com/index.html
+}
+</code></pre>
+
+<p>静态文件提高效率，使用最短匹配，不再检查正则表达式规则：  </p>
+<pre><code class="nginx">location ^~ /static/ {
+    root /static/;
+}
+</code></pre>
+
+<p>或  </p>
+<pre><code class="nginx">location ~* \.(gif|jpg|jpeg|png|css|js|ico)$ {
+    root /res/;
+}
+</code></pre>
+
+<p>所有未被匹配的内容，使用通用匹配转发至后端：  </p>
+<pre><code class="nginx">location / {
+    proxy_pass http://example.com/index.html
+}
+</code></pre>
+
+<h2 id="_31">返回状态码</h2>
+<h3 id="_32">无参数状态码</h3>
+<pre><code class="nginx">location /wrong/url {
+    return 404;
+}
+</code></pre>
+
+<h3 id="_33">带参数状态吗</h3>
+<pre><code class="nginx">location /permanently/moved/url {
+    return 301 http://www.example.com/moved/here;
+}
+</code></pre>
+
+<h2 id="urlrewrite">重写URL（rewrite）</h2>
+<h3 id="rewrite">rewrite</h3>
+<p>语法：rewrite regular_expression new_uri [break|last|redirect|permanent]<br />
+上下文：server, location, if  </p>
+<p>uri重写后会重新选择location<br />
+rewrite值对域名之后的，除去查询参数的部分起作用，例如http://a.com/a/we/index.php?id=1&amp;u=str，只对/a/we/index.php起作用  </p>
+<h3 id="last">last</h3>
+<p>停止当前server或location中的rewrite，但是rewrite后的uri会继续查找location，location可能还会执行rewrite。  </p>
+<h3 id="break">break</h3>
+<p>停止当前server或location中的rewrite，rewrite后的uri不会继续查找location。  </p>
+<h3 id="redirect-permanent">redirect | permanent</h3>
+<p>redirect 302临时重定向<br />
+permanent 301永久重定向  </p>
+<h3 id="serverrewrite">server中rewrite会按顺序执行一次</h3>
+<h3 id="locationrewritelocation">location中rewrite在选中location时会执行</h3>
+<h2 id="http">重写HTTP</h2>
+<h3 id="httprefer">更改http请求refer</h3>
+<pre><code class="nginx">location / {
+    sub_filter /blog/ /blog-staging/;
+    sub_filter_once off;
+}
+</code></pre>
+
+<h3 id="host-name">更改host name</h3>
+<pre><code class="nginx">location / {
+    sub_filter 'href=&quot;http://127.0.0.1:8080/' 'href=&quot;http://$host/';
+    sub_filter 'img src=&quot;http://127.0.0.1:8080/' 'img src=&quot;http://$host/';
+    sub_filter_once on;
+}
+</code></pre>
+
+<h2 id="_34">错误处理</h2>
+<h3 id="_35">定义错误页</h3>
+<pre><code class="nginx">error_page 404 /404.html
+</code></pre>
+
+<h3 id="_36">替换错误码</h3>
+<pre><code class="nginx">location /old/path.html {
+    error_page 404 =301 http://example.com/new/path.html;
+}
+</code></pre>
+
+<h3 id="_37">将错误转交处理</h3>
+<pre><code class="nginx">server {
+    location /images/ {
+        error_page 404 = /fetch$uri;
+    }
+
+    location /fetch/ {
+        proxy_pass http://backend/;
+    }
+}
+</code></pre>
+
+<h1 id="reverse-proxy">反向代理 Reverse Proxy</h1>
+<h2 id="_38">转发请求</h2>
+<h3 id="_39">转发到网址</h3>
+<pre><code class="nginx">proxy_pass http://www.example.com
+</code></pre>
+
+<h3 id="ip">转发到IP端口</h3>
+<pre><code class="nginx">proxy_pass http://127.0.0.1:8000
+</code></pre>
+
+<h3 id="location_2">替换location</h3>
+<pre><code class="nginx">location /some/path/ {
+    proxy_pass http://www.example.com/link/;
+}
+</code></pre>
+
+<p>假设访问/some/path/page.html<br />
+会替换成/link/page.html  </p>
+<h3 id="fastcgi">FastCGI</h3>
+<p>fastcgi_pass</p>
+<h3 id="uwsgi">uwsgi</h3>
+<p>uwsgi_pass</p>
+<h3 id="scgi">SCGI</h3>
+<p>scgi_pass</p>
+<h3 id="memcached">memcached</h3>
+<p>memcached_pass</p>
+<h3 id="named-group">named group（即负载均衡）</h3>
+<p><a href="https://www.nginx.com/resources/admin-guide/load-balancer/">https://www.nginx.com/resources/admin-guide/load-balancer/</a></p>
+<h2 id="_40">修改转发请求头部</h2>
+<p>默认会删除内容为空的header fields，设置"Host"为$proxy_host，"Connection"为"close"。</p>
+<h3 id="proxy_set_header">proxy_set_header</h3>
+<p>语法：proxy_set_header field value;<br />
+默认：proxy_set_header Host $proxy_host;<br />
+          proxy_set_header Connection close;<br />
+上下文：http, server, location  </p>
+<h3 id="hosthost">设置Host为原始Host</h3>
+<p>proxy_set_header Host $host;  </p>
+<h3 id="ipip">设置真实IP为原始IP</h3>
+<p>proxy_set_header X-Real-IP $remote_addr;  </p>
+<h3 id="_41">阻止某个字段传给代理（设置为空）</h3>
+<p>proxy_set_header Accept-Encoding "";   </p>
+<h2 id="_42">配置缓存</h2>
+<h3 id="proxy_buffering">proxy_buffering（开关）</h3>
+<p>语法：proxy_buffering on | off;<br />
+默认：proxy_buffering on;<br />
+上下文：http, server, location  </p>
+<h3 id="proxy_buffers">proxy_buffers（单连接缓存大小块数）</h3>
+<p>语法：proxy_buffers number size;<br />
+默认：proxy_buffers 8 4k|8k;<br />
+上下文：http, server, location  </p>
+<h3 id="proxy_buffer_size">proxy_buffer_size（响应读取阈值）</h3>
+<p>语法：proxy_buffer_size size;<br />
+默认：proxy_buffer_size 4k|8k;<br />
+上下文：http, server, location  </p>
+<h3 id="proxy_buffer">低延迟交互应用时关闭proxy_buffer（同步处理）</h3>
+<p>proxy_buffering off;  </p>
+<h2 id="ip_1">绑定出口IP</h2>
+<h3 id="ip_2">绑定IP</h3>
+<p>proxy_bind 127.0.0.1;  </p>
+<h3 id="_43">绑定变量</h3>
+<p>proxy_bind $server_addr;  </p>
+<h1 id="content-caching">内容缓存 Content Caching</h1>
+<p><a href="https://www.nginx.com/resources/admin-guide/content-caching/">https://www.nginx.com/resources/admin-guide/content-caching/</a></p>
+<h2 id="_44">开启响应缓存</h2>
+<h3 id="proxy_cache">proxy_cache 开启或关闭代理缓存</h3>
+<p>语法：proxy_cache zone | off;<br />
+默认：proxy_cache off;<br />
+上下文：http, server, location  </p>
+<h3 id="proxy_cache_path">proxy_cache_path 定义缓存区</h3>
+<p>语法：proxy_cache_path path [levels=levels] [use_temp_path=on|off] keys_zone=name:size [inactive=time] [max_size=size] [loader_files=number] [loader_sleep=time] [loader_threshold=time] [purger=on|off] [purger_files=number] [purger_sleep=time] [purger_threshold=time];<br />
+默认：N/A 
+上下文：http  </p>
+<h3 id="keys_zone">keys_zone # 定义缓存区名称，大小，超时时间，</h3>
+<p>proxy_cache_path /path/to/cache keys_zone=one:10m  </p>
+<p>这个大小是key存储空间大小，不是数据存储空间大小，1m约能存储8k个key。  </p>
+<h3 id="levels">levels # 指定缓存子目录数</h3>
+<p>假设设置为levels=1:2 <br />
+缓存文件key为b7f54b2df7773722d382f4809d65029c<br />
+nginx会取key最后1个字符c为一级目录，再取倒数2、3个字符29为二级目录<br />
+最多设置三级目录 levels=2:2:2  </p>
+<h3 id="inactive">inactive</h3>
+<p>不访问老化时间  </p>
+<h3 id="use_temp_path">use_temp_path</h3>
+<p>默认会先把文件写入临时目录（proxy_temp_path），若临时目录与缓存目录不在同一个文件系统，会造成两次文件写入<br />
+建议设置为off  </p>
+<h2 id="_45">设置缓存加载</h2>
+<p>一次加载过多会影响启动速度和性能  </p>
+<h3 id="loader_threshold">loader_threshold</h3>
+<p>遍历时间阈值，默认200millliseconds  </p>
+<h3 id="loader_files">loader_files</h3>
+<p>遍历文件阈值，默认100  </p>
+<h3 id="loader_sleeps">loader_sleeps</h3>
+<p>遍历间隔事件，默认50毫秒  </p>
+<h3 id="_46">示例</h3>
+<pre><code class="nginx">proxy_cache_path /path/to/cache keys_zone=one:10m loader_threshold=300 loader_files=200
+</code></pre>
+
+<h2 id="_47">缓存设置</h2>
+<h3 id="key">设置缓存key计算方法</h3>
+<p>proxy_cache_key "$host$request_uri$cookie_user";  </p>
+<h3 id="_48">设置缓存条件：最小请求次数（只有被最常访问的数据才被缓存）</h3>
+<p>proxy_cache_min_users 5;  </p>
+<h3 id="methods">设置缓存methods</h3>
+<p>proxy_cache_methods GET HEAD POST<br />
+默认只缓存GET和HEAD方法  </p>
+<h3 id="_49">缓存更新锁</h3>
+<p>语法：proxy_cache_lock on|off;<br />
+默认：proxy_cache_lock off;<br />
+上下文：http, server, location<br />
+当多个客户端同时请求一个缓存中不存在的文件时，只有当请求中第一个请求得到正确缓存数据后，其他请求才得到相应。<br />
+默认关闭，所有客户端都会与后端通信。  </p>
+<h3 id="_50">使用缓存替代错误相应</h3>
+<p>proxy_cache_use_stale error timeout http_500 http_502 http_503 http_504;  </p>
+<h3 id="_51">缓存正在更新时，先发送旧内容，触发更新的请求会等待服务器返回新结果</h3>
+<p>proxy_cache_use_stale updating  </p>
+<h2 id="_52">限制或绕过缓存</h2>
+<p>默认缓存永久缓存，超过限制按最近最少访问老化  </p>
+<h3 id="_53">设置缓存过期时间</h3>
+<p>proxy_cache_valid any           5m;  </p>
+<h3 id="_54">按状态码设置缓存过期时间</h3>
+<p>proxy_cache_valid 200 302 10m;<br />
+proxy_cache_valid 404          1m;  </p>
+<h3 id="string-0">如果有string参数为空 或 值参数不等于0 则不缓存</h3>
+<p>proxy_cache_bypass $cookie_nocache $arg_nocache$arg_comment;  </p>
+<h3 id="string-0_1">如果有string不为空 或 值不等于0 则不缓存</h3>
+<p>proxy_no_cache $cookie_nocache $arg_nocache$arg_comment;  </p>
+<h2 id="purge">缓存手动老化 PURGE</h2>
+<h2 id="_55">缓存分段</h2>
+<h2 id="_56">综合配置示例</h2>
+<h1 id="_57">静态文件</h1>
+<p><a href="https://www.nginx.com/resources/admin-guide/serving-static-content/">https://www.nginx.com/resources/admin-guide/serving-static-content/</a></p>
+<h2 id="rootindex">root目录和Index文件</h2>
+<h3 id="root_1">root使用示例</h3>
+<pre><code class="nginx">server {
+    root /www/data;
+
+    location / {
+        # 路径为root的路径：/www/data
+    }
+
+    location /images/ {
+        # 路径为root的路径+目录的路径：/www/data/image/
+    }
+
+    location ~ \.(mp3|mp4) {
+        # 路径被覆盖为：/www/media
+        root /www/media;
+    }
+}
+</code></pre>
+
+<h3 id="location_3">以斜杠"\"结尾的location</h3>
+<p>以斜杠"\"结尾的location会被认为是目录，nginx会试图在其中找到index.html文件<br />
+如：假设URI为/images/some/path/，nginx会寻找/www/data/images/some/path/index.html  </p>
+<h3 id="autoindex-indexhtml">autoindex 自动创建index.html</h3>
+<p>语法：autoindex on | off;<br />
+默认：autoindex off;<br />
+上下文:http, server, location  </p>
+<h3 id="index-index">index 定义index文件名称</h3>
+<p>语法：index index_file;  </p>
+<h2 id="try_file">try_file</h2>
+<h3 id="_58">不存在则重定向到默认</h3>
+<pre><code class="nginx">location /images/ {
+    try_files $uri /images/default.gif;
+}
+</code></pre>
+
+<h3 id="404">尝试一系列形式，不存在则404</h3>
+<pre><code class="nginx">location / {
+    try_files $uri $uri/ $uri.html =404;
+}
+</code></pre>
+
+<h3 id="proxy">找不到文件则转到proxy</h3>
+<pre><code class="nginx">location / {
+    try_files $uri $uri/ @backend;
+}
+</code></pre>
+
+<pre><code class="nginx">location @backend {
+    proxy_pass http://backend.example.com;
+}
+</code></pre>
+
+<h2 id="_59">性能优化</h2>
+<h3 id="send_file_1">send_file 直接发送文件</h3>
+<p>语法：sendfile on | off;<br />
+默认：sendfile off;<br />
+上下文：http, server, location, if in location<br />
+默认nginx会把文件copy到内存后再发送，打开send_file后会直接从文件fd复制到socket fd。  </p>
+<h3 id="sendfile_max_chunk">sendfile_max_chunk 最大一次发送数据量</h3>
+<p>语法：sendfile_max_chunk size;<br />
+默认：sendfile_max_chunk 0;<br />
+上下文：http, server, location<br />
+为防止nginx被特大文件占用，需要限制每次最大发送分段为1m  </p>
+<h3 id="tcp_nopush_1">tcp_nopush</h3>
+<p>语法：tcp_nopush on | off;<br />
+默认：tcp_nopush off;<br />
+上下文：http, server, location  </p>
+<p>在一个包中发送响应头和文件<br />
+数据包累积满时才发送<br />
+依赖于sendfile打开  </p>
+<h3 id="tcp_nodelay">tcp_nodelay</h3>
+<p>语法：tcp_nodelay on | off;<br />
+默认：tcp_nodelay on;<br />
+上下文：http, server, location  </p>
+<h3 id="tcp">增加tcp监听队列长度</h3>
+<p>查看队列长度方法：  </p>
+<pre><code class="sh">netstat -Lan   
+</code></pre>
+
+<p>临时修改操作系统参数：  </p>
+<pre><code class="sh">sudo sysctl -w net.core.somaxconn=4096
+</code></pre>
+
+<p>永久修改操作系统参数：<br />
+为文件/etc/sysctl.conf添加  </p>
+<pre><code>net.core.somaxconn = 4096
+</code></pre>
+
+<p>修改nginx配置，一般应大于512：  </p>
+<pre><code class="nginx">listen 80 backlog 4096;
+</code></pre>
+
+<h1 id="_60">正向代理配置示例</h1>
+<pre><code class="nginx">server{  
+        # 不能设置hostname
+
+        # 设置dns及超时时间
+        resolver 8.8.8.8;  
+        resolver_timeout 30s;   
+
+        # 监听端口
+        listen 82;  
+        location / {  
+                # 代理参数
+                proxy_pass http://$http_host$request_uri;  
+                proxy_set_header Host $http_host;  
+
+                # 配置缓存大小
+                proxy_buffers 256 4k;  
+
+                # 关闭磁盘缓存
+                proxy_max_temp_file_size 0;  
+
+                # 配置代理服务器http状态缓存时间
+                proxy_connect_timeout 30;  
+                proxy_cache_valid 200 302 10m;  
+                proxy_cache_valid 301 1h;  
+                proxy_cache_valid any 1m;  
+        }  
+}
+</code></pre>
+
+<h1 id="_61">反向代理配置示例</h1>
+<h3 id="1">例1：</h3>
+<pre><code class="nginx">location / {
+    proxy_pass      http://192.168.18.201:8080;
+    proxy_set_header  X-Real-IP  $remote_addr; # 设置代理转发保留用户ip
+}
+</code></pre>
+
+<h3 id="2">例2：</h3>
+<pre><code class="nginx">server {  
+    listen    80;  
+    server_name www.test.com;  
+    location / {  
+        proxy_pass http://8.8.8.8:80;  
+    }  
+}  
+</code></pre>
+
+<h3 id="3">例3：</h3>
+<pre><code class="nginx">http {  
+
+    # 负载均衡地址池
+    upstream http_server_pool {  
+        server 192.168.1.2:8080 weight=2 max_fails=2 fail_timeout=30s;  
+        server 192.168.1.3:8080 weight=3 max_fails=2 fail_timeout=30s;  
+        server 192.168.1.4:8080 weight=4 max_fails=2 fail_timeout=30s;  
+    }
+
+    # 一个虚拟主机，用来反向代理http_server_pool这组服务器  
+    server {  
+        listen       80;  
+        # 外网访问的域名          
+        server_name  www.test.com;   
+        location / {  
+            # 后端服务器返回500 503 404错误，自动请求转发到upstream池中另一台服务器  
+            proxy_next_upstream error timeout invalid_header http_500 http_503 http_404;  
+            proxy_pass http://http_server_pool;  
+            proxy_set_header Host www.test.com;  
+            proxy_set_header X-Real-IP $remote_addr;  
+            proxy_set_header X-Forwarded-For  $proxy_add_x_forwarded_for;  
+        }  
+        access_log  logs/www.test.com.access.log  combined;  
+    }
+}
+</code></pre>
+
+<h1 id="ssl">ssl</h1>
+<p><a href="http://nginx.org/en/docs/http/configuring_https_servers.html">http://nginx.org/en/docs/http/configuring_https_servers.html</a></p>
+<h3 id="ssl_protocols-ssl">ssl_protocols SSL协议</h3>
+<p>语法：ssl_protocols [protocol]<br />
+默认：TLSv1 TLSv1.1 TLSv1.2 
+默认值即可  </p>
+<h3 id="ssl_ciphers-ssl">ssl_ciphers SSL加密</h3>
+<p>语法：ssl_ciphers []<br />
+默认：ssl_ciphers HIGH:!aNULL:!MD5<br />
+默认值即可  </p>
+<h3 id="ssl_session_cache-sslcache">ssl_session_cache SSL会话Cache性能优化</h3>
+<p>语法：ssl_session_cache shared:SSL:10m;<br />
+默认：<br />
+1m Cache约4000个会话。  </p>
+<h3 id="ssl_session_time-ssl">ssl_session_time SSL会话超时时间</h3>
+<p>语法：ssl_session_time [time]<br />
+默认：5分钟<br />
+可以增加会话时间以优化。  </p>
+<h3 id="crt">为缺少中间证书的浏览器添加crt中间证书</h3>
+<pre><code class="sh">cat www.example.com.crt bundle.crt &gt; www.example.com.chained.crt  
+</code></pre>
+
+<p>需要保证顺序正确，自己证书在最前  </p>
+<h3 id="_62">配置示例</h3>
+<pre><code class="nginx">server {
+    listen     443 ssl;
+    ssl         on;
+
+    ssl_certificate      @SSL_CERT@; # 证书，公开
+    ssl_certificate_key  @SSL_KEY@; # 密钥，不公开
+
+    ssl_session_cache shared:SSL:10m;
+    ssl_session_timeout  10m;
+
+    ssl_prefer_server_ciphers   on;
+}
+</code></pre>
+
+<h3 id="_63">消息转发</h3>
+<p>所有http转发到https：  </p>
+<pre><code class="nginx">server {
+    listen  80;
+    server_name yingxuanxuan.com;
+
+    rewrite ^(.*)$  https://$host$1 permanent;
+}
+···
+
+nginx http错误497转发至https：  
+``` nginx
+error_page 497  https://$host$uri?$args;    
+</code></pre>
+
+<p>非登陆页面使用http：  </p>
+<pre><code class="nginx">if ($uri !~* &quot;/logging.php$&quot;)
+{
+    rewrite ^/(.*)$ http://$host/$1 redirect;
+}
+</code></pre>
+
+<p>登录页面使用https：  </p>
+<pre><code class="nginx">if ($uri ~* &quot;/logging.php$&quot;)
+{
+    rewrite ^/(.*)$ https://$host/$1 redirect;
+}
+</code></pre>
+
+<h3 id="_64">生成方法</h3>
+<pre><code class="sh">openssl req -newkey rsa:2048 -keyout yourname.key -out yourname.csr   
+</code></pre>
+
+<p>CN/Shannxi/Xian/Yingxuanxuan Ltd/Yingxuanxuan/*.yingxuanxuan.com/yingxuanxuan@hotmail.com <br />
+extra部分直接回车   </p>
+<h3 id="_65">分解生成方法</h3>
+<p>生成RSA密钥：  </p>
+<pre><code class="sh">openssl genrsa -des3-out 33iq.key 1024
+</code></pre>
+
+<p>复制一个无密码密钥：  </p>
+<pre><code class="sh">openssl rsa -in 33iq.key -out 33iq_nopass.key
+</code></pre>
+
+<p>生成一个证书请求：  </p>
+<pre><code class="sh">openssl req -new-key 33iq.key -out 33iq.csr
+</code></pre>
+
+<p>自己签发证书（不安全连接）：  </p>
+<pre><code class="sh">openssl x509 -req-days365-in 33iq.csr -signkey 33iq.key -out 33iq.crt
+</code></pre>
+
+<h1 id="_66">负载均衡</h1>
+<p><a href="http://nginx.org/en/docs/http/load_balancing.html">http://nginx.org/en/docs/http/load_balancing.html</a>
+<a href="https://www.nginx.com/resources/admin-guide/load-balancer/">https://www.nginx.com/resources/admin-guide/load-balancer/</a></p>
+<h3 id="dns">DNS负载均衡</h3>
+<p>将相同域名配置到不同IP即可</p>
+<h1 id="_67">重定向</h1>
+<p><a href="http://nginx.org/en/docs/http/converting_rewrite_rules.html">http://nginx.org/en/docs/http/converting_rewrite_rules.html</a></p>
+<h1 id="websocket">websocket代理</h1>
+<p><a href="http://nginx.org/en/docs/http/websocket.html">http://nginx.org/en/docs/http/websocket.html</a></p>
+<h1 id="nginx-httl-hls-module">nginx httl hls module</h1>
+<p><a href="http://nginx.org/en/docs/http/ngx_http_hls_module.html">http://nginx.org/en/docs/http/ngx_http_hls_module.html</a></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
