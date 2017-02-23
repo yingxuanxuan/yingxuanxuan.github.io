@@ -144,11 +144,909 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">特性</a></li>
+            <li><a href="#_2">实际测试支持文件格式</a></li>
+            <li><a href="#_3">最佳视频参数</a></li>
+            <li><a href="#best-practices-for-multi-device-transcoding">Best Practices For Multi-Device Transcoding</a></li>
+            <li><a href="#ngx_http_hls">ngx_http_hls支持的文件格式与编码格式</a></li>
+        <li class="main "><a href="#_10">限制</a></li>
+        <li class="main "><a href="#_11">安装</a></li>
+            <li><a href="#_12">编译</a></li>
+            <li><a href="#rhelcentos-rpm">RHEL/CentOS RPM</a></li>
+            <li><a href="#debianubuntu-rpm">Debian/Ubuntu RPM</a></li>
+        <li class="main "><a href="#url">URL结构</a></li>
+            <li><a href="#url_1">基本URL结构</a></li>
+            <li><a href="#url_2">多文件合一URL结构</a></li>
+            <li><a href="#url_3">URL路径参数</a></li>
+            <li><a href="#_18">文件名结构</a></li>
+        <li class="main "><a href="#mappingjson">Mapping模式JSON响应格式</a></li>
+            <li><a href="#_20">示例字段说明准备</a></li>
+            <li><a href="#_21">示例：简单映射</a></li>
+            <li><a href="#_22">示例：自适应集合</a></li>
+            <li><a href="#_23">示例：播放列表</a></li>
+            <li><a href="#_24">示例：过滤器</a></li>
+            <li><a href="#_25">示例：连续直播</a></li>
+            <li><a href="#_26">示例：不连续直播</a></li>
+            <li><a href="#mapping">Mapping模式参数说明</a></li>
+        <li class="main "><a href="#_27">安全</a></li>
+            <li><a href="#_28">鉴权</a></li>
+            <li><a href="#url_4">URL加密</a></li>
+            <li><a href="#_30">多媒体加密</a></li>
+            <li><a href="#drm">DRM</a></li>
+        <li class="main "><a href="#_31">性能建议</a></li>
+        <li class="main "><a href="#_32">配置</a></li>
+            <li><a href="#_33">配置示例</a></li>
+            <li><a href="#nginx">Nginx变量</a></li>
+            <li><a href="#_34">配置指令：基础</a></li>
+            <li><a href="#segmentation">配置指令：segmentation分段</a></li>
+            <li><a href="#upstream">配置指令：upstream</a></li>
+            <li><a href="#fallback">配置指令：fallback</a></li>
+            <li><a href="#_35">配置指令：性能</a></li>
+            <li><a href="#url_5">配置指令：url结构</a></li>
+            <li><a href="#_36">配置指令：响应头部</a></li>
+            <li><a href="#ad-stitching-mapped-mode-only">配置指令：ad stitching (mapped mode only)</a></li>
+            <li><a href="#drm-encryption">配置指令：DRM / encryption</a></li>
+            <li><a href="#dash">配置指令：DASH</a></li>
+            <li><a href="#hds">配置指令：HDS</a></li>
+            <li><a href="#hls">配置指令：HLS</a></li>
+            <li><a href="#mss">配置指令：MSS</a></li>
+            <li><a href="#_37">配置指令：缩略图截取</a></li>
+            <li><a href="#misc">配置指令：misc 混合</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-</div>
+<h1 id="_1">特性</h1>
+<p>实时将MP4转换为DASH，HDS，HLS，MSS<br />
+工作模式1：Local本地模式，使用本地文件提供服务<br />
+工作模式2：Remote远程模式，使用HTTP分段请求提供服务<br />
+工作模式3：Mapped映射模式，使用JSON编码请求从远程或本地文件提供服务<br />
+支持自适应码率<br />
+播放列表（Mapped映射模式）<br />
+模拟直播（Mapped映射模式）<br />
+文件未找到回溯（在多数据中心环境中有用）<br />
+视频编码：H264，H265（DASH/HLS），VP9（DASH）<br />
+音频编码：AAC，MP3<br />
+WebVTT/SRT字幕支持：1、DASH，2、HLS，3、MSS<br />
+支持Audio only/Video only文件<br />
+备用音轨支持1：生成多个音轨的manifest文件，在用户端选择<br />
+备用音轨支持2：单视频多音频文件多路复用，无需用户端支持<br />
+多音视频轨道选择<br />
+支持0.5-2倍变速（需要libavcodec和libavfilter）<br />
+源文件剪裁（I-Frame到P-frame）<br />
+支持可变分段长度-授权播放器选择最佳码率，防止过短分段<br />
+Clipping of MP4 files for progressive download playback<br />
+缩略图截取（需要libavcodec）<br />
+解密CENC加密的MP4文件（it is possible to create such files with MP4Box)<br />
+DASH: 通用加密（CENC）支持<br />
+MSS: PlayReady encryption support<br />
+HLS: Generation of I-frames playlist (EXT-X-I-FRAMES-ONLY)<br />
+HLS: 支持AES-128 / SAMPLE-AES加密  </p>
+<h2 id="_2">实际测试支持文件格式</h2>
+<p>mp4，mov<br />
+支持编码的avi文件  </p>
+<h2 id="_3">最佳视频参数</h2>
+<p><a href="https://knowledge.kaltura.com/recommended-video-source-formats-and-specifications">https://knowledge.kaltura.com/recommended-video-source-formats-and-specifications</a></p>
+<h3 id="_4">建议的视频设置</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Recommended</th>
+<th>Avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compressed Source</td>
+<td>H.264, ProRes</td>
+<td></td>
+</tr>
+<tr>
+<td>Container</td>
+<td>MOV, MP4</td>
+<td></td>
+</tr>
+<tr>
+<td>Bitrate</td>
+<td>x1.5-2 of the largest flavor</td>
+<td></td>
+</tr>
+<tr>
+<td>Frame Size</td>
+<td>As big as the largest desired flavor</td>
+<td>Don’t scale/zoom</td>
+</tr>
+<tr>
+<td>Frame Size</td>
+<td>Multiples of 16 (see below)</td>
+<td></td>
+</tr>
+<tr>
+<td>Frame Size</td>
+<td>Keep the original</td>
+<td>Don’t re-sample</td>
+</tr>
+</tbody>
+</table>
+<h3 id="quicktime-mpeg-4">QuickTime MPEG-4 设置建议</h3>
+<p>MP4/MOV Streaming - choose Fast-Start.<br />
+MP4 Video Compression - choose H.264 High profile.<br />
+Bitrate – based on video dimensions. See table below. <br />
+Progressive scan mode – avoid interlaced (Kaltura can handle interlaced as well, but it’s not recommended).<br />
+Multi pass –multi-pass will provide better quality (although Kaltura can convert single-pass file as well). <br />
+VBR vs. CBR - VBR (variable bitrate) usually provides better quality than CBR (constant bitrate).<br />
+Frame Rate – choose Current.  </p>
+<h3 id="_5">不同视频尺寸建议码率</h3>
+<p>理想的码率是6-8kbps<br />
+带*号的是kaltrua的默认配置  </p>
+<table>
+<thead>
+<tr>
+<th>16:9</th>
+<th>4:3</th>
+<th>Bitrate Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*1920x1080 (1080p)</td>
+<td></td>
+<td>6,000-8,000 Kbps</td>
+</tr>
+<tr>
+<td>*1280x720 (720p)</td>
+<td></td>
+<td>3,750-5,000 Kbps</td>
+</tr>
+<tr>
+<td>*1024x720 (iPad)</td>
+<td></td>
+<td>3,750-5,000 Kbps</td>
+</tr>
+<tr>
+<td>960x540 (540p)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>720x405</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>640x360</td>
+<td>640x480</td>
+<td>1,350-1,800 Kbps</td>
+</tr>
+<tr>
+<td>560x315</td>
+<td>560x420</td>
+<td></td>
+</tr>
+<tr>
+<td>*480x270</td>
+<td>480x360</td>
+<td>600-800 Kbps</td>
+</tr>
+<tr>
+<td>400x225</td>
+<td>400x300</td>
+<td></td>
+</tr>
+<tr>
+<td>*320x180</td>
+<td>320x240</td>
+<td>600-800 Kbps</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">建议的音频编码设置</h3>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Recommended</th>
+<th>Avoid</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compression</td>
+<td>AAC, MP3</td>
+<td>Nellymoser</td>
+</tr>
+<tr>
+<td>Channels</td>
+<td>Stereo, Mono</td>
+<td>Surround, 7.1</td>
+</tr>
+<tr>
+<td>Sample Size</td>
+<td>44.1 kHz or lower</td>
+<td></td>
+</tr>
+<tr>
+<td>Sound Levels</td>
+<td>Normalized</td>
+<td>Peaks, low sound</td>
+</tr>
+</tbody>
+</table>
+<h2 id="best-practices-for-multi-device-transcoding">Best Practices For Multi-Device Transcoding</h2>
+<p><a href="https://knowledge.kaltura.com/best-practices-multi-device-transcoding">https://knowledge.kaltura.com/best-practices-multi-device-transcoding</a></p>
+<h2 id="ngx_http_hls">ngx_http_hls支持的文件格式与编码格式</h2>
+<h3 id="_7">支持文件格式</h3>
+<p>The ngx_http_hls_module module provides HTTP Live Streaming (HLS) server-side support for MP4 and MOV media files. </p>
+<h3 id="_8">通常后缀名</h3>
+<p>Such files typically have the .mp4, .m4v, .m4a, .mov, or .qt filename extensions. </p>
+<h3 id="_9">支持编码格式</h3>
+<p>The module supports H.264 video codec, AAC and MP3 audio codecs.</p>
+<h1 id="_10">限制</h1>
+<p>轨道选择和码率变化在progressive download下不支持<br />
+I-frames playlist generation is not supported when encryption is enabled<br />
+只在Linux下测试通过  </p>
+<h1 id="_11">安装</h1>
+<h2 id="_12">编译</h2>
+<p>cd到NGINX源代码目录执行</p>
+<pre><code class="sh">./configure --add-module=/path/to/nginx-vod-module
+make
+make install
+</code></pre>
+
+<p>异步I/O支持加--with-file-aio（强烈建议，只支持local和mapped模式）</p>
+<pre><code class="sh">./configure --add-module=/path/to/nginx-vod-module --with-file-aio
+</code></pre>
+
+<p>支持使用线程池异步打开文件（只支持nginx 1.7.11以上，local和mapped模式）</p>
+<pre><code class="sh">./configure -add-module=/path/to/nginx-vod-module --with-threads
+</code></pre>
+
+<p>gcc编译优化-O3，和-O比较可以提升8%的MP4解析速度和帧处理之间</p>
+<pre><code class="sh">./configure --add-module=/path/to/nginx-vod-module --with-cc-opt=&quot;-O3&quot;
+</code></pre>
+
+<p>打印debug消息</p>
+<pre><code class="sh">./configure --add-module=/path/to/nginx-vod-module --with-debug
+</code></pre>
+
+<p>关闭编译优化（方便gdb调试）</p>
+<pre><code class="sh">./configure --add-module=/path/to/nginx-vod-module --with-cc-opt=&quot;-O0&quot;
+</code></pre>
+
+<h2 id="rhelcentos-rpm">RHEL/CentOS RPM</h2>
+<h3 id="rhel-or-centos-6">RHEL or CentOS 6</h3>
+<pre><code class="sh">rpm -ihv http://installrepo.kaltura.org/releases/kaltura-release.noarch.rpm
+yum install kaltura-nginx
+</code></pre>
+
+<h3 id="rhel-or-centos-7">RHEL or CentOS 7</h3>
+<pre><code class="sh">rpm -ihv http://installrepo.kaltura.org/releases/kaltura-release.noarch.rpm   
+</code></pre>
+
+<p>修改/etc/yum.repos.d/kaltura.repo
+将</p>
+<pre><code>baseurl = http://installrepo.kaltura.org/releases/latest/RPMS/$basearch/
+</code></pre>
+
+<p>替换为</p>
+<pre><code>baseurl = http://installrepo.kaltura.org/releases/rhel7/RPMS/$basearch/
+</code></pre>
+
+<h2 id="debianubuntu-rpm">Debian/Ubuntu RPM</h2>
+<pre><code class="sh">wget -O - http://installrepo.kaltura.org/repo/apt/debian/kaltura-deb.gpg.key|apt-key add -
+echo &quot;deb [arch=amd64] http://installrepo.kaltura.org/repo/apt/debian kajam main&quot; &gt; /etc/apt/sources.list.d/kaltura.list
+apt-get update
+apt-get install kaltura-nginx
+</code></pre>
+
+<h3 id="_13">注意</h3>
+<p>Ubuntu NOTE: You must also make sure the multiverse repo is enabled in /etc/apt/sources.list</p>
+<h1 id="url">URL结构</h1>
+<h2 id="url_1">基本URL结构</h2>
+<h3 id="_14">结构</h3>
+<p>http://<domain>/<location>/<fileuri>/<filename>  </p>
+<h3 id="fileuri">fileuri</h3>
+<p>local模式：根目录root /的相对路径<br />
+mapped模式：根据从upstream /收到的JSON确定<br />
+remote模式：读取chunks的mp4文件路径  </p>
+<h2 id="url_2">多文件合一URL结构</h2>
+<h3 id="_15">多合一</h3>
+<p>http://<domain>/<location>/<prefix>,<middle1>,<middle2>,<middle3>,<postfix>.urlset/<filename>  </p>
+<h3 id="_16">分解</h3>
+<p>http://<domain>/<location><prefix><middle1><postfix>/<filename><br />
+http://<domain>/<location><prefix><middle2><postfix>/<filename><br />
+http://<domain>/<location><prefix><middle3><postfix>/<filename>  </p>
+<h3 id="_17">注意</h3>
+<p>The suffix .urlset (can be changed with vod_multi_uri_suffix) indicates that the URL should be treated as a multi URL.  </p>
+<h2 id="url_3">URL路径参数</h2>
+<p>clipFrom：播放开始时间毫秒 例如 .../clipFrom/10000/...<br />
+clipTo: 播放结束时间毫秒 例如 .../clipTo/60000/...<br />
+tracks: 音视频轨道 例如 .../tracks/v1-a1/...  </p>
+<h2 id="_18">文件名结构</h2>
+<h3 id="_19">结构</h3>
+<p><basename>[<seqparams>][<fileparams>][<trackparams>][<langparams>].<extension>  </p>
+<h3 id="basename">basename</h3>
+<p>dash - manifest.mpd<br />
+hds - manifest.f4m<br />
+hls master playlist - master.m3u8<br />
+hls media playlist - index.m3u8<br />
+mss - manifest<br />
+thumb - thumb-<offset>.jpg (offset is the thumbnail video offset in milliseconds)  </p>
+<h3 id="seqparams-sseq">seqparams （sseq）</h3>
+<p>序号，如 master-sseq1.m3u8</p>
+<h3 id="fileparams-f">fileparams （f）</h3>
+<p>多路复用参数，如manifest-f1.mpd </p>
+<h3 id="trackparams-t">trackparams （t）</h3>
+<p>轨道参数，如manifest-a1.f4m <br />
+默认使用每个文件的第一个音轨和第一个视轨 
+与URL中/tracks/参数进行AND操作  </p>
+<h3 id="langparams">langparams</h3>
+<p>语言音轨，如master-leng.m3u8</p>
+<h1 id="mappingjson">Mapping模式JSON响应格式</h1>
+<p>Mapping模式时，nginx-vod-module向配置的upstream上游服务器发出http请求，接收它应该生成的多媒体。<br />
+upstream上游服务器必须响应JSON格式。  </p>
+<h2 id="_20">示例字段说明准备</h2>
+<p>1、Source Clip 从单一媒体文件中提取的音视频轨道。<br />
+2、Filter 对音视频轨道的筛选、操作。速率变化/音量大小/min多个音轨混合。<br />
+3、Clip 经过一系列Source Clip和Filter操作之后得到的结果。<br />
+4、Sequence 一些列应该被顺序播放的Clip。<br />
+5、Set 几个分辨率不同自适应播放的Sequence，每个Sequence内的Clip必须相同。  </p>
+<h2 id="_21">示例：简单映射</h2>
+<p>请求单一MP4文件</p>
+<pre><code class="json">{
+    &quot;sequences&quot;:[
+        {
+            &quot;clips&quot;:[
+                {
+                    &quot;type&quot;:&quot;source&quot;,
+                    &quot;path&quot;:&quot;/path/to/video.mp4&quot;
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<h2 id="_22">示例：自适应集合</h2>
+<pre><code class="json">{
+    &quot;sequences&quot;:[
+        {
+            &quot;clips&quot;:[
+                &quot;type&quot;:&quot;source&quot;,
+                &quot;path&quot;:&quot;/path/to/bitrate1.mp4&quot;
+            ]
+        },
+        {
+            &quot;clips&quot;:[
+                &quot;type&quot;:&quot;source&quot;,
+                &quot;path&quot;:&quot;/path/to/bitrate2.mp4&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<h2 id="_23">示例：播放列表</h2>
+<p>一个35秒的视频加一个22秒的视频</p>
+<pre><code class="json">{
+    &quot;durations&quot;:[35000, 22000],
+    &quot;sequences&quot;:[
+        {
+            &quot;clips&quot;:[
+                &quot;type&quot;:&quot;source&quot;,
+                &quot;path&quot;:&quot;/path/to/video1.mp4&quot;
+            ]
+        },
+        {
+            &quot;clips&quot;:[
+                &quot;type&quot;:&quot;source&quot;,
+                &quot;path&quot;:&quot;/path/to/video2.mp4&quot;
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<h2 id="_24">示例：过滤器</h2>
+<p>以1.5被速率播放视频1，混合使用50%音量的视频2的音轨</p>
+<pre><code class="json">{
+    &quot;sequences&quot;: [
+        {
+            &quot;clips&quot;: [
+                {
+                    &quot;type&quot;: &quot;mixFilter&quot;,
+                    &quot;sources&quot;: [
+                        {
+                            &quot;type&quot;: &quot;rateFilter&quot;,
+                            &quot;rate&quot;: 1.5,
+                            &quot;source&quot;: {
+                                &quot;type&quot;: &quot;source&quot;,
+                                &quot;path&quot;: &quot;/path/to/video1.mp4&quot;
+                            }
+                        },
+                        {
+                            &quot;type&quot;: &quot;gainFilter&quot;,
+                            &quot;gain&quot;: 0.5,
+                            &quot;source&quot;: {
+                                &quot;type&quot;: &quot;source&quot;,
+                                &quot;path&quot;: &quot;/path/to/video2.mp4&quot;,
+                                &quot;tracks&quot;: &quot;a1&quot;
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<h2 id="_25">示例：连续直播</h2>
+<pre><code class="json">{
+    &quot;playlistType&quot;: &quot;live&quot;,
+    &quot;discontinuity&quot;: false,
+    &quot;segmentBaseTime&quot;: 1451904060000,
+    &quot;firstClipTime&quot;: 1451917506000,
+    &quot;durations&quot;: [83000, 83000],
+    &quot;sequences&quot;: [
+        {
+            &quot;clips&quot;: [
+                {
+                    &quot;type&quot;: &quot;source&quot;,
+                    &quot;path&quot;: &quot;/path/to/video1.mp4&quot;
+                },
+                {
+                    &quot;type&quot;: &quot;source&quot;,
+                    &quot;path&quot;: &quot;/path/to/video2.mp4&quot;
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<h2 id="_26">示例：不连续直播</h2>
+<pre><code class="json">{
+    &quot;playlistType&quot;: &quot;live&quot;,
+    &quot;discontinuity&quot;: true,
+    &quot;initialClipIndex&quot;: 171,
+    &quot;initialSegmentIndex&quot;: 153,
+    &quot;firstClipTime&quot;: 1451918170000,
+    &quot;durations&quot;: [83000, 83000],
+    &quot;sequences&quot;: [
+        {
+            &quot;clips&quot;: [
+                {
+                    &quot;type&quot;: &quot;source&quot;,
+                    &quot;path&quot;: &quot;/path/to/video1.mp4&quot;
+                },
+                {
+                    &quot;type&quot;: &quot;source&quot;,
+                    &quot;path&quot;: &quot;/path/to/video2.mp4&quot;
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<h2 id="mapping">Mapping模式参数说明</h2>
+<h3 id="set">Set</h3>
+<h3 id="sequence">Sequence</h3>
+<h3 id="clipabstract">Clip（abstract）</h3>
+<h3 id="source-clip">Source clip</h3>
+<h3 id="rate-filter-clip">Rate filter clip</h3>
+<h3 id="gain-filter-clip">Gain filter clip</h3>
+<h3 id="mix-filter-clip">Mix filter clip</h3>
+<h3 id="concat-clip">Concat clip</h3>
+<h3 id="dynamic-clip">Dynamic clip</h3>
+<h3 id="notification">Notification</h3>
+<h1 id="_27">安全</h1>
+<h2 id="_28">鉴权</h2>
+<h3 id="cdn">CDN分发</h3>
+<h3 id="_29">直接分发</h3>
+<h2 id="url_4">URL加密</h2>
+<h2 id="_30">多媒体加密</h2>
+<h2 id="drm">DRM</h2>
+<h1 id="_31">性能建议</h1>
+<ol>
+<li>中型大型部署，不要让用户直接从nginx-vod-module播放，应该使用HTTP代理或CDN。<br />
+     中型部署添加一个缓存代理，使用nginx server的proxy_pass和proxy_cache。<br />
+     通常nginx-vod-module与mp4文件越近越好，缓存代理离用户越近越好。  </li>
+<li>开启nginx-vod-module缓存<br />
+      vod_metadata_cache，为每个分段保存需要重复读取的video metadata，缓存大小应该是GB级别。<br />
+      vod_response_cache，保存manifest清单请求，如果有中间代理层，这个缓存不是必须的，没有必要设置很大，128M一般够用。<br />
+      vod_mapping_cache，mapped模式，几MB即可。<br />
+      nginx's open_file_cache，缓存打开的文件句柄。<br />
+      打开vod_performance_counters可以跟踪命中率，启用一个nginx vod状态页面。  </li>
+<li>在local和mapped模式下，打开aio异步I/O，必须在编译时和配置时打开aio选项，可以通过状态页面的read_file(aio off)值对比async_read_file(aio on)。  </li>
+<li>在local和mapped模式下，打开异步文件打开，必须在编译时和配置时打开vod_open_file_thread_pool选项，可以通过状态页面的open_file值对比async_open_file值。  </li>
+<li></li>
+<li></li>
+<li>为manifest文件打开gzip压缩<br />
+     gzip_types application/vnd.apple.mpegurl video/f4m application/dash+xml text/xml  </li>
+<li></li>
+</ol>
+<h1 id="_32">配置</h1>
+<h2 id="_33">配置示例</h2>
+<h3 id="local">Local模式</h3>
+<pre><code class="nginx.conf">http {
+    upstream fallback {
+        server fallback.kaltura.com:80;
+    }
+
+    server {
+        # vod settings
+        vod_mode local;                                                                # 模式设置
+        vod_fallback_upstream_location /fallback;                       # 请求转发
+        vod_last_modified 'Sun, 19 Nov 2000 08:52:00 GMT';      # 为直播修改最后修改时间参数
+        vod_last_modified_types *;
+
+        # vod caches
+        vod_metadata_cache metadata_cache 512m;                  # 视频元数据缓存
+        vod_response_cache response_cache 128m;                    # manifest index缓存
+
+        # gzip manifests
+        gzip on;                                                                             # manifest index 打开gzip压缩
+        gzip_types application/vnd.apple.mpegurl;                      # 要压缩的文件类型
+
+        # file handle caching / aio
+        open_file_cache          max=1000 inactive=5m;                # nginx文件句柄缓存
+        open_file_cache_valid    2m;
+        open_file_cache_min_uses 1;
+        open_file_cache_errors   on;
+        aio on;                                                                               # 打开异步I/O
+
+        location ^~ /fallback/ {
+            internal;
+            proxy_pass http://fallback/;
+            proxy_set_header Host $http_host;
+        }
+
+        location /content/ {
+            root /web/;
+            vod hls;
+
+            add_header Access-Control-Allow-Headers '*';
+            add_header Access-Control-Expose-Headers 'Server,range,Content-Length,Content-Range';
+            add_header Access-Control-Allow-Methods 'GET, HEAD, OPTIONS';
+            add_header Access-Control-Allow-Origin '*';
+            expires 100d;
+        }
+    }
+}
+</code></pre>
+
+<h3 id="mapped">Mapped模式</h3>
+<pre><code class="nginx.conf">http {
+    upstream kalapi {
+        server www.kaltura.com:80;
+    }
+
+    upstream fallback {
+        server fallback.kaltura.com:80;
+    }
+
+    server {
+        # vod settings
+        vod_mode mapped;
+        vod_upstream_location /kalapi;
+        vod_upstream_extra_args &quot;pathOnly=1&quot;;
+        vod_fallback_upstream_location /fallback;
+        vod_last_modified 'Sun, 19 Nov 2000 08:52:00 GMT';
+        vod_last_modified_types *;
+
+        # vod caches
+        vod_metadata_cache metadata_cache 512m;
+        vod_response_cache response_cache 128m;
+        vod_mapping_cache mapping_cache 5m;
+
+        # gzip manifests
+        gzip on;
+        gzip_types application/vnd.apple.mpegurl;
+
+        # file handle caching / aio
+        open_file_cache          max=1000 inactive=5m;
+        open_file_cache_valid    2m;
+        open_file_cache_min_uses 1;
+        open_file_cache_errors   on;
+        aio on;
+
+        location ^~ /fallback/ {
+            internal;
+            proxy_pass http://fallback/;
+            proxy_set_header Host $http_host;
+        }
+
+        location ^~ /kalapi/ {
+            internal;
+            proxy_pass http://kalapi/;
+            proxy_set_header Host $http_host;
+        }
+
+        location ~ ^/p/\d+/(sp/\d+/)?serveFlavor/ {
+            # encrypted hls
+            vod hls;
+            vod_secret_key &quot;mukkaukk$vod_filepath&quot;;
+            vod_hls_encryption_method aes-128;
+
+            add_header Access-Control-Allow-Headers '*';
+            add_header Access-Control-Expose-Headers 'Server,range,Content-Length,Content-Range';
+            add_header Access-Control-Allow-Methods 'GET, HEAD, OPTIONS';
+            add_header Access-Control-Allow-Origin '*';
+            expires 100d;
+        }
+    }
+}
+</code></pre>
+
+<h3 id="remote">Remote模式</h3>
+<pre><code class="nginx.conf">http {
+    upstream kalapi {
+        server www.kaltura.com:80;
+    }
+
+    server {
+        # vod settings
+        vod_mode remote;
+        vod_upstream_location /kalapi;
+        vod_last_modified 'Sun, 19 Nov 2000 08:52:00 GMT';
+        vod_last_modified_types *;
+
+        # vod caches
+        vod_metadata_cache metadata_cache 512m;
+        vod_response_cache response_cache 128m;
+
+        # gzip manifests
+        gzip on;
+        gzip_types application/vnd.apple.mpegurl;
+
+        location ^~ /kalapi/ {
+            internal;
+            proxy_pass http://kalapi/;
+            proxy_set_header Host $http_host;
+        }
+
+        location ~ ^/p/\d+/(sp/\d+/)?serveFlavor/ {
+            vod hls;
+
+            add_header Access-Control-Allow-Headers '*';
+            add_header Access-Control-Expose-Headers 'Server,range,Content-Length,Content-Range';
+            add_header Access-Control-Allow-Methods 'GET, HEAD, OPTIONS';
+            add_header Access-Control-Allow-Origin '*';
+            expires 100d;
+        }
+    }
+}
+</code></pre>
+
+<h2 id="nginx">Nginx变量</h2>
+<p>NGINX模块变量<br />
+$vod_suburi - the current sub uri. For example, if the url is: http://<domain>/<location>/<prefix>,<middle1>,<middle2>,<middle3>,<postfix>.urlset/<filename> $vod_suburi will have the value http://<domain>/<location>/<prefix><middle1><postfix>/<filename> when processing the first uri.<br />
+$vod_filepath - in local / mapped modes, the file path of current sub uri. In remote mode, has the same value as $vod_suburi.<br />
+$vod_sequence_id - contains the id of the current sequence, if no id was specified in the mapping json this variable will be the same as $vod_suburi.<br />
+$vod_clip_id - the id of the current clip, this variable has a value during these phases:<br />
+Mapping of dynamic clips to concat clips<br />
+Mapping of source clip to paths<br />
+$vod_notification_id - the id of the current notification, the value is non-empty only when referenced by vod_notification_uri<br />
+$vod_dynamic_mapping - a serialized representation of the mapping of dynamic clips to concat clips.<br />
+$vod_request_params - a serialized representation of the request params, e.g. 12-f2-v1-a1. The variable contains:<br />
+The segment index (for a segment request)<br />
+The sequence index<br />
+A selection of audio/video tracks<br />
+Note: Configuration directives that can accept variables are explicitly marked as such.  </p>
+<h2 id="_34">配置指令：基础</h2>
+<h3 id="vod">vod 分段模式</h3>
+<p>语法：vod segmenter<br />
+默认：n/a<br />
+上下文：location  </p>
+<p>segmenter：<br />
+1、none MP4文件<br />
+2、dash Dynamic Adaptive Streaming over HTTP分包<br />
+3、hds Adobe HTTP Dynamic Streaming分包<br />
+4、hls Apple HTTP Live Streaming分包<br />
+5、mss 微软Smooth Streaming分包<br />
+6、thumb 缩略图  </p>
+<h3 id="vod_mode">vod_mode 模式</h3>
+<p>语法：vod_mode mode<br />
+默认：local<br />
+上下文：http, server, location  </p>
+<h3 id="vod_status">vod_status 开启监控</h3>
+<p>语法：vod_status status<br />
+默认：n/a<br />
+上下文：location  </p>
+<h2 id="segmentation">配置指令：segmentation分段</h2>
+<h3 id="vod_segment_duration">vod_segment_duration 分段时长</h3>
+<p>语法：vod_segment_duration duration<br />
+默认：10s<br />
+上下文：http, server, location  </p>
+<p>强烈建议设置为GOP的倍数，如果不是GOP的倍数且vod_align_segments_to_key_frames开启，manifest中的分段时间和实际会有明显差别，还会带来空分段。  </p>
+<h3 id="vod_live_window_duration">vod_live_window_duration 直播窗口时长</h3>
+<p>语法：vod_live_window_duration duration<br />
+默认：30000<br />
+上下文：http, server, location  </p>
+<p>？  </p>
+<h3 id="vod_bootstrap_segment_durations">vod_bootstrap_segment_durations 启动分段时长</h3>
+<p>语法：vod_bootstrap_segment_durations duration<br />
+默认：none<br />
+上下文：http, server, location  </p>
+<p>启动时分段时长，设置较短启动分段用于尽早确定码率，避免全程分段短。  </p>
+<h3 id="vod_align_segments_to_key_frames">vod_align_segments_to_key_frames 分段由关键帧开始</h3>
+<p>语法：vod_align_segments_to_key_frames on/off<br />
+默认：off<br />
+上下文：http, server, location  </p>
+<p>开启后分段由关键帧开始，可能会导致实际分段时长与manifest中声明的时长不同，除非vod_manifest_segment_durations_mode设置为accurate。  </p>
+<h3 id="vod_segment_count_policy">vod_segment_count_policy 分段计数策略</h3>
+<p>语法：vod_segment_count_policy last_short/last_long/last_rounded<br />
+默认：last_short<br />
+上下文：http, server, location  </p>
+<p>假设分段设置为10秒:<br />
+last_short：一个33秒的视频会分段为10, 10, 10, 3<br />
+last_long：一个33秒的视频会分段为10, 10, 13<br />
+last_rounded：一个33秒的视频会分段为10, 10, 13，一个38秒的视频会分段为10, 10, 10, 8 </p>
+<h3 id="vod_manifest_segment_durations_mode-manifest">vod_manifest_segment_durations_mode manifest文件分段时长准确度模式</h3>
+<p>语法：vod_manifest_segment_durations_mode estimate/accurate<br />
+默认：estimate<br />
+上下文：http, server, location  </p>
+<p>设置分段精确度模式：<br />
+estimate：估算模式，设置为10秒则manifest中显示为#EXTINF:10<br />
+accurate：精确模式， 假设帧率为29.97分段为10秒，则分段为10.01秒。如果vod_align_segment_to_key_frames设置为on，则关键帧也会被计算。  </p>
+<h2 id="upstream">配置指令：upstream</h2>
+<p>上游服务器配置</p>
+<h2 id="fallback">配置指令：fallback</h2>
+<p>失败回溯配置</p>
+<h2 id="_35">配置指令：性能</h2>
+<h3 id="vod_metadata_cache">vod_metadata_cache 视频分段缓存</h3>
+<p>语法：vod_metadata_cache zone_name zone_size [expiration]<br />
+默认：off<br />
+上下文：http, server, location<br />
+设置视频分段缓存大小和过期时间。  </p>
+<h3 id="vod_mapping_cache">vod_mapping_cache</h3>
+<p>语法：vod_mapping_cache zone_name zone_size [expiration]<br />
+默认：off<br />
+上下文：http, server, location<br />
+Configures the size and shared memory object name of the mapping cache for vod (mapped mode only).  </p>
+<h3 id="vod_live_mapping_cache">vod_live_mapping_cache</h3>
+<p>语法：vod_live_mapping_cache zone_name zone_size [expiration]<br />
+默认：off<br />
+上下文：http, server, location<br />
+Configures the size and shared memory object name of the mapping cache for live (mapped mode only).  </p>
+<h3 id="vod_response_cache">vod_response_cache</h3>
+<p>语法：vod_response_cache zone_name zone_size [expiration]<br />
+默认：off<br />
+上下文：http, server, location<br />
+设置视频manifests文件和非视频文件缓存。  </p>
+<h3 id="vod_live_response_cache">vod_live_response_cache</h3>
+<p>语法：vod_live_response_cache zone_name zone_size [expiration]<br />
+默认：off<br />
+上下文：http, server, location<br />
+Configures the size and shared memory object name of the response cache for time changing live responses. This cache holds the following types of responses for live: DASH MPD, HLS index M3U8, HDS bootstrap, MSS manifest.  </p>
+<h3 id="vod_initial_read_size">vod_initial_read_size 初始读取大小</h3>
+<p>语法：vod_initial_read_size size<br />
+默认：4K<br />
+上下文：http, server, location <br />
+设置MP4文件初始读取大小  </p>
+<h3 id="vod_max_metadata_size">vod_max_metadata_size 最大支持视频元数据大小</h3>
+<p>语法：vod_max_metadata_size  size<br />
+默认：128MB 
+上下文：http, server, location<br />
+设置最大支持的视频元数据大小 (即MP4 - moov 元素大小)  </p>
+<h3 id="vod_max_frames_size">vod_max_frames_size 最大帧大小</h3>
+<p>语法：vod_max_frames_size size<br />
+默认：16MB<br />
+上下文：http, server, location<br />
+Sets the limit on the total size of the frames of a single segment  </p>
+<h3 id="vod_cache_buffer_size">vod_cache_buffer_size</h3>
+<p>语法：vod_cache_buffer_size size<br />
+默认：256K<br />
+上下文：http, server, location<br />
+Sets the size of the cache buffers used when reading MP4 frames.  </p>
+<h3 id="vod_open_file_thread_pool">vod_open_file_thread_pool</h3>
+<p>语法：vod_open_file_thread_pool pool_name<br />
+默认：off<br />
+上下文：http, server, location<br />
+Enables the use of asynchronous file open via thread pool. The thread pool must be defined with a thread_pool directive, if no pool name is specified the default pool is used. This directive is supported only on nginx 1.7.11 or newer when compiling with --add-threads. Note: this directive currently disables the use of nginx's open_file_cache by nginx-vod-module  </p>
+<h3 id="vod_output_buffer_pool-http">vod_output_buffer_pool HTTP响应内存池</h3>
+<p>语法：vod_output_buffer_pool size count<br />
+默认：off<br />
+上下文：http, server, location 
+Pre-allocates buffers for generating response data, saving the need allocate/free the buffers on every request.  </p>
+<h3 id="vod_performance_counters">vod_performance_counters</h3>
+<p>语法：vod_performance_counters zone_name<br />
+默认：off<br />
+上下文：http, server, location<br />
+Configures the shared memory object name of the performance counters  </p>
+<h2 id="url_5">配置指令：url结构</h2>
+<p>修改url结构</p>
+<h2 id="_36">配置指令：响应头部</h2>
+<p>修改响应头部</p>
+<h2 id="ad-stitching-mapped-mode-only">配置指令：ad stitching (mapped mode only)</h2>
+<h2 id="drm-encryption">配置指令：DRM / encryption</h2>
+<h2 id="dash">配置指令：DASH</h2>
+<h2 id="hds">配置指令：HDS</h2>
+<h2 id="hls">配置指令：HLS</h2>
+<h3 id="vod_hls_encryption_method">vod_hls_encryption_method</h3>
+<p>语法：vod_hls_encryption_method method<br />
+默认：none<br />
+上下文：http, server, location<br />
+Sets the encryption method of HLS segments, allowed values are: none (default), aes-128, sample-aes.  </p>
+<h3 id="vod_hls_absolute_master_urls-manifesturl">vod_hls_absolute_master_urls 设置manifest文件url相对/绝对</h3>
+<p>语法：vod_hls_absolute_master_urls on/off<br />
+默认：on<br />
+上下文：http, server, location<br />
+When enabled the server returns absolute playlist URLs in master playlist requests  </p>
+<h3 id="vod_hls_absolute_index_urls-manifesturl">vod_hls_absolute_index_urls 设置manifest文件url相对/绝对</h3>
+<p>语法：vod_hls_absolute_index_urls on/off<br />
+默认：on<br />
+上下文：http, server, location<br />
+When enabled the server returns absolute segment URLs in media playlist requests  </p>
+<h3 id="vod_hls_absolute_iframe_urls">vod_hls_absolute_iframe_urls</h3>
+<p>语法：vod_hls_absolute_iframe_urls on/off<br />
+默认：off<br />
+上下文：http, server, location<br />
+When enabled the server returns absolute segment URLs in iframe playlist requests  </p>
+<h3 id="vod_hls_master_file_name_prefix">vod_hls_master_file_name_prefix</h3>
+<p>syntax: vod_hls_master_file_name_prefix name<br />
+default: master<br />
+context: http, server, location<br />
+The name of the HLS master playlist file (an m3u8 extension is implied).  </p>
+<h3 id="vod_hls_index_file_name_prefix">vod_hls_index_file_name_prefix</h3>
+<p>syntax: vod_hls_index_file_name_prefix name<br />
+default: index<br />
+context: http, server, location<br />
+The name of the HLS media playlist file (an m3u8 extension is implied).  </p>
+<h3 id="vod_hls_iframes_file_name_prefix">vod_hls_iframes_file_name_prefix</h3>
+<p>syntax: vod_hls_iframes_file_name_prefix name<br />
+default: iframes<br />
+context: http, server, location<br />
+The name of the HLS I-frames playlist file (an m3u8 extension is implied).  </p>
+<h3 id="vod_hls_segment_file_name_prefix">vod_hls_segment_file_name_prefix</h3>
+<p>syntax: vod_hls_segment_file_name_prefix name<br />
+default: seg<br />
+context: http, server, location<br />
+The prefix of segment file names, the actual file name is seg-<index>-v<video-track-index>-a<audio-track-index>.ts.  </p>
+<h3 id="vod_hls_encryption_key_file_name">vod_hls_encryption_key_file_name</h3>
+<p>syntax: vod_hls_encryption_key_file_name name<br />
+default: encryption.key<br />
+context: http, server, location<br />
+The name of the encryption key file name, only relevant when encryption method is not none.  </p>
+<h3 id="vod_hls_encryption_key_uri">vod_hls_encryption_key_uri</h3>
+<p>syntax: vod_hls_encryption_key_uri uri<br />
+default: a url pointing to encryption.key<br />
+context: http, server, location<br />
+Sets the value of the URI attribute of EXT-X-KEY, only relevant when encryption method is not none. The parameter value can contain variables.  </p>
+<h3 id="vod_hls_encryption_key_format">vod_hls_encryption_key_format</h3>
+<p>syntax: vod_hls_encryption_key_format format<br />
+default: none<br />
+context: http, server, location<br />
+Sets the value of the KEYFORMAT attribute of EXT-X-KEY, only relevant when encryption method is not none.  </p>
+<h3 id="vod_hls_encryption_key_format_versions">vod_hls_encryption_key_format_versions</h3>
+<p>syntax: vod_hls_encryption_key_format_versions versions<br />
+default: none<br />
+context: http, server, location<br />
+Sets the value of the KEYFORMATVERSIONS attribute of EXT-X-KEY, only relevant when encryption method is not none.  </p>
+<h3 id="vod_hls_interleave_frames">vod_hls_interleave_frames 音视频交叉分包</h3>
+<p>syntax: vod_hls_interleave_frames on/off<br />
+default: off<br />
+context: http, server, location<br />
+When enabled, the HLS muxer interleaves frames of different streams (audio / video). When disabled, on every switch between audio / video the muxer flushes the MPEG TS packet.  </p>
+<h3 id="vod_hls_align_frames">vod_hls_align_frames 音视频帧对齐</h3>
+<p>syntax: vod_hls_align_frames on/off<br />
+default: on<br />
+context: http, server, location<br />
+When enabled, every video / audio frame is aligned to MPEG TS packet boundary, padding is added as needed.  </p>
+<h3 id="vod_hls_output_id3_timestamps">vod_hls_output_id3_timestamps</h3>
+<p>syntax: vod_hls_output_id3_timestamps on/off<br />
+default: on<br />
+context: http, server, location<br />
+When enabled, an ID3 TEXT frame will be outputted in each TS segment, containing a JSON with the absolute segment timestamp. The timestamp is measured in milliseconds since the epoch (unixtime x 1000), the JSON structure is: {"timestamp":1459779115000}  </p>
+<h2 id="mss">配置指令：MSS</h2>
+<p>略</p>
+<h2 id="_37">配置指令：缩略图截取</h2>
+<p>略</p>
+<h2 id="misc">配置指令：misc 混合</h2>
+<p>略</p></div>
         </div>
 
         <footer class="col-md-12">
