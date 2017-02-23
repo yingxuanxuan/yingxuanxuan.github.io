@@ -623,7 +623,7 @@ man搜索路径：/etc/man_db.conf  </p>
 6、游戏<br />
 2、系统核心函数工具<br />
 3、函数，库，libc<br />
-4、/dev文件  # man urandom 4
+4、/dev文件  # man urandom 4<br />
 5、设置文件<br />
 7、Linux惯例、协定<br />
 9、kernel相关文件  </p>
@@ -707,7 +707,7 @@ su - = su -l = su --login #使用shell登录  </p>
 用户ID = 1~499，系统用户，没有shell，为服务创建的用户<br />
 用户ID = 500+，普通用户  </p>
 <h2 id="useradd">useradd</h2>
-<p>不指定-g会自动创建同名用户组
+<p>不指定-g会自动创建同名用户组<br />
 -g groupname username #增加用户配置<br />
 -d #家目录<br />
 -s #登录shell<br />
@@ -727,12 +727,12 @@ su - = su -l = su --login #使用shell登录  </p>
 -L #锁定<br />
 -U #解锁  </p>
 <h2 id="gpasswd">gpasswd</h2>
-<p>管理/etc/group 和/etc/gshadow
-gpasswd groupname  #设置组密码
-gpasswd -r groupname #取消用户组密码
-gpasswd -d user group #将用户从用户组删除
-gpasswd -a user wheel #添加到用户组
-gpasswd -A user1 user2 user3 wheel #添加用户组管理员
+<p>管理/etc/group 和/etc/gshadow<br />
+gpasswd groupname  #设置组密码<br />
+gpasswd -r groupname #取消用户组密码<br />
+gpasswd -d user group #将用户从用户组删除<br />
+gpasswd -a user wheel #添加到用户组<br />
+gpasswd -A user1 user2 user3 wheel #添加用户组管理员<br />
 gpasswd -M user1 user2 user3 wheel #添加用户组成员</p>
 <h2 id="password">password # 修改密码</h2>
 <p>passwd # 修改当前用户密码<br />
@@ -978,13 +978,13 @@ tail -n num file #显示后n行<br />
 tail -n +num file #显示直到正数n行<br />
 tail -f #持续检测  </p>
 <h2 id="odoctal-dump">od(octal dump)</h2>
-<p>od [OPTION] [FILE] [[+|-]OFFSET[.][b]]
+<p>od [OPTION] [FILE] [[+|-]OFFSET[.][b]]<br />
 -A --address-radix=[doxn] #地址（行号）显示方式<br />
 -Ad #decimal<br />
 -Ao #octal<br />
 -Ax #hex<br />
 -An #none<br />
--w[BYTES] --width=BYTES #每行宽度（字节数） 
+-w[BYTES] --width=BYTES #每行宽度（字节数） <br />
 -t --format=[acdfoux]<br />
 -t a #named character, ignoring hight-order bit<br />
 -t c #printable character or bachslash escape<br />
@@ -1415,7 +1415,7 @@ cpio -ivct &lt; [file|device] #查看<br />
 * /boot/initramfs-xxxx 是cpio文件 *  </p>
 <h1 id="vim">第九章：vim</h1>
 <h2 id="_46">注意</h2>
-<p>root没有alias vi=vim
+<p>root没有alias vi=vim<br />
 使用软连接共享配置文件：</p>
 <pre><code class="sh">ln -s /home/yingxuanxuan/.vimrc /root/.
 </code></pre>
@@ -1506,7 +1506,7 @@ ctrl + w, k # ctrl + w, up<br />
 ctrl + w, q # quit    </p>
 <h2 id="_54">命令补全</h2>
 <p>ctrl + x, ctrl + n # 以上文的内容进行补齐<br />
-ctrl + x, ctrl + f # 以当前目录下的文件名补齐 
+ctrl + x, ctrl + f # 以当前目录下的文件名补齐 <br />
 ctrl + x, ctrl + o # 以后缀名相关的内建语法进行补齐  </p>
 <h2 id="_55">配置文件</h2>
 <h3 id="viminfo">~/.viminfo # 使用记录，上次编辑位置，搜索关键字</h3>
@@ -1642,20 +1642,20 @@ ${var%key} #从右向左删除，删除最短匹配<br />
 ${var%%key} #从右向左删除，删除最长匹配<br />
 ${var/key1/key2｝ #将首个匹配的key1替换为key2<br />
 ${var//key1/key2｝ #将所有匹配的key1替换为key2<br />
-表达式 str没有定义 str=""  str已经定义且不等于""
-var=${str-expr} var=expr    var=    var=$str
-var=${str:-expr}    var=expr    var=expr    var=$str
-var=${str+expr} var=    var=expr    var=expr
-var=${str:+expr}    var=    var=    var=expr
-var=${str=expr} str=expr
-var=expr    str不变
-var=    str不变
-var=$str
-var=${str:=expr}    str=expr
-var=expr    str=expr
-var=expr    str不变
-var=$str
-var=${str?expr} expr输出至stderr   var=    var=$str
+表达式 str没有定义 str=""  str已经定义且不等于""<br />
+var=${str-expr} var=expr    var=    var=$str<br />
+var=${str:-expr}    var=expr    var=expr    var=$str<br />
+var=${str+expr} var=    var=expr    var=expr<br />
+var=${str:+expr}    var=    var=    var=expr<br />
+var=${str=expr} str=expr<br />
+var=expr    str不变<br />
+var=    str不变<br />
+var=$str<br />
+var=${str:=expr}    str=expr<br />
+var=expr    str=expr<br />
+var=expr    str不变<br />
+var=$str<br />
+var=${str?expr} expr输出至stderr   var=    var=$str<br />
 var=${str:?expr}    expr输出至stderr   expr输出至stderr   var=$str</p>
 <h2 id="alias-unalias">alias unalias</h2>
 <p>使用\转译还原alias  </p>
@@ -2119,8 +2119,8 @@ crontab -r #remove all, 删除其中一项用-e编辑  </p>
 */5    *    *    *    *    command #每隔5分钟执行<br />
 30    16    *    *    5    command #每周五16点30分执行  </p>
 <h3 id="crontab_1">系统crontab</h3>
-<p>/etc/crontab 
-/etc/cron.d/<em>
+<p>/etc/crontab <br />
+/etc/cron.d/<em><br />
 </em> 某些系统会把crontab加载到内存，需要重启crond重新读取crontab *<br />
 /etc/cron.d/0hourly每小时定时执行/etc/cron.hourly里的脚本<br />
 /etc/cron.hourly/0anacron定时执行daily weekly monthly任务<br />
@@ -2812,7 +2812,7 @@ https://wiki.centos.org/zh/AdditionalResources/Repositories/SCL  </p>
 <p>略</p>
 <h1 id="internet">服务器四：Internet连接</h1>
 <h2 id="_176">查看内核网卡加载</h2>
-<p>dmesg | grep -in eth
+<p>dmesg | grep -in eth<br />
 eth0: e1000_probe: Intel(R) PRO/1000 Network Connection</p>
 <h2 id="pci">查看pci网卡加载</h2>
 <p>lspci | grep -i ethernet</p>
@@ -2864,7 +2864,7 @@ dig www.baidu.com #检查是否设置成功  </p>
 <p>systemctl restart network.service<br />
 网络启动脚本  </p>
 <h3 id="adsl">ADSL</h3>
-<p>yum install rp-pppoe 
+<p>yum install rp-pppoe <br />
 pppoe-setup<br />
 pppoe-start<br />
 pppoe-stop<br />
@@ -3115,7 +3115,7 @@ User             username
 fi
 </code></pre>
 
-<p>方法四：
+<p>方法四：<br />
 编辑~/.bash_profile:</p>
 <pre><code>eval `keychain --eval id_rsa`
 </code></pre>
@@ -3192,7 +3192,7 @@ X -query 192.168.1.2 :1  </p>
 <h2 id="vnc">vnc</h2>
 <p>不加密</p>
 <h2 id="xrdp">xrdp</h2>
-<p>加密
+<p>加密<br />
 windows 远程连接协议</p>
 <h2 id="rsync_2">rsync</h2>
 <p>加密远程同步</p>
@@ -3310,7 +3310,7 @@ ab<br />
 runlevel # 3:多用户模式 5:带图形化的多用户 0:关机 1:单用户 2:不带网络的多用户 4:未使用 6:重新启动  </p>
 <h2 id="rsyslog">日志/rSyslog服务</h2>
 <p>syslog # CentOS 5<br />
-rsyslog # CentOS 6 
+rsyslog # CentOS 6 <br />
 /var/log/secure # 安全相关<br />
 /var/log/boot # 启动<br />
 /var/log/dmesg # 内核<br />
@@ -3378,7 +3378,7 @@ adduser yingxuanxuan<br />
 passwd yingxuanxuan #用户必须有密码才能进行sudo操作<br />
 gpasswd -a yingxuanxuan wheel #usermod -G wheel yingxuanxuan  </p>
 <h2 id="lvm">LVM逻辑卷管理</h2>
-<p>说明：
+<p>说明：<br />
 LVM（Logical volume Manager）通过将底层物理硬盘抽象封装起来，以逻辑卷的形式表现给上层习哦他能够  </p>
 <p>功能：<br />
 扩展硬盘空间<br />

@@ -209,262 +209,6 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<div class="toc">
-<ul>
-<li><a href="#_1">文档</a></li>
-<li><a href="#_2">安装</a><ul>
-<li><a href="#repo">repo 安装</a><ul>
-<li><a href="#repo_1">repo</a></li>
-<li><a href="#repo_2">导入repo签名</a></li>
-</ul>
-</li>
-<li><a href="#_3">编译安装</a></li>
-</ul>
-</li>
-<li><a href="#_4">操作命令</a><ul>
-<li><a href="#_5">信号</a></li>
-<li><a href="#_6">命令</a><ul>
-<li><a href="#_7">测试配置</a></li>
-<li><a href="#_8">查看编译选项</a></li>
-<li><a href="#_9">使用新配置</a></li>
-<li><a href="#_10">动态改变配置</a></li>
-</ul>
-</li>
-<li><a href="#_11">服务</a></li>
-</ul>
-</li>
-<li><a href="#_12">配置</a><ul>
-<li><a href="#_13">配置概述</a><ul>
-<li><a href="#_14">注释</a></li>
-<li><a href="#_15">指令</a></li>
-<li><a href="#_16">指令参数</a></li>
-<li><a href="#_17">指令上下文</a></li>
-<li><a href="#_18">单位</a></li>
-<li><a href="#_19">正则表达式</a></li>
-<li><a href="#_20">常用内置变量</a></li>
-<li><a href="#_21">自定义变量</a></li>
-<li><a href="#_22">包含配置目录</a></li>
-</ul>
-</li>
-<li><a href="#_23">配置示例</a></li>
-<li><a href="#core-functionality">全局配置（core functionality)</a><ul>
-<li><a href="#user">user # 用户，用户组配置</a></li>
-<li><a href="#worker_processes">worker_processes # 工作线程数</a></li>
-<li><a href="#worker_cpu_affinity-cpu">worker_cpu_affinity # CPU绑定</a></li>
-<li><a href="#worker_connections">worker_connections # 单工作线程最大连接数</a></li>
-<li><a href="#worker_rlimit_nofile">worker_rlimit_nofile # 最大文件描述符</a></li>
-<li><a href="#use">use # 事件模型</a></li>
-<li><a href="#error_log">error_log # 日志存储位置</a></li>
-<li><a href="#pid-pid">pid # PID存储位置</a></li>
-</ul>
-</li>
-<li><a href="#httpngx_http_core_module">HTTP核心配置（ngx_http_core_module）</a><ul>
-<li><a href="#client_header_buffer_size">client_header_buffer_size</a></li>
-<li><a href="#client_body_buffer_size">client_body_buffer_size</a></li>
-<li><a href="#listen">listen</a></li>
-<li><a href="#server_name">server_name</a></li>
-<li><a href="#location">location</a></li>
-<li><a href="#root">root</a></li>
-<li><a href="#alias">alias</a></li>
-<li><a href="#client_max_body_size-http-413">client_max_body_size # 大文件上传限制，超出返回HTTP 413</a></li>
-<li><a href="#send_file">send_file # 直接发送文件</a></li>
-<li><a href="#tcp_nopush">tcp_nopush</a></li>
-<li><a href="#keepalive_timeout">keepalive_timeout # 连接超时时间</a></li>
-<li><a href="#open_file_cache">open_file_cache # 文件句柄池</a></li>
-<li><a href="#open_file_cache_1">open_file_cache # 句柄有效时长</a></li>
-<li><a href="#open_file_min_uses">open_file_min_uses # 去激活前最低使用次数</a></li>
-<li><a href="#open_file_cache_error">open_file_cache_error # 是否缓存文件错误</a></li>
-<li><a href="#aio-io">aio # 异步IO</a></li>
-</ul>
-</li>
-<li><a href="#httpngx_http_log_module">HTTP日志配置（ngx_http_log_module）</a><ul>
-<li><a href="#access_log">access_log</a></li>
-<li><a href="#log_format">log_format</a></li>
-<li><a href="#open_log_file">open_log_file</a></li>
-</ul>
-</li>
-<li><a href="#httpngx_http_charset_module">HTTP字符集配置（ngx_http_charset_module）</a><ul>
-<li><a href="#charset">charset</a></li>
-<li><a href="#source_charset">source_charset</a></li>
-</ul>
-</li>
-<li><a href="#http-gzipngx_http_gzip_module">HTTP gzip配置（ngx_http_gzip_module）</a><ul>
-<li><a href="#gzip-gzip">gzip # gzip开关</a></li>
-<li><a href="#gzip_buffers-number">gzip_buffers number # 缓冲区大小</a></li>
-<li><a href="#gzip_comp_level">gzip_comp_level # 压缩级别</a></li>
-<li><a href="#gzip_disable-user-agent">gzip_disable User-Agent过滤</a></li>
-<li><a href="#gzip_min_length">gzip_min_length 压缩最小长度</a></li>
-<li><a href="#gzip_types-mime">gzip_types 压缩mime类型</a></li>
-</ul>
-</li>
-<li><a href="#http-ngx_http_rewrite_module">HTTP 重定向配置（ngx_http_rewrite_module）</a></li>
-</ul>
-</li>
-<li><a href="#web-server">Web Server</a><ul>
-<li><a href="#server-name">Server name</a><ul>
-<li><a href="#_24">匹配顺序</a></li>
-</ul>
-</li>
-<li><a href="#location_1">Location</a><ul>
-<li><a href="#_25">普通匹配</a></li>
-<li><a href="#_26">精确匹配（=）</a></li>
-<li><a href="#_27">正则匹配（~）</a></li>
-<li><a href="#_28">停止正则匹配（^~）</a></li>
-<li><a href="#locationnameredirect">@locationname内部redirect匹配</a></li>
-<li><a href="#_29">匹配顺序</a></li>
-<li><a href="#_30">性能优化</a></li>
-</ul>
-</li>
-<li><a href="#_31">返回状态码</a><ul>
-<li><a href="#_32">无参数状态码</a></li>
-<li><a href="#_33">带参数状态吗</a></li>
-</ul>
-</li>
-<li><a href="#urlrewrite">重写URL（rewrite）</a><ul>
-<li><a href="#rewrite">rewrite</a></li>
-<li><a href="#last">last</a></li>
-<li><a href="#break">break</a></li>
-<li><a href="#redirect-permanent">redirect | permanent</a></li>
-<li><a href="#serverrewrite">server中rewrite会按顺序执行一次</a></li>
-<li><a href="#locationrewritelocation">location中rewrite在选中location时会执行</a></li>
-</ul>
-</li>
-<li><a href="#http">重写HTTP</a><ul>
-<li><a href="#httprefer">更改http请求refer</a></li>
-<li><a href="#host-name">更改host name</a></li>
-</ul>
-</li>
-<li><a href="#_34">错误处理</a><ul>
-<li><a href="#_35">定义错误页</a></li>
-<li><a href="#_36">替换错误码</a></li>
-<li><a href="#_37">将错误转交处理</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#reverse-proxy">反向代理 Reverse Proxy</a><ul>
-<li><a href="#_38">转发请求</a><ul>
-<li><a href="#_39">转发到网址</a></li>
-<li><a href="#ip">转发到IP端口</a></li>
-<li><a href="#location_2">替换location</a></li>
-<li><a href="#fastcgi">FastCGI</a></li>
-<li><a href="#uwsgi">uwsgi</a></li>
-<li><a href="#scgi">SCGI</a></li>
-<li><a href="#memcached">memcached</a></li>
-<li><a href="#named-group">named group（即负载均衡）</a></li>
-</ul>
-</li>
-<li><a href="#_40">修改转发请求头部</a><ul>
-<li><a href="#proxy_set_header">proxy_set_header</a></li>
-<li><a href="#hosthost">设置Host为原始Host</a></li>
-<li><a href="#ipip">设置真实IP为原始IP</a></li>
-<li><a href="#_41">阻止某个字段传给代理（设置为空）</a></li>
-</ul>
-</li>
-<li><a href="#_42">配置缓存</a><ul>
-<li><a href="#proxy_buffering">proxy_buffering（开关）</a></li>
-<li><a href="#proxy_buffers">proxy_buffers（单连接缓存大小块数）</a></li>
-<li><a href="#proxy_buffer_size">proxy_buffer_size（响应读取阈值）</a></li>
-<li><a href="#proxy_buffer">低延迟交互应用时关闭proxy_buffer（同步处理）</a></li>
-</ul>
-</li>
-<li><a href="#ip_1">绑定出口IP</a><ul>
-<li><a href="#ip_2">绑定IP</a></li>
-<li><a href="#_43">绑定变量</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#content-caching">内容缓存 Content Caching</a><ul>
-<li><a href="#_44">开启响应缓存</a><ul>
-<li><a href="#proxy_cache">proxy_cache 开启或关闭代理缓存</a></li>
-<li><a href="#proxy_cache_path">proxy_cache_path 定义缓存区</a></li>
-<li><a href="#keys_zone">keys_zone # 定义缓存区名称，大小，超时时间，</a></li>
-<li><a href="#levels">levels # 指定缓存子目录数</a></li>
-<li><a href="#inactive">inactive</a></li>
-<li><a href="#use_temp_path">use_temp_path</a></li>
-</ul>
-</li>
-<li><a href="#_45">设置缓存加载</a><ul>
-<li><a href="#loader_threshold">loader_threshold</a></li>
-<li><a href="#loader_files">loader_files</a></li>
-<li><a href="#loader_sleeps">loader_sleeps</a></li>
-<li><a href="#_46">示例</a></li>
-</ul>
-</li>
-<li><a href="#_47">缓存设置</a><ul>
-<li><a href="#key">设置缓存key计算方法</a></li>
-<li><a href="#_48">设置缓存条件：最小请求次数（只有被最常访问的数据才被缓存）</a></li>
-<li><a href="#methods">设置缓存methods</a></li>
-<li><a href="#_49">缓存更新锁</a></li>
-<li><a href="#_50">使用缓存替代错误相应</a></li>
-<li><a href="#_51">缓存正在更新时，先发送旧内容，触发更新的请求会等待服务器返回新结果</a></li>
-</ul>
-</li>
-<li><a href="#_52">限制或绕过缓存</a><ul>
-<li><a href="#_53">设置缓存过期时间</a></li>
-<li><a href="#_54">按状态码设置缓存过期时间</a></li>
-<li><a href="#string-0">如果有string参数为空 或 值参数不等于0 则不缓存</a></li>
-<li><a href="#string-0_1">如果有string不为空 或 值不等于0 则不缓存</a></li>
-</ul>
-</li>
-<li><a href="#purge">缓存手动老化 PURGE</a></li>
-<li><a href="#_55">缓存分段</a></li>
-<li><a href="#_56">综合配置示例</a></li>
-</ul>
-</li>
-<li><a href="#_57">静态文件</a><ul>
-<li><a href="#rootindex">root目录和Index文件</a><ul>
-<li><a href="#root_1">root使用示例</a></li>
-<li><a href="#location_3">以斜杠"\"结尾的location</a></li>
-<li><a href="#autoindex-indexhtml">autoindex 自动创建index.html</a></li>
-<li><a href="#index-index">index 定义index文件名称</a></li>
-</ul>
-</li>
-<li><a href="#try_file">try_file</a><ul>
-<li><a href="#_58">不存在则重定向到默认</a></li>
-<li><a href="#404">尝试一系列形式，不存在则404</a></li>
-<li><a href="#proxy">找不到文件则转到proxy</a></li>
-</ul>
-</li>
-<li><a href="#_59">性能优化</a><ul>
-<li><a href="#send_file_1">send_file 直接发送文件</a></li>
-<li><a href="#sendfile_max_chunk">sendfile_max_chunk 最大一次发送数据量</a></li>
-<li><a href="#tcp_nopush_1">tcp_nopush</a></li>
-<li><a href="#tcp_nodelay">tcp_nodelay</a></li>
-<li><a href="#tcp">增加tcp监听队列长度</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#_60">正向代理配置示例</a></li>
-<li><a href="#_61">反向代理配置示例</a><ul>
-<li><a href="#1">例1：</a></li>
-<li><a href="#2">例2：</a></li>
-<li><a href="#3">例3：</a></li>
-</ul>
-</li>
-<li><a href="#ssl">ssl</a><ul>
-<li><a href="#ssl_protocols-ssl">ssl_protocols SSL协议</a></li>
-<li><a href="#ssl_ciphers-ssl">ssl_ciphers SSL加密</a></li>
-<li><a href="#ssl_session_cache-sslcache">ssl_session_cache SSL会话Cache性能优化</a></li>
-<li><a href="#ssl_session_time-ssl">ssl_session_time SSL会话超时时间</a></li>
-<li><a href="#crt">为缺少中间证书的浏览器添加crt中间证书</a></li>
-<li><a href="#_62">配置示例</a></li>
-<li><a href="#_63">消息转发</a></li>
-<li><a href="#_64">生成方法</a></li>
-<li><a href="#_65">分解生成方法</a></li>
-</ul>
-</li>
-<li><a href="#_66">负载均衡</a><ul>
-<li><a href="#dns">DNS负载均衡</a></li>
-</ul>
-</li>
-<li><a href="#_67">重定向</a></li>
-<li><a href="#websocket">websocket代理</a></li>
-<li><a href="#nginx-httl-hls-module">nginx httl hls module</a></li>
-</ul>
-</div>
 <h1 id="_1">文档</h1>
 <p><a href="http://nginx.org/en/docs/">http://nginx.org/en/docs/</a></p>
 <h1 id="_2">安装</h1>
@@ -654,7 +398,7 @@ $status：响应状态  </p>
 <p>语法：worker_processes 2<br />
 默认值：与CPU核数相同<br />
 上下文：main  </p>
-<p>CPU核数：<code>grep ^processor /proc/cpuinfo | wc -l</code>
+<p>CPU核数：<code>grep ^processor /proc/cpuinfo | wc -l</code><br />
 若开启ssl和gzip应该设置为CPU核数2倍，可以减少I/O操作  </p>
 <h3 id="worker_cpu_affinity-cpu">worker_cpu_affinity # CPU绑定</h3>
 <p>语法：worker_cpu_affinity 0001 0010 0100 1000<br />
@@ -718,8 +462,8 @@ server_name ""; （接受不存在Host字段的请求）  </p>
             location @name { ... }<br />
 默认：    —<br />
 上下文：server, location  </p>
-<p>会解析%xx格式文字
-会解析相对路径 . 或 .. 
+<p>会解析%xx格式文字<br />
+会解析相对路径 . 或 .. <br />
 默认会合并相邻斜杠（merge_slashes on）</p>
 <p>如果location请求被proxy_pass、fastcgi_pass、uwsgi_pass、scgi_pass、memcached_pass处理，若如”location /user/“带斜杠，则会正常处理。若如”location /user“不带斜杠，ngxin会发送一个301重定向到"location /user/"。若这并不是所要的，需要分别定义“location /user/”和“location /user”。</p>
 <p>URL带斜杠\表示目录，不带斜杠表示文件。不加斜杠访问会尝试访问文件，不存在时返回301重定向到带斜杠\的地址。<br />
@@ -1071,7 +815,7 @@ permanent 301永久重定向  </p>
 上下文：http, server, location  </p>
 <h3 id="proxy_cache_path">proxy_cache_path 定义缓存区</h3>
 <p>语法：proxy_cache_path path [levels=levels] [use_temp_path=on|off] keys_zone=name:size [inactive=time] [max_size=size] [loader_files=number] [loader_sleep=time] [loader_threshold=time] [purger=on|off] [purger_files=number] [purger_sleep=time] [purger_threshold=time];<br />
-默认：N/A 
+默认：N/A <br />
 上下文：http  </p>
 <h3 id="keys_zone">keys_zone # 定义缓存区名称，大小，超时时间，</h3>
 <p>proxy_cache_path /path/to/cache keys_zone=one:10m  </p>
@@ -1305,7 +1049,7 @@ proxy_cache_valid 404          1m;  </p>
 <p><a href="http://nginx.org/en/docs/http/configuring_https_servers.html">http://nginx.org/en/docs/http/configuring_https_servers.html</a></p>
 <h3 id="ssl_protocols-ssl">ssl_protocols SSL协议</h3>
 <p>语法：ssl_protocols [protocol]<br />
-默认：TLSv1 TLSv1.1 TLSv1.2 
+默认：TLSv1 TLSv1.1 TLSv1.2 <br />
 默认值即可  </p>
 <h3 id="ssl_ciphers-ssl">ssl_ciphers SSL加密</h3>
 <p>语法：ssl_ciphers []<br />
@@ -1392,7 +1136,7 @@ extra部分直接回车   </p>
 </code></pre>
 
 <h1 id="_66">负载均衡</h1>
-<p><a href="http://nginx.org/en/docs/http/load_balancing.html">http://nginx.org/en/docs/http/load_balancing.html</a>
+<p><a href="http://nginx.org/en/docs/http/load_balancing.html">http://nginx.org/en/docs/http/load_balancing.html</a><br />
 <a href="https://www.nginx.com/resources/admin-guide/load-balancer/">https://www.nginx.com/resources/admin-guide/load-balancer/</a></p>
 <h3 id="dns">DNS负载均衡</h3>
 <p>将相同域名配置到不同IP即可</p>

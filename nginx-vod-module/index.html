@@ -424,7 +424,7 @@ yum install kaltura-nginx
 <pre><code class="sh">rpm -ihv http://installrepo.kaltura.org/releases/kaltura-release.noarch.rpm   
 </code></pre>
 
-<p>修改/etc/yum.repos.d/kaltura.repo
+<p>修改/etc/yum.repos.d/kaltura.repo<br />
 将</p>
 <pre><code>baseurl = http://installrepo.kaltura.org/releases/latest/RPMS/$basearch/
 </code></pre>
@@ -479,7 +479,7 @@ thumb - thumb-<offset>.jpg (offset is the thumbnail video offset in milliseconds
 <p>多路复用参数，如manifest-f1.mpd </p>
 <h3 id="trackparams-t">trackparams （t）</h3>
 <p>轨道参数，如manifest-a1.f4m <br />
-默认使用每个文件的第一个音轨和第一个视轨 
+默认使用每个文件的第一个音轨和第一个视轨 <br />
 与URL中/tracks/参数进行AND操作  </p>
 <h3 id="langparams">langparams</h3>
 <p>语言音轨，如master-leng.m3u8</p>
@@ -929,7 +929,7 @@ Configures the size and shared memory object name of the response cache for time
 设置MP4文件初始读取大小  </p>
 <h3 id="vod_max_metadata_size">vod_max_metadata_size 最大支持视频元数据大小</h3>
 <p>语法：vod_max_metadata_size  size<br />
-默认：128MB 
+默认：128MB <br />
 上下文：http, server, location<br />
 设置最大支持的视频元数据大小 (即MP4 - moov 元素大小)  </p>
 <h3 id="vod_max_frames_size">vod_max_frames_size 最大帧大小</h3>
@@ -950,7 +950,7 @@ Enables the use of asynchronous file open via thread pool. The thread pool must 
 <h3 id="vod_output_buffer_pool-http">vod_output_buffer_pool HTTP响应内存池</h3>
 <p>语法：vod_output_buffer_pool size count<br />
 默认：off<br />
-上下文：http, server, location 
+上下文：http, server, location <br />
 Pre-allocates buffers for generating response data, saving the need allocate/free the buffers on every request.  </p>
 <h3 id="vod_performance_counters">vod_performance_counters</h3>
 <p>语法：vod_performance_counters zone_name<br />

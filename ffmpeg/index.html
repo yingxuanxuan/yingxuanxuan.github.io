@@ -144,11 +144,363 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">介绍</a></li>
+            <li><a href="#_2">功能</a></li>
+            <li><a href="#lib">Lib</a></li>
+            <li><a href="#app">App</a></li>
+            <li><a href="#_3">静态包下载地址</a></li>
+            <li><a href="#_4">库</a></li>
+        <li class="main "><a href="#_5">视频标准</a></li>
+            <li><a href="#apple-hls">Apple HLS 标准定义编码</a></li>
+            <li><a href="#_6">音视频文件格式编码</a></li>
+            <li><a href="#_7">多媒体容器对比</a></li>
+            <li><a href="#_8">视频编码对比</a></li>
+            <li><a href="#_9">音频编码对比</a></li>
+            <li><a href="#_10">流媒体系统对比</a></li>
+        <li class="main "><a href="#ffmpeg_1">ffmpeg</a></li>
+            <li><a href="#_11">语法</a></li>
+            <li><a href="#_12">功能</a></li>
+            <li><a href="#_19">通用选项</a></li>
+            <li><a href="#mp4">MP4流媒体优化参数</a></li>
+            <li><a href="#isomp4">将ISO文件压缩为MP4</a></li>
+            <li><a href="#_29">字幕格式转换</a></li>
+            <li><a href="#_30">选项</a></li>
+            <li><a href="#h264">视频选项（以H.264为例）</a></li>
+            <li><a href="#h265-hevc">H.265 HEVC</a></li>
+            <li><a href="#_43">文件合并</a></li>
+            <li><a href="#_44">硬件加速</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-</div>
+<h1 id="_1">介绍</h1>
+<h2 id="_2">功能</h2>
+<p>decode, encode, transcode, mux, demux, stream, filter, play </p>
+<h2 id="lib">Lib</h2>
+<p>libavcodec, libavutil, libavformat, libavfilter, libavdevice, libswscale and libswresample </p>
+<h3 id="libavutil">libavutil</h3>
+<p>A library containing functions for simplifying programming, including random number generators, data structures, mathematics routines, core multimedia utilities, and much more.</p>
+<h3 id="libavcodec">libavcodec 编解码库</h3>
+<p>A library containing decoders and encoders for audio/video codecs.</p>
+<h3 id="libavformat">libavformat 封装库</h3>
+<p>A library containing demuxers and muxers for multimedia container formats.</p>
+<h3 id="libavdevice">libavdevice</h3>
+<p>A library containing input and output devices for grabbing from and rendering to many common multimedia input/output software frameworks, including Video4Linux, Video4Linux2, VfW, and ALSA.</p>
+<h3 id="libavfilter">libavfilter 加特效（如：水印）</h3>
+<p>A library containing media filters.</p>
+<h3 id="libswscale">libswscale</h3>
+<p>A library performing highly optimized image scaling and color space/pixel format conversion operations.</p>
+<h3 id="libswresample">libswresample</h3>
+<p>A library performing highly optimized audio resampling, rematrixing and sample format conversion operations.</p>
+<h2 id="app">App</h2>
+<p>ffmpeg, ffserver, ffplay and ffprobe</p>
+<h3 id="ffmpeg">ffmpeg</h3>
+<p>A command line tool to convert multimedia files between formats</p>
+<h3 id="ffserver">ffserver</h3>
+<p>A multimedia streaming server for live broadcasts</p>
+<h3 id="ffplay">ffplay</h3>
+<p>A simple media player based on SDL and the FFmpeg libraries</p>
+<p>播放视频<br />
+ffplay a.mp4</p>
+<h3 id="ffprobe">ffprobe</h3>
+<p>A simple multimedia stream analyzer</p>
+<p>查看所有视频文件编码<br />
+find /mnt/f ( -iname <em>.mp4 -o -iname </em>.mov -o -iname <em>.avi -o -iname </em>.mkv -o -iname <em>.wmv -o -iname </em>.mpg ) -exec ./ffprobe {} \;</p>
+<h2 id="_3">静态包下载地址</h2>
+<p><a href="http://johnvansickle.com/ffmpeg/">http://johnvansickle.com/ffmpeg/</a></p>
+<h2 id="_4">库</h2>
+<h3 id="libx264">libx264</h3>
+<h3 id="libx265-10bit">libx265-10bit</h3>
+<h1 id="_5">视频标准</h1>
+<h2 id="apple-hls">Apple HLS 标准定义编码</h2>
+<h3 id="video">Video</h3>
+<p>H.264 Baseline Level 3.0, Baseline Level 3.1, Main Level 3.1, and High Profile Level 4.1.</p>
+<h3 id="audio">Audio</h3>
+<p>HE-AAC or AAC-LC up to 48 kHz, stereo audio<br />
+MP3 (MPEG-1 Audio Layer 3) 8 kHz to 48 kHz, stereo audio<br />
+AC-3 (for Apple TV, in pass-through mode only)</p>
+<h2 id="_6">音视频文件格式编码</h2>
+<p><a href="https://zh.wikipedia.org/wiki/视频文件格式">https://zh.wikipedia.org/wiki/视频文件格式</a><br />
+<a href="https://zh.wikipedia.org/wiki/AVI格式">https://zh.wikipedia.org/wiki/AVI格式</a></p>
+<h2 id="_7">多媒体容器对比</h2>
+<p><a href="https://en.wikipedia.org/wiki/Comparison_of_video_container_formats">https://en.wikipedia.org/wiki/Comparison_of_video_container_formats</a></p>
+<h2 id="_8">视频编码对比</h2>
+<p><a href="https://en.wikipedia.org/wiki/Comparison_of_video_codecs">https://en.wikipedia.org/wiki/Comparison_of_video_codecs</a></p>
+<h2 id="_9">音频编码对比</h2>
+<p><a href="https://zh.wikipedia.org/wiki/音频编码格式的比较">https://zh.wikipedia.org/wiki/音频编码格式的比较</a></p>
+<h2 id="_10">流媒体系统对比</h2>
+<p><a href="https://en.wikipedia.org/wiki/Comparison_of_streaming_media_systems">https://en.wikipedia.org/wiki/Comparison_of_streaming_media_systems</a></p>
+<h1 id="ffmpeg_1">ffmpeg</h1>
+<h2 id="_11">语法</h2>
+<p>ffmpeg [global_options] {[input_file_options] -i input_file} ... {[output_file_options] output_file} ...</p>
+<h2 id="_12">功能</h2>
+<ul>
+<li>音视频转换 *</li>
+<li>直播录制 *</li>
+<li>实时采样率转换 *</li>
+<li>实时改变大小 *</li>
+</ul>
+<h3 id="-i">输入 -i</h3>
+<p>文件、管道、网络、采集设备</p>
+<h3 id="_13">文件引用，流引用</h3>
+<p>0, 1, 2：第一个文件，第二个文件，第三个文件<br />
+2:3：第三个文件的第四个流</p>
+<h3 id="_14">文件参数</h3>
+<p>文件参数只对当前文件起作用<br />
+除全局参数外，文件参数依次跟在文件前面</p>
+<p>设置输出文件码率为64kbit/s：ffmpeg -i input.avi -b:v 64k output.avi<br />
+设置输出文件帧率为24fps：ffmpeg -i input.avi -r 24 output.avi<br />
+设置输入文件帧率为1fps，输出文件帧率为24fps：ffmpeg -r 1 -i input.m2v -r 24 output.avi</p>
+<h3 id="_15">流复制</h3>
+<p>-codec copy<br />
+-codec: copy</p>
+<p>默认流程：输入-》解封装-》解码-》过滤器-》编码-》封装-》输出<br />
+复制流程：输入-》接封装-》封装-》输出</p>
+<h3 id="_16">流自动选择规则</h3>
+<p>视频：选择输出分辨率最高的<br />
+音频：选择channel最多的<br />
+字幕：选择第一个<br />
+质量相同的：选择索引号最低的<br />
+手动配置忽略音频/视频/字幕：-vn/-an/-sn<br />
+映射配置：-map</p>
+<h3 id="_17">流配置项</h3>
+<p>stream_index：使用流索引 -thread:1 4，第二条流设置为4<br />
+stream_type[:stream_index]：视频vV，音频a，字幕s，数据d，附件t，不加索引表示全部这一类型<br />
+p:program_id[:stream_index]<br />
+stream_id或i:stream_id：使用流id，如MPEG-TS的PID<br />
+m:key[:value]：使用metedata中key的值</p>
+<p>例如 -codec copy 或-code: copy 所有流配置<br />
+例如 -codec:a:1 ac3，设置音频第二条流编码为ac3</p>
+<h3 id="_18">缩写</h3>
+<p>-codec:v = -vcodec<br />
+-codec:a = -acodec<br />
+-b:v = -vb<br />
+-b:a = -ab</p>
+<h2 id="_19">通用选项</h2>
+<h3 id="_20">查看所有格式</h3>
+<p>ffmpeg -formats</p>
+<h3 id="_21">查看所有支持编码</h3>
+<p>ffmpeg -codecs</p>
+<h3 id="_22">查看所有解码器</h3>
+<p>ffmpeg -decoders</p>
+<h3 id="_23">查看所有编码器</h3>
+<p>ffmpeg -encoders</p>
+<h3 id="_24">获取帮助</h3>
+<p>ffmpeg -h<br />
+ffmpeg -h long<br />
+ffmpeg -h full</p>
+<h3 id="_25">查看特定编码帮助</h3>
+<p>ffmpeg -h encoder=nvenc_h264</p>
+<h3 id="_26">查看封装默认编码</h3>
+<p>ffmpeg -help muxer=matroska</p>
+<h3 id="_27">查看文件音视频编码编码</h3>
+<p>ffmpeg -i INPUTFILE  会报错，忽略错误<br />
+ffprobe INPUTFILE</p>
+<h2 id="mp4">MP4流媒体优化参数</h2>
+<h3 id="movmp4">mov或mp4格式</h3>
+<p>OUTPUT.mov<br />
+OUTPUT.mp4<br />
+-f mov OUTPUT<br />
+-f mp4 OUTPUT</p>
+<h3 id="moov">moov索引前置（默认在文件最后）</h3>
+<p>-movflags +faststart</p>
+<h3 id="h264high-profile">H.264高品质（High profile）</h3>
+<p>-c:v libx264 -profile:v {high|main|baseline}</p>
+<h3 id="nginx-vod-module">合适码率，见nginx-vod-module分辨率对应码率表格</h3>
+<p>-c:v libx264 -x264-params b=option</p>
+<ul>
+<li>ffmpeg选项单位是bits/s，x264选项单位是kilobits/s *</li>
+</ul>
+<h3 id="progressive-scaninterlaced">逐行扫描（progressive scan），避免隔行扫描（interlaced）</h3>
+<h3 id="multi-pass">Multi pass</h3>
+<h3 id="vbrcbr">动态码率（VBR），避免固定码率（CBR）</h3>
+<p>-c:v libx264  -b:v 1000k OUTPUT</p>
+<ul>
+<li>默认就是动态码率，固定码率需要限制-minrate -maxrate为相同值模拟固定码率 *</li>
+</ul>
+<h3 id="_28">帧率保持不变</h3>
+<p>默认帧率保持不变</p>
+<h2 id="isomp4">将ISO文件压缩为MP4</h2>
+<p>ffmpeg -i INPUT.iso OUTPUT.mp4</p>
+<h2 id="_29">字幕格式转换</h2>
+<p>ffmpeg -i Tor_animation.zh-CN.srt Tor_animation.zh-CN.ass</p>
+<h2 id="_30">选项</h2>
+<h3 id="_31">设置媒体格式</h3>
+<p>-f fmt (input/output)<br />
+一般输入文件会自动识别格式，输出文件会根据文件后缀名自动设置格式</p>
+<h3 id="_32">设置输入文件</h3>
+<p>-i filename (input)</p>
+<h3 id="_33">覆盖输出文件</h3>
+<p>-y (global)</p>
+<h3 id="_34">设置编解码格式</h3>
+<p>-c        [:stream_specifiler] codec (input/output/per-stream)<br />
+-codec[:stream_specifiler] codec (input/output/per-stream)</p>
+<p>例1：视频使用编码libx264，音频原样复制:<br />
+ffmpeg -i INPUT -map 0 -c:v libx264 -c:a copy OUTPUT</p>
+<p>例2：多个-c选项会使用最后设置的，第二条视频流编码设置为libx264，第138条音频编码设置为libvorbis<br />
+ffmpeg -i INPUT -map 0 -c copy -c:v:1 libx264 -c:a:137 libvorbis OUTPUT</p>
+<p>常用视频编码：<br />
+ffmpeg -encoders | grep V<br />
+-c:v libx264<br />
+-c:v libx265<br />
+-c:v mpeg2video<br />
+-c:v mpeg4<br />
+-c:v gif<br />
+-c:v flv<br />
+-c:v libxvid</p>
+<p>-c:v h264_nvenc = evenc = nvenc_h264<br />
+-c:v nvenc_hevc = hevc_nvenc<br />
+-c:v h264_qsv <br />
+-c:v hevc_qsv<br />
+-c:v mpeg2_qsv</p>
+<p>常用音频编码：<br />
+ffmpeg -encoders | grep A<br />
+-c:a mp2<br />
+-c:a mp2fixed<br />
+-c:a libtwolame <br />
+-c:a libmp3lame<br />
+-c:a wmav1<br />
+-c:a wmav2<br />
+-c:a aac</p>
+<p>常用字幕编码：<br />
+ffmpeg -encoders | grep S<br />
+-c:s ssa<br />
+-c:s ass<br />
+-c:s dvbsub<br />
+-c:s dvdsub<br />
+-c:s mov_text<br />
+-c:s srt<br />
+-c:s subrip<br />
+-c:s text<br />
+-c:s webvtt<br />
+-c:s xsub</p>
+<h3 id="_35">设置时间段</h3>
+<p>-t duration (input/output)<br />
+为输入设置项时，会限制读取的时间段<br />
+为输出设置项时，在时间段内会停止写入<br />
+-to 设置与 -t设置冲突，-t有更高的优先级</p>
+<h3 id="_36">设置停止写入时间点</h3>
+<p>-to position (output)</p>
+<h3 id="_37">限制输出文件大小，达到后停止输出文件</h3>
+<p>-fs limit_size (output)</p>
+<h3 id="_38">设置起始时间点</h3>
+<p>-ss position (input/output)<br />
+当用作输入文件的配置项时，会定位到输入文件的位置。<br />
+大部分格式不可能精确定位，所以ffmpeg会定位到position前的附近位置，当转码accurate_seek被设置时（默认设置），多余的数据会被解码并丢弃。当使用copy或-noaccurate_seek时，会被保留</p>
+<h3 id="_39">设置结束时间点</h3>
+<p>-sseof position (input/output)</p>
+<h3 id="_40">帧率</h3>
+<p>ffmpeg -r[:stream] fps (intput/output, per-stream)<br />
+用作输入时，忽略时间戳，强制按帧率读取<br />
+用作输出时，复制或丢弃帧达到帧率</p>
+<ul>
+<li>言外之意是默认帧率保持不变 *</li>
+</ul>
+<h3 id="_41">码率</h3>
+<p>-b:v option 设置视频码率<br />
+-b:a option 设置音频码率</p>
+<h3 id="_42">硬件加速</h3>
+<p>-hwaccel[:stream_specifier] hwaccel (input,per-stream)<br />
+none：默认值，不要用任何硬件加速<br />
+auto：自动选择硬件加速<br />
+vda：Apple VDA硬件加速<br />
+vdpau：使用VDPAU(Video Decode and Presentation API for Unix)硬件加速<br />
+dxva2：使用DXVA2(DirectX Video Acceleration)硬件加速<br />
+qsv：使用Intel QuickSync Video acceleration硬件转码加速<br />
+qsv不同于其他选项，这个选项不开启解码加速（qsv解码器支持会自动开启），但是被加速转码不复制frame帧到系统内存。<br />
+编码和解码都要QSV acceleration，不能使用filter。</p>
+<p>如果被选的加速器不能使用或不支持当前的解码器，则这个选项无效<br />
+大多数的加速方法都是为了播放，所以在现代CPU上并不会比软件解码快，而且ffmpeg还需要将解码的帧从GPU内存复制到系统内存，反而比软解慢，只用于测试。</p>
+<h3 id="map">map映射</h3>
+<p>映射第一个输入的全部流：<br />
+-map 0<br />
+ffmpeg -i INPUT -map 0 output</p>
+<p>映射第一个输入的第二条流：<br />
+-map 0：1<br />
+ffmpeg -i INPUT -map 0:1 out.wav</p>
+<p>映射第一个输入的第三条流和第二个输入的第七条流：<br />
+-map 0:2 -map 1:6<br />
+ffmapg -i a.mov -i b.mov -c copy -map 0:2 -map 1:6 out.mov</p>
+<p>映射第一个输入的全部视频和第三条音频：<br />
+-map 0:v -map 0:a:2<br />
+ffmpeg -i INPUT -map 0:v -map 0:a:2 OUTPUT</p>
+<p>映射第一个输入的全部流，排除第二条音频：<br />
+-map 0 -map -0:a:1<br />
+ffmpeg -i INPUT -map 0 -map -0:a:1 OUTPUT</p>
+<p>映射第一个输入的英文音频<br />
+-map 0:m:language:eng <br />
+ffmpeg -i INPUT -map 0:m:language:eng OUTPUT</p>
+<h2 id="h264">视频选项（以H.264为例）</h2>
+<p>原文：<a href="https://trac.ffmpeg.org/wiki/Encode/H.264">https://trac.ffmpeg.org/wiki/Encode/H.264</a><br />
+翻译：<a href="http://blog.csdn.net/vblittleboy/article/details/8982857">http://blog.csdn.net/vblittleboy/article/details/8982857</a></p>
+<ul>
+<li>所有视频选项都是针对流设置的 *</li>
+</ul>
+<h3 id="crf8bit">CRF（8bit）</h3>
+<p>值域：0 - 51，0代表无损，51最差<br />
+默认值：23<br />
+合理值：18 - 28<br />
+建议值：18</p>
+<ul>
+<li>CRF每减小6，文件变大1倍 *</li>
+</ul>
+<h3 id="preset">preset（预设，速度与质量平衡）</h3>
+<p>ultrafast<br />
+superfast<br />
+veryfast<br />
+faster<br />
+fast<br />
+medium<br />
+slow<br />
+slower<br />
+veryslow<br />
+placebo</p>
+<p>默认值：medium<br />
+质量最好：veryslow</p>
+<h2 id="h265-hevc">H.265 HEVC</h2>
+<p><a href="https://trac.ffmpeg.org/wiki/Encode/H.265">https://trac.ffmpeg.org/wiki/Encode/H.265</a></p>
+<h2 id="_43">文件合并</h2>
+<p><a href="https://trac.ffmpeg.org/wiki/Concatenate">https://trac.ffmpeg.org/wiki/Concatenate</a><br />
+ffmpeg -f concat -safe 0 -i d:\list.txt -c copy 1.mp4</p>
+<pre><code class="list.txt"># this is a comment
+file '\\YX-NAS\path\1.wmv'
+file '\\YX-NAS\path\2.wmv'
+file '\\YX-NAS\path\3.wmv'
+file '\\YX-NAS\path\4.wmv'
+</code></pre>
+
+<h2 id="_44">硬件加速</h2>
+<p><a href="https://trac.ffmpeg.org/wiki/HWAccelIntro">https://trac.ffmpeg.org/wiki/HWAccelIntro</a></p>
+<h3 id="_45">列出所有支持的硬件加速</h3>
+<p>ffmpeg -hwaccels</p>
+<h3 id="dxva2">dxva2</h3>
+<ul>
+<li>支持H.264, MPEG2, VC1 and WMV3加速解码 *</li>
+</ul>
+<p>编译选项：--enable-dxva2 （已经默认打开）<br />
+使用硬件加速：-hwaccel dxva2<br />
+示例：ffmpeg -hwaccel dxva2 -threads 1 -i INPUT -f null - -benchmark</p>
+<h3 id="nvenc">NVENC</h3>
+<p>使用条件：<br />
+1、Nvidia显卡<br />
+2、Nvidia驱动<br />
+3、本地安装NVENC SDK的nvEncodeAPI.h头文件 <a href="https://developer.nvidia.com/nvidia-video-codec-sdk">https://developer.nvidia.com/nvidia-video-codec-sdk</a><br />
+4、ffmpeg --enable-nvenc （已经默认打开）</p>
+<p>使用h.264编码器：ffmpeg -c:v nvenc_h264 (h264_nvenc, nvenc)<br />
+使用h.265编码器：ffmpeg -c:v nvenc_hevc (hevc_nvenc)<br />
+获取h.264帮助：ffmpeg -h encoder=nvenc_h264<br />
+获取h.265帮助：ffmpeg -h encoder=nvenc_hevc<br />
+示例：ffmpeg -i input -c:v nvenc_h264 -profile high444p -pixel_format yuv444p -preset default output.mp4</p>
+<h3 id="intel-qsv">Intel QSV</h3>
+<p>Intel Media Server Studio – Community Edition：<br />
+编译选项：--enable-libmfx （已经默认打开）<br />
+查询所有解码器：ffmpeg -decoders | grep _qsv<br />
+查询所有编码器：ffmpeg -encoders | grep _qsv<br />
+h264编码器、解码器：-c:v h264_qsv<br />
+h265编码器、解码器：-c:v hevc_qsv<br />
+MPEG2编码器、解码器：-c:v mpeg2_qsv<br />
+vc1_qsv解码器：-c:v vc1_qsv<br />
+示例：ffmpeg -i INPUT -c:v h264_qsv -preset:v faster out.qsv.mp4</p></div>
         </div>
 
         <footer class="col-md-12">
