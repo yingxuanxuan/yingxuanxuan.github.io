@@ -1,0 +1,6166 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Linux学习笔记，Python学习笔记，Android学习笔记，前端学习笔记，nginx， nginx-vod-module，ffmpeg，pyqt，qt，Javascript，vue等">
+      
+      
+        <link rel="canonical" href="https://yingxuanxuan.com/flask/">
+      
+      
+        <meta name="author" content="yingxuanxuan">
+      
+      
+        <link rel="shortcut icon" href="../img/favicon.ico">
+      
+      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.0.5">
+    
+    
+      
+        <title>Flask - yingxuanxuan.com</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-9c62e3c932.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02ce7adcc2.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="blue" data-md-color-accent="lime">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="yingxuanxuan.com" class=" md-logo  md-header-nav__button">
+          
+            <img src="../img/favicon.ico" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  学习笔记
+                </span>
+              
+                <span class="md-header-nav__parent">
+                  Python
+                </span>
+              
+            
+            Flask
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+              
+
+
+  
+
+
+  <a href="https://github.com/yingxuanxuan/yingxuanxuan.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+            
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <i class=" md-logo  md-nav__button">
+      
+        <img src="../img/favicon.ico">
+      
+    </i>
+    yingxuanxuan.com
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/yingxuanxuan/yingxuanxuan.github.io" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href=".." title="首页" class="md-nav__link">
+        首页
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      学习笔记
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-2">
+        学习笔记
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
+      Linux
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-2-1">
+        Linux
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../linux/" title="Linux" class="md-nav__link">
+        Linux
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../nginx/" title="Ningx" class="md-nav__link">
+        Ningx
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../nginx-vod-module/" title="Nginx-vod-module" class="md-nav__link">
+        Nginx-vod-module
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../ffmpeg/" title="FFmpeg" class="md-nav__link">
+        FFmpeg
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" checked>
+    
+    <label class="md-nav__link" for="nav-2-2">
+      Python
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-2-2">
+        Python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../python/" title="Python" class="md-nav__link">
+        Python
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Flask
+      </label>
+    
+    <a href="./" title="Flask" class="md-nav__link md-nav__link--active">
+      Flask
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="快速入门" class="md-nav__link">
+    快速入门
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="配置与惯例" class="md-nav__link">
+    配置与惯例
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="安装" class="md-nav__link">
+    安装
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="依赖" class="md-nav__link">
+    依赖
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtualenv" title="virtualenv" class="md-nav__link">
+    virtualenv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helloworld" title="HelloWorld" class="md-nav__link">
+    HelloWorld
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#httpserverip" title="定义HttpServer绑定IP" class="md-nav__link">
+    定义HttpServer绑定IP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="调试模式（交互式调试器）" class="md-nav__link">
+    调试模式（交互式调试器）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" title="URL路由" class="md-nav__link">
+    URL路由
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="静态文件" class="md-nav__link">
+    静态文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="模板渲染" class="md-nav__link">
+    模板渲染
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="模板路径" class="md-nav__link">
+    模板路径
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request" title="访问Request数据" class="md-nav__link">
+    访问Request数据
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request_1" title="Request上下文与单元测试" class="md-nav__link">
+    Request上下文与单元测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reqeust" title="使用Reqeust对象" class="md-nav__link">
+    使用Reqeust对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="异常处理" class="md-nav__link">
+    异常处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestfiles" title="上传文件 request.files" class="md-nav__link">
+    上传文件 request.files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cookies" title="Cookies 读取与存储" class="md-nav__link">
+    Cookies 读取与存储
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="重定向与错误" class="md-nav__link">
+    重定向与错误
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" title="response" class="md-nav__link">
+    response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session" title="会话 session" class="md-nav__link">
+    会话 session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" title="闪现消息(Flashing)" class="md-nav__link">
+    闪现消息(Flashing)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="日志记录" class="md-nav__link">
+    日志记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsgi" title="整合WSGI中间件" class="md-nav__link">
+    整合WSGI中间件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask" title="使用Flask扩展" class="md-nav__link">
+    使用Flask扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" title="部署到Web服务器" class="md-nav__link">
+    部署到Web服务器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" title="简单完整示例教程" class="md-nav__link">
+    简单完整示例教程
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="示例功能" class="md-nav__link">
+    示例功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" title="工程目录" class="md-nav__link">
+    工程目录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="数据库" class="md-nav__link">
+    数据库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask_1" title="Flask应用启动、配置、数据库连接" class="md-nav__link">
+    Flask应用启动、配置、数据库连接
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="从环境变量导入路径" class="md-nav__link">
+    从环境变量导入路径
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="使用环境变量传递信息" class="md-nav__link">
+    使用环境变量传递信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="数据库连接代码" class="md-nav__link">
+    数据库连接代码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flaskurl" title="flask应用，url处理" class="md-nav__link">
+    flask应用，url处理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="显示评论" class="md-nav__link">
+    显示评论
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="添加评论" class="md-nav__link">
+    添加评论
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" title="登录页面及登录POST" class="md-nav__link">
+    登录页面及登录POST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="退出" class="md-nav__link">
+    退出
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html" title="HTML模板" class="md-nav__link">
+    HTML模板
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layouthtml" title="layout.html" class="md-nav__link">
+    layout.html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show_entrieshtml" title="show_entries.html" class="md-nav__link">
+    show_entries.html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loginhtml" title="login.html" class="md-nav__link">
+    login.html
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css" title="CSS样式" class="md-nav__link">
+    CSS样式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stylecss" title="style.css" class="md-nav__link">
+    style.css
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" title="单元测试" class="md-nav__link">
+    单元测试
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="测试工程结构" class="md-nav__link">
+    测试工程结构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" title="运行测试" class="md-nav__link">
+    运行测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" title="测试的大框架" class="md-nav__link">
+    测试的大框架
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="第一个测试" class="md-nav__link">
+    第一个测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" title="登录和登出" class="md-nav__link">
+    登录和登出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="测试消息的添加" class="md-nav__link">
+    测试消息的添加
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="其他测试技巧" class="md-nav__link">
+    其他测试技巧
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" title="伪造资源和上下文" class="md-nav__link">
+    伪造资源和上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" title="保存上下文" class="md-nav__link">
+    保存上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sessions" title="访问和修改Sessions" class="md-nav__link">
+    访问和修改Sessions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" title="模板" class="md-nav__link">
+    模板
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jinja" title="Jinja配置" class="md-nav__link">
+    Jinja配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jinja2" title="标准上下文，默认在Jinja2模板中可用的值" class="md-nav__link">
+    标准上下文，默认在Jinja2模板中可用的值
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="可以使用的变量和方法" class="md-nav__link">
+    可以使用的变量和方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jinja2_1" title="导入宏（Jinja2的宏）的方法" class="md-nav__link">
+    导入宏（Jinja2的宏）的方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jinja2_2" title="标准过滤器，Jinja2自带的过滤器" class="md-nav__link">
+    标准过滤器，Jinja2自带的过滤器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="控制自动转译" class="md-nav__link">
+    控制自动转译
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="注册过滤器" class="md-nav__link">
+    注册过滤器
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jinja2_3" title="使用装饰器标记自定义Jinja2过滤器" class="md-nav__link">
+    使用装饰器标记自定义Jinja2过滤器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jinja2_4" title="手动添加过滤器到Jinja2" class="md-nav__link">
+    手动添加过滤器到Jinja2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="在模板中使用过滤器" class="md-nav__link">
+    在模板中使用过滤器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context_processor" title="使用context_processor添加变量、函数添加到模板上下文" class="md-nav__link">
+    使用context_processor添加变量、函数添加到模板上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" title="模板结构控制" class="md-nav__link">
+    模板结构控制
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" title="条件" class="md-nav__link">
+    条件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" title="循环" class="md-nav__link">
+    循环
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" title="宏" class="md-nav__link">
+    宏
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" title="继承" class="md-nav__link">
+    继承
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_42" title="日志、邮件、调试模式" class="md-nav__link">
+    日志、邮件、调试模式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flask_2" title="配置Flask发送错误邮件" class="md-nav__link">
+    配置Flask发送错误邮件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" title="记录到文件" class="md-nav__link">
+    记录到文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" title="控制日志格式" class="md-nav__link">
+    控制日志格式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" title="邮件格式" class="md-nav__link">
+    邮件格式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" title="日志格式" class="md-nav__link">
+    日志格式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" title="常用日志变量" class="md-nav__link">
+    常用日志变量
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" title="其他的库" class="md-nav__link">
+    其他的库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug" title="开启Debug" class="md-nav__link">
+    开启Debug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" title="调试器配置" class="md-nav__link">
+    调试器配置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_50" title="配置处理" class="md-nav__link">
+    配置处理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_51" title="配置基础" class="md-nav__link">
+    配置基础
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" title="内置的配置值" class="md-nav__link">
+    内置的配置值
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" title="从文件配置" class="md-nav__link">
+    从文件配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" title="配置的最佳实践" class="md-nav__link">
+    配置的最佳实践
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" title="开发/生产" class="md-nav__link">
+    开发/生产
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" title="实例文件夹" class="md-nav__link">
+    实例文件夹
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_57" title="信号" class="md-nav__link">
+    信号
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_58" title="订阅信号" class="md-nav__link">
+    订阅信号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" title="创建信号" class="md-nav__link">
+    创建信号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" title="发送信号" class="md-nav__link">
+    发送信号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask_3" title="信号与Flask的请求上下文" class="md-nav__link">
+    信号与Flask的请求上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" title="基于装饰器的信号订阅" class="md-nav__link">
+    基于装饰器的信号订阅
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_62" title="核心信号" class="md-nav__link">
+    核心信号
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pluggable-views" title="Pluggable Views" class="md-nav__link">
+    Pluggable Views
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_63" title="基本原则" class="md-nav__link">
+    基本原则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_64" title="方法提示" class="md-nav__link">
+    方法提示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_65" title="基于调度的方法" class="md-nav__link">
+    基于调度的方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_66" title="装饰试图" class="md-nav__link">
+    装饰试图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" title="基于API的方法视图" class="md-nav__link">
+    基于API的方法视图
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_67" title="应用上下文" class="md-nav__link">
+    应用上下文
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_68" title="应用上下文的作用" class="md-nav__link">
+    应用上下文的作用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_69" title="创建应用上下文" class="md-nav__link">
+    创建应用上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_70" title="应用上下文局部变量" class="md-nav__link">
+    应用上下文局部变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_71" title="上下文用法" class="md-nav__link">
+    上下文用法
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_72" title="显式创建使用资源" class="md-nav__link">
+    显式创建使用资源
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_73" title="隐式创建使用资源" class="md-nav__link">
+    隐式创建使用资源
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_74" title="请求上下文" class="md-nav__link">
+    请求上下文
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_75" title="上下文作用域" class="md-nav__link">
+    上下文作用域
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flaskcontext" title="Flask请求context内部处理" class="md-nav__link">
+    Flask请求context内部处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_76" title="回调和错误" class="md-nav__link">
+    回调和错误
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teardown_request" title="teardown_request()" class="md-nav__link">
+    teardown_request()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_77" title="留意代理" class="md-nav__link">
+    留意代理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_78" title="错误时的上下文保护" class="md-nav__link">
+    错误时的上下文保护
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_79" title="用蓝图实现模块化" class="md-nav__link">
+    用蓝图实现模块化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_80" title="为什么使用蓝图" class="md-nav__link">
+    为什么使用蓝图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_81" title="蓝图的设想" class="md-nav__link">
+    蓝图的设想
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_82" title="创建蓝图（模块）" class="md-nav__link">
+    创建蓝图（模块）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_83" title="注册（使用）蓝图（模块）" class="md-nav__link">
+    注册（使用）蓝图（模块）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_84" title="蓝图使用（模块）资源" class="md-nav__link">
+    蓝图使用（模块）资源
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_85" title="蓝图资源文件夹" class="md-nav__link">
+    蓝图资源文件夹
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_86" title="静态文件" class="md-nav__link">
+    静态文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_87" title="模板路径" class="md-nav__link">
+    模板路径
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_1" title="构造URL" class="md-nav__link">
+    构造URL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flask_4" title="Flask扩展" class="md-nav__link">
+    Flask扩展
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_88" title="寻找扩展" class="md-nav__link">
+    寻找扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_89" title="使用扩展" class="md-nav__link">
+    使用扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-08" title="Flask 0.8以前" class="md-nav__link">
+    Flask 0.8以前
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-script" title="Flask-Script" class="md-nav__link">
+    Flask-Script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-bootstrap" title="Flask-Bootstrap" class="md-nav__link">
+    Flask-Bootstrap
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basehtml" title="base.html定义的块" class="md-nav__link">
+    base.html定义的块
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python" title="python初始化" class="md-nav__link">
+    python初始化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_90" title="模板继承" class="md-nav__link">
+    模板继承
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-moment" title="Flask-Moment" class="md-nav__link">
+    Flask-Moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-wtf" title="Flask-WTF" class="md-nav__link">
+    Flask-WTF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-sqlalchemy" title="Flask-SQLAlchemy" class="md-nav__link">
+    Flask-SQLAlchemy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_91" title="数据库迁移" class="md-nav__link">
+    数据库迁移
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-mail" title="Flask-Mail" class="md-nav__link">
+    Flask-Mail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celery" title="Celery任务队列" class="md-nav__link">
+    Celery任务队列
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_92" title="特性" class="md-nav__link">
+    特性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_93" title="安装" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_94" title="定义任务" class="md-nav__link">
+    定义任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worker" title="启动Worker任务" class="md-nav__link">
+    启动Worker任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_95" title="发送任务" class="md-nav__link">
+    发送任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celery-flower" title="Celery Flower" class="md-nav__link">
+    Celery Flower
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-admin" title="Flask-Admin" class="md-nav__link">
+    Flask-Admin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell" title="与Shell共舞" class="md-nav__link">
+    与Shell共舞
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_96" title="创建一个请求上下文" class="md-nav__link">
+    创建一个请求上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_97" title="激发请求发送前后的调用" class="md-nav__link">
+    激发请求发送前后的调用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flask_5" title="Flask代码模式" class="md-nav__link">
+    Flask代码模式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url_2" title="大型应用（批量导入url处理类)" class="md-nav__link">
+    大型应用（批量导入url处理类)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_98" title="修改前目录结构" class="md-nav__link">
+    修改前目录结构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_99" title="修改后目录结构" class="md-nav__link">
+    修改后目录结构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_100" title="应用程序的工厂函数" class="md-nav__link">
+    应用程序的工厂函数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_101" title="应用调度" class="md-nav__link">
+    应用调度
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api_1" title="实现API异常处理" class="md-nav__link">
+    实现API异常处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_3" title="使用URL处理器" class="md-nav__link">
+    使用URL处理器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setuptools" title="使用Setuptools部署、分发" class="md-nav__link">
+    使用Setuptools部署、分发
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fabric" title="使用Fabric部署" class="md-nav__link">
+    使用Fabric部署
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flasksqlite3" title="在Flask中使用sqlite3" class="md-nav__link">
+    在Flask中使用sqlite3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flasksqlalchemy" title="在Flask中使用sqlalchemy" class="md-nav__link">
+    在Flask中使用sqlalchemy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_102" title="上传文件" class="md-nav__link">
+    上传文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_103" title="缓存" class="md-nav__link">
+    缓存
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_104" title="视图装饰器" class="md-nav__link">
+    视图装饰器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wtforms" title="使用WTForms进行表单验证" class="md-nav__link">
+    使用WTForms进行表单验证
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_105" title="模板继承" class="md-nav__link">
+    模板继承
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_106" title="消息闪现" class="md-nav__link">
+    消息闪现
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jqueryajax" title="用jQuery实现Ajax" class="md-nav__link">
+    用jQuery实现Ajax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_107" title="自定义错误页面" class="md-nav__link">
+    自定义错误页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_108" title="延迟加载视图" class="md-nav__link">
+    延迟加载视图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flaskmongokit" title="在Flask中使用MongoKit" class="md-nav__link">
+    在Flask中使用MongoKit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#favicon" title="添加Favicon" class="md-nav__link">
+    添加Favicon
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_109" title="特性" class="md-nav__link">
+    特性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_110" title="新标准" class="md-nav__link">
+    新标准
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_111" title="旧标准" class="md-nav__link">
+    旧标准
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_112" title="模板" class="md-nav__link">
+    模板
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_113" title="数据流" class="md-nav__link">
+    数据流
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_114" title="延迟请求回调" class="md-nav__link">
+    延迟请求回调
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-method-overrides" title="添加HTTP Method Overrides" class="md-nav__link">
+    添加HTTP Method Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_115" title="请求内容校验码" class="md-nav__link">
+    请求内容校验码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celery_1" title="基于Celery的后台任务" class="md-nav__link">
+    基于Celery的后台任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask_6" title="继承Flask" class="md-nav__link">
+    继承Flask
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_116" title="部署选择" class="md-nav__link">
+    部署选择
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_117" title="托管配置" class="md-nav__link">
+    托管配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_118" title="主机配置" class="md-nav__link">
+    主机配置
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mod_wsgiapache" title="mod_wsgi（Apache）" class="md-nav__link">
+    mod_wsgi（Apache）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsgi_1" title="独立WSGI容器" class="md-nav__link">
+    独立WSGI容器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uwsgi" title="uWSGI" class="md-nav__link">
+    uWSGI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastcgi" title="FastCGI" class="md-nav__link">
+    FastCGI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgi" title="CGI" class="md-nav__link">
+    CGI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_119" title="大型工程" class="md-nav__link">
+    大型工程
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_120" title="阅读源码" class="md-nav__link">
+    阅读源码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_121" title="钩子，继承" class="md-nav__link">
+    钩子，继承
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_122" title="继承" class="md-nav__link">
+    继承
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_123" title="用中间件包装" class="md-nav__link">
+    用中间件包装
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_124" title="分支" class="md-nav__link">
+    分支
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_125" title="像专家一样扩大规模" class="md-nav__link">
+    像专家一样扩大规模
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_126" title="与社区对话" class="md-nav__link">
+    与社区对话
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api_2" title="API" class="md-nav__link">
+    API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_127" title="应用对象" class="md-nav__link">
+    应用对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_128" title="蓝图对象" class="md-nav__link">
+    蓝图对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_129" title="进入的请求对象" class="md-nav__link">
+    进入的请求对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_130" title="响应对象" class="md-nav__link">
+    响应对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_131" title="会话" class="md-nav__link">
+    会话
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_132" title="会话接口" class="md-nav__link">
+    会话接口
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_133" title="测试客户端" class="md-nav__link">
+    测试客户端
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_134" title="应用全局变量" class="md-nav__link">
+    应用全局变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_135" title="有用的函数和类" class="md-nav__link">
+    有用的函数和类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_136" title="消息闪现" class="md-nav__link">
+    消息闪现
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" title="JSON支持" class="md-nav__link">
+    JSON支持
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_137" title="模板渲染" class="md-nav__link">
+    模板渲染
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_138" title="配置" class="md-nav__link">
+    配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_139" title="扩展" class="md-nav__link">
+    扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_140" title="流的辅助函数" class="md-nav__link">
+    流的辅助函数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_141" title="有用的内构件" class="md-nav__link">
+    有用的内构件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_142" title="信号" class="md-nav__link">
+    信号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_143" title="基于类的视图" class="md-nav__link">
+    基于类的视图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_4" title="URL路由注册" class="md-nav__link">
+    URL路由注册
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_144" title="视图函数选项" class="md-nav__link">
+    视图函数选项
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_145" title="其他说明" class="md-nav__link">
+    其他说明
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flask_7" title="Flask中的设计决策" class="md-nav__link">
+    Flask中的设计决策
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#htmlxhtml" title="HTML/XHTML常见问题" class="md-nav__link">
+    HTML/XHTML常见问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_146" title="安全注意事项" class="md-nav__link">
+    安全注意事项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flaskunicode" title="Flask中的Unicode" class="md-nav__link">
+    Flask中的Unicode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask_8" title="Flask扩展开发" class="md-nav__link">
+    Flask扩展开发
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pocoo" title="Pocoo风格指引" class="md-nav__link">
+    Pocoo风格指引
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python3" title="Python3支持" class="md-nav__link">
+    Python3支持
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../pyqt/" title="PyQt/Qt" class="md-nav__link">
+        PyQt/Qt
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../mkdocs/" title="mkdocs" class="md-nav__link">
+        mkdocs
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Android
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-2-3">
+        Android
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../android/" title="Android" class="md-nav__link">
+        Android
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Javascript
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-2-4">
+        Javascript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../javascript/" title="Javascript" class="md-nav__link">
+        Javascript
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../vue/" title="Vue" class="md-nav__link">
+        Vue
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="快速入门" class="md-nav__link">
+    快速入门
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="配置与惯例" class="md-nav__link">
+    配置与惯例
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="安装" class="md-nav__link">
+    安装
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="依赖" class="md-nav__link">
+    依赖
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#virtualenv" title="virtualenv" class="md-nav__link">
+    virtualenv
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#helloworld" title="HelloWorld" class="md-nav__link">
+    HelloWorld
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#httpserverip" title="定义HttpServer绑定IP" class="md-nav__link">
+    定义HttpServer绑定IP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="调试模式（交互式调试器）" class="md-nav__link">
+    调试模式（交互式调试器）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" title="URL路由" class="md-nav__link">
+    URL路由
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="静态文件" class="md-nav__link">
+    静态文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="模板渲染" class="md-nav__link">
+    模板渲染
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="模板路径" class="md-nav__link">
+    模板路径
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#request" title="访问Request数据" class="md-nav__link">
+    访问Request数据
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#request_1" title="Request上下文与单元测试" class="md-nav__link">
+    Request上下文与单元测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reqeust" title="使用Reqeust对象" class="md-nav__link">
+    使用Reqeust对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="异常处理" class="md-nav__link">
+    异常处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requestfiles" title="上传文件 request.files" class="md-nav__link">
+    上传文件 request.files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cookies" title="Cookies 读取与存储" class="md-nav__link">
+    Cookies 读取与存储
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="重定向与错误" class="md-nav__link">
+    重定向与错误
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" title="response" class="md-nav__link">
+    response
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session" title="会话 session" class="md-nav__link">
+    会话 session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flashing" title="闪现消息(Flashing)" class="md-nav__link">
+    闪现消息(Flashing)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="日志记录" class="md-nav__link">
+    日志记录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsgi" title="整合WSGI中间件" class="md-nav__link">
+    整合WSGI中间件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask" title="使用Flask扩展" class="md-nav__link">
+    使用Flask扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#web" title="部署到Web服务器" class="md-nav__link">
+    部署到Web服务器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" title="简单完整示例教程" class="md-nav__link">
+    简单完整示例教程
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="示例功能" class="md-nav__link">
+    示例功能
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" title="工程目录" class="md-nav__link">
+    工程目录
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="数据库" class="md-nav__link">
+    数据库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask_1" title="Flask应用启动、配置、数据库连接" class="md-nav__link">
+    Flask应用启动、配置、数据库连接
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="从环境变量导入路径" class="md-nav__link">
+    从环境变量导入路径
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="使用环境变量传递信息" class="md-nav__link">
+    使用环境变量传递信息
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="数据库连接代码" class="md-nav__link">
+    数据库连接代码
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flaskurl" title="flask应用，url处理" class="md-nav__link">
+    flask应用，url处理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="显示评论" class="md-nav__link">
+    显示评论
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="添加评论" class="md-nav__link">
+    添加评论
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post" title="登录页面及登录POST" class="md-nav__link">
+    登录页面及登录POST
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="退出" class="md-nav__link">
+    退出
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#html" title="HTML模板" class="md-nav__link">
+    HTML模板
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layouthtml" title="layout.html" class="md-nav__link">
+    layout.html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show_entrieshtml" title="show_entries.html" class="md-nav__link">
+    show_entries.html
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loginhtml" title="login.html" class="md-nav__link">
+    login.html
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css" title="CSS样式" class="md-nav__link">
+    CSS样式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stylecss" title="style.css" class="md-nav__link">
+    style.css
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" title="单元测试" class="md-nav__link">
+    单元测试
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="测试工程结构" class="md-nav__link">
+    测试工程结构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" title="运行测试" class="md-nav__link">
+    运行测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" title="测试的大框架" class="md-nav__link">
+    测试的大框架
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="第一个测试" class="md-nav__link">
+    第一个测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" title="登录和登出" class="md-nav__link">
+    登录和登出
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="测试消息的添加" class="md-nav__link">
+    测试消息的添加
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="其他测试技巧" class="md-nav__link">
+    其他测试技巧
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" title="伪造资源和上下文" class="md-nav__link">
+    伪造资源和上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_31" title="保存上下文" class="md-nav__link">
+    保存上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sessions" title="访问和修改Sessions" class="md-nav__link">
+    访问和修改Sessions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_32" title="模板" class="md-nav__link">
+    模板
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jinja" title="Jinja配置" class="md-nav__link">
+    Jinja配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jinja2" title="标准上下文，默认在Jinja2模板中可用的值" class="md-nav__link">
+    标准上下文，默认在Jinja2模板中可用的值
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="可以使用的变量和方法" class="md-nav__link">
+    可以使用的变量和方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jinja2_1" title="导入宏（Jinja2的宏）的方法" class="md-nav__link">
+    导入宏（Jinja2的宏）的方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jinja2_2" title="标准过滤器，Jinja2自带的过滤器" class="md-nav__link">
+    标准过滤器，Jinja2自带的过滤器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="控制自动转译" class="md-nav__link">
+    控制自动转译
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="注册过滤器" class="md-nav__link">
+    注册过滤器
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#jinja2_3" title="使用装饰器标记自定义Jinja2过滤器" class="md-nav__link">
+    使用装饰器标记自定义Jinja2过滤器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jinja2_4" title="手动添加过滤器到Jinja2" class="md-nav__link">
+    手动添加过滤器到Jinja2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="在模板中使用过滤器" class="md-nav__link">
+    在模板中使用过滤器
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#context_processor" title="使用context_processor添加变量、函数添加到模板上下文" class="md-nav__link">
+    使用context_processor添加变量、函数添加到模板上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" title="模板结构控制" class="md-nav__link">
+    模板结构控制
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" title="条件" class="md-nav__link">
+    条件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" title="循环" class="md-nav__link">
+    循环
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" title="宏" class="md-nav__link">
+    宏
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" title="继承" class="md-nav__link">
+    继承
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_42" title="日志、邮件、调试模式" class="md-nav__link">
+    日志、邮件、调试模式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flask_2" title="配置Flask发送错误邮件" class="md-nav__link">
+    配置Flask发送错误邮件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" title="记录到文件" class="md-nav__link">
+    记录到文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" title="控制日志格式" class="md-nav__link">
+    控制日志格式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" title="邮件格式" class="md-nav__link">
+    邮件格式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" title="日志格式" class="md-nav__link">
+    日志格式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" title="常用日志变量" class="md-nav__link">
+    常用日志变量
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" title="其他的库" class="md-nav__link">
+    其他的库
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug" title="开启Debug" class="md-nav__link">
+    开启Debug
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" title="调试器配置" class="md-nav__link">
+    调试器配置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_50" title="配置处理" class="md-nav__link">
+    配置处理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_51" title="配置基础" class="md-nav__link">
+    配置基础
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" title="内置的配置值" class="md-nav__link">
+    内置的配置值
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" title="从文件配置" class="md-nav__link">
+    从文件配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" title="配置的最佳实践" class="md-nav__link">
+    配置的最佳实践
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" title="开发/生产" class="md-nav__link">
+    开发/生产
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_56" title="实例文件夹" class="md-nav__link">
+    实例文件夹
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_57" title="信号" class="md-nav__link">
+    信号
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_58" title="订阅信号" class="md-nav__link">
+    订阅信号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_59" title="创建信号" class="md-nav__link">
+    创建信号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_60" title="发送信号" class="md-nav__link">
+    发送信号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask_3" title="信号与Flask的请求上下文" class="md-nav__link">
+    信号与Flask的请求上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" title="基于装饰器的信号订阅" class="md-nav__link">
+    基于装饰器的信号订阅
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_62" title="核心信号" class="md-nav__link">
+    核心信号
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pluggable-views" title="Pluggable Views" class="md-nav__link">
+    Pluggable Views
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_63" title="基本原则" class="md-nav__link">
+    基本原则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_64" title="方法提示" class="md-nav__link">
+    方法提示
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_65" title="基于调度的方法" class="md-nav__link">
+    基于调度的方法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_66" title="装饰试图" class="md-nav__link">
+    装饰试图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api" title="基于API的方法视图" class="md-nav__link">
+    基于API的方法视图
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_67" title="应用上下文" class="md-nav__link">
+    应用上下文
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_68" title="应用上下文的作用" class="md-nav__link">
+    应用上下文的作用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_69" title="创建应用上下文" class="md-nav__link">
+    创建应用上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_70" title="应用上下文局部变量" class="md-nav__link">
+    应用上下文局部变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_71" title="上下文用法" class="md-nav__link">
+    上下文用法
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_72" title="显式创建使用资源" class="md-nav__link">
+    显式创建使用资源
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_73" title="隐式创建使用资源" class="md-nav__link">
+    隐式创建使用资源
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_74" title="请求上下文" class="md-nav__link">
+    请求上下文
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_75" title="上下文作用域" class="md-nav__link">
+    上下文作用域
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flaskcontext" title="Flask请求context内部处理" class="md-nav__link">
+    Flask请求context内部处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_76" title="回调和错误" class="md-nav__link">
+    回调和错误
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teardown_request" title="teardown_request()" class="md-nav__link">
+    teardown_request()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_77" title="留意代理" class="md-nav__link">
+    留意代理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_78" title="错误时的上下文保护" class="md-nav__link">
+    错误时的上下文保护
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_79" title="用蓝图实现模块化" class="md-nav__link">
+    用蓝图实现模块化
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_80" title="为什么使用蓝图" class="md-nav__link">
+    为什么使用蓝图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_81" title="蓝图的设想" class="md-nav__link">
+    蓝图的设想
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_82" title="创建蓝图（模块）" class="md-nav__link">
+    创建蓝图（模块）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_83" title="注册（使用）蓝图（模块）" class="md-nav__link">
+    注册（使用）蓝图（模块）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_84" title="蓝图使用（模块）资源" class="md-nav__link">
+    蓝图使用（模块）资源
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_85" title="蓝图资源文件夹" class="md-nav__link">
+    蓝图资源文件夹
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_86" title="静态文件" class="md-nav__link">
+    静态文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_87" title="模板路径" class="md-nav__link">
+    模板路径
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_1" title="构造URL" class="md-nav__link">
+    构造URL
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flask_4" title="Flask扩展" class="md-nav__link">
+    Flask扩展
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_88" title="寻找扩展" class="md-nav__link">
+    寻找扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_89" title="使用扩展" class="md-nav__link">
+    使用扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-08" title="Flask 0.8以前" class="md-nav__link">
+    Flask 0.8以前
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-script" title="Flask-Script" class="md-nav__link">
+    Flask-Script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-bootstrap" title="Flask-Bootstrap" class="md-nav__link">
+    Flask-Bootstrap
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basehtml" title="base.html定义的块" class="md-nav__link">
+    base.html定义的块
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python" title="python初始化" class="md-nav__link">
+    python初始化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_90" title="模板继承" class="md-nav__link">
+    模板继承
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-moment" title="Flask-Moment" class="md-nav__link">
+    Flask-Moment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-wtf" title="Flask-WTF" class="md-nav__link">
+    Flask-WTF
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-sqlalchemy" title="Flask-SQLAlchemy" class="md-nav__link">
+    Flask-SQLAlchemy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_91" title="数据库迁移" class="md-nav__link">
+    数据库迁移
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-mail" title="Flask-Mail" class="md-nav__link">
+    Flask-Mail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celery" title="Celery任务队列" class="md-nav__link">
+    Celery任务队列
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_92" title="特性" class="md-nav__link">
+    特性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_93" title="安装" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_94" title="定义任务" class="md-nav__link">
+    定义任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worker" title="启动Worker任务" class="md-nav__link">
+    启动Worker任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_95" title="发送任务" class="md-nav__link">
+    发送任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celery-flower" title="Celery Flower" class="md-nav__link">
+    Celery Flower
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask-admin" title="Flask-Admin" class="md-nav__link">
+    Flask-Admin
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#shell" title="与Shell共舞" class="md-nav__link">
+    与Shell共舞
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_96" title="创建一个请求上下文" class="md-nav__link">
+    创建一个请求上下文
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_97" title="激发请求发送前后的调用" class="md-nav__link">
+    激发请求发送前后的调用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flask_5" title="Flask代码模式" class="md-nav__link">
+    Flask代码模式
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#url_2" title="大型应用（批量导入url处理类)" class="md-nav__link">
+    大型应用（批量导入url处理类)
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_98" title="修改前目录结构" class="md-nav__link">
+    修改前目录结构
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_99" title="修改后目录结构" class="md-nav__link">
+    修改后目录结构
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_100" title="应用程序的工厂函数" class="md-nav__link">
+    应用程序的工厂函数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_101" title="应用调度" class="md-nav__link">
+    应用调度
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#api_1" title="实现API异常处理" class="md-nav__link">
+    实现API异常处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_3" title="使用URL处理器" class="md-nav__link">
+    使用URL处理器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setuptools" title="使用Setuptools部署、分发" class="md-nav__link">
+    使用Setuptools部署、分发
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fabric" title="使用Fabric部署" class="md-nav__link">
+    使用Fabric部署
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flasksqlite3" title="在Flask中使用sqlite3" class="md-nav__link">
+    在Flask中使用sqlite3
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flasksqlalchemy" title="在Flask中使用sqlalchemy" class="md-nav__link">
+    在Flask中使用sqlalchemy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_102" title="上传文件" class="md-nav__link">
+    上传文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_103" title="缓存" class="md-nav__link">
+    缓存
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_104" title="视图装饰器" class="md-nav__link">
+    视图装饰器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wtforms" title="使用WTForms进行表单验证" class="md-nav__link">
+    使用WTForms进行表单验证
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_105" title="模板继承" class="md-nav__link">
+    模板继承
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_106" title="消息闪现" class="md-nav__link">
+    消息闪现
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jqueryajax" title="用jQuery实现Ajax" class="md-nav__link">
+    用jQuery实现Ajax
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_107" title="自定义错误页面" class="md-nav__link">
+    自定义错误页面
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_108" title="延迟加载视图" class="md-nav__link">
+    延迟加载视图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flaskmongokit" title="在Flask中使用MongoKit" class="md-nav__link">
+    在Flask中使用MongoKit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#favicon" title="添加Favicon" class="md-nav__link">
+    添加Favicon
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_109" title="特性" class="md-nav__link">
+    特性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_110" title="新标准" class="md-nav__link">
+    新标准
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_111" title="旧标准" class="md-nav__link">
+    旧标准
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_112" title="模板" class="md-nav__link">
+    模板
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_113" title="数据流" class="md-nav__link">
+    数据流
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_114" title="延迟请求回调" class="md-nav__link">
+    延迟请求回调
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http-method-overrides" title="添加HTTP Method Overrides" class="md-nav__link">
+    添加HTTP Method Overrides
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_115" title="请求内容校验码" class="md-nav__link">
+    请求内容校验码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celery_1" title="基于Celery的后台任务" class="md-nav__link">
+    基于Celery的后台任务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask_6" title="继承Flask" class="md-nav__link">
+    继承Flask
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_116" title="部署选择" class="md-nav__link">
+    部署选择
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_117" title="托管配置" class="md-nav__link">
+    托管配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_118" title="主机配置" class="md-nav__link">
+    主机配置
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mod_wsgiapache" title="mod_wsgi（Apache）" class="md-nav__link">
+    mod_wsgi（Apache）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wsgi_1" title="独立WSGI容器" class="md-nav__link">
+    独立WSGI容器
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#uwsgi" title="uWSGI" class="md-nav__link">
+    uWSGI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastcgi" title="FastCGI" class="md-nav__link">
+    FastCGI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cgi" title="CGI" class="md-nav__link">
+    CGI
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_119" title="大型工程" class="md-nav__link">
+    大型工程
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_120" title="阅读源码" class="md-nav__link">
+    阅读源码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_121" title="钩子，继承" class="md-nav__link">
+    钩子，继承
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_122" title="继承" class="md-nav__link">
+    继承
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_123" title="用中间件包装" class="md-nav__link">
+    用中间件包装
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_124" title="分支" class="md-nav__link">
+    分支
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_125" title="像专家一样扩大规模" class="md-nav__link">
+    像专家一样扩大规模
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_126" title="与社区对话" class="md-nav__link">
+    与社区对话
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api_2" title="API" class="md-nav__link">
+    API
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_127" title="应用对象" class="md-nav__link">
+    应用对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_128" title="蓝图对象" class="md-nav__link">
+    蓝图对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_129" title="进入的请求对象" class="md-nav__link">
+    进入的请求对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_130" title="响应对象" class="md-nav__link">
+    响应对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_131" title="会话" class="md-nav__link">
+    会话
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_132" title="会话接口" class="md-nav__link">
+    会话接口
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_133" title="测试客户端" class="md-nav__link">
+    测试客户端
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_134" title="应用全局变量" class="md-nav__link">
+    应用全局变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_135" title="有用的函数和类" class="md-nav__link">
+    有用的函数和类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_136" title="消息闪现" class="md-nav__link">
+    消息闪现
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#json" title="JSON支持" class="md-nav__link">
+    JSON支持
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_137" title="模板渲染" class="md-nav__link">
+    模板渲染
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_138" title="配置" class="md-nav__link">
+    配置
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_139" title="扩展" class="md-nav__link">
+    扩展
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_140" title="流的辅助函数" class="md-nav__link">
+    流的辅助函数
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_141" title="有用的内构件" class="md-nav__link">
+    有用的内构件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_142" title="信号" class="md-nav__link">
+    信号
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_143" title="基于类的视图" class="md-nav__link">
+    基于类的视图
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url_4" title="URL路由注册" class="md-nav__link">
+    URL路由注册
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_144" title="视图函数选项" class="md-nav__link">
+    视图函数选项
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_145" title="其他说明" class="md-nav__link">
+    其他说明
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flask_7" title="Flask中的设计决策" class="md-nav__link">
+    Flask中的设计决策
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#htmlxhtml" title="HTML/XHTML常见问题" class="md-nav__link">
+    HTML/XHTML常见问题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_146" title="安全注意事项" class="md-nav__link">
+    安全注意事项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flaskunicode" title="Flask中的Unicode" class="md-nav__link">
+    Flask中的Unicode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flask_8" title="Flask扩展开发" class="md-nav__link">
+    Flask扩展开发
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pocoo" title="Pocoo风格指引" class="md-nav__link">
+    Pocoo风格指引
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python3" title="Python3支持" class="md-nav__link">
+    Python3支持
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+                 <a href="https://github.com/yingxuanxuan/yingxuanxuan.github.io/edit/master/docs/flask.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+               
+              
+                
+                  <h1>Flask</h1>
+                
+                <h2 id="_1">快速入门<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">配置与惯例<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>Flask配置选项的默认值都是合理的，有一些是默认的，如templates和static默认在源码目录下，这些配置可以修改但一般并不需要。<br />
+Flask使用了Thread-Local变量，避免了同一request间的参数传递，这样很方便，但是使得程序依赖于合法的request请求，依赖于request的数据导致程序无法复用。  </p>
+<h3 id="_3">安装<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h4 id="_4">依赖<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p>Flask依赖Werkzeug和Jinja2。<br />
+Werkzeug是一个WSGI工具集。<br />
+Jinja2负责渲染模板。  </p>
+<h4 id="virtualenv">virtualenv<a class="headerlink" href="#virtualenv" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-bash">sudo pip install virtualenv
+mkdir myproject
+cd myproject
+virtualenv venv
+. venv/scripts/activate
+pip install Flask</code></pre>
+
+
+<h4 id="helloworld">HelloWorld<a class="headerlink" href="#helloworld" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-python"># 文件hello.py
+from flask import Flask
+
+# Flask通过__name__找到包路径及其下的static和templates目录，避免限制为当前目录
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+if __name__ == '__main__':
+    app.run()</code></pre>
+
+
+<p>运行：</p>
+<pre class="codehilite"><code class="language-bash">python hello.py</code></pre>
+
+
+<p>通过环境变量运行：</p>
+<pre class="codehilite"><code class="language-bash"># windows下使用set设置环境变量
+export FLASK_APP=hello.py
+flask run</code></pre>
+
+
+<p>通过python module运行：</p>
+<pre class="codehilite"><code class="language-bash">export FLASK_APP=hello.py
+python -m flask run</code></pre>
+
+
+<p>访问：http://127.0.0.1:5000</p>
+<h4 id="httpserverip">定义HttpServer绑定IP<a class="headerlink" href="#httpserverip" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-python">app.run(host='0.0.0.0', port=80)</code></pre>
+
+
+<pre class="codehilite"><code class="language-bash">flask run --host=0.0.0.0</code></pre>
+
+
+<h4 id="_5">调试模式（交互式调试器）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-python">app.debug = True
+app.run()
+# 或
+app.run(debug=True)</code></pre>
+
+
+<pre class="codehilite"><code class="language-bash">export FLASK_DEBUG=1
+flask run</code></pre>
+
+
+<h4 id="url">URL路由<a class="headerlink" href="#url" title="Permanent link">&para;</a></h4>
+<p>基本示例：</p>
+<pre class="codehilite"><code class="language-py">@app.route('/')
+def index():
+    return 'Index Page'
+
+@app.route('/hello')
+    return 'Hello World'</code></pre>
+
+
+<p>带变量的URL：</p>
+<pre class="codehilite"><code class="language-py">@app.route('/user/&lt;username&gt;')
+def show_user_profile(username):
+    return 'User %s' % username</code></pre>
+
+
+<p>带变量的URL并转换数据类型：<br />
+int # 整形<br />
+float # 浮点型 <br />
+string # 不接受斜线<br />
+path # 接受斜线的string<br />
+any # 任意<br />
+uuid # UUID</p>
+<pre class="codehilite"><code class="language-py">@app.route('/post/&lt;int:post_id&gt;')
+def show_post(post_id):
+    return 'Post %d' % post_id</code></pre>
+
+
+<p>遵守唯一URL管理，避免重定向行为:<br />
+/projects/ # 若访问/projects会被Flask重定向到/projects/<br />
+/about # 若访问/about/会产生"404 Not Found"<br />
+<strong>建议使用带斜线的URL，保证URL唯一性，避免搜索引擎索引同一个页面两次</strong></p>
+<p>使用url_for()用处理函数逆向构造URL：<br />
+url_for的第一个参数是处理函数的名称，后面命名参数匹配的部分会应用到url，不符合的部分会作为查询参数。  </p>
+<pre class="codehilite"><code>from flask import Flask, url_for
+app = Flask(__name__)
+
+@app.route('/')
+def index: pass
+
+@app.route('/login')
+def login(username): pass
+
+@app.route('/user/&lt;username&gt;')
+def profile(username): pass
+
+# 使用test_request_context()构造request
+with app.test_request_context():
+    print(url_for('index')) # 输出：/
+    print(url_for('login')) # 输出：/login
+    print(url_for('login', next='/') # 输出：/login?next=/
+    print(url_for('profile', username='John Doe')) # 输出：/user/John%20Doe
+
+    # url_for默认生成相对地址，外部链接需要使用绝对地址
+    print(url_or('index', _external=True)) # 输出 http://host:port/</code></pre>
+
+
+<p>使用逆向构造URL的用途：<br />
+- 可以自动在Flask工程中查询URL<br />
+- Flask会自动转译特殊字符和Unicode<br />
+- 如果应用不位于URL根路径，url_for会自动处理</p>
+<p>HTTP方法：<br />
+默认处理为GET请求，使用route装饰器的methods指定HTTP方法  </p>
+<pre class="codehilite"><code class="language-py">@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        do_the_login()
+    else:
+        show_the_login_form()</code></pre>
+
+
+<p>GET # 获取页面<br />
+HEAD # 获取信息，只关心消息头，Flask会自动按GET处理<br />
+POST # 发送信息，发送表单<br />
+PUT # 类似POST，但可以多次覆盖旧数据，POST只能触发一次<br />
+DELETE # 删除<br />
+OPTIONS # 查询URL支持哪些HTTP方法，Flask会自动处理<br />
+HTTP4和XHTML1只支持GET和POST，但是JavaScript和HTML5支持其他方法  </p>
+<h3 id="_6">静态文件<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>文件路径：包或者模块的所在目录中static文件夹<br />
+使用URL：/static<br />
+生成URL：url_for('static', filename='style.css')，static是特殊参数  </p>
+<h3 id="_7">模板渲染<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="_8">模板路径<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h4>
+<p>模块路径：</p>
+<pre class="codehilite"><code>/application.py
+/templates
+    /hello.html</code></pre>
+
+
+<p>包路径：</p>
+<pre class="codehilite"><code>/application
+    /__init__.py
+    /templates
+        /hello.html</code></pre>
+
+
+<p>渲染：</p>
+<pre class="codehilite"><code class="language-py">from flask import render_template
+@app.route('/hello/')
+@app.route('/hello/&lt;name&gt;')
+def hello(name=None)
+    return render_template('hello.html', name=name)</code></pre>
+
+
+<pre class="codehilite"><code class="language-html">&lt;!doctype html&gt;
+&lt;title&gt;Hello from Flask&lt;/title&gt;
+{% if name %}
+    &lt;h1&gt;Hello {{name}}!&lt;/h1&gt;
+{% else %}
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+{% endif %}</code></pre>
+
+
+<p>在模板里可以让问request、session和g对象以及get_flashed_message()  <br />
+模板继承可以使每个页面的header、navigation和footer保持一致。<br />
+变量中包含HTML会被转译，例如以上代码{{name}}中包含的HTML会被自动转译。<br />
+自动转译是默认对.html .htm .xml .html模板文件开启，模板字符串自动转译是关闭的。<br />
+使用|safe过滤器或flask.Markup可以标记字符串为安全。</p>
+<pre class="codehilite"><code class="language-py">from flask import Markup
+
+# 标记为安全字符串
+Markup('&lt;strong&gt;Hello %s!&lt;/strong&gt;') % '&lt;blink&gt;hacker&lt;/blink&gt;'
+# 输出Markup(u'&lt;strong&gt;Hello &amp;lt;blink&amp;gt;hacker&amp;lt;/blink&amp;gt;!&lt;/strong&gt;')
+
+# 手动转译
+Markup.escape('&lt;blink&gt;hacker&lt;/blink&gt;')
+# 输出 Markup(u'&amp;lt;blink&amp;gt;hacker&amp;lt;/blink&amp;gt;')
+
+# 清除HTML TAG
+Markup('&lt;em&gt;Marked up&lt;/em&gt; &amp;raquo; HTML').striptags()
+# 输出 u'Marked up \xbb HTML'</code></pre>
+
+
+<h3 id="request">访问Request数据<a class="headerlink" href="#request" title="Permanent link">&para;</a></h3>
+<h4 id="request_1">Request上下文与单元测试<a class="headerlink" href="#request_1" title="Permanent link">&para;</a></h4>
+<p>Request使用时看起来是全局的，其实Request是线程（或协程）本地的<br />
+单元测试时没有请求，所以没有Request对象  </p>
+<p>使用test_request_context()环境管理器：</p>
+<pre class="codehilite"><code class="language-py">from flask import request
+
+with app.test_request_context('/hello', method='POST')
+    assert request.path == '/hello'
+    assert request.method = 'POST'</code></pre>
+
+
+<p>或将整个WSGI环境传递给request_context()方法</p>
+<pre class="codehilite"><code class="language-py">from flask import request
+with app.request_context(environ):
+    assert request.method == 'POST'</code></pre>
+
+
+<h4 id="reqeust">使用Reqeust对象<a class="headerlink" href="#reqeust" title="Permanent link">&para;</a></h4>
+<p>从POST方法的form中获取信息 request.form：</p>
+<pre class="codehilite"><code class="language-py">from flask import request
+
+@app.route('/login', methods=['POST', 'GET'])
+def login():
+    error = None
+    if request.method == 'POST':
+        if valid_login(request.form['username'], request.form['password']):
+            return log_the_user_in(request.form['username'])
+        else:
+            error = 'Invalid username/password'
+
+    return render_template('login.html', error=error)</code></pre>
+
+
+<p>获取查询字符串 request.args：  </p>
+<pre class="codehilite"><code class="language-py"># ?key=value
+searchword = request.args.get('q', '')</code></pre>
+
+
+<p>获取json字段：request.args</p>
+<p>获取header字段：request.headers</p>
+<h4 id="_9">异常处理<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p>若form中属性不存在则会抛出KeyError异常。不处理KeyError异常会显示一个"HTTP 400 Bad Request错误页面”。</p>
+<h4 id="requestfiles">上传文件 request.files<a class="headerlink" href="#requestfiles" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">from flask import request 
+
+@app.route('/upload', methods=['GET', 'POST'])
+def upload_file():
+    if request.method == 'POST':
+        f = request.files['the_file']
+        f.save('/var/www/uploads/uploaded_file.txt')
+        # 获取文件名
+        f.save('/var/www/uploads/' + secure_filename(f.filename))</code></pre>
+
+
+<p><strong>上传文件需要HTML表单中设置<code>enctype="multipart/form-data"</code></strong></p>
+<h4 id="cookies">Cookies 读取与存储<a class="headerlink" href="#cookies" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">from flask import request
+
+# 获取cookie
+@app.route('/')
+def index():
+    username = request.cookies.get('username')
+    username = request.cookies.get['username']
+
+# 设置cookie
+@app.route('/')
+def index():
+    # 如果不设置cookie只需要返回字符串，若要设置cookie需要自行构造response
+    # 若不想自行构造response，可以使用“延迟请求回调”
+    resp = make_response(render_template(...))
+    resp.set_cookie('username', 'the username')
+    return resp</code></pre>
+
+
+<h3 id="_10">重定向与错误<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<p>redirect() # 重定向到其他url  </p>
+<pre class="codehilite"><code class="language-py">from flask import abort, redirect, url_for
+
+@app.route('/')
+def index():
+    return redirect(url_for('login'))</code></pre>
+
+
+<p>abort() # 发送错误</p>
+<pre class="codehilite"><code class="language-py">@app.route('/login')
+def login():
+    abort(401)
+    this_is_never_executed()</code></pre>
+
+
+<p>定制错误页面：</p>
+<pre class="codehilite"><code class="language-py">from flask import render_template
+
+# 返回模板
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_templete('page_not_found.html'), 404</code></pre>
+
+
+<h3 id="response">response<a class="headerlink" href="#response" title="Permanent link">&para;</a></h3>
+<p>url处理函数的返回值会被自动转换为response对象。<br />
+如果返回值是字符串，会被转换为字符串为body、状态码为200 OK、MIME是text/html的response。<br />
+Flask返回值处理逻辑：<br />
+1. 如果返回的是一个合法的response对象，则从url处理函数直接返回。<br />
+2. 如果返回的是一个字符串，Flask会用字符串和默认参数创建response。<br />
+3. 如果返回一个tuple，格式为(response, status, headers)，Flask会用tuple覆盖默认设置。tuple至少要有一个值。headers是一个list或dict。<br />
+4. 如果以上都不是，Flask会假设返回值是一个WSGi应用程序，并发起请求。</p>
+<p>如果不想让Flask自动处理，可以使用make_response自行处理。</p>
+<pre class="codehilite"><code class="language-py"># 返回tuple
+@app.errorhandler(404)
+def not_found(error):
+    return render_template('error.html'), 404
+
+# 自行处理
+@app.errorhandler(404)
+def not_found(error):
+    resp = make_response(render_template('error.html'), 404)
+    resp.headers['X-Something'] = 'A value'
+    return resp</code></pre>
+
+
+<h3 id="session">会话 session<a class="headerlink" href="#session" title="Permanent link">&para;</a></h3>
+<p>会话是在不同请求间存储特定用户的信息。<br />
+Flask使用Cookies字段存储Session，并对Cookies字段做了Hash校验，用户只能查看Cookies内容但不能修改。</p>
+<pre class="codehilite"><code class="language-py">from flask import Flask, session, redirect, url_for, escape, request
+app = Flask(__name__)
+app.secret_key = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+
+# 查询session
+@app.route('/')
+def index():
+    if 'username' in session:
+        return 'Logged in as %s' % escape(session['username'])
+    return 'You are not logged in'
+
+# 插入session
+@app.route('/login', methods=['GET', 'POSt'])
+def login():
+    if request.method == 'POST':
+        session['username'] = request.form['username']
+        return redirect(url_for('index'))
+    return '''
+        &lt;form action=&quot;&quot; method=&quot;post&quot;&gt;
+            &lt;p&gt;&lt;input type=text name=username/&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;intpu type=submit value=Login&gt;&lt;/p&gt;
+        &lt;/form&gt;
+    '''
+
+# 删除session
+@app.route('/logout')
+def logout():
+    session.pop('username', None)
+    return redirect(url_for('index'))</code></pre>
+
+
+<p>生成密钥：</p>
+<pre class="codehilite"><code class="language-py">import os
+os.urandom(24)</code></pre>
+
+
+<h3 id="flashing">闪现消息(Flashing)<a class="headerlink" href="#flashing" title="Permanent link">&para;</a></h3>
+<p>闪现消息是在请求结束时响应给客户端的一种消息。<br />
+当且仅当下一条请求时访问信息。<br />
+使用flask()记录消息。<br />
+在下一条请求或模版中使用get_flashed_messages()获取消息。</p>
+<h3 id="_11">日志记录<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code>app.logger.debug('')
+app.logger.warning('', 42)
+app.logger.error('')
+# logger是标准的python Logger</code></pre>
+
+
+<h3 id="wsgi">整合WSGI中间件<a class="headerlink" href="#wsgi" title="Permanent link">&para;</a></h3>
+<p>使用Werkzeug的中间件避免lighttpd的bugs</p>
+<pre class="codehilite"><code class="language-py">from werkzeug.contrib.fixers import LighttpdCGIRootFix
+app.wsgi_app = LighttpdCGIRootFix(app.wsgi_app)</code></pre>
+
+
+<h3 id="flask">使用Flask扩展<a class="headerlink" href="#flask" title="Permanent link">&para;</a></h3>
+<p>见扩展</p>
+<h3 id="web">部署到Web服务器<a class="headerlink" href="#web" title="Permanent link">&para;</a></h3>
+<p>见部署</p>
+<h2 id="_12">简单完整示例教程<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<h3 id="_13">示例功能<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>单用户评论系统<br />
+使用sqlite作为数据库<br />
+倒叙显示所有评论 <br />
+评论内容HTTP不安全   </p>
+<h3 id="_14">工程目录<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>static存放静态文件<br />
+template存放jinja2模板html</p>
+<pre class="codehilite"><code>/flaskr
+    /static
+    /templates</code></pre>
+
+
+<h3 id="_15">数据库<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>schema.sql<br />
+存放评论的id，标题，内容</p>
+<pre class="codehilite"><code class="language-sql">drop table if exists entries;
+create table entries (
+    id integer primary key autoincrement,
+    title string not null,
+    text string not null
+);</code></pre>
+
+
+<p>创建数据库方法一：使用shell</p>
+<pre class="codehilite"><code class="language-bash">sqlite3 /tmp/flaskr.db &lt; schema.sql</code></pre>
+
+
+<p>创建数据库方法二：python</p>
+<pre class="codehilite"><code class="language-bash">def init_db():
+    # 在没有请求的时候，flask.g全局变量无法得知应用信息，使用app_context()创建环境。
+    with app.app_context():
+        db = get_db()
+        # open_resource从flask应用目录打开文件。
+        with app.open_resource('schema.sql', mode='r') as f:
+            # 读取sql脚本并执行
+            db.cursor().executescript(f.read())
+        db.commit()
+
+@app.cli.command('initdb')
+def initdb_command():
+    init_db()
+    print('Initialized the database.')</code></pre>
+
+
+<h3 id="flask_1">Flask应用启动、配置、数据库连接<a class="headerlink" href="#flask_1" title="Permanent link">&para;</a></h3>
+<h4 id="_16">从环境变量导入路径<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
+<p>Flask没有当前工作目录的概念，因为一个进程中可能会运行多个应用。<br />
+可以使用app.root_path获取应用路径，用os.path辅助。<br />
+可以使用app.config.from_envvar("FLASKR_SETTINGS", silent=True)从环境变量中获取配置。</p>
+<h4 id="_17">使用环境变量传递信息<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<p>request是当前请求的环境变量<br />
+g是当前request共享信息的变量  </p>
+<h4 id="_18">数据库连接代码<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">import os
+import sqlite3
+from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash
+
+app = Flask(__name__)
+
+# 默认配置，配置必须使用大写
+app.config.update(dict(
+    DATABASE=os.path.join(app.root_path, 'flaskr.db'),
+    DEBUG=True,
+    SECRET_KEY='development key',
+    USERNAME='admin',
+    PASSWORD='default'
+))
+
+# 从环境变量覆盖配置
+app.config.from_envvar('FLASKR_SETTINGS', silent=True)
+
+def connect_db():
+    '''根据配置文件连接数据库'''
+    rv = sqlite3.connect(app.config['DATABASE'])
+    rv.row_factory = sqlite3.Row
+    return rv
+
+def get_db():
+    '''保存数据库连接'''
+    if not hasattr(g, 'sqlite_db'):
+        g.sqlite_db = connect_db()
+    return g.sqlite_db
+
+# 使Flask应用结束时销毁的装饰器
+@app.teardown_appcontext
+def close_db(error):
+    if hasattr(g, 'sqlite_db'):
+        g.sqlite_db.close()
+
+if __name__ == '__main__':
+    app.run()</code></pre>
+
+
+<h3 id="flaskurl">flask应用，url处理<a class="headerlink" href="#flaskurl" title="Permanent link">&para;</a></h3>
+<h4 id="_19">显示评论<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">@app.route('/')
+def show_entries():
+    db = get_db()
+    # 从数据库中读取所有评论
+    cur = db.execute('select title, text from entries order by id desc')
+    entries = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]
+    # 渲染页面
+    return render_template('show_entries.html', entries=entries)</code></pre>
+
+
+<h4 id="_20">添加评论<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">@app.route('/add', methods=['POST'])
+def add_entry():
+    # 在session中查询
+    if not session.get('logged_in'):
+        abort(401)
+
+    # 写入数据库
+    db = get_db()
+    db.execute('insert into entries (title, text) values (?, ?)', 
+        [request.form['title'], request.form['text']])
+    db.commit()
+
+    # 发送falsh消息
+    flash('New entry was successfully posted')
+
+    # 重定向到评论显示页面
+    return redirect(url_for('show_entries'))</code></pre>
+
+
+<h4 id="post">登录页面及登录POST<a class="headerlink" href="#post" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">@app.route('/login', methods=['GET', 'POST'])
+def login():
+    error = None
+    if request.method == 'POST':
+        # 登录验证
+        if request.form['username'] != app.config['USERNAME']:
+            error = 'Invalid username'
+        elif request.form['password'] != app.config['PASSWORD']:
+            error = 'Invalid password'
+        # 登录成功写入session
+        else:
+            session['logged_in'] = True
+            flash('You were logged in')
+            return redirect(url_for('show_entries'))
+    # GET请求返回登录页
+    return render_template('login.html', error=error)</code></pre>
+
+
+<h4 id="_21">退出<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">@app.route('/logout')
+def logout():
+    # 从Session中删除
+    session.pop('logged_in', None)
+    flash('You were logged out')
+    return redirect(url_for('show_entries'))</code></pre>
+
+
+<h3 id="html">HTML模板<a class="headerlink" href="#html" title="Permanent link">&para;</a></h3>
+<h4 id="layouthtml">layout.html<a class="headerlink" href="#layouthtml" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-html">&lt;!doctype html&gt;
+&lt;title&gt;Flaskr&lt;/title&gt;
+&lt;link rel=stylesheet type=text/css href=&quot;{{url_for('static', filename='style.css')}}&quot;&gt;
+&lt;div class=page&gt;
+    &lt;h1&gt;Flaskr&lt;/h1&gt;
+    &lt;div class=metanav&gt;
+        {% if not session.logged_in %}
+            &lt;a href=&quot;{{url_for('login')}}&quot;&gt;log in&lt;/a&gt;
+        {% else %}
+            &lt;a href=&quot;{{url_for('logout')}}&quot;&gt;log out&lt;/a&gt;
+        {% endif %}
+    &lt;/div&gt;
+
+    {% for message in get_flashed_messages() %}
+        &lt;div class=flash&gt;{{ message }}&lt;/div&gt;
+    {% endfor %}
+
+    {% block body %}
+    {% endblock %}
+&lt;/div&gt;</code></pre>
+
+
+<h4 id="show_entrieshtml">show_entries.html<a class="headerlink" href="#show_entrieshtml" title="Permanent link">&para;</a></h4>
+<p>使用safe过滤器是jajin2不做安全转换</p>
+<pre class="codehilite"><code class="language-html">{% extends &quot;layout.html&quot; %}
+{% block body %}
+    {% if session.logged_in %}
+        &lt;form action=&quot;{{ url_for('add_entry') }}&quot; method=post class=add-entry&gt;
+            &lt;dl&gt;
+                &lt;dt&gt;Title:&lt;/dt&gt;
+                &lt;dd&gt;&lt;input type=text size=30 name=title&gt;&lt;/dd&gt;
+                &lt;dt&gt;Text:&lt;/dt&gt;
+                &lt;dd&gt;&lt;textarea name=text rows=5 clos=40&gt;&lt;/textarea&gt;&lt;/dd&gt;
+                &lt;dd&gt;&lt;input type=submit value=Share&gt;&lt;/dd&gt;
+            &lt;dl&gt;
+        &lt;/form&gt;
+    {% endif %}
+
+    &lt;ul class=entires&gt;
+        {% for entry in entries %}
+            &lt;li&gt;&lt;h2&gt;{{ entry.title }}&lt;/h2&gt;{{ entry.text | safe }}&lt;/li&gt;
+        {% else %}
+            &lt;li&gt;&lt;em&gt;Unbelievable. No entries here so far&lt;/em&gt;&lt;/li&gt;
+        {% endfor %}
+    &lt;/ul&gt;
+{% endblock %}</code></pre>
+
+
+<h4 id="loginhtml">login.html<a class="headerlink" href="#loginhtml" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-html">{% extends &quot;layout.html&quot; %}
+{% block body %}
+    &lt;h2&gt;Login&lt;/h2&gt;
+    {% if error %}
+        &lt;p class=error&gt;&lt;strong&gt;Error:&lt;/strong&gt;{{ error }}&lt;/p&gt;
+    {% endif %}
+
+    &lt;form action=&quot;&quot; method=post&gt;
+        &lt;dl&gt;
+            &lt;dt&gt;Username:&lt;/dt&gt;
+            &lt;dd&gt;&lt;input type=text name=username&gt;&lt;/dd&gt;
+            &lt;dt&gt;Passwrod:&lt;/dt&gt;
+            &lt;dd&gt;&lt;input type=password name=password&gt;&lt;/dd&gt;
+            &lt;dd&gt;&lt;input type=submit value=Login&gt;&lt;/dd&gt;
+        &lt;/dl&gt;
+    &lt;/form&gt;
+{% endblock %}</code></pre>
+
+
+<h3 id="css">CSS样式<a class="headerlink" href="#css" title="Permanent link">&para;</a></h3>
+<h4 id="stylecss">style.css<a class="headerlink" href="#stylecss" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-css">body {font-family: sans-serif; background: #eee;}
+a, h1, h2 {color: #377BA8;}
+h1, h2 {font-family: 'Georgia', serif; margin:0;}
+h1 {border-bottom: 2px solid #eee;}
+h2 {font-size: 1.2em;}
+
+.page {margin: 2em auto; width: 35em; border: 5px solid #ccc; padding:0.8em; background: white;}
+.entries {list-style: none; margin: 0; padding: 0;}
+.entries li {margin: 0.8em 1.2em;}
+.entries li h2 {margin-left: -1em;}
+.add-entry {font-size: 0.9em; border-bottom: 1px solid #ccc;}
+.add-entry dl {font-weight: bold;}
+.metanav {text-align: right; font-size: 0.8em; padding: 0.3em; margin-bottom: 1em; background: #fafafa;}
+.flash {background: #CEE5F5; padding: 0.5em; border: 1px solid #AACBE2;}
+.error {background: #F0D6D6; padding: 0.5em;}</code></pre>
+
+
+<h3 id="_22">单元测试<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<h4 id="_23">测试工程结构<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code>flaskr/
+    flaskr/
+        __init__.py
+        static/
+        templates/
+    tests/
+        test_flaskr.py
+    setup.py
+    MANIFEST.in</code></pre>
+
+
+<h4 id="_24">运行测试<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h4>
+<h4 id="_25">测试的大框架<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h4>
+<h4 id="_26">第一个测试<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h4>
+<h4 id="_27">登录和登出<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h4>
+<h4 id="_28">测试消息的添加<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h4>
+<h4 id="_29">其他测试技巧<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h4>
+<h4 id="_30">伪造资源和上下文<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h4>
+<h4 id="_31">保存上下文<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h4>
+<h4 id="sessions">访问和修改Sessions<a class="headerlink" href="#sessions" title="Permanent link">&para;</a></h4>
+<h2 id="_32">模板<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h2>
+<h3 id="jinja">Jinja配置<a class="headerlink" href="#jinja" title="Permanent link">&para;</a></h3>
+<p>默认配置：<br />
+所有扩展名为.html .htm .xml .xhtml的木板会开启自动转译<br />
+在模板中可以利用{% autoescape false %}标签选择转译是否开启。<br />
+Flask在Jinja2上下文中插入了几个全局函数和助手，另外还有一些目前默认的值。  </p>
+<h3 id="jinja2">标准上下文，默认在Jinja2模板中可用的值<a class="headerlink" href="#jinja2" title="Permanent link">&para;</a></h3>
+<h4 id="_33">可以使用的变量和方法<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h4>
+<p>Flask内置变量及方法：  </p>
+<pre class="codehilite"><code>config：flask.config  
+request：flask.request  
+session：flask.session  
+g：flask.g  
+url_for()：flask.url_for()  
+get_flasked_message()：flask.get_flashed_message()  </code></pre>
+
+
+<p>python变量：  </p>
+<pre class="codehilite"><code>&lt;p&gt;Dict item: {{ my_dict['key'] }}&lt;/p&gt;
+&lt;p&gt;List item: {{ my_list[3] }}&lt;/p&gt;
+&lt;p&gt;List with a variable index: {{ my_list[my_index] }}&lt;/p&gt;
+&lt;p&gt;Object's method {{ my_object.method() }}&lt;/p&gt;</code></pre>
+
+
+<h4 id="jinja2_1">导入宏（Jinja2的宏）的方法<a class="headerlink" href="#jinja2_1" title="Permanent link">&para;</a></h4>
+<p>由于以上变量是被添加到request中的，而且不是全局变量，所以想要导入一个需要访问request的宏，需要显式地传入request或变量作为宏的参数。<br />
+或者导入宏时手动带上context：  </p>
+<pre class="codehilite"><code>{% from '_helpers.html' import my_macro with context %}</code></pre>
+
+
+<h3 id="jinja2_2">标准过滤器，Jinja2自带的过滤器<a class="headerlink" href="#jinja2_2" title="Permanent link">&para;</a></h3>
+<p>tojson():  </p>
+<pre class="codehilite"><code>&lt;script type=text/javascript&gt;
+    doSomethingWith({{ user.username | tojson | safe }});
+&lt;/script&gt;</code></pre>
+
+
+<p>safe：渲染时不转译<br />
+capitalize：句子首字母大写  <br />
+lower：全部小写<br />
+upper：全部大写<br />
+title：句子中所有词首字母大写<br />
+trim：去掉首位空格<br />
+striptags：取消所有HTML标签<br />
+其他内置过滤器：<a href="http://jinja.pocoo.org/docs/templates/#builtin-filters">http://jinja.pocoo.org/docs/templates/#builtin-filters</a></p>
+<h3 id="_34">控制自动转译<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h3>
+<p>Jinja2会自动转译HTML中的特殊字符，如：<code>&amp; &gt; &lt; " '</code>。<br />
+但是有时会需要插入HTML，例如插入markdown转换成的HTML，有以下三种方法。<br />
+1. 在传递到模板之前，将HTML字符串转换成Markup对象。推荐使用这种方法。<br />
+2. 在模版中使用|safe过滤器将变量标记为安全，如<code>{{ var | safe }}</code>。<br />
+3. 临时完全禁用自动转译如</p>
+<pre class="codehilite"><code>{% autoescape false %}
+    &lt;p&gt;autoescaping is disabled here&lt;/p&gt;
+    &lt;p&gt;{{ will_not_be_escaped_var }}&lt;/p&gt;
+{% endautoescape %}</code></pre>
+
+
+<h3 id="_35">注册过滤器<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h3>
+<h4 id="jinja2_3">使用装饰器标记自定义Jinja2过滤器<a class="headerlink" href="#jinja2_3" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">@app.template_filter('reverse')
+def reverse_filter(s):
+    return s[::-1]</code></pre>
+
+
+<h4 id="jinja2_4">手动添加过滤器到Jinja2<a class="headerlink" href="#jinja2_4" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">def reverse_filter(s):
+    return s[::-1]
+app.jinja_env.filters['reverse'] = reverse_filter</code></pre>
+
+
+<h4 id="_36">在模板中使用过滤器<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code>{% for x in mylist | reverse %}
+{% endfor %}</code></pre>
+
+
+<h3 id="context_processor">使用context_processor添加变量、函数添加到模板上下文<a class="headerlink" href="#context_processor" title="Permanent link">&para;</a></h3>
+<p>context_processor是一个返回dict的函数，dict中的值可以是变量也可以是函数</p>
+<pre class="codehilite"><code class="language-py">@app.context_processor
+def inject_user():
+    return dict(user=g.user)</code></pre>
+
+
+<pre class="codehilite"><code class="language-py">@app.context_processor
+def utility_processor():
+    def format_price(amount, currency=u'$'):
+        return u'{0:.2f}{1}.format(amount, currency)
+    return dict(format_price=format_price)</code></pre>
+
+
+<pre class="codehilite"><code>{{ format_price(0.33) }}</code></pre>
+
+
+<h3 id="_37">模板结构控制<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h3>
+<h4 id="_38">条件<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code>{% if user %}
+    Hello, {{ user }}!
+{% else %}
+    Hello, Stranger!
+{% endif %}</code></pre>
+
+
+<h4 id="_39">循环<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code>&lt;ul&gt;
+    {% for comment in comments %}
+        &lt;li&gt;{{ comment }}&lt;/li&gt;
+    {% endfor %}
+&lt;/ul&gt;</code></pre>
+
+
+<h4 id="_40">宏<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h4>
+<p>定义：</p>
+<pre class="codehilite"><code>{% macro render_comment(comment) %}
+    &lt;li&gt;{{ comment }}&lt;/li&gt;
+{% endmacro %}</code></pre>
+
+
+<p>使用：</p>
+<pre class="codehilite"><code>&lt;ul&gt;
+    {% for comment in comments %}
+        {{ render_comment(comment) }}
+    {% endfor %}
+&lt;/ul&gt;</code></pre>
+
+
+<p>从其他文件中导入：</p>
+<pre class="codehilite"><code>{% import 'macros.html' as macros %}
+&lt;ul&gt;
+    {% for comment in comments %}
+        {{ macros.render_comment(comment) }}
+    {% endfor %}
+&lt;/ul&gt;</code></pre>
+
+
+<h4 id="_41">继承<a class="headerlink" href="#_41" title="Permanent link">&para;</a></h4>
+<p>父模板base.html：</p>
+<pre class="codehilite"><code>&lt;html&gt;
+&lt;head&gt;
+    {% block head %}
+    &lt;title&gt;{% block title %}{% endblock %} - My Application&lt;/title&gt;
+    {% endblock %}
+&lt;/head&gt;
+&lt;body&gt;
+    {% block body %}
+    {% endblock %}
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+<p>子模板：</p>
+<pre class="codehilite"><code>{% extends &quot;base.html&quot; %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+    &lt;style&gt;
+    &lt;/style&gt;
+{% endblock %}
+{% block body %}
+&lt;h1&gt;Hello, World!&lt;/h1&gt;
+{% endblock %}</code></pre>
+
+
+<p><strong>使用<code>super()</code>引用原模板内容，用于向原有块中添加新内容</strong></p>
+<h2 id="_42">日志、邮件、调试模式<a class="headerlink" href="#_42" title="Permanent link">&para;</a></h2>
+<p>Flask默认不会写任何日志。</p>
+<h3 id="flask_2">配置Flask发送错误邮件<a class="headerlink" href="#flask_2" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-py">ADMINS = ['yourname@example.com']
+if not app.debug:
+    import logging
+    from logging.handlers import SMTPHandler
+    mail_handler = SMTPHandler('127.0.0.1', 'server-error@example.com', ADMINS, 'YourApplication Failed')
+    mail_handler.setLevel(logging.ERROR)
+    app.logger.addHandler(mail_handler)</code></pre>
+
+
+<h3 id="_43">记录到文件<a class="headerlink" href="#_43" title="Permanent link">&para;</a></h3>
+<p>日志记录器：<br />
+- FileHandler 记录文件日志<br />
+- RotatingFileHandler 循环覆盖记录日志<br />
+- NTEventLogHandler 记录日志到Windows系统事件<br />
+- SysLogHandler 记录日志到Unix系统日志</p>
+<pre class="codehilite"><code class="language-py">if not app.debug:
+    import logging
+    from themodule import TheHandlerYouWant
+    file_handler = TheHandlerYouWant(...)
+    file_handler.setLevel(logging.WARNING)
+    app.logger.addHandler(file_handler)</code></pre>
+
+
+<h3 id="_44">控制日志格式<a class="headerlink" href="#_44" title="Permanent link">&para;</a></h3>
+<h4 id="_45">邮件格式<a class="headerlink" href="#_45" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">from logging import Formatter
+mail_handler.setFormatter(Formatter('''
+Message type:       %(levelname)s
+Location:           %(pathname)s:%(lineno)d
+Module:             %(module)s
+Function:           %(funcName)s
+Time:               %(asctime)s
+
+Message:
+
+%(message)s
+'''))</code></pre>
+
+
+<h4 id="_46">日志格式<a class="headerlink" href="#_46" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">from logging import Formatter
+file_handler.setFormatter(Formatter(
+    '%(asctime)s %(levelname)s: %(message)s '
+    '[in %(pathname)s:%(lineno)d]'
+))</code></pre>
+
+
+<h4 id="_47">常用日志变量<a class="headerlink" href="#_47" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>格式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>%(levelname)s</td>
+<td>消息文本的记录等级 ('DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL').</td>
+</tr>
+<tr>
+<td>%(pathname)s</td>
+<td>发起日志记录调用的源文件的完整路径（如果可用）</td>
+</tr>
+<tr>
+<td>%(filename)s</td>
+<td>路径中的文件名部分</td>
+</tr>
+<tr>
+<td>%(module)s</td>
+<td>模块（文件名的名称部分）</td>
+</tr>
+<tr>
+<td>%(funcName)s</td>
+<td>包含日志调用的函数名</td>
+</tr>
+<tr>
+<td>%(lineno)d</td>
+<td>日志记录调用所在的源文件行的行号（如果可用）</td>
+</tr>
+<tr>
+<td>%(asctime)s</td>
+<td>LogRecord 创建时的人类可读的时间。</td>
+</tr>
+<tr>
+<td>%(message)s</td>
+<td>记录的消息，视为 msg % args</td>
+</tr>
+</tbody>
+</table>
+<p>默认情况下，asctime格式为 "2003-07-08 16:49:45,896" （逗号后的数字时间的毫秒部分）。这可以通过继承 :class:~logging.Formatter，并重载 formatTime() 改变。</p>
+<p>format(): 处理实际格式，输入LogRecord，输出格式化后的字符串。<br />
+formatTime(): 控制asctime格式。<br />
+formatException(): 控制异常的格式，输入exc_info，输出字符串。</p>
+<h3 id="_48">其他的库<a class="headerlink" href="#_48" title="Permanent link">&para;</a></h3>
+<p>不建议使用Flask.logging统一配置所有日志，因为这样运行多个应用时不能分别配置。<br />
+建议使用getLogger获取日志记录，然后遍历日志记录器：</p>
+<pre class="codehilite"><code class="language-py">from logging import getLogger
+logger = [app.logger, getLogger('sqlalchemy'), getLogger('otherlibrary']
+from logger in loggers:
+    logger.addHandler(mail_handler)
+    logger.addHandler(file_handler)</code></pre>
+
+
+<h3 id="debug">开启Debug<a class="headerlink" href="#debug" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-py">app.debug = True
+或
+run(debug=True)</code></pre>
+
+
+<h3 id="_49">调试器配置<a class="headerlink" href="#_49" title="Permanent link">&para;</a></h3>
+<p>Flask默认调试器可能会与其他调试器冲突。<br />
+- debug: 是否开启调试<br />
+- use_debugger: 是否使用内部Flask调试器<br />
+- use_reloader: 是否在异常时重新再如并创建子进程</p>
+<p>开启外部调试器（Aptana/Eclipse）配置示例：<br />
+config.yaml</p>
+<pre class="codehilite"><code class="language-yaml">Flask:
+    DEBUG: True
+    DEBUG_WITH_APTANA: True</code></pre>
+
+
+<pre class="codehilite"><code class="language-py">if __name__ == '__main__':
+    app = create_app(config='config.yaml')
+
+    if app.debug:
+        # 默认使用Flask内部调试器
+        use_debugger = True
+    try:
+        # 当外部调试器开启时，关闭Flask内部调试器
+        use_debugger = not(app.config.get('DEBUG_WITH_APTANA'))
+    except:
+        pass
+    app.run(use_debugger=use_debugger, debug=app.debug, use_reloader=use_debugger, host='0.0.0.0')</code></pre>
+
+
+<h2 id="_50">配置处理<a class="headerlink" href="#_50" title="Permanent link">&para;</a></h2>
+<h3 id="_51">配置基础<a class="headerlink" href="#_51" title="Permanent link">&para;</a></h3>
+<h3 id="_52">内置的配置值<a class="headerlink" href="#_52" title="Permanent link">&para;</a></h3>
+<h3 id="_53">从文件配置<a class="headerlink" href="#_53" title="Permanent link">&para;</a></h3>
+<h3 id="_54">配置的最佳实践<a class="headerlink" href="#_54" title="Permanent link">&para;</a></h3>
+<h3 id="_55">开发/生产<a class="headerlink" href="#_55" title="Permanent link">&para;</a></h3>
+<h3 id="_56">实例文件夹<a class="headerlink" href="#_56" title="Permanent link">&para;</a></h3>
+<h2 id="_57">信号<a class="headerlink" href="#_57" title="Permanent link">&para;</a></h2>
+<h3 id="_58">订阅信号<a class="headerlink" href="#_58" title="Permanent link">&para;</a></h3>
+<h3 id="_59">创建信号<a class="headerlink" href="#_59" title="Permanent link">&para;</a></h3>
+<h3 id="_60">发送信号<a class="headerlink" href="#_60" title="Permanent link">&para;</a></h3>
+<h3 id="flask_3">信号与Flask的请求上下文<a class="headerlink" href="#flask_3" title="Permanent link">&para;</a></h3>
+<h3 id="_61">基于装饰器的信号订阅<a class="headerlink" href="#_61" title="Permanent link">&para;</a></h3>
+<h3 id="_62">核心信号<a class="headerlink" href="#_62" title="Permanent link">&para;</a></h3>
+<h2 id="pluggable-views">Pluggable Views<a class="headerlink" href="#pluggable-views" title="Permanent link">&para;</a></h2>
+<h3 id="_63">基本原则<a class="headerlink" href="#_63" title="Permanent link">&para;</a></h3>
+<h3 id="_64">方法提示<a class="headerlink" href="#_64" title="Permanent link">&para;</a></h3>
+<h3 id="_65">基于调度的方法<a class="headerlink" href="#_65" title="Permanent link">&para;</a></h3>
+<h3 id="_66">装饰试图<a class="headerlink" href="#_66" title="Permanent link">&para;</a></h3>
+<h3 id="api">基于API的方法视图<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
+<h2 id="_67">应用上下文<a class="headerlink" href="#_67" title="Permanent link">&para;</a></h2>
+<h3 id="_68">应用上下文的作用<a class="headerlink" href="#_68" title="Permanent link">&para;</a></h3>
+<p>在一个Python进程中可以运行多个Flask应用。<br />
+为了不使用参数层层传递context，Flask使用current_app指向当前请求所属的应用。  </p>
+<h3 id="_69">创建应用上下文<a class="headerlink" href="#_69" title="Permanent link">&para;</a></h3>
+<p>当一个request的context被放入处理栈时，如果有需要，应用context就会被一起创建。<br />
+显示调用app_context()方法可以创建应用context，如：  </p>
+<pre class="codehilite"><code class="language-py">from flask import Flask, current_app
+
+app = Flask(__name__)
+with app.app_context():
+    # 在这里就可以通过current_app访问应用context
+    print current_app.name
+    print current_app.url_map</code></pre>
+
+
+<h3 id="_70">应用上下文局部变量<a class="headerlink" href="#_70" title="Permanent link">&para;</a></h3>
+<p>flask.current_app # 程序上下文，当前程序<br />
+flask.g # 存储在程序上下文，处理请求时用作临时存储对象，每次请求会重设<br />
+flask.request # 请求上下文，请求对象<br />
+flask.session # 请求上下文，用户会话  </p>
+<h3 id="_71">上下文用法<a class="headerlink" href="#_71" title="Permanent link">&para;</a></h3>
+<h4 id="_72">显式创建使用资源<a class="headerlink" href="#_72" title="Permanent link">&para;</a></h4>
+<p>可以在上下文中缓存数据库连接。  </p>
+<pre class="codehilite"><code class="language-py">import sqlite3
+from flask import g
+
+def get_db():
+    db = getattr(g, '_database', None)
+    if db is None:
+        db = g._database = connect_to_database()
+    return db
+
+@app.teardown_appcontext
+def teardown_db(exception):
+    db = getattr(g, '_database', None)
+    if db is not None:
+        db.close()</code></pre>
+
+
+<h4 id="_73">隐式创建使用资源<a class="headerlink" href="#_73" title="Permanent link">&para;</a></h4>
+<p>使用LocalProxy存储变量</p>
+<pre class="codehilite"><code class="language-py">from werkzeug.local import LocalProxy
+db = LocalProxy(get_db)
+
+# 用户可以直接通过db访问数据，db已经在内部完成get_db调用</code></pre>
+
+
+<h2 id="_74">请求上下文<a class="headerlink" href="#_74" title="Permanent link">&para;</a></h2>
+<h3 id="_75">上下文作用域<a class="headerlink" href="#_75" title="Permanent link">&para;</a></h3>
+<p>请求context仅在处理请求时存在。例如以下代码在没有请求时调用会发生错误：  </p>
+<pre class="codehilite"><code class="language-py">from flask import reqeust, url_for
+
+def redirect_url():
+    return request.args.get('next') or request.referrer or url_for('index')</code></pre>
+
+
+<p>可以使用<code>text_request_context('/?next=http://example.com/'</code>模拟请求。<br />
+使用with的方式：</p>
+<pre class="codehilite"><code class="language-py">with app.text_request_context('/?next=http://example.com/')
+    redirect_url()</code></pre>
+
+
+<p>手动入栈请求的方式：</p>
+<pre class="codehilite"><code class="language-py">ctx = app.text_request_context('/?next=http://example.com/')
+# 入栈
+ctx.push()
+# 处理请求
+redirect_url()
+# 出栈
+ctx.pop()</code></pre>
+
+
+<h3 id="flaskcontext">Flask请求context内部处理<a class="headerlink" href="#flaskcontext" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-py">def wsgi_app(self, environ):
+    with self.request_context(environ):
+        try:
+            response = self.full_dispatch_request()
+        except Exception, e:
+            response = self.make_response(self.handle_exception(e))
+        return response(environ, start_response)</code></pre>
+
+
+<h3 id="_76">回调和错误<a class="headerlink" href="#_76" title="Permanent link">&para;</a></h3>
+<ol>
+<li>在所有请求前调用<code>before_first_request()</code>。</li>
+<li>每个请求之前，执行<code>before_request()</code>上绑定的函数，若某个函数返回了一个<code>response</code>则其他函数将不会被调用。</li>
+<li>如果<code>before_request()</code>绑定的函数没有返回<code>response</code>，则url处理函数被正常调用。</li>
+<li>url处理函数返回后被转化成<code>response</code>对象，之后会调用<code>after_request()</code></li>
+<li>最后会调用<code>teardown_request()</code>上绑定的函数，即使发生异常也会被执行。</li>
+</ol>
+<h3 id="teardown_request">teardown_request()<a class="headerlink" href="#teardown_request" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-py">@app.teardown_request
+def teardown():
+    pass
+
+with app.text_client() as client:
+    resp = client.get('/foo')
+
+# teardown_request()在这里被调用</code></pre>
+
+
+<h3 id="_77">留意代理<a class="headerlink" href="#_77" title="Permanent link">&para;</a></h3>
+<h3 id="_78">错误时的上下文保护<a class="headerlink" href="#_78" title="Permanent link">&para;</a></h3>
+<h2 id="_79">用蓝图实现模块化<a class="headerlink" href="#_79" title="Permanent link">&para;</a></h2>
+<h3 id="_80">为什么使用蓝图<a class="headerlink" href="#_80" title="Permanent link">&para;</a></h3>
+<ul>
+<li>把一个应用分成几个模块。</li>
+<li>用URL前缀或子域名模块化管理URL。</li>
+<li>可以使一个模块获得多种URL规则。</li>
+<li>可以使用蓝图模块化静态文件、模块化模板、模板化过滤器。</li>
+<li>在Flask扩展中使用。</li>
+</ul>
+<h3 id="_81">蓝图的设想<a class="headerlink" href="#_81" title="Permanent link">&para;</a></h3>
+<ul>
+<li>注册式地集成到应用。</li>
+<li>按模块分配请求和处理URL。</li>
+</ul>
+<h3 id="_82">创建蓝图（模块）<a class="headerlink" href="#_82" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-py">from flask import Blueprint, render_template, abort
+from jinja2 import TemplateNotFound
+
+simple_page = Blueprint('simple_page', __name__, template_folder='templates')
+
+@simple_page.route('/', defaults={'page': 'index'})
+@simple_page.route('/&lt;page&gt;')
+def show(page):
+    try:
+        return render_template('pages/%s.html' % page)
+    except TemplateNotFound:
+        abort(404)</code></pre>
+
+
+<p>蓝图绑定到app时，<code>@simple_page.route</code>会将<code>show</code>注册为<code>simple_page.show</code></p>
+<h3 id="_83">注册（使用）蓝图（模块）<a class="headerlink" href="#_83" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code class="language-py">from flask import Flask
+from yourapplication.simple_page import simple_page
+
+app = Flask(__name__)
+
+# 挂载在根目录
+app.register_blueprint(simple_page)
+
+# 挂载到/pages
+app.register_blueprint(simple_page, url_prefix='/pages')</code></pre>
+
+
+<h3 id="_84">蓝图使用（模块）资源<a class="headerlink" href="#_84" title="Permanent link">&para;</a></h3>
+<h4 id="_85">蓝图资源文件夹<a class="headerlink" href="#_85" title="Permanent link">&para;</a></h4>
+<p>蓝图若使用单独文件夹（Python包），这个文件夹就是蓝图的资源文件夹。<br />
+蓝图若共用文件夹（Python模块），模块所在文件夹就是资源文件夹。<br />
+可以使用<code>simple_page.root_path</code>获取资源路径。 <br />
+可以使用<code>simple_page.open_resource()</code>从文件夹打开文件。如：</p>
+<pre class="codehilite"><code class="language-py">with simple_page.open_resource('static/style.css') as f:
+    code = f.read()</code></pre>
+
+
+<h4 id="_86">静态文件<a class="headerlink" href="#_86" title="Permanent link">&para;</a></h4>
+<p>可以使用<code>static_folder</code>参数指定静态文件夹路径，如：</p>
+<pre class="codehilite"><code class="language-py">admin = Blueprint('admin', __name__, static_folder='static')</code></pre>
+
+
+<p>若admin模块加载在根路径'/'，静态资源路径就是'/static/xxx' <br />
+若admin模块加载在'/admin'，静态资源路径就是'/admin/static/xxx' <br />
+可以使用admin.static访问static参数，如：</p>
+<pre class="codehilite"><code class="language-py">url_for('admin.static', filename='style.css')</code></pre>
+
+
+<h4 id="_87">模板路径<a class="headerlink" href="#_87" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">admin = Blueprint('admin', __name__, template_folder='templates')</code></pre>
+
+
+<h3 id="url_1">构造URL<a class="headerlink" href="#url_1" title="Permanent link">&para;</a></h3>
+<pre class="codehilite"><code># 不同模块构造url
+url_for('admin.index')
+
+# 相同模块构造url
+url_for('.index')</code></pre>
+
+
+<h2 id="flask_4">Flask扩展<a class="headerlink" href="#flask_4" title="Permanent link">&para;</a></h2>
+<h3 id="_88">寻找扩展<a class="headerlink" href="#_88" title="Permanent link">&para;</a></h3>
+<h3 id="_89">使用扩展<a class="headerlink" href="#_89" title="Permanent link">&para;</a></h3>
+<h3 id="flask-08">Flask 0.8以前<a class="headerlink" href="#flask-08" title="Permanent link">&para;</a></h3>
+<h3 id="flask-script">Flask-Script<a class="headerlink" href="#flask-script" title="Permanent link">&para;</a></h3>
+<p>命令交互式操作Flask</p>
+<pre class="codehilite"><code class="language-py">from flask import Flask
+# 废弃
+from flask.ext.script import Manager
+# 建议
+from flask_script import Manager
+
+app = Flask(__name__)
+manager = Manager(app)
+
+if __name__ == '__main__':
+    manager.run()</code></pre>
+
+
+<pre class="codehilite"><code class="language-py">py -3 hello.py --help
+py -3 hello.py shell --help
+py -3 hello.py runserver --help</code></pre>
+
+
+<p>自动导入上下文：</p>
+<pre class="codehilite"><code class="language-py">from flask_script import Shell
+
+def make_shell_context():
+    return dict(app=app, db=db, User=User, Role=Role)
+manager.add_command('shell', Shell(make_context=make_shell_context))</code></pre>
+
+
+<h3 id="flask-bootstrap">Flask-Bootstrap<a class="headerlink" href="#flask-bootstrap" title="Permanent link">&para;</a></h3>
+<p>flask_bootstrap提供bootstrap，google analytics，WTForm定义等模板</p>
+<h4 id="basehtml">base.html定义的块<a class="headerlink" href="#basehtml" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>块名</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doc</td>
+<td>整个HTML文档</td>
+</tr>
+<tr>
+<td>html_attribs</td>
+<td><html>标签的属性</td>
+</tr>
+<tr>
+<td>html</td>
+<td><html>标签中的内容</td>
+</tr>
+<tr>
+<td>head</td>
+<td><head>标签中的内容</td>
+</tr>
+<tr>
+<td>title</td>
+<td><title>标签中的内容</td>
+</tr>
+<tr>
+<td>metas</td>
+<td>一组<meta>标签</td>
+</tr>
+<tr>
+<td>styles</td>
+<td>层叠样式表定义</td>
+</tr>
+<tr>
+<td>body_attribs</td>
+<td><body>标签的属性</td>
+</tr>
+<tr>
+<td>body</td>
+<td><body>标签中的内容</td>
+</tr>
+<tr>
+<td>navbar</td>
+<td>用户定义的导航条</td>
+</tr>
+<tr>
+<td>content</td>
+<td>用户定义的页面内容</td>
+</tr>
+<tr>
+<td>scripts</td>
+<td>文档底部的Javascript声明</td>
+</tr>
+</tbody>
+</table>
+<p>避免覆盖模板原有内容：</p>
+<pre class="codehilite"><code>{% block scripts %}
+{{ super() }}
+&lt;script type=&quot;text/javascript&quot; src=&quot;my-script.js&quot;&gt;&lt;/script&gt;
+{% endblock %}</code></pre>
+
+
+<h4 id="python">python初始化<a class="headerlink" href="#python" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">from flask import app
+from flask_bootstrap import Bootstrap
+
+app = Flask(__name__)
+bootstrap = Bootstrap(app)
+
+app.run()</code></pre>
+
+
+<h4 id="_90">模板继承<a class="headerlink" href="#_90" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-py">{% extends &quot;bootstrap/base.html&quot; %}
+
+{% block title %}Flasky{% endblock %}
+
+{% block navbar %}
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Flasky&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{% endblock %}
+
+{% block content %}
+&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;page-header&quot;&gt;
+        &lt;h1&gt;Hello, {{ name }}!&lt;/h1&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+{% endblock %}</code></pre>
+
+
+<h3 id="flask-moment">Flask-Moment<a class="headerlink" href="#flask-moment" title="Permanent link">&para;</a></h3>
+<p>moment.js提供本地化时间<br />
+http://momentjs.com/docs/#/displaying/</p>
+<p>安装：</p>
+<pre class="codehilite"><code class="language-sh">pip install flask-moment</code></pre>
+
+
+<p>python：</p>
+<pre class="codehilite"><code class="language-py">from datetime import datetime
+from flask.ext.moment import Moment
+moment = Moment(app)
+
+@app.route('/')
+def index():
+    return render_template('index.html', current_time=datetime.utcnow())</code></pre>
+
+
+<p><strong>moment需要输入不带时区的utc时间</strong></p>
+<p>模板：</p>
+<pre class="codehilite"><code>{% block scripts %}
+{{ super() }}
+{{ moment.include_moment() }}
+{% endblock %}
+
+
+{% block page_content %}
+&lt;p&gt;The local date and time is {{ moment(current_time).format('LLL') }}.&lt;/p&gt;
+&lt;p&gt;That was {{ moment(current_time).fromNow(refresh=True) }}.&lt;/p&gt;
+{% endblock %}</code></pre>
+
+
+<p><strong>moment.format显示时间</strong><br />
+<strong>moment.fromNow显示距离当前多久，动态刷新</strong>  </p>
+<p>语言本地化：</p>
+<pre class="codehilite"><code class="language-py">{{ moment.lang('es') }}
+{{ moment.lang('zh-cn') }}</code></pre>
+
+
+<h3 id="flask-wtf">Flask-WTF<a class="headerlink" href="#flask-wtf" title="Permanent link">&para;</a></h3>
+<p>flask-wtf默认开启防止csrf攻击，即发送表单时发送一个key要求响应时带回，key错误时为伪造响应。</p>
+<p>安装：</p>
+<pre class="codehilite"><code class="language-sh">pip install flask-wtf</code></pre>
+
+
+<p>启动:</p>
+<pre class="codehilite"><code class="language-py">app = Flask(__name__)
+app.config['SECRET_KEY'] = 'flask-wtf需要使用secret_key'</code></pre>
+
+
+<p>定义：</p>
+<pre class="codehilite"><code class="language-py">from flask_wtf import Form
+from wtforms import StringField, SubmitField
+from wtforms.validators import Required
+
+class NameForm(Form):
+    name = StringField('What is your name?', validators=[Required()])
+    submit = SubmitField('Submit')</code></pre>
+
+
+<p>wtf手动生成表单：</p>
+<pre class="codehilite"><code>&lt;form method=&quot;POST&quot;&gt;
+    {{ form.hidden_tag() }}
+    {{ form.name.label }} {{ form.name() }}
+    {{ form.name.label }} {{ form.name(id='my-text-field') }} # 指定ID等用于样式表
+    {{ form.submit() }}
+&lt;/form&gt;</code></pre>
+
+
+<p>flask-bootstrap + flask-wtf自动生成表单：</p>
+<pre class="codehilite"><code>{% import &quot;bootstrap/wtf.html&quot; as wtf %}
+{{ wtf.quick_form(form) }}</code></pre>
+
+
+<p>表单验证：</p>
+<pre class="codehilite"><code class="language-py">@app.route('/', methods=['GET', 'POST'])
+def index():
+    name = None
+    form = NameForm()
+    if form.validate_on_submit():
+        name = form.name.data
+        form.name.date = ''
+    return render_template('index.html', form=form, name=name)</code></pre>
+
+
+<p><strong>GET POST二合一，POST时通过validate_on_submit判断获取输入</strong></p>
+<p>POST后刷新处理：<br />
+POST后刷新，浏览器会重复POST，可以通过POST响应URL重定向避免。  </p>
+<pre class="codehilite"><code class="language-py">from flask import Flask, render_template, session, redirect, url_for
+
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    form = NameForm()
+    if form.validate_on_submit():
+        session['name'] = form.name.data
+        return redirect(url_for('index'))
+    return render_template('index.html', form=form, name=session.get('name'))</code></pre>
+
+
+<p>字段：<br />
+字段类型 | 说明<br />
+---------|-----<br />
+StringField | 文本字段<br />
+TextAreaField | 多行文本字段<br />
+PasswordField | 密码文本字段<br />
+HiddenField | 隐藏文本字段<br />
+DateField | 文本字段，值为datetime.date格式<br />
+DateTimeField | 文本字段，值为datetime.datetime格式<br />
+IntegerField | 文本字段，值为整数<br />
+DecimalField | 文本字段，值为decimal.Decimal<br />
+FloatField | 文本字段，值为浮点数<br />
+BooleanField | 复选框，值为True和False<br />
+RadioField | 一组单选框<br />
+SelectField | 下拉列表<br />
+SelectMultipliField | 下拉列表，可选择多个值<br />
+FileField | 文件上传字段<br />
+SubmitField | 表单提交按钮<br />
+FormField | 把表单作为字段嵌入另一个表单<br />
+FieldList | 一组指定类型的字段</p>
+<p>验证：<br />
+验证函数 | 说明<br />
+---------|-----<br />
+Email | 验证电子邮件地址 <br />
+EqualTo | 比较两个字段的值，常用于要求输入两次密码进行确认<br />
+IPAddress | 验证IPv4网络地址<br />
+Length | 验证输入字符串的长度<br />
+NumberRange | 验证输入的值在数字范围内<br />
+Optional | 无输入时跳过其他验证函数 <br />
+Required | 确保字段中有数据 <br />
+Regexp | 使用正则表达式验证输入值<br />
+URL | 验证URL<br />
+AnyOf | 确保输入值在列表中<br />
+NoneOf | 确保输入值不在列表中 </p>
+<h3 id="flask-sqlalchemy">Flask-SQLAlchemy<a class="headerlink" href="#flask-sqlalchemy" title="Permanent link">&para;</a></h3>
+<p>安装：</p>
+<pre class="codehilite"><code class="language-sh">pip install flask-sqlalchemy</code></pre>
+
+
+<p>数据库URI配置：</p>
+<pre class="codehilite"><code class="language-sh">export SQLALCHEMY_DATABASE_URI=mysql://username:password@hostname/database</code></pre>
+
+
+<table>
+<thead>
+<tr>
+<th>数据库引擎</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MySQL</td>
+<td>mysql://username:password@hostnmae/database</td>
+</tr>
+<tr>
+<td>Postgres</td>
+<td>postgresql://username:password@hostname/database</td>
+</tr>
+<tr>
+<td>SQLite(*nix)</td>
+<td>sqlite:///absolute/path/to/database</td>
+</tr>
+<tr>
+<td>SQLite(win)</td>
+<td>sqlite:///c:/absolute/path/to/database</td>
+</tr>
+</tbody>
+</table>
+<p>初始化:</p>
+<pre class="codehilite"><code class="language-py">from flask_salalchemy import SQLAlchemy
+
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+# 自动提交
+app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
+# 跟踪数据库变更
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)</code></pre>
+
+
+<p>模型定义：</p>
+<pre class="codehilite"><code class="language-py">class Role(db.Model):
+    __tablename__ = 'roles'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(64), unique=True)
+
+    def __repr__(self):
+        return '&lt;Role %r&gt;' % self.name
+
+class User(db.Model):
+    __tablename__ = 'users'
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(64), unique=True, index=True)
+
+    def __repr__(self):
+        return '&lt;User %r&gt;' % self.username</code></pre>
+
+
+<p><strong>__repr()__返回一个可读性字符串表示模型，用于调试</strong></p>
+<p>操作：</p>
+<pre class="codehilite"><code class="language-py">from app.py import db, Role, User
+
+# 不存在则创建数据库
+db.create_all()
+
+# 删除
+db.drop_all()
+
+# 创建对象
+admin_role = Role(name='Admin')
+mod_role = Role(name='Moderator')
+user_role=Role(name='User')
+user_john=User(username='john', role=admin_role)
+user_susan = User(username='susan', role=user_role)
+user_david = User(username='david', role=user_role)
+
+# 插入数据库
+db.session.add(admin_role)
+db.session.add(mod_role)
+db.session.add(user_role)
+db.session.add(user_john)
+db.session.add(user_susan)
+db.session.add(user_david)
+
+# 批量插入数据库
+db.session.add_all([admin_role, mod_role, user_role, user_john, user_susan, user_david])
+
+# 提交，session是原子操作，避免不一致性
+db.session.commit()
+
+# 回退
+db.session.rollback()
+
+# 修改
+admin_role.name = 'Administrator'
+db.session.add(admin_role)
+db.session.commit()
+
+# 删除
+db.session.delete(mod_role)
+db.session.commit()
+
+# 查询
+Role.query.all()
+User.query.all()
+User.query.filter_by(role=user_role)
+Role.query.filter_by(name='User').first()
+
+# 显示SQL语句
+str(User.query.filter_by(role=user_role))
+
+# 排序
+user_role.users.order_by(User.username).all()
+
+# 统计
+user_role.users.count()</code></pre>
+
+
+<p>数据类型：<br />
+类型名 | Python类型 | 说明<br />
+-------|------------|------<br />
+Integer | int | 普通整数，一般是32位<br />
+SmallInteger | int | 取值范围小的整数，一般是16位<br />
+BigInteger | int或long | 不限制精度的整数<br />
+Float | float | 浮点数<br />
+Numeric | decimal.Decimal | 定点数<br />
+String | str | 变长字符串<br />
+Text | str | 变长字符串，对较长或不限长度的字符串做了优化<br />
+Unicode | unicode | 变长Unicode字符串<br />
+UnicodeText | unicode | 变长Unicode字符串，对较长或不限长度的字符串做了优化<br />
+Boolean | bool | 布尔值<br />
+Date | datetime.date | 日期<br />
+Time | datetime.time | 时间<br />
+DateTime | datetime.datetime | 日期和世界<br />
+Interval | datetime.timedelta | 时间间隔<br />
+Enum | str | 一组字符串<br />
+PickleType | 任何Python对象 | 自动使用Pickle序列化<br />
+LargeBinary | str | 二进制文件</p>
+<p>列选项：<br />
+选项名 | 说明<br />
+-------|-----<br />
+primary_key | 主键<br />
+unique | 不允许重复<br />
+index | 创建索引<br />
+nullable | 允许使用空值<br />
+default | 定义默认值</p>
+<p>一对多关系：</p>
+<pre class="codehilite"><code class="language-py">class Role(db.Model):
+    users = db.relationship('User', backref='role')
+
+class User(db.Model):
+    role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))</code></pre>
+
+
+<p><strong>db.relationship定义一种特殊属性users，访问users属性返回对应的User列表</strong><br />
+<strong>backref在User模型中添加一个role属性，访问role访问的是对象，访问role_id只能访问外键的值</strong>  </p>
+<p>relationship()选项：<br />
+选项名 | 说明<br />
+-------|-----<br />
+backref | 在关系的另一个模型中添加反向作用<br />
+primaryjoin | 明确指定两个模型之间使用的联结条件。只在模棱两可的关系中需要定义。<br />
+lazy | 加载方式:<br />
+... | select：首次访问时按需加载<br />
+... | immediate：源对象加载则加载<br />
+... | join：使用联结加载<br />
+... | subquery：立即加载，使用子查询<br />
+... | noload：永不加载<br />
+... | dynamic：不加载，提供查询<br />
+uselist | True使用列表，False一对一不使用列表<br />
+order_by | 指定关系中记录的排序方式<br />
+secondary | 指定多对多关系中关系表的名称<br />
+secondaryjoin | SQLAlchemy无法决定时，指定多对多关系中的二级联结条件</p>
+<p>查询过滤器：<br />
+过滤器 | 说明<br />
+-------|-----<br />
+filter() | 把过滤器添加到原查询上，返回一个新查询<br />
+filter_by() | 把等值过滤器添加到原查询上，返回一个新查询<br />
+limit() | 限制查询结果数量，返回一个新查询<br />
+offset() | 便宜查询结果，返回一个新查询<br />
+order_by() | 排序，返回新查询<br />
+group_by() | 分组，返回新查询</p>
+<p>查询执行函数：<br />
+方法 | 说明<br />
+-----|-----<br />
+all() | 返回所有结果list<br />
+first() | 返回第一个结果或None<br />
+first_or_404() | 返回第一个结果或404<br />
+get() | 返回指定主键对应行或None<br />
+get_or_404() | 返回指定主键对应行或404<br />
+count() | 返回查询结果的数量<br />
+paginate() | 返回一个Paginate对象，包含范围内的结果</p>
+<h3 id="_91">数据库迁移<a class="headerlink" href="#_91" title="Permanent link">&para;</a></h3>
+<p>SQLAlchemy Alembic:<a href="https://alembic.readthedocs.org/en/latest/index.html">https://alembic.readthedocs.org/en/latest/index.html</a><br />
+Flask-Migrate(Alembic轻量级包装):<a href="http://flask-migrate.readthedocs.org/en/latest/">http://flask-migrate.readthedocs.org/en/latest/</a>，依赖Flask-Script操作。</p>
+<p>安装：</p>
+<pre class="codehilite"><code class="language-sh">pip install flask-migrate</code></pre>
+
+
+<p>启动代码：</p>
+<pre class="codehilite"><code class="language-py">from flask_migrate import Migrate, MigrateCommand
+
+app = Flask(__name__)
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+
+manager.add_command('db', MigrateCommand)</code></pre>
+
+
+<p>初始化命令：</p>
+<pre class="codehilite"><code class="language-sh">python hello.py db init</code></pre>
+
+
+<p>手动创建迁移（自行实现<code>upgrade()</code>和<code>downgrade()</code>）：</p>
+<pre class="codehilite"><code class="language-sh">python hello.py db revision</code></pre>
+
+
+<p>自动创建迁移（需要检查）</p>
+<pre class="codehilite"><code class="language-sh">python hello.py db migrate -m &quot;initial migration&quot;</code></pre>
+
+
+<p>升级数据库</p>
+<pre class="codehilite"><code class="language-sh">python hello.py db upgrade</code></pre>
+
+
+<h3 id="flask-mail">Flask-Mail<a class="headerlink" href="#flask-mail" title="Permanent link">&para;</a></h3>
+<p>包装python标准smtplib</p>
+<p>安装：</p>
+<pre class="codehilite"><code class="language-sh">pip install flask-mail</code></pre>
+
+
+<p>配置项：<br />
+配置 | 默认值 | 说明<br />
+-----|--------|-----<br />
+MAIL_SERVER | localhost | 电子邮件服务器域名或IP<br />
+MAIL_PORT | 25 | 电子邮件服务器端口<br />
+MAIL_USE_TLS | False | 启用TLS<br />
+MAIL_USE_SSL | False | 启用SSL<br />
+MAIL_USERNAME | None | 邮件账户的用户名<br />
+MAIL_PASSWORD | None | 邮件账户的密码</p>
+<p>配置启动：</p>
+<pre class="codehilite"><code class="language-py">import os
+from flask import Flask
+from flask_mail import Mail
+
+app = Flask(__name__)
+
+app.config['MAIL_SERVER'] = 'smtp.googlemail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USERNAME'] = os.evviron.get('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
+
+mail = Mail(app)</code></pre>
+
+
+<p>发送邮件：</p>
+<pre class="codehilite"><code class="language-py">from flask.ext.mail import Message
+msg = Message('test subject', sender='you@example.com', recipients=['you@example.com'])
+msg.body = 'text body'
+msg.html = '&lt;b&gt;HTML&lt;/b&gt; body'
+mail.send(msg)</code></pre>
+
+
+<p>发送邮件（模板渲染）：</p>
+<pre class="codehilite"><code class="language-py">from flask.ext.mail import Message
+msg = Message('test subject', sender='you@example.com', recipients=['you@example.com'])
+msg.body = render_template(template + '.txt', parm1, parm2)
+msg.html = render_template(template + '.html', parm1, parm2)
+mail.send(msg)</code></pre>
+
+
+<h3 id="celery">Celery任务队列<a class="headerlink" href="#celery" title="Permanent link">&para;</a></h3>
+<h4 id="_92">特性<a class="headerlink" href="#_92" title="Permanent link">&para;</a></h4>
+<p>Brokers(消息丢列，代理): RabbitMQ, Redis, Amazon SQS<br />
+Result Stores(结果存储): AMQP, Redis, Memcached, SQLAlchemy, Django ORM, Apache Cassandra, Elasticsearch<br />
+Concurrency(并发): prefork(multiprocessing), Eventlet, gevent, solo(single threaded)<br />
+Serialization(序列化): pickle, json, yaml, msgpack. zlib, bzip2, 消息签名</p>
+<p>Monitoring: worker实时监控事件<br />
+Work-flows: 工作流支持，分组、数据链、块<br />
+Time &amp; Rate Limits: 按时间、处理时长进行流控<br />
+Scheduling: 计划任务，相对时间、时间间隔、定时任务  </p>
+<h4 id="_93">安装<a class="headerlink" href="#_93" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-sh">pip install celery
+pip install celery[redis]
+
+# 其他Broker
+pip install celery[librabbitmq, redis, auth, msgpack]</code></pre>
+
+
+<h4 id="_94">定义任务<a class="headerlink" href="#_94" title="Permanent link">&para;</a></h4>
+<p>task.py</p>
+<pre class="codehilite"><code class="language-py">from celery import Celery
+
+# redis url 格式:'redis://:password@hostname:port/db_number'
+# 默认port为6379，数据库id为0
+
+# redis socket 格式:  'redis+socket:///path/to/redis.sock?virtual_host=db_number'
+
+# 只执行不返回结果
+# app = Celery('tasks', broker='redis://localhost')
+
+# 配置backend保存结果
+app = Celery('tasks', backend='redis://localhost', broker='redis://localhost')
+
+@app.task()
+def add(x, y)
+    return x + y</code></pre>
+
+
+<h4 id="worker">启动Worker任务<a class="headerlink" href="#worker" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-sh">celery -A task worker # 启动任务
+celery -A task worker --loglevel=info # 带日志选项启动任务
+celery worker --help # 查看worker选项帮助
+celery help # 帮助</code></pre>
+
+
+<h4 id="_95">发送任务<a class="headerlink" href="#_95" title="Permanent link">&para;</a></h4>
+<p>client.py</p>
+<pre class="codehilite"><code class="language-py">from task import add
+
+result = add.delay(1, 2) # 返回一个AsyncResult对象，用于检查状态、获取结果或异常
+result = add.apply_async((1, 2))
+
+# 检查状态
+result.ready()
+
+# 获取结果
+result.get() # 必须设置backend保存及诶过
+
+# 关闭异常重现，默认若出现异常get会重新抛出异常
+result.get(propagate=False)
+
+# 访问异常调用栈
+result.traceback</code></pre>
+
+
+<h4 id="celery-flower">Celery Flower<a class="headerlink" href="#celery-flower" title="Permanent link">&para;</a></h4>
+<p><a href="https://flower.readthedocs.io/en/latest/">https://flower.readthedocs.io/en/latest/</a></p>
+<p>特性：<br />
+- 实时任务执行监控工具web界面<br />
+- 远程控制<br />
+- Broker监控<br />
+- HTTP API<br />
+- 基本用户认证，支持Google OpenID</p>
+<pre class="codehilite"><code class="language-sh">pip install flower
+flower -A proj --port=5555
+curl http://localhost:5555/</code></pre>
+
+
+<h3 id="flask-admin">Flask-Admin<a class="headerlink" href="#flask-admin" title="Permanent link">&para;</a></h3>
+<h2 id="shell">与Shell共舞<a class="headerlink" href="#shell" title="Permanent link">&para;</a></h2>
+<h3 id="_96">创建一个请求上下文<a class="headerlink" href="#_96" title="Permanent link">&para;</a></h3>
+<h3 id="_97">激发请求发送前后的调用<a class="headerlink" href="#_97" title="Permanent link">&para;</a></h3>
+<h2 id="flask_5">Flask代码模式<a class="headerlink" href="#flask_5" title="Permanent link">&para;</a></h2>
+<h3 id="url_2">大型应用（批量导入url处理类)<a class="headerlink" href="#url_2" title="Permanent link">&para;</a></h3>
+<h4 id="_98">修改前目录结构<a class="headerlink" href="#_98" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code>/application
+    /application.py
+    /static
+        /style.css
+    /templates
+        /layout.html
+        /index.html
+        /login.html
+        ...</code></pre>
+
+
+<h4 id="_99">修改后目录结构<a class="headerlink" href="#_99" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code>/application
+    /runserver.py
+    /application
+        /__init__.py
+        /views.py
+        /static
+        /templates</code></pre>
+
+
+<p>添加runserver.py</p>
+<pre class="codehilite"><code class="language-py">from application import app
+app.run(debug=True)</code></pre>
+
+
+<p>添加<strong>init</strong>.py</p>
+<pre class="codehilite"><code class="language-py">from flask import Flask
+app = Flask(__name__)
+
+# 在Flask生成后导入模块中所有view
+import application.views</code></pre>
+
+
+<p>添加views.py</p>
+<pre class="codehilite"><code class="language-py">from application import app
+
+@app.route('/')
+def index():
+    return 'Hello World!'</code></pre>
+
+
+<p>修改步骤：<br />
+1. 使用python包（目录）替换python模块（py文件）管理代码<br />
+2. 添加启动代码runserver.py<br />
+3. 在包<strong>init</strong>.py中创建Flask应用，导入模块所有view。<br />
+4. 在views中引用app，实现url处理程序。  </p>
+<p><strong>这样修改有循环依赖的嫌疑，其实在__init__.py中只导入并没有使用，并且实在文件末尾导入的</strong></p>
+<h3 id="_100">应用程序的工厂函数<a class="headerlink" href="#_100" title="Permanent link">&para;</a></h3>
+<h3 id="_101">应用调度<a class="headerlink" href="#_101" title="Permanent link">&para;</a></h3>
+<h3 id="api_1">实现API异常处理<a class="headerlink" href="#api_1" title="Permanent link">&para;</a></h3>
+<h3 id="url_3">使用URL处理器<a class="headerlink" href="#url_3" title="Permanent link">&para;</a></h3>
+<h3 id="setuptools">使用Setuptools部署、分发<a class="headerlink" href="#setuptools" title="Permanent link">&para;</a></h3>
+<h3 id="fabric">使用Fabric部署<a class="headerlink" href="#fabric" title="Permanent link">&para;</a></h3>
+<h3 id="flasksqlite3">在Flask中使用sqlite3<a class="headerlink" href="#flasksqlite3" title="Permanent link">&para;</a></h3>
+<h3 id="flasksqlalchemy">在Flask中使用sqlalchemy<a class="headerlink" href="#flasksqlalchemy" title="Permanent link">&para;</a></h3>
+<h3 id="_102">上传文件<a class="headerlink" href="#_102" title="Permanent link">&para;</a></h3>
+<h3 id="_103">缓存<a class="headerlink" href="#_103" title="Permanent link">&para;</a></h3>
+<h3 id="_104">视图装饰器<a class="headerlink" href="#_104" title="Permanent link">&para;</a></h3>
+<h3 id="wtforms">使用WTForms进行表单验证<a class="headerlink" href="#wtforms" title="Permanent link">&para;</a></h3>
+<h3 id="_105">模板继承<a class="headerlink" href="#_105" title="Permanent link">&para;</a></h3>
+<h3 id="_106">消息闪现<a class="headerlink" href="#_106" title="Permanent link">&para;</a></h3>
+<h3 id="jqueryajax">用jQuery实现Ajax<a class="headerlink" href="#jqueryajax" title="Permanent link">&para;</a></h3>
+<h3 id="_107">自定义错误页面<a class="headerlink" href="#_107" title="Permanent link">&para;</a></h3>
+<h3 id="_108">延迟加载视图<a class="headerlink" href="#_108" title="Permanent link">&para;</a></h3>
+<h3 id="flaskmongokit">在Flask中使用MongoKit<a class="headerlink" href="#flaskmongokit" title="Permanent link">&para;</a></h3>
+<h3 id="favicon">添加Favicon<a class="headerlink" href="#favicon" title="Permanent link">&para;</a></h3>
+<h4 id="_109">特性<a class="headerlink" href="#_109" title="Permanent link">&para;</a></h4>
+<p>16*16像素的ICO文件</p>
+<h4 id="_110">新标准<a class="headerlink" href="#_110" title="Permanent link">&para;</a></h4>
+<pre class="codehilite"><code class="language-html">&lt;link rel=&quot;shortcut icon&quot; href=&quot;{{ url_for('static', filename='favicon.ico') }}&quot;&gt;</code></pre>
+
+
+<h4 id="_111">旧标准<a class="headerlink" href="#_111" title="Permanent link">&para;</a></h4>
+<p>放在root路径下的favicon.ico</p>
+<pre class="codehilite"><code class="language-py">app.add_url_rule('/favicon.ico', redirect_to=url_for('static', filename='favicon.ico'))</code></pre>
+
+
+<p>或者</p>
+<pre class="codehilite"><code class="language-py">import os
+from flask import send_from_directory
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon,ico', mimetype='image/vnd.microsoft.icon')</code></pre>
+
+
+<h4 id="_112">模板<a class="headerlink" href="#_112" title="Permanent link">&para;</a></h4>
+<p>templates/base.html</p>
+<pre class="codehilite"><code>{% block head %}
+{{ super() }}
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;{{ url_for('static', filename='favicon.ico') }}&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;{{ url_for('static', filename='favicon.ico') }} type=&quot;image/x-icon&quot;&gt;
+{% endblock %}</code></pre>
+
+
+<h3 id="_113">数据流<a class="headerlink" href="#_113" title="Permanent link">&para;</a></h3>
+<h3 id="_114">延迟请求回调<a class="headerlink" href="#_114" title="Permanent link">&para;</a></h3>
+<h3 id="http-method-overrides">添加HTTP Method Overrides<a class="headerlink" href="#http-method-overrides" title="Permanent link">&para;</a></h3>
+<h3 id="_115">请求内容校验码<a class="headerlink" href="#_115" title="Permanent link">&para;</a></h3>
+<h3 id="celery_1">基于Celery的后台任务<a class="headerlink" href="#celery_1" title="Permanent link">&para;</a></h3>
+<h3 id="flask_6">继承Flask<a class="headerlink" href="#flask_6" title="Permanent link">&para;</a></h3>
+<h2 id="_116">部署选择<a class="headerlink" href="#_116" title="Permanent link">&para;</a></h2>
+<h3 id="_117">托管配置<a class="headerlink" href="#_117" title="Permanent link">&para;</a></h3>
+<h3 id="_118">主机配置<a class="headerlink" href="#_118" title="Permanent link">&para;</a></h3>
+<h4 id="mod_wsgiapache">mod_wsgi（Apache）<a class="headerlink" href="#mod_wsgiapache" title="Permanent link">&para;</a></h4>
+<h4 id="wsgi_1">独立WSGI容器<a class="headerlink" href="#wsgi_1" title="Permanent link">&para;</a></h4>
+<p>Gunicorn:  </p>
+<p>Gevent:  </p>
+<p>Twisted Web:  </p>
+<p>Proxy Setups:  </p>
+<h4 id="uwsgi">uWSGI<a class="headerlink" href="#uwsgi" title="Permanent link">&para;</a></h4>
+<h4 id="fastcgi">FastCGI<a class="headerlink" href="#fastcgi" title="Permanent link">&para;</a></h4>
+<h4 id="cgi">CGI<a class="headerlink" href="#cgi" title="Permanent link">&para;</a></h4>
+<h2 id="_119">大型工程<a class="headerlink" href="#_119" title="Permanent link">&para;</a></h2>
+<h3 id="_120">阅读源码<a class="headerlink" href="#_120" title="Permanent link">&para;</a></h3>
+<h3 id="_121">钩子，继承<a class="headerlink" href="#_121" title="Permanent link">&para;</a></h3>
+<h3 id="_122">继承<a class="headerlink" href="#_122" title="Permanent link">&para;</a></h3>
+<h3 id="_123">用中间件包装<a class="headerlink" href="#_123" title="Permanent link">&para;</a></h3>
+<h3 id="_124">分支<a class="headerlink" href="#_124" title="Permanent link">&para;</a></h3>
+<h3 id="_125">像专家一样扩大规模<a class="headerlink" href="#_125" title="Permanent link">&para;</a></h3>
+<h3 id="_126">与社区对话<a class="headerlink" href="#_126" title="Permanent link">&para;</a></h3>
+<h2 id="api_2">API<a class="headerlink" href="#api_2" title="Permanent link">&para;</a></h2>
+<h3 id="_127">应用对象<a class="headerlink" href="#_127" title="Permanent link">&para;</a></h3>
+<h3 id="_128">蓝图对象<a class="headerlink" href="#_128" title="Permanent link">&para;</a></h3>
+<h3 id="_129">进入的请求对象<a class="headerlink" href="#_129" title="Permanent link">&para;</a></h3>
+<h3 id="_130">响应对象<a class="headerlink" href="#_130" title="Permanent link">&para;</a></h3>
+<h3 id="_131">会话<a class="headerlink" href="#_131" title="Permanent link">&para;</a></h3>
+<h3 id="_132">会话接口<a class="headerlink" href="#_132" title="Permanent link">&para;</a></h3>
+<h3 id="_133">测试客户端<a class="headerlink" href="#_133" title="Permanent link">&para;</a></h3>
+<h3 id="_134">应用全局变量<a class="headerlink" href="#_134" title="Permanent link">&para;</a></h3>
+<h3 id="_135">有用的函数和类<a class="headerlink" href="#_135" title="Permanent link">&para;</a></h3>
+<h3 id="_136">消息闪现<a class="headerlink" href="#_136" title="Permanent link">&para;</a></h3>
+<h3 id="json">JSON支持<a class="headerlink" href="#json" title="Permanent link">&para;</a></h3>
+<h3 id="_137">模板渲染<a class="headerlink" href="#_137" title="Permanent link">&para;</a></h3>
+<h3 id="_138">配置<a class="headerlink" href="#_138" title="Permanent link">&para;</a></h3>
+<h3 id="_139">扩展<a class="headerlink" href="#_139" title="Permanent link">&para;</a></h3>
+<h3 id="_140">流的辅助函数<a class="headerlink" href="#_140" title="Permanent link">&para;</a></h3>
+<h3 id="_141">有用的内构件<a class="headerlink" href="#_141" title="Permanent link">&para;</a></h3>
+<h3 id="_142">信号<a class="headerlink" href="#_142" title="Permanent link">&para;</a></h3>
+<h3 id="_143">基于类的视图<a class="headerlink" href="#_143" title="Permanent link">&para;</a></h3>
+<h3 id="url_4">URL路由注册<a class="headerlink" href="#url_4" title="Permanent link">&para;</a></h3>
+<h3 id="_144">视图函数选项<a class="headerlink" href="#_144" title="Permanent link">&para;</a></h3>
+<h2 id="_145">其他说明<a class="headerlink" href="#_145" title="Permanent link">&para;</a></h2>
+<h3 id="flask_7">Flask中的设计决策<a class="headerlink" href="#flask_7" title="Permanent link">&para;</a></h3>
+<h3 id="htmlxhtml">HTML/XHTML常见问题<a class="headerlink" href="#htmlxhtml" title="Permanent link">&para;</a></h3>
+<h3 id="_146">安全注意事项<a class="headerlink" href="#_146" title="Permanent link">&para;</a></h3>
+<h3 id="flaskunicode">Flask中的Unicode<a class="headerlink" href="#flaskunicode" title="Permanent link">&para;</a></h3>
+<h3 id="flask_8">Flask扩展开发<a class="headerlink" href="#flask_8" title="Permanent link">&para;</a></h3>
+<h3 id="pocoo">Pocoo风格指引<a class="headerlink" href="#pocoo" title="Permanent link">&para;</a></h3>
+<h3 id="python3">Python3支持<a class="headerlink" href="#python3" title="Permanent link">&para;</a></h3>
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../python/" title="Python" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Python
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../pyqt/" title="PyQt/Qt" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                PyQt/Qt
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 Yingxuanxuan.com
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/yingxuanxuan" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/yingxuanxuan_g" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-f7ac33b6fb.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-92401539-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>

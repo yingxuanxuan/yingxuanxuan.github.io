@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "\u5b66\u4e60\u7b14\u8bb0\n\u00b6\n\n\nLinux\n\u00b6\n\n\nLinux\u547d\u4ee4\u901f\u67e5\n\u00b6\n\n\nNginx\u914d\u7f6e\n\u00b6\n\n\nNginx-void-module\uff08HLS\u3001DASH\u3001SmoothStreaming\u89c6\u9891\u670d\u52a1\u5668\uff09\n\u00b6\n\n\nFFmpeg\u547d\u4ee4\u901f\u67e5\n\u00b6\n\n\nPython\n\u00b6\n\n\nPython\n\u00b6\n\n\nPyQt/Qt\n\u00b6\n\n\nAndroid\n\u00b6\n\n\nAndroid\n\u00b6\n\n\nJavascript\n\u00b6\n\n\nJavascript\n\u00b6\n\n\nVue\n\u00b6\n\n\n\n\n\u5173\u4e8e\u672c\u7ad9\n\u00b6\n\n\n\u672c\u7ad9\u642d\u5efa\u5728\nvultr\u4e1c\u4eac\u673a\u623f\n \uff0c5\u7f8e\u5143/\u6708\uff0c\u7f51\u901f10Mbit/s\uff0c\u6d41\u91cf1TB/\u6708\uff0cRTT\u54cd\u5e94\u65f6\u5ef6114ms\u3002\n\n\nShadowsocks VPN \u7ffb\u5899 \u642d\u68af\u5b50 Youtube\u9ad8\u6e05\n  \n  \n\n\n\n\n20\u7f8e\u5143\u4ee3\u91d1\u5238\n\uff0c\u53ef\u514d\u8d39\u4f7f\u75284\u4e2a\u6708\u3002\n\n\n  \n\n\n\n\n\n\n\n\n\u5efa\u8bae\u673a\u623f\n\n\n\u6d4b\u8bd5\u5730\u5740\n\n\n100MB\u4e0b\u8f7d\u6d4b\u8bd5\n\n\n1GB\u4e0b\u8f7d\u6d4b\u8bd5\n\n\n\u5168\u56fd\u5e73\u5747RTT\u65f6\u5ef6\n\n\n\n\n\n\n\n\n\n\n\u4e1c\u4eac\n\n\nhnd-jp-ping.vultr.com\n\n\n\u4e0b\u8f7d\n\n\n\u4e0b\u8f7d\n\n\n114ms \n\u6d4b\u8bd5\n\n\n\n\n\n\n\u65b0\u52a0\u5761\n\n\nsgp-ping.vultr.com\n\n\n\u4e0b\u8f7d\n\n\n\u4e0b\u8f7d\n\n\n160ms \n\u6d4b\u8bd5\n\n\n\n\n\n\n\u7845\u8c37\n\n\nsjo-ca-us-ping.vultr.com\n\n\n\u4e0b\u8f7d\n\n\n\u4e0b\u8f7d\n\n\n171ms \n\u6d4b\u8bd5\n\n\n\n\n\n\n\u6d1b\u6749\u77f6\n\n\nlax-ca-us-ping.vultr.com\n\n\n\u4e0b\u8f7d\n\n\n\u4e0b\u8f7d\n\n\n182ms \n\u6d4b\u8bd5",
+            "text": "\u5b66\u4e60\u7b14\u8bb0\n\u00b6\n\n\nLinux\n\u00b6\n\n\nLinux\u547d\u4ee4\u901f\u67e5\n\u00b6\n\n\nNginx\u914d\u7f6e\n\u00b6\n\n\nNginx-void-module\uff08HLS\u3001DASH\u3001SmoothStreaming\u89c6\u9891\u670d\u52a1\u5668\uff09\n\u00b6\n\n\nFFmpeg\u547d\u4ee4\u901f\u67e5\n\u00b6\n\n\nPython\n\u00b6\n\n\nPython\n\u00b6\n\n\nFlask\n\u00b6\n\n\nPyQt/Qt\n\u00b6\n\n\nAndroid\n\u00b6\n\n\nAndroid\n\u00b6\n\n\nJavascript\n\u00b6\n\n\nJavascript\n\u00b6\n\n\nVue\n\u00b6\n\n\n\n\n\u5173\u4e8e\u672c\u7ad9\n\u00b6\n\n\n\u672c\u7ad9\u642d\u5efa\u5728\nvultr\u4e1c\u4eac\u673a\u623f\n \uff0c5\u7f8e\u5143/\u6708\uff0c\u7f51\u901f10Mbit/s\uff0c\u6d41\u91cf1TB/\u6708\uff0cRTT\u54cd\u5e94\u65f6\u5ef6114ms\u3002\n\n\nShadowsocks VPN \u7ffb\u5899 \u642d\u68af\u5b50 Youtube\u9ad8\u6e05\n  \n  \n\n\n\n\n20\u7f8e\u5143\u4ee3\u91d1\u5238\n\uff0c\u53ef\u514d\u8d39\u4f7f\u75284\u4e2a\u6708\u3002\n\n\n  \n\n\n\n\n\n\n\n\n\u5efa\u8bae\u673a\u623f\n\n\n\u6d4b\u8bd5\u5730\u5740\n\n\n100MB\u4e0b\u8f7d\u6d4b\u8bd5\n\n\n1GB\u4e0b\u8f7d\u6d4b\u8bd5\n\n\n\u5168\u56fd\u5e73\u5747RTT\u65f6\u5ef6\n\n\n\n\n\n\n\n\n\n\n\u4e1c\u4eac\n\n\nhnd-jp-ping.vultr.com\n\n\n\u4e0b\u8f7d\n\n\n\u4e0b\u8f7d\n\n\n114ms \n\u6d4b\u8bd5\n\n\n\n\n\n\n\u65b0\u52a0\u5761\n\n\nsgp-ping.vultr.com\n\n\n\u4e0b\u8f7d\n\n\n\u4e0b\u8f7d\n\n\n160ms \n\u6d4b\u8bd5\n\n\n\n\n\n\n\u7845\u8c37\n\n\nsjo-ca-us-ping.vultr.com\n\n\n\u4e0b\u8f7d\n\n\n\u4e0b\u8f7d\n\n\n171ms \n\u6d4b\u8bd5\n\n\n\n\n\n\n\u6d1b\u6749\u77f6\n\n\nlax-ca-us-ping.vultr.com\n\n\n\u4e0b\u8f7d\n\n\n\u4e0b\u8f7d\n\n\n182ms \n\u6d4b\u8bd5",
             "title": "\u9996\u9875"
         },
         {
@@ -44,6 +44,11 @@
             "location": "/#python_1",
             "text": "",
             "title": "Python"
+        },
+        {
+            "location": "/#flask",
+            "text": "",
+            "title": "Flask"
         },
         {
             "location": "/#pyqtqt",
@@ -4969,6 +4974,1161 @@
             "location": "/python/",
             "text": "",
             "title": "Python"
+        },
+        {
+            "location": "/flask/",
+            "text": "\u5feb\u901f\u5165\u95e8\n\u00b6\n\n\n\u914d\u7f6e\u4e0e\u60ef\u4f8b\n\u00b6\n\n\nFlask\u914d\u7f6e\u9009\u9879\u7684\u9ed8\u8ba4\u503c\u90fd\u662f\u5408\u7406\u7684\uff0c\u6709\u4e00\u4e9b\u662f\u9ed8\u8ba4\u7684\uff0c\u5982templates\u548cstatic\u9ed8\u8ba4\u5728\u6e90\u7801\u76ee\u5f55\u4e0b\uff0c\u8fd9\u4e9b\u914d\u7f6e\u53ef\u4ee5\u4fee\u6539\u4f46\u4e00\u822c\u5e76\u4e0d\u9700\u8981\u3002\n\nFlask\u4f7f\u7528\u4e86Thread-Local\u53d8\u91cf\uff0c\u907f\u514d\u4e86\u540c\u4e00request\u95f4\u7684\u53c2\u6570\u4f20\u9012\uff0c\u8fd9\u6837\u5f88\u65b9\u4fbf\uff0c\u4f46\u662f\u4f7f\u5f97\u7a0b\u5e8f\u4f9d\u8d56\u4e8e\u5408\u6cd5\u7684request\u8bf7\u6c42\uff0c\u4f9d\u8d56\u4e8erequest\u7684\u6570\u636e\u5bfc\u81f4\u7a0b\u5e8f\u65e0\u6cd5\u590d\u7528\u3002  \n\n\n\u5b89\u88c5\n\u00b6\n\n\n\u4f9d\u8d56\n\u00b6\n\n\nFlask\u4f9d\u8d56Werkzeug\u548cJinja2\u3002\n\nWerkzeug\u662f\u4e00\u4e2aWSGI\u5de5\u5177\u96c6\u3002\n\nJinja2\u8d1f\u8d23\u6e32\u67d3\u6a21\u677f\u3002  \n\n\nvirtualenv\n\u00b6\n\n\nsudo pip install virtualenv\nmkdir myproject\ncd myproject\nvirtualenv venv\n. venv/scripts/activate\npip install Flask\n\n\n\n\nHelloWorld\n\u00b6\n\n\n# \u6587\u4ef6hello.py\nfrom flask import Flask\n\n# Flask\u901a\u8fc7__name__\u627e\u5230\u5305\u8def\u5f84\u53ca\u5176\u4e0b\u7684static\u548ctemplates\u76ee\u5f55\uff0c\u907f\u514d\u9650\u5236\u4e3a\u5f53\u524d\u76ee\u5f55\napp = Flask(__name__)\n\n@app.route('/')\ndef hello_world():\n    return 'Hello World!'\n\nif __name__ == '__main__':\n    app.run()\n\n\n\n\n\u8fd0\u884c\uff1a\n\n\npython hello.py\n\n\n\n\n\u901a\u8fc7\u73af\u5883\u53d8\u91cf\u8fd0\u884c\uff1a\n\n\n# windows\u4e0b\u4f7f\u7528set\u8bbe\u7f6e\u73af\u5883\u53d8\u91cf\nexport FLASK_APP=hello.py\nflask run\n\n\n\n\n\u901a\u8fc7python module\u8fd0\u884c\uff1a\n\n\nexport FLASK_APP=hello.py\npython -m flask run\n\n\n\n\n\u8bbf\u95ee\uff1ahttp://127.0.0.1:5000\n\n\n\u5b9a\u4e49HttpServer\u7ed1\u5b9aIP\n\u00b6\n\n\napp.run(host='0.0.0.0', port=80)\n\n\n\n\nflask run --host=0.0.0.0\n\n\n\n\n\u8c03\u8bd5\u6a21\u5f0f\uff08\u4ea4\u4e92\u5f0f\u8c03\u8bd5\u5668\uff09\n\u00b6\n\n\napp.debug = True\napp.run()\n# \u6216\napp.run(debug=True)\n\n\n\n\nexport FLASK_DEBUG=1\nflask run\n\n\n\n\nURL\u8def\u7531\n\u00b6\n\n\n\u57fa\u672c\u793a\u4f8b\uff1a\n\n\n@app.route('/')\ndef index():\n    return 'Index Page'\n\n@app.route('/hello')\n    return 'Hello World'\n\n\n\n\n\u5e26\u53d8\u91cf\u7684URL\uff1a\n\n\n@app.route('/user/<username>')\ndef show_user_profile(username):\n    return 'User %s' % username\n\n\n\n\n\u5e26\u53d8\u91cf\u7684URL\u5e76\u8f6c\u6362\u6570\u636e\u7c7b\u578b\uff1a\n\nint # \u6574\u5f62\n\nfloat # \u6d6e\u70b9\u578b \n\nstring # \u4e0d\u63a5\u53d7\u659c\u7ebf\n\npath # \u63a5\u53d7\u659c\u7ebf\u7684string\n\nany # \u4efb\u610f\n\nuuid # UUID\n\n\n@app.route('/post/<int:post_id>')\ndef show_post(post_id):\n    return 'Post %d' % post_id\n\n\n\n\n\u9075\u5b88\u552f\u4e00URL\u7ba1\u7406\uff0c\u907f\u514d\u91cd\u5b9a\u5411\u884c\u4e3a:\n\n/projects/ # \u82e5\u8bbf\u95ee/projects\u4f1a\u88abFlask\u91cd\u5b9a\u5411\u5230/projects/\n\n/about # \u82e5\u8bbf\u95ee/about/\u4f1a\u4ea7\u751f\"404 Not Found\"\n\n\n\u5efa\u8bae\u4f7f\u7528\u5e26\u659c\u7ebf\u7684URL\uff0c\u4fdd\u8bc1URL\u552f\u4e00\u6027\uff0c\u907f\u514d\u641c\u7d22\u5f15\u64ce\u7d22\u5f15\u540c\u4e00\u4e2a\u9875\u9762\u4e24\u6b21\n\n\n\u4f7f\u7528url_for()\u7528\u5904\u7406\u51fd\u6570\u9006\u5411\u6784\u9020URL\uff1a\n\nurl_for\u7684\u7b2c\u4e00\u4e2a\u53c2\u6570\u662f\u5904\u7406\u51fd\u6570\u7684\u540d\u79f0\uff0c\u540e\u9762\u547d\u540d\u53c2\u6570\u5339\u914d\u7684\u90e8\u5206\u4f1a\u5e94\u7528\u5230url\uff0c\u4e0d\u7b26\u5408\u7684\u90e8\u5206\u4f1a\u4f5c\u4e3a\u67e5\u8be2\u53c2\u6570\u3002  \n\n\nfrom flask import Flask, url_for\napp = Flask(__name__)\n\n@app.route('/')\ndef index: pass\n\n@app.route('/login')\ndef login(username): pass\n\n@app.route('/user/<username>')\ndef profile(username): pass\n\n# \u4f7f\u7528test_request_context()\u6784\u9020request\nwith app.test_request_context():\n    print(url_for('index')) # \u8f93\u51fa\uff1a/\n    print(url_for('login')) # \u8f93\u51fa\uff1a/login\n    print(url_for('login', next='/') # \u8f93\u51fa\uff1a/login?next=/\n    print(url_for('profile', username='John Doe')) # \u8f93\u51fa\uff1a/user/John%20Doe\n\n    # url_for\u9ed8\u8ba4\u751f\u6210\u76f8\u5bf9\u5730\u5740\uff0c\u5916\u90e8\u94fe\u63a5\u9700\u8981\u4f7f\u7528\u7edd\u5bf9\u5730\u5740\n    print(url_or('index', _external=True)) # \u8f93\u51fa http://host:port/\n\n\n\n\n\u4f7f\u7528\u9006\u5411\u6784\u9020URL\u7684\u7528\u9014\uff1a\n\n- \u53ef\u4ee5\u81ea\u52a8\u5728Flask\u5de5\u7a0b\u4e2d\u67e5\u8be2URL\n\n- Flask\u4f1a\u81ea\u52a8\u8f6c\u8bd1\u7279\u6b8a\u5b57\u7b26\u548cUnicode\n\n- \u5982\u679c\u5e94\u7528\u4e0d\u4f4d\u4e8eURL\u6839\u8def\u5f84\uff0curl_for\u4f1a\u81ea\u52a8\u5904\u7406\n\n\nHTTP\u65b9\u6cd5\uff1a\n\n\u9ed8\u8ba4\u5904\u7406\u4e3aGET\u8bf7\u6c42\uff0c\u4f7f\u7528route\u88c5\u9970\u5668\u7684methods\u6307\u5b9aHTTP\u65b9\u6cd5  \n\n\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    if request.method == 'POST':\n        do_the_login()\n    else:\n        show_the_login_form()\n\n\n\n\nGET # \u83b7\u53d6\u9875\u9762\n\nHEAD # \u83b7\u53d6\u4fe1\u606f\uff0c\u53ea\u5173\u5fc3\u6d88\u606f\u5934\uff0cFlask\u4f1a\u81ea\u52a8\u6309GET\u5904\u7406\n\nPOST # \u53d1\u9001\u4fe1\u606f\uff0c\u53d1\u9001\u8868\u5355\n\nPUT # \u7c7b\u4f3cPOST\uff0c\u4f46\u53ef\u4ee5\u591a\u6b21\u8986\u76d6\u65e7\u6570\u636e\uff0cPOST\u53ea\u80fd\u89e6\u53d1\u4e00\u6b21\n\nDELETE # \u5220\u9664\n\nOPTIONS # \u67e5\u8be2URL\u652f\u6301\u54ea\u4e9bHTTP\u65b9\u6cd5\uff0cFlask\u4f1a\u81ea\u52a8\u5904\u7406\n\nHTTP4\u548cXHTML1\u53ea\u652f\u6301GET\u548cPOST\uff0c\u4f46\u662fJavaScript\u548cHTML5\u652f\u6301\u5176\u4ed6\u65b9\u6cd5  \n\n\n\u9759\u6001\u6587\u4ef6\n\u00b6\n\n\n\u6587\u4ef6\u8def\u5f84\uff1a\u5305\u6216\u8005\u6a21\u5757\u7684\u6240\u5728\u76ee\u5f55\u4e2dstatic\u6587\u4ef6\u5939\n\n\u4f7f\u7528URL\uff1a/static\n\n\u751f\u6210URL\uff1aurl_for('static', filename='style.css')\uff0cstatic\u662f\u7279\u6b8a\u53c2\u6570  \n\n\n\u6a21\u677f\u6e32\u67d3\n\u00b6\n\n\n\u6a21\u677f\u8def\u5f84\n\u00b6\n\n\n\u6a21\u5757\u8def\u5f84\uff1a\n\n\n/application.py\n/templates\n    /hello.html\n\n\n\n\n\u5305\u8def\u5f84\uff1a\n\n\n/application\n    /__init__.py\n    /templates\n        /hello.html\n\n\n\n\n\u6e32\u67d3\uff1a\n\n\nfrom flask import render_template\n@app.route('/hello/')\n@app.route('/hello/<name>')\ndef hello(name=None)\n    return render_template('hello.html', name=name)\n\n\n\n\n<!doctype html>\n<title>Hello from Flask</title>\n{% if name %}\n    <h1>Hello {{name}}!</h1>\n{% else %}\n    <h1>Hello World!</h1>\n{% endif %}\n\n\n\n\n\u5728\u6a21\u677f\u91cc\u53ef\u4ee5\u8ba9\u95eerequest\u3001session\u548cg\u5bf9\u8c61\u4ee5\u53caget_flashed_message()  \n\n\u6a21\u677f\u7ee7\u627f\u53ef\u4ee5\u4f7f\u6bcf\u4e2a\u9875\u9762\u7684header\u3001navigation\u548cfooter\u4fdd\u6301\u4e00\u81f4\u3002\n\n\u53d8\u91cf\u4e2d\u5305\u542bHTML\u4f1a\u88ab\u8f6c\u8bd1\uff0c\u4f8b\u5982\u4ee5\u4e0a\u4ee3\u7801{{name}}\u4e2d\u5305\u542b\u7684HTML\u4f1a\u88ab\u81ea\u52a8\u8f6c\u8bd1\u3002\n\n\u81ea\u52a8\u8f6c\u8bd1\u662f\u9ed8\u8ba4\u5bf9.html .htm .xml .html\u6a21\u677f\u6587\u4ef6\u5f00\u542f\uff0c\u6a21\u677f\u5b57\u7b26\u4e32\u81ea\u52a8\u8f6c\u8bd1\u662f\u5173\u95ed\u7684\u3002\n\n\u4f7f\u7528|safe\u8fc7\u6ee4\u5668\u6216flask.Markup\u53ef\u4ee5\u6807\u8bb0\u5b57\u7b26\u4e32\u4e3a\u5b89\u5168\u3002\n\n\nfrom flask import Markup\n\n# \u6807\u8bb0\u4e3a\u5b89\u5168\u5b57\u7b26\u4e32\nMarkup('<strong>Hello %s!</strong>') % '<blink>hacker</blink>'\n# \u8f93\u51faMarkup(u'<strong>Hello &lt;blink&gt;hacker&lt;/blink&gt;!</strong>')\n\n# \u624b\u52a8\u8f6c\u8bd1\nMarkup.escape('<blink>hacker</blink>')\n# \u8f93\u51fa Markup(u'&lt;blink&gt;hacker&lt;/blink&gt;')\n\n# \u6e05\u9664HTML TAG\nMarkup('<em>Marked up</em> &raquo; HTML').striptags()\n# \u8f93\u51fa u'Marked up \\xbb HTML'\n\n\n\n\n\u8bbf\u95eeRequest\u6570\u636e\n\u00b6\n\n\nRequest\u4e0a\u4e0b\u6587\u4e0e\u5355\u5143\u6d4b\u8bd5\n\u00b6\n\n\nRequest\u4f7f\u7528\u65f6\u770b\u8d77\u6765\u662f\u5168\u5c40\u7684\uff0c\u5176\u5b9eRequest\u662f\u7ebf\u7a0b\uff08\u6216\u534f\u7a0b\uff09\u672c\u5730\u7684\n\n\u5355\u5143\u6d4b\u8bd5\u65f6\u6ca1\u6709\u8bf7\u6c42\uff0c\u6240\u4ee5\u6ca1\u6709Request\u5bf9\u8c61  \n\n\n\u4f7f\u7528test_request_context()\u73af\u5883\u7ba1\u7406\u5668\uff1a\n\n\nfrom flask import request\n\nwith app.test_request_context('/hello', method='POST')\n    assert request.path == '/hello'\n    assert request.method = 'POST'\n\n\n\n\n\u6216\u5c06\u6574\u4e2aWSGI\u73af\u5883\u4f20\u9012\u7ed9request_context()\u65b9\u6cd5\n\n\nfrom flask import request\nwith app.request_context(environ):\n    assert request.method == 'POST'\n\n\n\n\n\u4f7f\u7528Reqeust\u5bf9\u8c61\n\u00b6\n\n\n\u4ecePOST\u65b9\u6cd5\u7684form\u4e2d\u83b7\u53d6\u4fe1\u606f request.form\uff1a\n\n\nfrom flask import request\n\n@app.route('/login', methods=['POST', 'GET'])\ndef login():\n    error = None\n    if request.method == 'POST':\n        if valid_login(request.form['username'], request.form['password']):\n            return log_the_user_in(request.form['username'])\n        else:\n            error = 'Invalid username/password'\n\n    return render_template('login.html', error=error)\n\n\n\n\n\u83b7\u53d6\u67e5\u8be2\u5b57\u7b26\u4e32 request.args\uff1a  \n\n\n# ?key=value\nsearchword = request.args.get('q', '')\n\n\n\n\n\u83b7\u53d6json\u5b57\u6bb5\uff1arequest.args\n\n\n\u83b7\u53d6header\u5b57\u6bb5\uff1arequest.headers\n\n\n\u5f02\u5e38\u5904\u7406\n\u00b6\n\n\n\u82e5form\u4e2d\u5c5e\u6027\u4e0d\u5b58\u5728\u5219\u4f1a\u629b\u51faKeyError\u5f02\u5e38\u3002\u4e0d\u5904\u7406KeyError\u5f02\u5e38\u4f1a\u663e\u793a\u4e00\u4e2a\"HTTP 400 Bad Request\u9519\u8bef\u9875\u9762\u201d\u3002\n\n\n\u4e0a\u4f20\u6587\u4ef6 request.files\n\u00b6\n\n\nfrom flask import request \n\n@app.route('/upload', methods=['GET', 'POST'])\ndef upload_file():\n    if request.method == 'POST':\n        f = request.files['the_file']\n        f.save('/var/www/uploads/uploaded_file.txt')\n        # \u83b7\u53d6\u6587\u4ef6\u540d\n        f.save('/var/www/uploads/' + secure_filename(f.filename))\n\n\n\n\n\u4e0a\u4f20\u6587\u4ef6\u9700\u8981HTML\u8868\u5355\u4e2d\u8bbe\u7f6e\nenctype=\"multipart/form-data\"\n\n\nCookies \u8bfb\u53d6\u4e0e\u5b58\u50a8\n\u00b6\n\n\nfrom flask import request\n\n# \u83b7\u53d6cookie\n@app.route('/')\ndef index():\n    username = request.cookies.get('username')\n    username = request.cookies.get['username']\n\n# \u8bbe\u7f6ecookie\n@app.route('/')\ndef index():\n    # \u5982\u679c\u4e0d\u8bbe\u7f6ecookie\u53ea\u9700\u8981\u8fd4\u56de\u5b57\u7b26\u4e32\uff0c\u82e5\u8981\u8bbe\u7f6ecookie\u9700\u8981\u81ea\u884c\u6784\u9020response\n    # \u82e5\u4e0d\u60f3\u81ea\u884c\u6784\u9020response\uff0c\u53ef\u4ee5\u4f7f\u7528\u201c\u5ef6\u8fdf\u8bf7\u6c42\u56de\u8c03\u201d\n    resp = make_response(render_template(...))\n    resp.set_cookie('username', 'the username')\n    return resp\n\n\n\n\n\u91cd\u5b9a\u5411\u4e0e\u9519\u8bef\n\u00b6\n\n\nredirect() # \u91cd\u5b9a\u5411\u5230\u5176\u4ed6url  \n\n\nfrom flask import abort, redirect, url_for\n\n@app.route('/')\ndef index():\n    return redirect(url_for('login'))\n\n\n\n\nabort() # \u53d1\u9001\u9519\u8bef\n\n\n@app.route('/login')\ndef login():\n    abort(401)\n    this_is_never_executed()\n\n\n\n\n\u5b9a\u5236\u9519\u8bef\u9875\u9762\uff1a\n\n\nfrom flask import render_template\n\n# \u8fd4\u56de\u6a21\u677f\n@app.errorhandler(404)\ndef page_not_found(error):\n    return render_templete('page_not_found.html'), 404\n\n\n\n\nresponse\n\u00b6\n\n\nurl\u5904\u7406\u51fd\u6570\u7684\u8fd4\u56de\u503c\u4f1a\u88ab\u81ea\u52a8\u8f6c\u6362\u4e3aresponse\u5bf9\u8c61\u3002\n\n\u5982\u679c\u8fd4\u56de\u503c\u662f\u5b57\u7b26\u4e32\uff0c\u4f1a\u88ab\u8f6c\u6362\u4e3a\u5b57\u7b26\u4e32\u4e3abody\u3001\u72b6\u6001\u7801\u4e3a200 OK\u3001MIME\u662ftext/html\u7684response\u3002\n\nFlask\u8fd4\u56de\u503c\u5904\u7406\u903b\u8f91\uff1a\n\n1. \u5982\u679c\u8fd4\u56de\u7684\u662f\u4e00\u4e2a\u5408\u6cd5\u7684response\u5bf9\u8c61\uff0c\u5219\u4eceurl\u5904\u7406\u51fd\u6570\u76f4\u63a5\u8fd4\u56de\u3002\n\n2. \u5982\u679c\u8fd4\u56de\u7684\u662f\u4e00\u4e2a\u5b57\u7b26\u4e32\uff0cFlask\u4f1a\u7528\u5b57\u7b26\u4e32\u548c\u9ed8\u8ba4\u53c2\u6570\u521b\u5efaresponse\u3002\n\n3. \u5982\u679c\u8fd4\u56de\u4e00\u4e2atuple\uff0c\u683c\u5f0f\u4e3a(response, status, headers)\uff0cFlask\u4f1a\u7528tuple\u8986\u76d6\u9ed8\u8ba4\u8bbe\u7f6e\u3002tuple\u81f3\u5c11\u8981\u6709\u4e00\u4e2a\u503c\u3002headers\u662f\u4e00\u4e2alist\u6216dict\u3002\n\n4. \u5982\u679c\u4ee5\u4e0a\u90fd\u4e0d\u662f\uff0cFlask\u4f1a\u5047\u8bbe\u8fd4\u56de\u503c\u662f\u4e00\u4e2aWSGi\u5e94\u7528\u7a0b\u5e8f\uff0c\u5e76\u53d1\u8d77\u8bf7\u6c42\u3002\n\n\n\u5982\u679c\u4e0d\u60f3\u8ba9Flask\u81ea\u52a8\u5904\u7406\uff0c\u53ef\u4ee5\u4f7f\u7528make_response\u81ea\u884c\u5904\u7406\u3002\n\n\n# \u8fd4\u56detuple\n@app.errorhandler(404)\ndef not_found(error):\n    return render_template('error.html'), 404\n\n# \u81ea\u884c\u5904\u7406\n@app.errorhandler(404)\ndef not_found(error):\n    resp = make_response(render_template('error.html'), 404)\n    resp.headers['X-Something'] = 'A value'\n    return resp\n\n\n\n\n\u4f1a\u8bdd session\n\u00b6\n\n\n\u4f1a\u8bdd\u662f\u5728\u4e0d\u540c\u8bf7\u6c42\u95f4\u5b58\u50a8\u7279\u5b9a\u7528\u6237\u7684\u4fe1\u606f\u3002\n\nFlask\u4f7f\u7528Cookies\u5b57\u6bb5\u5b58\u50a8Session\uff0c\u5e76\u5bf9Cookies\u5b57\u6bb5\u505a\u4e86Hash\u6821\u9a8c\uff0c\u7528\u6237\u53ea\u80fd\u67e5\u770bCookies\u5185\u5bb9\u4f46\u4e0d\u80fd\u4fee\u6539\u3002\n\n\nfrom flask import Flask, session, redirect, url_for, escape, request\napp = Flask(__name__)\napp.secret_key = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAA'\n\n# \u67e5\u8be2session\n@app.route('/')\ndef index():\n    if 'username' in session:\n        return 'Logged in as %s' % escape(session['username'])\n    return 'You are not logged in'\n\n# \u63d2\u5165session\n@app.route('/login', methods=['GET', 'POSt'])\ndef login():\n    if request.method == 'POST':\n        session['username'] = request.form['username']\n        return redirect(url_for('index'))\n    return '''\n        <form action=\"\" method=\"post\">\n            <p><input type=text name=username/></p>\n            <p><intpu type=submit value=Login></p>\n        </form>\n    '''\n\n# \u5220\u9664session\n@app.route('/logout')\ndef logout():\n    session.pop('username', None)\n    return redirect(url_for('index'))\n\n\n\n\n\u751f\u6210\u5bc6\u94a5\uff1a\n\n\nimport os\nos.urandom(24)\n\n\n\n\n\u95ea\u73b0\u6d88\u606f(Flashing)\n\u00b6\n\n\n\u95ea\u73b0\u6d88\u606f\u662f\u5728\u8bf7\u6c42\u7ed3\u675f\u65f6\u54cd\u5e94\u7ed9\u5ba2\u6237\u7aef\u7684\u4e00\u79cd\u6d88\u606f\u3002\n\n\u5f53\u4e14\u4ec5\u5f53\u4e0b\u4e00\u6761\u8bf7\u6c42\u65f6\u8bbf\u95ee\u4fe1\u606f\u3002\n\n\u4f7f\u7528flask()\u8bb0\u5f55\u6d88\u606f\u3002\n\n\u5728\u4e0b\u4e00\u6761\u8bf7\u6c42\u6216\u6a21\u7248\u4e2d\u4f7f\u7528get_flashed_messages()\u83b7\u53d6\u6d88\u606f\u3002\n\n\n\u65e5\u5fd7\u8bb0\u5f55\n\u00b6\n\n\napp.logger.debug('')\napp.logger.warning('', 42)\napp.logger.error('')\n# logger\u662f\u6807\u51c6\u7684python Logger\n\n\n\n\n\u6574\u5408WSGI\u4e2d\u95f4\u4ef6\n\u00b6\n\n\n\u4f7f\u7528Werkzeug\u7684\u4e2d\u95f4\u4ef6\u907f\u514dlighttpd\u7684bugs\n\n\nfrom werkzeug.contrib.fixers import LighttpdCGIRootFix\napp.wsgi_app = LighttpdCGIRootFix(app.wsgi_app)\n\n\n\n\n\u4f7f\u7528Flask\u6269\u5c55\n\u00b6\n\n\n\u89c1\u6269\u5c55\n\n\n\u90e8\u7f72\u5230Web\u670d\u52a1\u5668\n\u00b6\n\n\n\u89c1\u90e8\u7f72\n\n\n\u7b80\u5355\u5b8c\u6574\u793a\u4f8b\u6559\u7a0b\n\u00b6\n\n\n\u793a\u4f8b\u529f\u80fd\n\u00b6\n\n\n\u5355\u7528\u6237\u8bc4\u8bba\u7cfb\u7edf\n\n\u4f7f\u7528sqlite\u4f5c\u4e3a\u6570\u636e\u5e93\n\n\u5012\u53d9\u663e\u793a\u6240\u6709\u8bc4\u8bba \n\n\u8bc4\u8bba\u5185\u5bb9HTTP\u4e0d\u5b89\u5168   \n\n\n\u5de5\u7a0b\u76ee\u5f55\n\u00b6\n\n\nstatic\u5b58\u653e\u9759\u6001\u6587\u4ef6\n\ntemplate\u5b58\u653ejinja2\u6a21\u677fhtml\n\n\n/flaskr\n    /static\n    /templates\n\n\n\n\n\u6570\u636e\u5e93\n\u00b6\n\n\nschema.sql\n\n\u5b58\u653e\u8bc4\u8bba\u7684id\uff0c\u6807\u9898\uff0c\u5185\u5bb9\n\n\ndrop table if exists entries;\ncreate table entries (\n    id integer primary key autoincrement,\n    title string not null,\n    text string not null\n);\n\n\n\n\n\u521b\u5efa\u6570\u636e\u5e93\u65b9\u6cd5\u4e00\uff1a\u4f7f\u7528shell\n\n\nsqlite3 /tmp/flaskr.db < schema.sql\n\n\n\n\n\u521b\u5efa\u6570\u636e\u5e93\u65b9\u6cd5\u4e8c\uff1apython\n\n\ndef init_db():\n    # \u5728\u6ca1\u6709\u8bf7\u6c42\u7684\u65f6\u5019\uff0cflask.g\u5168\u5c40\u53d8\u91cf\u65e0\u6cd5\u5f97\u77e5\u5e94\u7528\u4fe1\u606f\uff0c\u4f7f\u7528app_context()\u521b\u5efa\u73af\u5883\u3002\n    with app.app_context():\n        db = get_db()\n        # open_resource\u4eceflask\u5e94\u7528\u76ee\u5f55\u6253\u5f00\u6587\u4ef6\u3002\n        with app.open_resource('schema.sql', mode='r') as f:\n            # \u8bfb\u53d6sql\u811a\u672c\u5e76\u6267\u884c\n            db.cursor().executescript(f.read())\n        db.commit()\n\n@app.cli.command('initdb')\ndef initdb_command():\n    init_db()\n    print('Initialized the database.')\n\n\n\n\nFlask\u5e94\u7528\u542f\u52a8\u3001\u914d\u7f6e\u3001\u6570\u636e\u5e93\u8fde\u63a5\n\u00b6\n\n\n\u4ece\u73af\u5883\u53d8\u91cf\u5bfc\u5165\u8def\u5f84\n\u00b6\n\n\nFlask\u6ca1\u6709\u5f53\u524d\u5de5\u4f5c\u76ee\u5f55\u7684\u6982\u5ff5\uff0c\u56e0\u4e3a\u4e00\u4e2a\u8fdb\u7a0b\u4e2d\u53ef\u80fd\u4f1a\u8fd0\u884c\u591a\u4e2a\u5e94\u7528\u3002\n\n\u53ef\u4ee5\u4f7f\u7528app.root_path\u83b7\u53d6\u5e94\u7528\u8def\u5f84\uff0c\u7528os.path\u8f85\u52a9\u3002\n\n\u53ef\u4ee5\u4f7f\u7528app.config.from_envvar(\"FLASKR_SETTINGS\", silent=True)\u4ece\u73af\u5883\u53d8\u91cf\u4e2d\u83b7\u53d6\u914d\u7f6e\u3002\n\n\n\u4f7f\u7528\u73af\u5883\u53d8\u91cf\u4f20\u9012\u4fe1\u606f\n\u00b6\n\n\nrequest\u662f\u5f53\u524d\u8bf7\u6c42\u7684\u73af\u5883\u53d8\u91cf\n\ng\u662f\u5f53\u524drequest\u5171\u4eab\u4fe1\u606f\u7684\u53d8\u91cf  \n\n\n\u6570\u636e\u5e93\u8fde\u63a5\u4ee3\u7801\n\u00b6\n\n\nimport os\nimport sqlite3\nfrom flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash\n\napp = Flask(__name__)\n\n# \u9ed8\u8ba4\u914d\u7f6e\uff0c\u914d\u7f6e\u5fc5\u987b\u4f7f\u7528\u5927\u5199\napp.config.update(dict(\n    DATABASE=os.path.join(app.root_path, 'flaskr.db'),\n    DEBUG=True,\n    SECRET_KEY='development key',\n    USERNAME='admin',\n    PASSWORD='default'\n))\n\n# \u4ece\u73af\u5883\u53d8\u91cf\u8986\u76d6\u914d\u7f6e\napp.config.from_envvar('FLASKR_SETTINGS', silent=True)\n\ndef connect_db():\n    '''\u6839\u636e\u914d\u7f6e\u6587\u4ef6\u8fde\u63a5\u6570\u636e\u5e93'''\n    rv = sqlite3.connect(app.config['DATABASE'])\n    rv.row_factory = sqlite3.Row\n    return rv\n\ndef get_db():\n    '''\u4fdd\u5b58\u6570\u636e\u5e93\u8fde\u63a5'''\n    if not hasattr(g, 'sqlite_db'):\n        g.sqlite_db = connect_db()\n    return g.sqlite_db\n\n# \u4f7fFlask\u5e94\u7528\u7ed3\u675f\u65f6\u9500\u6bc1\u7684\u88c5\u9970\u5668\n@app.teardown_appcontext\ndef close_db(error):\n    if hasattr(g, 'sqlite_db'):\n        g.sqlite_db.close()\n\nif __name__ == '__main__':\n    app.run()\n\n\n\n\nflask\u5e94\u7528\uff0curl\u5904\u7406\n\u00b6\n\n\n\u663e\u793a\u8bc4\u8bba\n\u00b6\n\n\n@app.route('/')\ndef show_entries():\n    db = get_db()\n    # \u4ece\u6570\u636e\u5e93\u4e2d\u8bfb\u53d6\u6240\u6709\u8bc4\u8bba\n    cur = db.execute('select title, text from entries order by id desc')\n    entries = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]\n    # \u6e32\u67d3\u9875\u9762\n    return render_template('show_entries.html', entries=entries)\n\n\n\n\n\u6dfb\u52a0\u8bc4\u8bba\n\u00b6\n\n\n@app.route('/add', methods=['POST'])\ndef add_entry():\n    # \u5728session\u4e2d\u67e5\u8be2\n    if not session.get('logged_in'):\n        abort(401)\n\n    # \u5199\u5165\u6570\u636e\u5e93\n    db = get_db()\n    db.execute('insert into entries (title, text) values (?, ?)', \n        [request.form['title'], request.form['text']])\n    db.commit()\n\n    # \u53d1\u9001falsh\u6d88\u606f\n    flash('New entry was successfully posted')\n\n    # \u91cd\u5b9a\u5411\u5230\u8bc4\u8bba\u663e\u793a\u9875\u9762\n    return redirect(url_for('show_entries'))\n\n\n\n\n\u767b\u5f55\u9875\u9762\u53ca\u767b\u5f55POST\n\u00b6\n\n\n@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    error = None\n    if request.method == 'POST':\n        # \u767b\u5f55\u9a8c\u8bc1\n        if request.form['username'] != app.config['USERNAME']:\n            error = 'Invalid username'\n        elif request.form['password'] != app.config['PASSWORD']:\n            error = 'Invalid password'\n        # \u767b\u5f55\u6210\u529f\u5199\u5165session\n        else:\n            session['logged_in'] = True\n            flash('You were logged in')\n            return redirect(url_for('show_entries'))\n    # GET\u8bf7\u6c42\u8fd4\u56de\u767b\u5f55\u9875\n    return render_template('login.html', error=error)\n\n\n\n\n\u9000\u51fa\n\u00b6\n\n\n@app.route('/logout')\ndef logout():\n    # \u4eceSession\u4e2d\u5220\u9664\n    session.pop('logged_in', None)\n    flash('You were logged out')\n    return redirect(url_for('show_entries'))\n\n\n\n\nHTML\u6a21\u677f\n\u00b6\n\n\nlayout.html\n\u00b6\n\n\n<!doctype html>\n<title>Flaskr</title>\n<link rel=stylesheet type=text/css href=\"{{url_for('static', filename='style.css')}}\">\n<div class=page>\n    <h1>Flaskr</h1>\n    <div class=metanav>\n        {% if not session.logged_in %}\n            <a href=\"{{url_for('login')}}\">log in</a>\n        {% else %}\n            <a href=\"{{url_for('logout')}}\">log out</a>\n        {% endif %}\n    </div>\n\n    {% for message in get_flashed_messages() %}\n        <div class=flash>{{ message }}</div>\n    {% endfor %}\n\n    {% block body %}\n    {% endblock %}\n</div>\n\n\n\n\nshow_entries.html\n\u00b6\n\n\n\u4f7f\u7528safe\u8fc7\u6ee4\u5668\u662fjajin2\u4e0d\u505a\u5b89\u5168\u8f6c\u6362\n\n\n{% extends \"layout.html\" %}\n{% block body %}\n    {% if session.logged_in %}\n        <form action=\"{{ url_for('add_entry') }}\" method=post class=add-entry>\n            <dl>\n                <dt>Title:</dt>\n                <dd><input type=text size=30 name=title></dd>\n                <dt>Text:</dt>\n                <dd><textarea name=text rows=5 clos=40></textarea></dd>\n                <dd><input type=submit value=Share></dd>\n            <dl>\n        </form>\n    {% endif %}\n\n    <ul class=entires>\n        {% for entry in entries %}\n            <li><h2>{{ entry.title }}</h2>{{ entry.text | safe }}</li>\n        {% else %}\n            <li><em>Unbelievable. No entries here so far</em></li>\n        {% endfor %}\n    </ul>\n{% endblock %}\n\n\n\n\nlogin.html\n\u00b6\n\n\n{% extends \"layout.html\" %}\n{% block body %}\n    <h2>Login</h2>\n    {% if error %}\n        <p class=error><strong>Error:</strong>{{ error }}</p>\n    {% endif %}\n\n    <form action=\"\" method=post>\n        <dl>\n            <dt>Username:</dt>\n            <dd><input type=text name=username></dd>\n            <dt>Passwrod:</dt>\n            <dd><input type=password name=password></dd>\n            <dd><input type=submit value=Login></dd>\n        </dl>\n    </form>\n{% endblock %}\n\n\n\n\nCSS\u6837\u5f0f\n\u00b6\n\n\nstyle.css\n\u00b6\n\n\nbody {font-family: sans-serif; background: #eee;}\na, h1, h2 {color: #377BA8;}\nh1, h2 {font-family: 'Georgia', serif; margin:0;}\nh1 {border-bottom: 2px solid #eee;}\nh2 {font-size: 1.2em;}\n\n.page {margin: 2em auto; width: 35em; border: 5px solid #ccc; padding:0.8em; background: white;}\n.entries {list-style: none; margin: 0; padding: 0;}\n.entries li {margin: 0.8em 1.2em;}\n.entries li h2 {margin-left: -1em;}\n.add-entry {font-size: 0.9em; border-bottom: 1px solid #ccc;}\n.add-entry dl {font-weight: bold;}\n.metanav {text-align: right; font-size: 0.8em; padding: 0.3em; margin-bottom: 1em; background: #fafafa;}\n.flash {background: #CEE5F5; padding: 0.5em; border: 1px solid #AACBE2;}\n.error {background: #F0D6D6; padding: 0.5em;}\n\n\n\n\n\u5355\u5143\u6d4b\u8bd5\n\u00b6\n\n\n\u6d4b\u8bd5\u5de5\u7a0b\u7ed3\u6784\n\u00b6\n\n\nflaskr/\n    flaskr/\n        __init__.py\n        static/\n        templates/\n    tests/\n        test_flaskr.py\n    setup.py\n    MANIFEST.in\n\n\n\n\n\u8fd0\u884c\u6d4b\u8bd5\n\u00b6\n\n\n\u6d4b\u8bd5\u7684\u5927\u6846\u67b6\n\u00b6\n\n\n\u7b2c\u4e00\u4e2a\u6d4b\u8bd5\n\u00b6\n\n\n\u767b\u5f55\u548c\u767b\u51fa\n\u00b6\n\n\n\u6d4b\u8bd5\u6d88\u606f\u7684\u6dfb\u52a0\n\u00b6\n\n\n\u5176\u4ed6\u6d4b\u8bd5\u6280\u5de7\n\u00b6\n\n\n\u4f2a\u9020\u8d44\u6e90\u548c\u4e0a\u4e0b\u6587\n\u00b6\n\n\n\u4fdd\u5b58\u4e0a\u4e0b\u6587\n\u00b6\n\n\n\u8bbf\u95ee\u548c\u4fee\u6539Sessions\n\u00b6\n\n\n\u6a21\u677f\n\u00b6\n\n\nJinja\u914d\u7f6e\n\u00b6\n\n\n\u9ed8\u8ba4\u914d\u7f6e\uff1a\n\n\u6240\u6709\u6269\u5c55\u540d\u4e3a.html .htm .xml .xhtml\u7684\u6728\u677f\u4f1a\u5f00\u542f\u81ea\u52a8\u8f6c\u8bd1\n\n\u5728\u6a21\u677f\u4e2d\u53ef\u4ee5\u5229\u7528{% autoescape false %}\u6807\u7b7e\u9009\u62e9\u8f6c\u8bd1\u662f\u5426\u5f00\u542f\u3002\n\nFlask\u5728Jinja2\u4e0a\u4e0b\u6587\u4e2d\u63d2\u5165\u4e86\u51e0\u4e2a\u5168\u5c40\u51fd\u6570\u548c\u52a9\u624b\uff0c\u53e6\u5916\u8fd8\u6709\u4e00\u4e9b\u76ee\u524d\u9ed8\u8ba4\u7684\u503c\u3002  \n\n\n\u6807\u51c6\u4e0a\u4e0b\u6587\uff0c\u9ed8\u8ba4\u5728Jinja2\u6a21\u677f\u4e2d\u53ef\u7528\u7684\u503c\n\u00b6\n\n\n\u53ef\u4ee5\u4f7f\u7528\u7684\u53d8\u91cf\u548c\u65b9\u6cd5\n\u00b6\n\n\nFlask\u5185\u7f6e\u53d8\u91cf\u53ca\u65b9\u6cd5\uff1a  \n\n\nconfig\uff1aflask.config  \nrequest\uff1aflask.request  \nsession\uff1aflask.session  \ng\uff1aflask.g  \nurl_for()\uff1aflask.url_for()  \nget_flasked_message()\uff1aflask.get_flashed_message()  \n\n\n\n\npython\u53d8\u91cf\uff1a  \n\n\n<p>Dict item: {{ my_dict['key'] }}</p>\n<p>List item: {{ my_list[3] }}</p>\n<p>List with a variable index: {{ my_list[my_index] }}</p>\n<p>Object's method {{ my_object.method() }}</p>\n\n\n\n\n\u5bfc\u5165\u5b8f\uff08Jinja2\u7684\u5b8f\uff09\u7684\u65b9\u6cd5\n\u00b6\n\n\n\u7531\u4e8e\u4ee5\u4e0a\u53d8\u91cf\u662f\u88ab\u6dfb\u52a0\u5230request\u4e2d\u7684\uff0c\u800c\u4e14\u4e0d\u662f\u5168\u5c40\u53d8\u91cf\uff0c\u6240\u4ee5\u60f3\u8981\u5bfc\u5165\u4e00\u4e2a\u9700\u8981\u8bbf\u95eerequest\u7684\u5b8f\uff0c\u9700\u8981\u663e\u5f0f\u5730\u4f20\u5165request\u6216\u53d8\u91cf\u4f5c\u4e3a\u5b8f\u7684\u53c2\u6570\u3002\n\n\u6216\u8005\u5bfc\u5165\u5b8f\u65f6\u624b\u52a8\u5e26\u4e0acontext\uff1a  \n\n\n{% from '_helpers.html' import my_macro with context %}\n\n\n\n\n\u6807\u51c6\u8fc7\u6ee4\u5668\uff0cJinja2\u81ea\u5e26\u7684\u8fc7\u6ee4\u5668\n\u00b6\n\n\ntojson():  \n\n\n<script type=text/javascript>\n    doSomethingWith({{ user.username | tojson | safe }});\n</script>\n\n\n\n\nsafe\uff1a\u6e32\u67d3\u65f6\u4e0d\u8f6c\u8bd1\n\ncapitalize\uff1a\u53e5\u5b50\u9996\u5b57\u6bcd\u5927\u5199  \n\nlower\uff1a\u5168\u90e8\u5c0f\u5199\n\nupper\uff1a\u5168\u90e8\u5927\u5199\n\ntitle\uff1a\u53e5\u5b50\u4e2d\u6240\u6709\u8bcd\u9996\u5b57\u6bcd\u5927\u5199\n\ntrim\uff1a\u53bb\u6389\u9996\u4f4d\u7a7a\u683c\n\nstriptags\uff1a\u53d6\u6d88\u6240\u6709HTML\u6807\u7b7e\n\n\u5176\u4ed6\u5185\u7f6e\u8fc7\u6ee4\u5668\uff1a\nhttp://jinja.pocoo.org/docs/templates/#builtin-filters\n\n\n\u63a7\u5236\u81ea\u52a8\u8f6c\u8bd1\n\u00b6\n\n\nJinja2\u4f1a\u81ea\u52a8\u8f6c\u8bd1HTML\u4e2d\u7684\u7279\u6b8a\u5b57\u7b26\uff0c\u5982\uff1a\n& > < \" '\n\u3002\n\n\u4f46\u662f\u6709\u65f6\u4f1a\u9700\u8981\u63d2\u5165HTML\uff0c\u4f8b\u5982\u63d2\u5165markdown\u8f6c\u6362\u6210\u7684HTML\uff0c\u6709\u4ee5\u4e0b\u4e09\u79cd\u65b9\u6cd5\u3002\n\n1. \u5728\u4f20\u9012\u5230\u6a21\u677f\u4e4b\u524d\uff0c\u5c06HTML\u5b57\u7b26\u4e32\u8f6c\u6362\u6210Markup\u5bf9\u8c61\u3002\u63a8\u8350\u4f7f\u7528\u8fd9\u79cd\u65b9\u6cd5\u3002\n\n2. \u5728\u6a21\u7248\u4e2d\u4f7f\u7528|safe\u8fc7\u6ee4\u5668\u5c06\u53d8\u91cf\u6807\u8bb0\u4e3a\u5b89\u5168\uff0c\u5982\n{{ var | safe }}\n\u3002\n\n3. \u4e34\u65f6\u5b8c\u5168\u7981\u7528\u81ea\u52a8\u8f6c\u8bd1\u5982\n\n\n{% autoescape false %}\n    <p>autoescaping is disabled here</p>\n    <p>{{ will_not_be_escaped_var }}</p>\n{% endautoescape %}\n\n\n\n\n\u6ce8\u518c\u8fc7\u6ee4\u5668\n\u00b6\n\n\n\u4f7f\u7528\u88c5\u9970\u5668\u6807\u8bb0\u81ea\u5b9a\u4e49Jinja2\u8fc7\u6ee4\u5668\n\u00b6\n\n\n@app.template_filter('reverse')\ndef reverse_filter(s):\n    return s[::-1]\n\n\n\n\n\u624b\u52a8\u6dfb\u52a0\u8fc7\u6ee4\u5668\u5230Jinja2\n\u00b6\n\n\ndef reverse_filter(s):\n    return s[::-1]\napp.jinja_env.filters['reverse'] = reverse_filter\n\n\n\n\n\u5728\u6a21\u677f\u4e2d\u4f7f\u7528\u8fc7\u6ee4\u5668\n\u00b6\n\n\n{% for x in mylist | reverse %}\n{% endfor %}\n\n\n\n\n\u4f7f\u7528context_processor\u6dfb\u52a0\u53d8\u91cf\u3001\u51fd\u6570\u6dfb\u52a0\u5230\u6a21\u677f\u4e0a\u4e0b\u6587\n\u00b6\n\n\ncontext_processor\u662f\u4e00\u4e2a\u8fd4\u56dedict\u7684\u51fd\u6570\uff0cdict\u4e2d\u7684\u503c\u53ef\u4ee5\u662f\u53d8\u91cf\u4e5f\u53ef\u4ee5\u662f\u51fd\u6570\n\n\n@app.context_processor\ndef inject_user():\n    return dict(user=g.user)\n\n\n\n\n@app.context_processor\ndef utility_processor():\n    def format_price(amount, currency=u'$'):\n        return u'{0:.2f}{1}.format(amount, currency)\n    return dict(format_price=format_price)\n\n\n\n\n{{ format_price(0.33) }}\n\n\n\n\n\u6a21\u677f\u7ed3\u6784\u63a7\u5236\n\u00b6\n\n\n\u6761\u4ef6\n\u00b6\n\n\n{% if user %}\n    Hello, {{ user }}!\n{% else %}\n    Hello, Stranger!\n{% endif %}\n\n\n\n\n\u5faa\u73af\n\u00b6\n\n\n<ul>\n    {% for comment in comments %}\n        <li>{{ comment }}</li>\n    {% endfor %}\n</ul>\n\n\n\n\n\u5b8f\n\u00b6\n\n\n\u5b9a\u4e49\uff1a\n\n\n{% macro render_comment(comment) %}\n    <li>{{ comment }}</li>\n{% endmacro %}\n\n\n\n\n\u4f7f\u7528\uff1a\n\n\n<ul>\n    {% for comment in comments %}\n        {{ render_comment(comment) }}\n    {% endfor %}\n</ul>\n\n\n\n\n\u4ece\u5176\u4ed6\u6587\u4ef6\u4e2d\u5bfc\u5165\uff1a\n\n\n{% import 'macros.html' as macros %}\n<ul>\n    {% for comment in comments %}\n        {{ macros.render_comment(comment) }}\n    {% endfor %}\n</ul>\n\n\n\n\n\u7ee7\u627f\n\u00b6\n\n\n\u7236\u6a21\u677fbase.html\uff1a\n\n\n<html>\n<head>\n    {% block head %}\n    <title>{% block title %}{% endblock %} - My Application</title>\n    {% endblock %}\n</head>\n<body>\n    {% block body %}\n    {% endblock %}\n</body>\n</html>\n\n\n\n\n\u5b50\u6a21\u677f\uff1a\n\n\n{% extends \"base.html\" %}\n{% block title %}Index{% endblock %}\n{% block head %}\n    {{ super() }}\n    <style>\n    </style>\n{% endblock %}\n{% block body %}\n<h1>Hello, World!</h1>\n{% endblock %}\n\n\n\n\n\u4f7f\u7528\nsuper()\n\u5f15\u7528\u539f\u6a21\u677f\u5185\u5bb9\uff0c\u7528\u4e8e\u5411\u539f\u6709\u5757\u4e2d\u6dfb\u52a0\u65b0\u5185\u5bb9\n\n\n\u65e5\u5fd7\u3001\u90ae\u4ef6\u3001\u8c03\u8bd5\u6a21\u5f0f\n\u00b6\n\n\nFlask\u9ed8\u8ba4\u4e0d\u4f1a\u5199\u4efb\u4f55\u65e5\u5fd7\u3002\n\n\n\u914d\u7f6eFlask\u53d1\u9001\u9519\u8bef\u90ae\u4ef6\n\u00b6\n\n\nADMINS = ['yourname@example.com']\nif not app.debug:\n    import logging\n    from logging.handlers import SMTPHandler\n    mail_handler = SMTPHandler('127.0.0.1', 'server-error@example.com', ADMINS, 'YourApplication Failed')\n    mail_handler.setLevel(logging.ERROR)\n    app.logger.addHandler(mail_handler)\n\n\n\n\n\u8bb0\u5f55\u5230\u6587\u4ef6\n\u00b6\n\n\n\u65e5\u5fd7\u8bb0\u5f55\u5668\uff1a\n\n- FileHandler \u8bb0\u5f55\u6587\u4ef6\u65e5\u5fd7\n\n- RotatingFileHandler \u5faa\u73af\u8986\u76d6\u8bb0\u5f55\u65e5\u5fd7\n\n- NTEventLogHandler \u8bb0\u5f55\u65e5\u5fd7\u5230Windows\u7cfb\u7edf\u4e8b\u4ef6\n\n- SysLogHandler \u8bb0\u5f55\u65e5\u5fd7\u5230Unix\u7cfb\u7edf\u65e5\u5fd7\n\n\nif not app.debug:\n    import logging\n    from themodule import TheHandlerYouWant\n    file_handler = TheHandlerYouWant(...)\n    file_handler.setLevel(logging.WARNING)\n    app.logger.addHandler(file_handler)\n\n\n\n\n\u63a7\u5236\u65e5\u5fd7\u683c\u5f0f\n\u00b6\n\n\n\u90ae\u4ef6\u683c\u5f0f\n\u00b6\n\n\nfrom logging import Formatter\nmail_handler.setFormatter(Formatter('''\nMessage type:       %(levelname)s\nLocation:           %(pathname)s:%(lineno)d\nModule:             %(module)s\nFunction:           %(funcName)s\nTime:               %(asctime)s\n\nMessage:\n\n%(message)s\n'''))\n\n\n\n\n\u65e5\u5fd7\u683c\u5f0f\n\u00b6\n\n\nfrom logging import Formatter\nfile_handler.setFormatter(Formatter(\n    '%(asctime)s %(levelname)s: %(message)s '\n    '[in %(pathname)s:%(lineno)d]'\n))\n\n\n\n\n\u5e38\u7528\u65e5\u5fd7\u53d8\u91cf\n\u00b6\n\n\n\n\n\n\n\n\n\u683c\u5f0f\n\n\n\u63cf\u8ff0\n\n\n\n\n\n\n\n\n\n\n%(levelname)s\n\n\n\u6d88\u606f\u6587\u672c\u7684\u8bb0\u5f55\u7b49\u7ea7 ('DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL').\n\n\n\n\n\n\n%(pathname)s\n\n\n\u53d1\u8d77\u65e5\u5fd7\u8bb0\u5f55\u8c03\u7528\u7684\u6e90\u6587\u4ef6\u7684\u5b8c\u6574\u8def\u5f84\uff08\u5982\u679c\u53ef\u7528\uff09\n\n\n\n\n\n\n%(filename)s\n\n\n\u8def\u5f84\u4e2d\u7684\u6587\u4ef6\u540d\u90e8\u5206\n\n\n\n\n\n\n%(module)s\n\n\n\u6a21\u5757\uff08\u6587\u4ef6\u540d\u7684\u540d\u79f0\u90e8\u5206\uff09\n\n\n\n\n\n\n%(funcName)s\n\n\n\u5305\u542b\u65e5\u5fd7\u8c03\u7528\u7684\u51fd\u6570\u540d\n\n\n\n\n\n\n%(lineno)d\n\n\n\u65e5\u5fd7\u8bb0\u5f55\u8c03\u7528\u6240\u5728\u7684\u6e90\u6587\u4ef6\u884c\u7684\u884c\u53f7\uff08\u5982\u679c\u53ef\u7528\uff09\n\n\n\n\n\n\n%(asctime)s\n\n\nLogRecord \u521b\u5efa\u65f6\u7684\u4eba\u7c7b\u53ef\u8bfb\u7684\u65f6\u95f4\u3002\n\n\n\n\n\n\n%(message)s\n\n\n\u8bb0\u5f55\u7684\u6d88\u606f\uff0c\u89c6\u4e3a msg % args\n\n\n\n\n\n\n\n\n\u9ed8\u8ba4\u60c5\u51b5\u4e0b\uff0casctime\u683c\u5f0f\u4e3a \"2003-07-08 16:49:45,896\" \uff08\u9017\u53f7\u540e\u7684\u6570\u5b57\u65f6\u95f4\u7684\u6beb\u79d2\u90e8\u5206\uff09\u3002\u8fd9\u53ef\u4ee5\u901a\u8fc7\u7ee7\u627f :class:~logging.Formatter\uff0c\u5e76\u91cd\u8f7d formatTime() \u6539\u53d8\u3002\n\n\nformat(): \u5904\u7406\u5b9e\u9645\u683c\u5f0f\uff0c\u8f93\u5165LogRecord\uff0c\u8f93\u51fa\u683c\u5f0f\u5316\u540e\u7684\u5b57\u7b26\u4e32\u3002\n\nformatTime(): \u63a7\u5236asctime\u683c\u5f0f\u3002\n\nformatException(): \u63a7\u5236\u5f02\u5e38\u7684\u683c\u5f0f\uff0c\u8f93\u5165exc_info\uff0c\u8f93\u51fa\u5b57\u7b26\u4e32\u3002\n\n\n\u5176\u4ed6\u7684\u5e93\n\u00b6\n\n\n\u4e0d\u5efa\u8bae\u4f7f\u7528Flask.logging\u7edf\u4e00\u914d\u7f6e\u6240\u6709\u65e5\u5fd7\uff0c\u56e0\u4e3a\u8fd9\u6837\u8fd0\u884c\u591a\u4e2a\u5e94\u7528\u65f6\u4e0d\u80fd\u5206\u522b\u914d\u7f6e\u3002\n\n\u5efa\u8bae\u4f7f\u7528getLogger\u83b7\u53d6\u65e5\u5fd7\u8bb0\u5f55\uff0c\u7136\u540e\u904d\u5386\u65e5\u5fd7\u8bb0\u5f55\u5668\uff1a\n\n\nfrom logging import getLogger\nlogger = [app.logger, getLogger('sqlalchemy'), getLogger('otherlibrary']\nfrom logger in loggers:\n    logger.addHandler(mail_handler)\n    logger.addHandler(file_handler)\n\n\n\n\n\u5f00\u542fDebug\n\u00b6\n\n\napp.debug = True\n\u6216\nrun(debug=True)\n\n\n\n\n\u8c03\u8bd5\u5668\u914d\u7f6e\n\u00b6\n\n\nFlask\u9ed8\u8ba4\u8c03\u8bd5\u5668\u53ef\u80fd\u4f1a\u4e0e\u5176\u4ed6\u8c03\u8bd5\u5668\u51b2\u7a81\u3002\n\n- debug: \u662f\u5426\u5f00\u542f\u8c03\u8bd5\n\n- use_debugger: \u662f\u5426\u4f7f\u7528\u5185\u90e8Flask\u8c03\u8bd5\u5668\n\n- use_reloader: \u662f\u5426\u5728\u5f02\u5e38\u65f6\u91cd\u65b0\u518d\u5982\u5e76\u521b\u5efa\u5b50\u8fdb\u7a0b\n\n\n\u5f00\u542f\u5916\u90e8\u8c03\u8bd5\u5668\uff08Aptana/Eclipse\uff09\u914d\u7f6e\u793a\u4f8b\uff1a\n\nconfig.yaml\n\n\nFlask:\n    DEBUG: True\n    DEBUG_WITH_APTANA: True\n\n\n\n\nif __name__ == '__main__':\n    app = create_app(config='config.yaml')\n\n    if app.debug:\n        # \u9ed8\u8ba4\u4f7f\u7528Flask\u5185\u90e8\u8c03\u8bd5\u5668\n        use_debugger = True\n    try:\n        # \u5f53\u5916\u90e8\u8c03\u8bd5\u5668\u5f00\u542f\u65f6\uff0c\u5173\u95edFlask\u5185\u90e8\u8c03\u8bd5\u5668\n        use_debugger = not(app.config.get('DEBUG_WITH_APTANA'))\n    except:\n        pass\n    app.run(use_debugger=use_debugger, debug=app.debug, use_reloader=use_debugger, host='0.0.0.0')\n\n\n\n\n\u914d\u7f6e\u5904\u7406\n\u00b6\n\n\n\u914d\u7f6e\u57fa\u7840\n\u00b6\n\n\n\u5185\u7f6e\u7684\u914d\u7f6e\u503c\n\u00b6\n\n\n\u4ece\u6587\u4ef6\u914d\u7f6e\n\u00b6\n\n\n\u914d\u7f6e\u7684\u6700\u4f73\u5b9e\u8df5\n\u00b6\n\n\n\u5f00\u53d1/\u751f\u4ea7\n\u00b6\n\n\n\u5b9e\u4f8b\u6587\u4ef6\u5939\n\u00b6\n\n\n\u4fe1\u53f7\n\u00b6\n\n\n\u8ba2\u9605\u4fe1\u53f7\n\u00b6\n\n\n\u521b\u5efa\u4fe1\u53f7\n\u00b6\n\n\n\u53d1\u9001\u4fe1\u53f7\n\u00b6\n\n\n\u4fe1\u53f7\u4e0eFlask\u7684\u8bf7\u6c42\u4e0a\u4e0b\u6587\n\u00b6\n\n\n\u57fa\u4e8e\u88c5\u9970\u5668\u7684\u4fe1\u53f7\u8ba2\u9605\n\u00b6\n\n\n\u6838\u5fc3\u4fe1\u53f7\n\u00b6\n\n\nPluggable Views\n\u00b6\n\n\n\u57fa\u672c\u539f\u5219\n\u00b6\n\n\n\u65b9\u6cd5\u63d0\u793a\n\u00b6\n\n\n\u57fa\u4e8e\u8c03\u5ea6\u7684\u65b9\u6cd5\n\u00b6\n\n\n\u88c5\u9970\u8bd5\u56fe\n\u00b6\n\n\n\u57fa\u4e8eAPI\u7684\u65b9\u6cd5\u89c6\u56fe\n\u00b6\n\n\n\u5e94\u7528\u4e0a\u4e0b\u6587\n\u00b6\n\n\n\u5e94\u7528\u4e0a\u4e0b\u6587\u7684\u4f5c\u7528\n\u00b6\n\n\n\u5728\u4e00\u4e2aPython\u8fdb\u7a0b\u4e2d\u53ef\u4ee5\u8fd0\u884c\u591a\u4e2aFlask\u5e94\u7528\u3002\n\n\u4e3a\u4e86\u4e0d\u4f7f\u7528\u53c2\u6570\u5c42\u5c42\u4f20\u9012context\uff0cFlask\u4f7f\u7528current_app\u6307\u5411\u5f53\u524d\u8bf7\u6c42\u6240\u5c5e\u7684\u5e94\u7528\u3002  \n\n\n\u521b\u5efa\u5e94\u7528\u4e0a\u4e0b\u6587\n\u00b6\n\n\n\u5f53\u4e00\u4e2arequest\u7684context\u88ab\u653e\u5165\u5904\u7406\u6808\u65f6\uff0c\u5982\u679c\u6709\u9700\u8981\uff0c\u5e94\u7528context\u5c31\u4f1a\u88ab\u4e00\u8d77\u521b\u5efa\u3002\n\n\u663e\u793a\u8c03\u7528app_context()\u65b9\u6cd5\u53ef\u4ee5\u521b\u5efa\u5e94\u7528context\uff0c\u5982\uff1a  \n\n\nfrom flask import Flask, current_app\n\napp = Flask(__name__)\nwith app.app_context():\n    # \u5728\u8fd9\u91cc\u5c31\u53ef\u4ee5\u901a\u8fc7current_app\u8bbf\u95ee\u5e94\u7528context\n    print current_app.name\n    print current_app.url_map\n\n\n\n\n\u5e94\u7528\u4e0a\u4e0b\u6587\u5c40\u90e8\u53d8\u91cf\n\u00b6\n\n\nflask.current_app # \u7a0b\u5e8f\u4e0a\u4e0b\u6587\uff0c\u5f53\u524d\u7a0b\u5e8f\n\nflask.g # \u5b58\u50a8\u5728\u7a0b\u5e8f\u4e0a\u4e0b\u6587\uff0c\u5904\u7406\u8bf7\u6c42\u65f6\u7528\u4f5c\u4e34\u65f6\u5b58\u50a8\u5bf9\u8c61\uff0c\u6bcf\u6b21\u8bf7\u6c42\u4f1a\u91cd\u8bbe\n\nflask.request # \u8bf7\u6c42\u4e0a\u4e0b\u6587\uff0c\u8bf7\u6c42\u5bf9\u8c61\n\nflask.session # \u8bf7\u6c42\u4e0a\u4e0b\u6587\uff0c\u7528\u6237\u4f1a\u8bdd  \n\n\n\u4e0a\u4e0b\u6587\u7528\u6cd5\n\u00b6\n\n\n\u663e\u5f0f\u521b\u5efa\u4f7f\u7528\u8d44\u6e90\n\u00b6\n\n\n\u53ef\u4ee5\u5728\u4e0a\u4e0b\u6587\u4e2d\u7f13\u5b58\u6570\u636e\u5e93\u8fde\u63a5\u3002  \n\n\nimport sqlite3\nfrom flask import g\n\ndef get_db():\n    db = getattr(g, '_database', None)\n    if db is None:\n        db = g._database = connect_to_database()\n    return db\n\n@app.teardown_appcontext\ndef teardown_db(exception):\n    db = getattr(g, '_database', None)\n    if db is not None:\n        db.close()\n\n\n\n\n\u9690\u5f0f\u521b\u5efa\u4f7f\u7528\u8d44\u6e90\n\u00b6\n\n\n\u4f7f\u7528LocalProxy\u5b58\u50a8\u53d8\u91cf\n\n\nfrom werkzeug.local import LocalProxy\ndb = LocalProxy(get_db)\n\n# \u7528\u6237\u53ef\u4ee5\u76f4\u63a5\u901a\u8fc7db\u8bbf\u95ee\u6570\u636e\uff0cdb\u5df2\u7ecf\u5728\u5185\u90e8\u5b8c\u6210get_db\u8c03\u7528\n\n\n\n\n\u8bf7\u6c42\u4e0a\u4e0b\u6587\n\u00b6\n\n\n\u4e0a\u4e0b\u6587\u4f5c\u7528\u57df\n\u00b6\n\n\n\u8bf7\u6c42context\u4ec5\u5728\u5904\u7406\u8bf7\u6c42\u65f6\u5b58\u5728\u3002\u4f8b\u5982\u4ee5\u4e0b\u4ee3\u7801\u5728\u6ca1\u6709\u8bf7\u6c42\u65f6\u8c03\u7528\u4f1a\u53d1\u751f\u9519\u8bef\uff1a  \n\n\nfrom flask import reqeust, url_for\n\ndef redirect_url():\n    return request.args.get('next') or request.referrer or url_for('index')\n\n\n\n\n\u53ef\u4ee5\u4f7f\u7528\ntext_request_context('/?next=http://example.com/'\n\u6a21\u62df\u8bf7\u6c42\u3002\n\n\u4f7f\u7528with\u7684\u65b9\u5f0f\uff1a\n\n\nwith app.text_request_context('/?next=http://example.com/')\n    redirect_url()\n\n\n\n\n\u624b\u52a8\u5165\u6808\u8bf7\u6c42\u7684\u65b9\u5f0f\uff1a\n\n\nctx = app.text_request_context('/?next=http://example.com/')\n# \u5165\u6808\nctx.push()\n# \u5904\u7406\u8bf7\u6c42\nredirect_url()\n# \u51fa\u6808\nctx.pop()\n\n\n\n\nFlask\u8bf7\u6c42context\u5185\u90e8\u5904\u7406\n\u00b6\n\n\ndef wsgi_app(self, environ):\n    with self.request_context(environ):\n        try:\n            response = self.full_dispatch_request()\n        except Exception, e:\n            response = self.make_response(self.handle_exception(e))\n        return response(environ, start_response)\n\n\n\n\n\u56de\u8c03\u548c\u9519\u8bef\n\u00b6\n\n\n\n\n\u5728\u6240\u6709\u8bf7\u6c42\u524d\u8c03\u7528\nbefore_first_request()\n\u3002\n\n\n\u6bcf\u4e2a\u8bf7\u6c42\u4e4b\u524d\uff0c\u6267\u884c\nbefore_request()\n\u4e0a\u7ed1\u5b9a\u7684\u51fd\u6570\uff0c\u82e5\u67d0\u4e2a\u51fd\u6570\u8fd4\u56de\u4e86\u4e00\u4e2a\nresponse\n\u5219\u5176\u4ed6\u51fd\u6570\u5c06\u4e0d\u4f1a\u88ab\u8c03\u7528\u3002\n\n\n\u5982\u679c\nbefore_request()\n\u7ed1\u5b9a\u7684\u51fd\u6570\u6ca1\u6709\u8fd4\u56de\nresponse\n\uff0c\u5219url\u5904\u7406\u51fd\u6570\u88ab\u6b63\u5e38\u8c03\u7528\u3002\n\n\nurl\u5904\u7406\u51fd\u6570\u8fd4\u56de\u540e\u88ab\u8f6c\u5316\u6210\nresponse\n\u5bf9\u8c61\uff0c\u4e4b\u540e\u4f1a\u8c03\u7528\nafter_request()\n\n\n\u6700\u540e\u4f1a\u8c03\u7528\nteardown_request()\n\u4e0a\u7ed1\u5b9a\u7684\u51fd\u6570\uff0c\u5373\u4f7f\u53d1\u751f\u5f02\u5e38\u4e5f\u4f1a\u88ab\u6267\u884c\u3002\n\n\n\n\nteardown_request()\n\u00b6\n\n\n@app.teardown_request\ndef teardown():\n    pass\n\nwith app.text_client() as client:\n    resp = client.get('/foo')\n\n# teardown_request()\u5728\u8fd9\u91cc\u88ab\u8c03\u7528\n\n\n\n\n\u7559\u610f\u4ee3\u7406\n\u00b6\n\n\n\u9519\u8bef\u65f6\u7684\u4e0a\u4e0b\u6587\u4fdd\u62a4\n\u00b6\n\n\n\u7528\u84dd\u56fe\u5b9e\u73b0\u6a21\u5757\u5316\n\u00b6\n\n\n\u4e3a\u4ec0\u4e48\u4f7f\u7528\u84dd\u56fe\n\u00b6\n\n\n\n\n\u628a\u4e00\u4e2a\u5e94\u7528\u5206\u6210\u51e0\u4e2a\u6a21\u5757\u3002\n\n\n\u7528URL\u524d\u7f00\u6216\u5b50\u57df\u540d\u6a21\u5757\u5316\u7ba1\u7406URL\u3002\n\n\n\u53ef\u4ee5\u4f7f\u4e00\u4e2a\u6a21\u5757\u83b7\u5f97\u591a\u79cdURL\u89c4\u5219\u3002\n\n\n\u53ef\u4ee5\u4f7f\u7528\u84dd\u56fe\u6a21\u5757\u5316\u9759\u6001\u6587\u4ef6\u3001\u6a21\u5757\u5316\u6a21\u677f\u3001\u6a21\u677f\u5316\u8fc7\u6ee4\u5668\u3002\n\n\n\u5728Flask\u6269\u5c55\u4e2d\u4f7f\u7528\u3002\n\n\n\n\n\u84dd\u56fe\u7684\u8bbe\u60f3\n\u00b6\n\n\n\n\n\u6ce8\u518c\u5f0f\u5730\u96c6\u6210\u5230\u5e94\u7528\u3002\n\n\n\u6309\u6a21\u5757\u5206\u914d\u8bf7\u6c42\u548c\u5904\u7406URL\u3002\n\n\n\n\n\u521b\u5efa\u84dd\u56fe\uff08\u6a21\u5757\uff09\n\u00b6\n\n\nfrom flask import Blueprint, render_template, abort\nfrom jinja2 import TemplateNotFound\n\nsimple_page = Blueprint('simple_page', __name__, template_folder='templates')\n\n@simple_page.route('/', defaults={'page': 'index'})\n@simple_page.route('/<page>')\ndef show(page):\n    try:\n        return render_template('pages/%s.html' % page)\n    except TemplateNotFound:\n        abort(404)\n\n\n\n\n\u84dd\u56fe\u7ed1\u5b9a\u5230app\u65f6\uff0c\n@simple_page.route\n\u4f1a\u5c06\nshow\n\u6ce8\u518c\u4e3a\nsimple_page.show\n\n\n\u6ce8\u518c\uff08\u4f7f\u7528\uff09\u84dd\u56fe\uff08\u6a21\u5757\uff09\n\u00b6\n\n\nfrom flask import Flask\nfrom yourapplication.simple_page import simple_page\n\napp = Flask(__name__)\n\n# \u6302\u8f7d\u5728\u6839\u76ee\u5f55\napp.register_blueprint(simple_page)\n\n# \u6302\u8f7d\u5230/pages\napp.register_blueprint(simple_page, url_prefix='/pages')\n\n\n\n\n\u84dd\u56fe\u4f7f\u7528\uff08\u6a21\u5757\uff09\u8d44\u6e90\n\u00b6\n\n\n\u84dd\u56fe\u8d44\u6e90\u6587\u4ef6\u5939\n\u00b6\n\n\n\u84dd\u56fe\u82e5\u4f7f\u7528\u5355\u72ec\u6587\u4ef6\u5939\uff08Python\u5305\uff09\uff0c\u8fd9\u4e2a\u6587\u4ef6\u5939\u5c31\u662f\u84dd\u56fe\u7684\u8d44\u6e90\u6587\u4ef6\u5939\u3002\n\n\u84dd\u56fe\u82e5\u5171\u7528\u6587\u4ef6\u5939\uff08Python\u6a21\u5757\uff09\uff0c\u6a21\u5757\u6240\u5728\u6587\u4ef6\u5939\u5c31\u662f\u8d44\u6e90\u6587\u4ef6\u5939\u3002\n\n\u53ef\u4ee5\u4f7f\u7528\nsimple_page.root_path\n\u83b7\u53d6\u8d44\u6e90\u8def\u5f84\u3002 \n\n\u53ef\u4ee5\u4f7f\u7528\nsimple_page.open_resource()\n\u4ece\u6587\u4ef6\u5939\u6253\u5f00\u6587\u4ef6\u3002\u5982\uff1a\n\n\nwith simple_page.open_resource('static/style.css') as f:\n    code = f.read()\n\n\n\n\n\u9759\u6001\u6587\u4ef6\n\u00b6\n\n\n\u53ef\u4ee5\u4f7f\u7528\nstatic_folder\n\u53c2\u6570\u6307\u5b9a\u9759\u6001\u6587\u4ef6\u5939\u8def\u5f84\uff0c\u5982\uff1a\n\n\nadmin = Blueprint('admin', __name__, static_folder='static')\n\n\n\n\n\u82e5admin\u6a21\u5757\u52a0\u8f7d\u5728\u6839\u8def\u5f84'/'\uff0c\u9759\u6001\u8d44\u6e90\u8def\u5f84\u5c31\u662f'/static/xxx' \n\n\u82e5admin\u6a21\u5757\u52a0\u8f7d\u5728'/admin'\uff0c\u9759\u6001\u8d44\u6e90\u8def\u5f84\u5c31\u662f'/admin/static/xxx' \n\n\u53ef\u4ee5\u4f7f\u7528admin.static\u8bbf\u95eestatic\u53c2\u6570\uff0c\u5982\uff1a\n\n\nurl_for('admin.static', filename='style.css')\n\n\n\n\n\u6a21\u677f\u8def\u5f84\n\u00b6\n\n\nadmin = Blueprint('admin', __name__, template_folder='templates')\n\n\n\n\n\u6784\u9020URL\n\u00b6\n\n\n# \u4e0d\u540c\u6a21\u5757\u6784\u9020url\nurl_for('admin.index')\n\n# \u76f8\u540c\u6a21\u5757\u6784\u9020url\nurl_for('.index')\n\n\n\n\nFlask\u6269\u5c55\n\u00b6\n\n\n\u5bfb\u627e\u6269\u5c55\n\u00b6\n\n\n\u4f7f\u7528\u6269\u5c55\n\u00b6\n\n\nFlask 0.8\u4ee5\u524d\n\u00b6\n\n\nFlask-Script\n\u00b6\n\n\n\u547d\u4ee4\u4ea4\u4e92\u5f0f\u64cd\u4f5cFlask\n\n\nfrom flask import Flask\n# \u5e9f\u5f03\nfrom flask.ext.script import Manager\n# \u5efa\u8bae\nfrom flask_script import Manager\n\napp = Flask(__name__)\nmanager = Manager(app)\n\nif __name__ == '__main__':\n    manager.run()\n\n\n\n\npy -3 hello.py --help\npy -3 hello.py shell --help\npy -3 hello.py runserver --help\n\n\n\n\n\u81ea\u52a8\u5bfc\u5165\u4e0a\u4e0b\u6587\uff1a\n\n\nfrom flask_script import Shell\n\ndef make_shell_context():\n    return dict(app=app, db=db, User=User, Role=Role)\nmanager.add_command('shell', Shell(make_context=make_shell_context))\n\n\n\n\nFlask-Bootstrap\n\u00b6\n\n\nflask_bootstrap\u63d0\u4f9bbootstrap\uff0cgoogle analytics\uff0cWTForm\u5b9a\u4e49\u7b49\u6a21\u677f\n\n\nbase.html\u5b9a\u4e49\u7684\u5757\n\u00b6\n\n\n\n\n\n\n\n\n\u5757\u540d\n\n\n\u8bf4\u660e\n\n\n\n\n\n\n\n\n\n\ndoc\n\n\n\u6574\u4e2aHTML\u6587\u6863\n\n\n\n\n\n\nhtml_attribs\n\n\n\u6807\u7b7e\u7684\u5c5e\u6027\n\n\n\n\n\n\nhtml\n\n\n\u6807\u7b7e\u4e2d\u7684\u5185\u5bb9\n\n\n\n\n\n\nhead\n\n\n\u6807\u7b7e\u4e2d\u7684\u5185\u5bb9\n\n\n\n\n\n\ntitle\n\n\n\u6807\u7b7e\u4e2d\u7684\u5185\u5bb9\n\n\n\n\n\n\nmetas\n\n\n\u4e00\u7ec4\n\u6807\u7b7e\n\n\n\n\n\n\nstyles\n\n\n\u5c42\u53e0\u6837\u5f0f\u8868\u5b9a\u4e49\n\n\n\n\n\n\nbody_attribs\n\n\n\u6807\u7b7e\u7684\u5c5e\u6027\n\n\n\n\n\n\nbody\n\n\n\u6807\u7b7e\u4e2d\u7684\u5185\u5bb9\n\n\n\n\n\n\nnavbar\n\n\n\u7528\u6237\u5b9a\u4e49\u7684\u5bfc\u822a\u6761\n\n\n\n\n\n\ncontent\n\n\n\u7528\u6237\u5b9a\u4e49\u7684\u9875\u9762\u5185\u5bb9\n\n\n\n\n\n\nscripts\n\n\n\u6587\u6863\u5e95\u90e8\u7684Javascript\u58f0\u660e\n\n\n\n\n\n\n\n\n\u907f\u514d\u8986\u76d6\u6a21\u677f\u539f\u6709\u5185\u5bb9\uff1a\n\n\n{% block scripts %}\n{{ super() }}\n<script type=\"text/javascript\" src=\"my-script.js\"></script>\n{% endblock %}\n\n\n\n\npython\u521d\u59cb\u5316\n\u00b6\n\n\nfrom flask import app\nfrom flask_bootstrap import Bootstrap\n\napp = Flask(__name__)\nbootstrap = Bootstrap(app)\n\napp.run()\n\n\n\n\n\u6a21\u677f\u7ee7\u627f\n\u00b6\n\n\n{% extends \"bootstrap/base.html\" %}\n\n{% block title %}Flasky{% endblock %}\n\n{% block navbar %}\n<div class=\"navbar navbar-inverse\" role=\"navigation\">\n    <div class=\"container\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" href=\"/\">Flasky</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"/\">Home</a></li>\n            </ul>\n        </div>\n    </div>\n</div>\n{% endblock %}\n\n{% block content %}\n<div class=\"container\">\n    <div class=\"page-header\">\n        <h1>Hello, {{ name }}!</h1>\n    </div>\n</div>\n{% endblock %}\n\n\n\n\nFlask-Moment\n\u00b6\n\n\nmoment.js\u63d0\u4f9b\u672c\u5730\u5316\u65f6\u95f4\n\nhttp://momentjs.com/docs/#/displaying/\n\n\n\u5b89\u88c5\uff1a\n\n\npip install flask-moment\n\n\n\n\npython\uff1a\n\n\nfrom datetime import datetime\nfrom flask.ext.moment import Moment\nmoment = Moment(app)\n\n@app.route('/')\ndef index():\n    return render_template('index.html', current_time=datetime.utcnow())\n\n\n\n\nmoment\u9700\u8981\u8f93\u5165\u4e0d\u5e26\u65f6\u533a\u7684utc\u65f6\u95f4\n\n\n\u6a21\u677f\uff1a\n\n\n{% block scripts %}\n{{ super() }}\n{{ moment.include_moment() }}\n{% endblock %}\n\n\n{% block page_content %}\n<p>The local date and time is {{ moment(current_time).format('LLL') }}.</p>\n<p>That was {{ moment(current_time).fromNow(refresh=True) }}.</p>\n{% endblock %}\n\n\n\n\nmoment.format\u663e\u793a\u65f6\u95f4\n\n\nmoment.fromNow\u663e\u793a\u8ddd\u79bb\u5f53\u524d\u591a\u4e45\uff0c\u52a8\u6001\u5237\u65b0\n  \n\n\n\u8bed\u8a00\u672c\u5730\u5316\uff1a\n\n\n{{ moment.lang('es') }}\n{{ moment.lang('zh-cn') }}\n\n\n\n\nFlask-WTF\n\u00b6\n\n\nflask-wtf\u9ed8\u8ba4\u5f00\u542f\u9632\u6b62csrf\u653b\u51fb\uff0c\u5373\u53d1\u9001\u8868\u5355\u65f6\u53d1\u9001\u4e00\u4e2akey\u8981\u6c42\u54cd\u5e94\u65f6\u5e26\u56de\uff0ckey\u9519\u8bef\u65f6\u4e3a\u4f2a\u9020\u54cd\u5e94\u3002\n\n\n\u5b89\u88c5\uff1a\n\n\npip install flask-wtf\n\n\n\n\n\u542f\u52a8:\n\n\napp = Flask(__name__)\napp.config['SECRET_KEY'] = 'flask-wtf\u9700\u8981\u4f7f\u7528secret_key'\n\n\n\n\n\u5b9a\u4e49\uff1a\n\n\nfrom flask_wtf import Form\nfrom wtforms import StringField, SubmitField\nfrom wtforms.validators import Required\n\nclass NameForm(Form):\n    name = StringField('What is your name?', validators=[Required()])\n    submit = SubmitField('Submit')\n\n\n\n\nwtf\u624b\u52a8\u751f\u6210\u8868\u5355\uff1a\n\n\n<form method=\"POST\">\n    {{ form.hidden_tag() }}\n    {{ form.name.label }} {{ form.name() }}\n    {{ form.name.label }} {{ form.name(id='my-text-field') }} # \u6307\u5b9aID\u7b49\u7528\u4e8e\u6837\u5f0f\u8868\n    {{ form.submit() }}\n</form>\n\n\n\n\nflask-bootstrap + flask-wtf\u81ea\u52a8\u751f\u6210\u8868\u5355\uff1a\n\n\n{% import \"bootstrap/wtf.html\" as wtf %}\n{{ wtf.quick_form(form) }}\n\n\n\n\n\u8868\u5355\u9a8c\u8bc1\uff1a\n\n\n@app.route('/', methods=['GET', 'POST'])\ndef index():\n    name = None\n    form = NameForm()\n    if form.validate_on_submit():\n        name = form.name.data\n        form.name.date = ''\n    return render_template('index.html', form=form, name=name)\n\n\n\n\nGET POST\u4e8c\u5408\u4e00\uff0cPOST\u65f6\u901a\u8fc7validate_on_submit\u5224\u65ad\u83b7\u53d6\u8f93\u5165\n\n\nPOST\u540e\u5237\u65b0\u5904\u7406\uff1a\n\nPOST\u540e\u5237\u65b0\uff0c\u6d4f\u89c8\u5668\u4f1a\u91cd\u590dPOST\uff0c\u53ef\u4ee5\u901a\u8fc7POST\u54cd\u5e94URL\u91cd\u5b9a\u5411\u907f\u514d\u3002  \n\n\nfrom flask import Flask, render_template, session, redirect, url_for\n\n@app.route('/', methods=['GET', 'POST'])\ndef index():\n    form = NameForm()\n    if form.validate_on_submit():\n        session['name'] = form.name.data\n        return redirect(url_for('index'))\n    return render_template('index.html', form=form, name=session.get('name'))\n\n\n\n\n\u5b57\u6bb5\uff1a\n\n\u5b57\u6bb5\u7c7b\u578b | \u8bf4\u660e\n\n---------|-----\n\nStringField | \u6587\u672c\u5b57\u6bb5\n\nTextAreaField | \u591a\u884c\u6587\u672c\u5b57\u6bb5\n\nPasswordField | \u5bc6\u7801\u6587\u672c\u5b57\u6bb5\n\nHiddenField | \u9690\u85cf\u6587\u672c\u5b57\u6bb5\n\nDateField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3adatetime.date\u683c\u5f0f\n\nDateTimeField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3adatetime.datetime\u683c\u5f0f\n\nIntegerField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3a\u6574\u6570\n\nDecimalField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3adecimal.Decimal\n\nFloatField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3a\u6d6e\u70b9\u6570\n\nBooleanField | \u590d\u9009\u6846\uff0c\u503c\u4e3aTrue\u548cFalse\n\nRadioField | \u4e00\u7ec4\u5355\u9009\u6846\n\nSelectField | \u4e0b\u62c9\u5217\u8868\n\nSelectMultipliField | \u4e0b\u62c9\u5217\u8868\uff0c\u53ef\u9009\u62e9\u591a\u4e2a\u503c\n\nFileField | \u6587\u4ef6\u4e0a\u4f20\u5b57\u6bb5\n\nSubmitField | \u8868\u5355\u63d0\u4ea4\u6309\u94ae\n\nFormField | \u628a\u8868\u5355\u4f5c\u4e3a\u5b57\u6bb5\u5d4c\u5165\u53e6\u4e00\u4e2a\u8868\u5355\n\nFieldList | \u4e00\u7ec4\u6307\u5b9a\u7c7b\u578b\u7684\u5b57\u6bb5\n\n\n\u9a8c\u8bc1\uff1a\n\n\u9a8c\u8bc1\u51fd\u6570 | \u8bf4\u660e\n\n---------|-----\n\nEmail | \u9a8c\u8bc1\u7535\u5b50\u90ae\u4ef6\u5730\u5740 \n\nEqualTo | \u6bd4\u8f83\u4e24\u4e2a\u5b57\u6bb5\u7684\u503c\uff0c\u5e38\u7528\u4e8e\u8981\u6c42\u8f93\u5165\u4e24\u6b21\u5bc6\u7801\u8fdb\u884c\u786e\u8ba4\n\nIPAddress | \u9a8c\u8bc1IPv4\u7f51\u7edc\u5730\u5740\n\nLength | \u9a8c\u8bc1\u8f93\u5165\u5b57\u7b26\u4e32\u7684\u957f\u5ea6\n\nNumberRange | \u9a8c\u8bc1\u8f93\u5165\u7684\u503c\u5728\u6570\u5b57\u8303\u56f4\u5185\n\nOptional | \u65e0\u8f93\u5165\u65f6\u8df3\u8fc7\u5176\u4ed6\u9a8c\u8bc1\u51fd\u6570 \n\nRequired | \u786e\u4fdd\u5b57\u6bb5\u4e2d\u6709\u6570\u636e \n\nRegexp | \u4f7f\u7528\u6b63\u5219\u8868\u8fbe\u5f0f\u9a8c\u8bc1\u8f93\u5165\u503c\n\nURL | \u9a8c\u8bc1URL\n\nAnyOf | \u786e\u4fdd\u8f93\u5165\u503c\u5728\u5217\u8868\u4e2d\n\nNoneOf | \u786e\u4fdd\u8f93\u5165\u503c\u4e0d\u5728\u5217\u8868\u4e2d \n\n\nFlask-SQLAlchemy\n\u00b6\n\n\n\u5b89\u88c5\uff1a\n\n\npip install flask-sqlalchemy\n\n\n\n\n\u6570\u636e\u5e93URI\u914d\u7f6e\uff1a\n\n\nexport SQLALCHEMY_DATABASE_URI=mysql://username:password@hostname/database\n\n\n\n\n\n\n\n\n\n\n\u6570\u636e\u5e93\u5f15\u64ce\n\n\nURL\n\n\n\n\n\n\n\n\n\n\nMySQL\n\n\nmysql://username:password@hostnmae/database\n\n\n\n\n\n\nPostgres\n\n\npostgresql://username:password@hostname/database\n\n\n\n\n\n\nSQLite(*nix)\n\n\nsqlite:///absolute/path/to/database\n\n\n\n\n\n\nSQLite(win)\n\n\nsqlite:///c:/absolute/path/to/database\n\n\n\n\n\n\n\n\n\u521d\u59cb\u5316:\n\n\nfrom flask_salalchemy import SQLAlchemy\n\nbasedir = os.path.abspath(os.path.dirname(__file__))\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')\n# \u81ea\u52a8\u63d0\u4ea4\napp.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True\n# \u8ddf\u8e2a\u6570\u636e\u5e93\u53d8\u66f4\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\n\ndb = SQLAlchemy(app)\n\n\n\n\n\u6a21\u578b\u5b9a\u4e49\uff1a\n\n\nclass Role(db.Model):\n    __tablename__ = 'roles'\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(64), unique=True)\n\n    def __repr__(self):\n        return '<Role %r>' % self.name\n\nclass User(db.Model):\n    __tablename__ = 'users'\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(64), unique=True, index=True)\n\n    def __repr__(self):\n        return '<User %r>' % self.username\n\n\n\n\n__repr()__\u8fd4\u56de\u4e00\u4e2a\u53ef\u8bfb\u6027\u5b57\u7b26\u4e32\u8868\u793a\u6a21\u578b\uff0c\u7528\u4e8e\u8c03\u8bd5\n\n\n\u64cd\u4f5c\uff1a\n\n\nfrom app.py import db, Role, User\n\n# \u4e0d\u5b58\u5728\u5219\u521b\u5efa\u6570\u636e\u5e93\ndb.create_all()\n\n# \u5220\u9664\ndb.drop_all()\n\n# \u521b\u5efa\u5bf9\u8c61\nadmin_role = Role(name='Admin')\nmod_role = Role(name='Moderator')\nuser_role=Role(name='User')\nuser_john=User(username='john', role=admin_role)\nuser_susan = User(username='susan', role=user_role)\nuser_david = User(username='david', role=user_role)\n\n# \u63d2\u5165\u6570\u636e\u5e93\ndb.session.add(admin_role)\ndb.session.add(mod_role)\ndb.session.add(user_role)\ndb.session.add(user_john)\ndb.session.add(user_susan)\ndb.session.add(user_david)\n\n# \u6279\u91cf\u63d2\u5165\u6570\u636e\u5e93\ndb.session.add_all([admin_role, mod_role, user_role, user_john, user_susan, user_david])\n\n# \u63d0\u4ea4\uff0csession\u662f\u539f\u5b50\u64cd\u4f5c\uff0c\u907f\u514d\u4e0d\u4e00\u81f4\u6027\ndb.session.commit()\n\n# \u56de\u9000\ndb.session.rollback()\n\n# \u4fee\u6539\nadmin_role.name = 'Administrator'\ndb.session.add(admin_role)\ndb.session.commit()\n\n# \u5220\u9664\ndb.session.delete(mod_role)\ndb.session.commit()\n\n# \u67e5\u8be2\nRole.query.all()\nUser.query.all()\nUser.query.filter_by(role=user_role)\nRole.query.filter_by(name='User').first()\n\n# \u663e\u793aSQL\u8bed\u53e5\nstr(User.query.filter_by(role=user_role))\n\n# \u6392\u5e8f\nuser_role.users.order_by(User.username).all()\n\n# \u7edf\u8ba1\nuser_role.users.count()\n\n\n\n\n\u6570\u636e\u7c7b\u578b\uff1a\n\n\u7c7b\u578b\u540d | Python\u7c7b\u578b | \u8bf4\u660e\n\n-------|------------|------\n\nInteger | int | \u666e\u901a\u6574\u6570\uff0c\u4e00\u822c\u662f32\u4f4d\n\nSmallInteger | int | \u53d6\u503c\u8303\u56f4\u5c0f\u7684\u6574\u6570\uff0c\u4e00\u822c\u662f16\u4f4d\n\nBigInteger | int\u6216long | \u4e0d\u9650\u5236\u7cbe\u5ea6\u7684\u6574\u6570\n\nFloat | float | \u6d6e\u70b9\u6570\n\nNumeric | decimal.Decimal | \u5b9a\u70b9\u6570\n\nString | str | \u53d8\u957f\u5b57\u7b26\u4e32\n\nText | str | \u53d8\u957f\u5b57\u7b26\u4e32\uff0c\u5bf9\u8f83\u957f\u6216\u4e0d\u9650\u957f\u5ea6\u7684\u5b57\u7b26\u4e32\u505a\u4e86\u4f18\u5316\n\nUnicode | unicode | \u53d8\u957fUnicode\u5b57\u7b26\u4e32\n\nUnicodeText | unicode | \u53d8\u957fUnicode\u5b57\u7b26\u4e32\uff0c\u5bf9\u8f83\u957f\u6216\u4e0d\u9650\u957f\u5ea6\u7684\u5b57\u7b26\u4e32\u505a\u4e86\u4f18\u5316\n\nBoolean | bool | \u5e03\u5c14\u503c\n\nDate | datetime.date | \u65e5\u671f\n\nTime | datetime.time | \u65f6\u95f4\n\nDateTime | datetime.datetime | \u65e5\u671f\u548c\u4e16\u754c\n\nInterval | datetime.timedelta | \u65f6\u95f4\u95f4\u9694\n\nEnum | str | \u4e00\u7ec4\u5b57\u7b26\u4e32\n\nPickleType | \u4efb\u4f55Python\u5bf9\u8c61 | \u81ea\u52a8\u4f7f\u7528Pickle\u5e8f\u5217\u5316\n\nLargeBinary | str | \u4e8c\u8fdb\u5236\u6587\u4ef6\n\n\n\u5217\u9009\u9879\uff1a\n\n\u9009\u9879\u540d | \u8bf4\u660e\n\n-------|-----\n\nprimary_key | \u4e3b\u952e\n\nunique | \u4e0d\u5141\u8bb8\u91cd\u590d\n\nindex | \u521b\u5efa\u7d22\u5f15\n\nnullable | \u5141\u8bb8\u4f7f\u7528\u7a7a\u503c\n\ndefault | \u5b9a\u4e49\u9ed8\u8ba4\u503c\n\n\n\u4e00\u5bf9\u591a\u5173\u7cfb\uff1a\n\n\nclass Role(db.Model):\n    users = db.relationship('User', backref='role')\n\nclass User(db.Model):\n    role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))\n\n\n\n\ndb.relationship\u5b9a\u4e49\u4e00\u79cd\u7279\u6b8a\u5c5e\u6027users\uff0c\u8bbf\u95eeusers\u5c5e\u6027\u8fd4\u56de\u5bf9\u5e94\u7684User\u5217\u8868\n\n\nbackref\u5728User\u6a21\u578b\u4e2d\u6dfb\u52a0\u4e00\u4e2arole\u5c5e\u6027\uff0c\u8bbf\u95eerole\u8bbf\u95ee\u7684\u662f\u5bf9\u8c61\uff0c\u8bbf\u95eerole_id\u53ea\u80fd\u8bbf\u95ee\u5916\u952e\u7684\u503c\n  \n\n\nrelationship()\u9009\u9879\uff1a\n\n\u9009\u9879\u540d | \u8bf4\u660e\n\n-------|-----\n\nbackref | \u5728\u5173\u7cfb\u7684\u53e6\u4e00\u4e2a\u6a21\u578b\u4e2d\u6dfb\u52a0\u53cd\u5411\u4f5c\u7528\n\nprimaryjoin | \u660e\u786e\u6307\u5b9a\u4e24\u4e2a\u6a21\u578b\u4e4b\u95f4\u4f7f\u7528\u7684\u8054\u7ed3\u6761\u4ef6\u3002\u53ea\u5728\u6a21\u68f1\u4e24\u53ef\u7684\u5173\u7cfb\u4e2d\u9700\u8981\u5b9a\u4e49\u3002\n\nlazy | \u52a0\u8f7d\u65b9\u5f0f:\n\n... | select\uff1a\u9996\u6b21\u8bbf\u95ee\u65f6\u6309\u9700\u52a0\u8f7d\n\n... | immediate\uff1a\u6e90\u5bf9\u8c61\u52a0\u8f7d\u5219\u52a0\u8f7d\n\n... | join\uff1a\u4f7f\u7528\u8054\u7ed3\u52a0\u8f7d\n\n... | subquery\uff1a\u7acb\u5373\u52a0\u8f7d\uff0c\u4f7f\u7528\u5b50\u67e5\u8be2\n\n... | noload\uff1a\u6c38\u4e0d\u52a0\u8f7d\n\n... | dynamic\uff1a\u4e0d\u52a0\u8f7d\uff0c\u63d0\u4f9b\u67e5\u8be2\n\nuselist | True\u4f7f\u7528\u5217\u8868\uff0cFalse\u4e00\u5bf9\u4e00\u4e0d\u4f7f\u7528\u5217\u8868\n\norder_by | \u6307\u5b9a\u5173\u7cfb\u4e2d\u8bb0\u5f55\u7684\u6392\u5e8f\u65b9\u5f0f\n\nsecondary | \u6307\u5b9a\u591a\u5bf9\u591a\u5173\u7cfb\u4e2d\u5173\u7cfb\u8868\u7684\u540d\u79f0\n\nsecondaryjoin | SQLAlchemy\u65e0\u6cd5\u51b3\u5b9a\u65f6\uff0c\u6307\u5b9a\u591a\u5bf9\u591a\u5173\u7cfb\u4e2d\u7684\u4e8c\u7ea7\u8054\u7ed3\u6761\u4ef6\n\n\n\u67e5\u8be2\u8fc7\u6ee4\u5668\uff1a\n\n\u8fc7\u6ee4\u5668 | \u8bf4\u660e\n\n-------|-----\n\nfilter() | \u628a\u8fc7\u6ee4\u5668\u6dfb\u52a0\u5230\u539f\u67e5\u8be2\u4e0a\uff0c\u8fd4\u56de\u4e00\u4e2a\u65b0\u67e5\u8be2\n\nfilter_by() | \u628a\u7b49\u503c\u8fc7\u6ee4\u5668\u6dfb\u52a0\u5230\u539f\u67e5\u8be2\u4e0a\uff0c\u8fd4\u56de\u4e00\u4e2a\u65b0\u67e5\u8be2\n\nlimit() | \u9650\u5236\u67e5\u8be2\u7ed3\u679c\u6570\u91cf\uff0c\u8fd4\u56de\u4e00\u4e2a\u65b0\u67e5\u8be2\n\noffset() | \u4fbf\u5b9c\u67e5\u8be2\u7ed3\u679c\uff0c\u8fd4\u56de\u4e00\u4e2a\u65b0\u67e5\u8be2\n\norder_by() | \u6392\u5e8f\uff0c\u8fd4\u56de\u65b0\u67e5\u8be2\n\ngroup_by() | \u5206\u7ec4\uff0c\u8fd4\u56de\u65b0\u67e5\u8be2\n\n\n\u67e5\u8be2\u6267\u884c\u51fd\u6570\uff1a\n\n\u65b9\u6cd5 | \u8bf4\u660e\n\n-----|-----\n\nall() | \u8fd4\u56de\u6240\u6709\u7ed3\u679clist\n\nfirst() | \u8fd4\u56de\u7b2c\u4e00\u4e2a\u7ed3\u679c\u6216None\n\nfirst_or_404() | \u8fd4\u56de\u7b2c\u4e00\u4e2a\u7ed3\u679c\u6216404\n\nget() | \u8fd4\u56de\u6307\u5b9a\u4e3b\u952e\u5bf9\u5e94\u884c\u6216None\n\nget_or_404() | \u8fd4\u56de\u6307\u5b9a\u4e3b\u952e\u5bf9\u5e94\u884c\u6216404\n\ncount() | \u8fd4\u56de\u67e5\u8be2\u7ed3\u679c\u7684\u6570\u91cf\n\npaginate() | \u8fd4\u56de\u4e00\u4e2aPaginate\u5bf9\u8c61\uff0c\u5305\u542b\u8303\u56f4\u5185\u7684\u7ed3\u679c\n\n\n\u6570\u636e\u5e93\u8fc1\u79fb\n\u00b6\n\n\nSQLAlchemy Alembic:\nhttps://alembic.readthedocs.org/en/latest/index.html\n\nFlask-Migrate(Alembic\u8f7b\u91cf\u7ea7\u5305\u88c5):\nhttp://flask-migrate.readthedocs.org/en/latest/\n\uff0c\u4f9d\u8d56Flask-Script\u64cd\u4f5c\u3002\n\n\n\u5b89\u88c5\uff1a\n\n\npip install flask-migrate\n\n\n\n\n\u542f\u52a8\u4ee3\u7801\uff1a\n\n\nfrom flask_migrate import Migrate, MigrateCommand\n\napp = Flask(__name__)\ndb = SQLAlchemy(app)\nmigrate = Migrate(app, db)\n\nmanager.add_command('db', MigrateCommand)\n\n\n\n\n\u521d\u59cb\u5316\u547d\u4ee4\uff1a\n\n\npython hello.py db init\n\n\n\n\n\u624b\u52a8\u521b\u5efa\u8fc1\u79fb\uff08\u81ea\u884c\u5b9e\u73b0\nupgrade()\n\u548c\ndowngrade()\n\uff09\uff1a\n\n\npython hello.py db revision\n\n\n\n\n\u81ea\u52a8\u521b\u5efa\u8fc1\u79fb\uff08\u9700\u8981\u68c0\u67e5\uff09\n\n\npython hello.py db migrate -m \"initial migration\"\n\n\n\n\n\u5347\u7ea7\u6570\u636e\u5e93\n\n\npython hello.py db upgrade\n\n\n\n\nFlask-Mail\n\u00b6\n\n\n\u5305\u88c5python\u6807\u51c6smtplib\n\n\n\u5b89\u88c5\uff1a\n\n\npip install flask-mail\n\n\n\n\n\u914d\u7f6e\u9879\uff1a\n\n\u914d\u7f6e | \u9ed8\u8ba4\u503c | \u8bf4\u660e\n\n-----|--------|-----\n\nMAIL_SERVER | localhost | \u7535\u5b50\u90ae\u4ef6\u670d\u52a1\u5668\u57df\u540d\u6216IP\n\nMAIL_PORT | 25 | \u7535\u5b50\u90ae\u4ef6\u670d\u52a1\u5668\u7aef\u53e3\n\nMAIL_USE_TLS | False | \u542f\u7528TLS\n\nMAIL_USE_SSL | False | \u542f\u7528SSL\n\nMAIL_USERNAME | None | \u90ae\u4ef6\u8d26\u6237\u7684\u7528\u6237\u540d\n\nMAIL_PASSWORD | None | \u90ae\u4ef6\u8d26\u6237\u7684\u5bc6\u7801\n\n\n\u914d\u7f6e\u542f\u52a8\uff1a\n\n\nimport os\nfrom flask import Flask\nfrom flask_mail import Mail\n\napp = Flask(__name__)\n\napp.config['MAIL_SERVER'] = 'smtp.googlemail.com'\napp.config['MAIL_PORT'] = 587\napp.config['MAIL_USE_TLS'] = True\napp.config['MAIL_USERNAME'] = os.evviron.get('MAIL_USERNAME')\napp.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')\n\nmail = Mail(app)\n\n\n\n\n\u53d1\u9001\u90ae\u4ef6\uff1a\n\n\nfrom flask.ext.mail import Message\nmsg = Message('test subject', sender='you@example.com', recipients=['you@example.com'])\nmsg.body = 'text body'\nmsg.html = '<b>HTML</b> body'\nmail.send(msg)\n\n\n\n\n\u53d1\u9001\u90ae\u4ef6\uff08\u6a21\u677f\u6e32\u67d3\uff09\uff1a\n\n\nfrom flask.ext.mail import Message\nmsg = Message('test subject', sender='you@example.com', recipients=['you@example.com'])\nmsg.body = render_template(template + '.txt', parm1, parm2)\nmsg.html = render_template(template + '.html', parm1, parm2)\nmail.send(msg)\n\n\n\n\nCelery\u4efb\u52a1\u961f\u5217\n\u00b6\n\n\n\u7279\u6027\n\u00b6\n\n\nBrokers(\u6d88\u606f\u4e22\u5217\uff0c\u4ee3\u7406): RabbitMQ, Redis, Amazon SQS\n\nResult Stores(\u7ed3\u679c\u5b58\u50a8): AMQP, Redis, Memcached, SQLAlchemy, Django ORM, Apache Cassandra, Elasticsearch\n\nConcurrency(\u5e76\u53d1): prefork(multiprocessing), Eventlet, gevent, solo(single threaded)\n\nSerialization(\u5e8f\u5217\u5316): pickle, json, yaml, msgpack. zlib, bzip2, \u6d88\u606f\u7b7e\u540d\n\n\nMonitoring: worker\u5b9e\u65f6\u76d1\u63a7\u4e8b\u4ef6\n\nWork-flows: \u5de5\u4f5c\u6d41\u652f\u6301\uff0c\u5206\u7ec4\u3001\u6570\u636e\u94fe\u3001\u5757\n\nTime & Rate Limits: \u6309\u65f6\u95f4\u3001\u5904\u7406\u65f6\u957f\u8fdb\u884c\u6d41\u63a7\n\nScheduling: \u8ba1\u5212\u4efb\u52a1\uff0c\u76f8\u5bf9\u65f6\u95f4\u3001\u65f6\u95f4\u95f4\u9694\u3001\u5b9a\u65f6\u4efb\u52a1  \n\n\n\u5b89\u88c5\n\u00b6\n\n\npip install celery\npip install celery[redis]\n\n# \u5176\u4ed6Broker\npip install celery[librabbitmq, redis, auth, msgpack]\n\n\n\n\n\u5b9a\u4e49\u4efb\u52a1\n\u00b6\n\n\ntask.py\n\n\nfrom celery import Celery\n\n# redis url \u683c\u5f0f:'redis://:password@hostname:port/db_number'\n# \u9ed8\u8ba4port\u4e3a6379\uff0c\u6570\u636e\u5e93id\u4e3a0\n\n# redis socket \u683c\u5f0f:  'redis+socket:///path/to/redis.sock?virtual_host=db_number'\n\n# \u53ea\u6267\u884c\u4e0d\u8fd4\u56de\u7ed3\u679c\n# app = Celery('tasks', broker='redis://localhost')\n\n# \u914d\u7f6ebackend\u4fdd\u5b58\u7ed3\u679c\napp = Celery('tasks', backend='redis://localhost', broker='redis://localhost')\n\n@app.task()\ndef add(x, y)\n    return x + y\n\n\n\n\n\u542f\u52a8Worker\u4efb\u52a1\n\u00b6\n\n\ncelery -A task worker # \u542f\u52a8\u4efb\u52a1\ncelery -A task worker --loglevel=info # \u5e26\u65e5\u5fd7\u9009\u9879\u542f\u52a8\u4efb\u52a1\ncelery worker --help # \u67e5\u770bworker\u9009\u9879\u5e2e\u52a9\ncelery help # \u5e2e\u52a9\n\n\n\n\n\u53d1\u9001\u4efb\u52a1\n\u00b6\n\n\nclient.py\n\n\nfrom task import add\n\nresult = add.delay(1, 2) # \u8fd4\u56de\u4e00\u4e2aAsyncResult\u5bf9\u8c61\uff0c\u7528\u4e8e\u68c0\u67e5\u72b6\u6001\u3001\u83b7\u53d6\u7ed3\u679c\u6216\u5f02\u5e38\nresult = add.apply_async((1, 2))\n\n# \u68c0\u67e5\u72b6\u6001\nresult.ready()\n\n# \u83b7\u53d6\u7ed3\u679c\nresult.get() # \u5fc5\u987b\u8bbe\u7f6ebackend\u4fdd\u5b58\u53ca\u8bf6\u8fc7\n\n# \u5173\u95ed\u5f02\u5e38\u91cd\u73b0\uff0c\u9ed8\u8ba4\u82e5\u51fa\u73b0\u5f02\u5e38get\u4f1a\u91cd\u65b0\u629b\u51fa\u5f02\u5e38\nresult.get(propagate=False)\n\n# \u8bbf\u95ee\u5f02\u5e38\u8c03\u7528\u6808\nresult.traceback\n\n\n\n\nCelery Flower\n\u00b6\n\n\nhttps://flower.readthedocs.io/en/latest/\n\n\n\u7279\u6027\uff1a\n\n- \u5b9e\u65f6\u4efb\u52a1\u6267\u884c\u76d1\u63a7\u5de5\u5177web\u754c\u9762\n\n- \u8fdc\u7a0b\u63a7\u5236\n\n- Broker\u76d1\u63a7\n\n- HTTP API\n\n- \u57fa\u672c\u7528\u6237\u8ba4\u8bc1\uff0c\u652f\u6301Google OpenID\n\n\npip install flower\nflower -A proj --port=5555\ncurl http://localhost:5555/\n\n\n\n\nFlask-Admin\n\u00b6\n\n\n\u4e0eShell\u5171\u821e\n\u00b6\n\n\n\u521b\u5efa\u4e00\u4e2a\u8bf7\u6c42\u4e0a\u4e0b\u6587\n\u00b6\n\n\n\u6fc0\u53d1\u8bf7\u6c42\u53d1\u9001\u524d\u540e\u7684\u8c03\u7528\n\u00b6\n\n\nFlask\u4ee3\u7801\u6a21\u5f0f\n\u00b6\n\n\n\u5927\u578b\u5e94\u7528\uff08\u6279\u91cf\u5bfc\u5165url\u5904\u7406\u7c7b)\n\u00b6\n\n\n\u4fee\u6539\u524d\u76ee\u5f55\u7ed3\u6784\n\u00b6\n\n\n/application\n    /application.py\n    /static\n        /style.css\n    /templates\n        /layout.html\n        /index.html\n        /login.html\n        ...\n\n\n\n\n\u4fee\u6539\u540e\u76ee\u5f55\u7ed3\u6784\n\u00b6\n\n\n/application\n    /runserver.py\n    /application\n        /__init__.py\n        /views.py\n        /static\n        /templates\n\n\n\n\n\u6dfb\u52a0runserver.py\n\n\nfrom application import app\napp.run(debug=True)\n\n\n\n\n\u6dfb\u52a0\ninit\n.py\n\n\nfrom flask import Flask\napp = Flask(__name__)\n\n# \u5728Flask\u751f\u6210\u540e\u5bfc\u5165\u6a21\u5757\u4e2d\u6240\u6709view\nimport application.views\n\n\n\n\n\u6dfb\u52a0views.py\n\n\nfrom application import app\n\n@app.route('/')\ndef index():\n    return 'Hello World!'\n\n\n\n\n\u4fee\u6539\u6b65\u9aa4\uff1a\n\n1. \u4f7f\u7528python\u5305\uff08\u76ee\u5f55\uff09\u66ff\u6362python\u6a21\u5757\uff08py\u6587\u4ef6\uff09\u7ba1\u7406\u4ee3\u7801\n\n2. \u6dfb\u52a0\u542f\u52a8\u4ee3\u7801runserver.py\n\n3. \u5728\u5305\ninit\n.py\u4e2d\u521b\u5efaFlask\u5e94\u7528\uff0c\u5bfc\u5165\u6a21\u5757\u6240\u6709view\u3002\n\n4. \u5728views\u4e2d\u5f15\u7528app\uff0c\u5b9e\u73b0url\u5904\u7406\u7a0b\u5e8f\u3002  \n\n\n\u8fd9\u6837\u4fee\u6539\u6709\u5faa\u73af\u4f9d\u8d56\u7684\u5acc\u7591\uff0c\u5176\u5b9e\u5728__init__.py\u4e2d\u53ea\u5bfc\u5165\u5e76\u6ca1\u6709\u4f7f\u7528\uff0c\u5e76\u4e14\u5b9e\u5728\u6587\u4ef6\u672b\u5c3e\u5bfc\u5165\u7684\n\n\n\u5e94\u7528\u7a0b\u5e8f\u7684\u5de5\u5382\u51fd\u6570\n\u00b6\n\n\n\u5e94\u7528\u8c03\u5ea6\n\u00b6\n\n\n\u5b9e\u73b0API\u5f02\u5e38\u5904\u7406\n\u00b6\n\n\n\u4f7f\u7528URL\u5904\u7406\u5668\n\u00b6\n\n\n\u4f7f\u7528Setuptools\u90e8\u7f72\u3001\u5206\u53d1\n\u00b6\n\n\n\u4f7f\u7528Fabric\u90e8\u7f72\n\u00b6\n\n\n\u5728Flask\u4e2d\u4f7f\u7528sqlite3\n\u00b6\n\n\n\u5728Flask\u4e2d\u4f7f\u7528sqlalchemy\n\u00b6\n\n\n\u4e0a\u4f20\u6587\u4ef6\n\u00b6\n\n\n\u7f13\u5b58\n\u00b6\n\n\n\u89c6\u56fe\u88c5\u9970\u5668\n\u00b6\n\n\n\u4f7f\u7528WTForms\u8fdb\u884c\u8868\u5355\u9a8c\u8bc1\n\u00b6\n\n\n\u6a21\u677f\u7ee7\u627f\n\u00b6\n\n\n\u6d88\u606f\u95ea\u73b0\n\u00b6\n\n\n\u7528jQuery\u5b9e\u73b0Ajax\n\u00b6\n\n\n\u81ea\u5b9a\u4e49\u9519\u8bef\u9875\u9762\n\u00b6\n\n\n\u5ef6\u8fdf\u52a0\u8f7d\u89c6\u56fe\n\u00b6\n\n\n\u5728Flask\u4e2d\u4f7f\u7528MongoKit\n\u00b6\n\n\n\u6dfb\u52a0Favicon\n\u00b6\n\n\n\u7279\u6027\n\u00b6\n\n\n16*16\u50cf\u7d20\u7684ICO\u6587\u4ef6\n\n\n\u65b0\u6807\u51c6\n\u00b6\n\n\n<link rel=\"shortcut icon\" href=\"{{ url_for('static', filename='favicon.ico') }}\">\n\n\n\n\n\u65e7\u6807\u51c6\n\u00b6\n\n\n\u653e\u5728root\u8def\u5f84\u4e0b\u7684favicon.ico\n\n\napp.add_url_rule('/favicon.ico', redirect_to=url_for('static', filename='favicon.ico'))\n\n\n\n\n\u6216\u8005\n\n\nimport os\nfrom flask import send_from_directory\n\n@app.route('/favicon.ico')\ndef favicon():\n    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon,ico', mimetype='image/vnd.microsoft.icon')\n\n\n\n\n\u6a21\u677f\n\u00b6\n\n\ntemplates/base.html\n\n\n{% block head %}\n{{ super() }}\n<link rel=\"shortcut icon\" href=\"{{ url_for('static', filename='favicon.ico') }}\" type=\"image/x-icon\">\n<link rel=\"icon\" href=\"{{ url_for('static', filename='favicon.ico') }} type=\"image/x-icon\">\n{% endblock %}\n\n\n\n\n\u6570\u636e\u6d41\n\u00b6\n\n\n\u5ef6\u8fdf\u8bf7\u6c42\u56de\u8c03\n\u00b6\n\n\n\u6dfb\u52a0HTTP Method Overrides\n\u00b6\n\n\n\u8bf7\u6c42\u5185\u5bb9\u6821\u9a8c\u7801\n\u00b6\n\n\n\u57fa\u4e8eCelery\u7684\u540e\u53f0\u4efb\u52a1\n\u00b6\n\n\n\u7ee7\u627fFlask\n\u00b6\n\n\n\u90e8\u7f72\u9009\u62e9\n\u00b6\n\n\n\u6258\u7ba1\u914d\u7f6e\n\u00b6\n\n\n\u4e3b\u673a\u914d\u7f6e\n\u00b6\n\n\nmod_wsgi\uff08Apache\uff09\n\u00b6\n\n\n\u72ec\u7acbWSGI\u5bb9\u5668\n\u00b6\n\n\nGunicorn:  \n\n\nGevent:  \n\n\nTwisted Web:  \n\n\nProxy Setups:  \n\n\nuWSGI\n\u00b6\n\n\nFastCGI\n\u00b6\n\n\nCGI\n\u00b6\n\n\n\u5927\u578b\u5de5\u7a0b\n\u00b6\n\n\n\u9605\u8bfb\u6e90\u7801\n\u00b6\n\n\n\u94a9\u5b50\uff0c\u7ee7\u627f\n\u00b6\n\n\n\u7ee7\u627f\n\u00b6\n\n\n\u7528\u4e2d\u95f4\u4ef6\u5305\u88c5\n\u00b6\n\n\n\u5206\u652f\n\u00b6\n\n\n\u50cf\u4e13\u5bb6\u4e00\u6837\u6269\u5927\u89c4\u6a21\n\u00b6\n\n\n\u4e0e\u793e\u533a\u5bf9\u8bdd\n\u00b6\n\n\nAPI\n\u00b6\n\n\n\u5e94\u7528\u5bf9\u8c61\n\u00b6\n\n\n\u84dd\u56fe\u5bf9\u8c61\n\u00b6\n\n\n\u8fdb\u5165\u7684\u8bf7\u6c42\u5bf9\u8c61\n\u00b6\n\n\n\u54cd\u5e94\u5bf9\u8c61\n\u00b6\n\n\n\u4f1a\u8bdd\n\u00b6\n\n\n\u4f1a\u8bdd\u63a5\u53e3\n\u00b6\n\n\n\u6d4b\u8bd5\u5ba2\u6237\u7aef\n\u00b6\n\n\n\u5e94\u7528\u5168\u5c40\u53d8\u91cf\n\u00b6\n\n\n\u6709\u7528\u7684\u51fd\u6570\u548c\u7c7b\n\u00b6\n\n\n\u6d88\u606f\u95ea\u73b0\n\u00b6\n\n\nJSON\u652f\u6301\n\u00b6\n\n\n\u6a21\u677f\u6e32\u67d3\n\u00b6\n\n\n\u914d\u7f6e\n\u00b6\n\n\n\u6269\u5c55\n\u00b6\n\n\n\u6d41\u7684\u8f85\u52a9\u51fd\u6570\n\u00b6\n\n\n\u6709\u7528\u7684\u5185\u6784\u4ef6\n\u00b6\n\n\n\u4fe1\u53f7\n\u00b6\n\n\n\u57fa\u4e8e\u7c7b\u7684\u89c6\u56fe\n\u00b6\n\n\nURL\u8def\u7531\u6ce8\u518c\n\u00b6\n\n\n\u89c6\u56fe\u51fd\u6570\u9009\u9879\n\u00b6\n\n\n\u5176\u4ed6\u8bf4\u660e\n\u00b6\n\n\nFlask\u4e2d\u7684\u8bbe\u8ba1\u51b3\u7b56\n\u00b6\n\n\nHTML/XHTML\u5e38\u89c1\u95ee\u9898\n\u00b6\n\n\n\u5b89\u5168\u6ce8\u610f\u4e8b\u9879\n\u00b6\n\n\nFlask\u4e2d\u7684Unicode\n\u00b6\n\n\nFlask\u6269\u5c55\u5f00\u53d1\n\u00b6\n\n\nPocoo\u98ce\u683c\u6307\u5f15\n\u00b6\n\n\nPython3\u652f\u6301\n\u00b6",
+            "title": "Flask"
+        },
+        {
+            "location": "/flask/#_1",
+            "text": "",
+            "title": "\u5feb\u901f\u5165\u95e8"
+        },
+        {
+            "location": "/flask/#_2",
+            "text": "Flask\u914d\u7f6e\u9009\u9879\u7684\u9ed8\u8ba4\u503c\u90fd\u662f\u5408\u7406\u7684\uff0c\u6709\u4e00\u4e9b\u662f\u9ed8\u8ba4\u7684\uff0c\u5982templates\u548cstatic\u9ed8\u8ba4\u5728\u6e90\u7801\u76ee\u5f55\u4e0b\uff0c\u8fd9\u4e9b\u914d\u7f6e\u53ef\u4ee5\u4fee\u6539\u4f46\u4e00\u822c\u5e76\u4e0d\u9700\u8981\u3002 \nFlask\u4f7f\u7528\u4e86Thread-Local\u53d8\u91cf\uff0c\u907f\u514d\u4e86\u540c\u4e00request\u95f4\u7684\u53c2\u6570\u4f20\u9012\uff0c\u8fd9\u6837\u5f88\u65b9\u4fbf\uff0c\u4f46\u662f\u4f7f\u5f97\u7a0b\u5e8f\u4f9d\u8d56\u4e8e\u5408\u6cd5\u7684request\u8bf7\u6c42\uff0c\u4f9d\u8d56\u4e8erequest\u7684\u6570\u636e\u5bfc\u81f4\u7a0b\u5e8f\u65e0\u6cd5\u590d\u7528\u3002",
+            "title": "\u914d\u7f6e\u4e0e\u60ef\u4f8b"
+        },
+        {
+            "location": "/flask/#_3",
+            "text": "",
+            "title": "\u5b89\u88c5"
+        },
+        {
+            "location": "/flask/#_4",
+            "text": "Flask\u4f9d\u8d56Werkzeug\u548cJinja2\u3002 \nWerkzeug\u662f\u4e00\u4e2aWSGI\u5de5\u5177\u96c6\u3002 \nJinja2\u8d1f\u8d23\u6e32\u67d3\u6a21\u677f\u3002",
+            "title": "\u4f9d\u8d56"
+        },
+        {
+            "location": "/flask/#virtualenv",
+            "text": "sudo pip install virtualenv\nmkdir myproject\ncd myproject\nvirtualenv venv\n. venv/scripts/activate\npip install Flask",
+            "title": "virtualenv"
+        },
+        {
+            "location": "/flask/#helloworld",
+            "text": "# \u6587\u4ef6hello.py\nfrom flask import Flask\n\n# Flask\u901a\u8fc7__name__\u627e\u5230\u5305\u8def\u5f84\u53ca\u5176\u4e0b\u7684static\u548ctemplates\u76ee\u5f55\uff0c\u907f\u514d\u9650\u5236\u4e3a\u5f53\u524d\u76ee\u5f55\napp = Flask(__name__)\n\n@app.route('/')\ndef hello_world():\n    return 'Hello World!'\n\nif __name__ == '__main__':\n    app.run()  \u8fd0\u884c\uff1a  python hello.py  \u901a\u8fc7\u73af\u5883\u53d8\u91cf\u8fd0\u884c\uff1a  # windows\u4e0b\u4f7f\u7528set\u8bbe\u7f6e\u73af\u5883\u53d8\u91cf\nexport FLASK_APP=hello.py\nflask run  \u901a\u8fc7python module\u8fd0\u884c\uff1a  export FLASK_APP=hello.py\npython -m flask run  \u8bbf\u95ee\uff1ahttp://127.0.0.1:5000",
+            "title": "HelloWorld"
+        },
+        {
+            "location": "/flask/#httpserverip",
+            "text": "app.run(host='0.0.0.0', port=80)  flask run --host=0.0.0.0",
+            "title": "\u5b9a\u4e49HttpServer\u7ed1\u5b9aIP"
+        },
+        {
+            "location": "/flask/#_5",
+            "text": "app.debug = True\napp.run()\n# \u6216\napp.run(debug=True)  export FLASK_DEBUG=1\nflask run",
+            "title": "\u8c03\u8bd5\u6a21\u5f0f\uff08\u4ea4\u4e92\u5f0f\u8c03\u8bd5\u5668\uff09"
+        },
+        {
+            "location": "/flask/#url",
+            "text": "\u57fa\u672c\u793a\u4f8b\uff1a  @app.route('/')\ndef index():\n    return 'Index Page'\n\n@app.route('/hello')\n    return 'Hello World'  \u5e26\u53d8\u91cf\u7684URL\uff1a  @app.route('/user/<username>')\ndef show_user_profile(username):\n    return 'User %s' % username  \u5e26\u53d8\u91cf\u7684URL\u5e76\u8f6c\u6362\u6570\u636e\u7c7b\u578b\uff1a \nint # \u6574\u5f62 \nfloat # \u6d6e\u70b9\u578b  \nstring # \u4e0d\u63a5\u53d7\u659c\u7ebf \npath # \u63a5\u53d7\u659c\u7ebf\u7684string \nany # \u4efb\u610f \nuuid # UUID  @app.route('/post/<int:post_id>')\ndef show_post(post_id):\n    return 'Post %d' % post_id  \u9075\u5b88\u552f\u4e00URL\u7ba1\u7406\uff0c\u907f\u514d\u91cd\u5b9a\u5411\u884c\u4e3a: \n/projects/ # \u82e5\u8bbf\u95ee/projects\u4f1a\u88abFlask\u91cd\u5b9a\u5411\u5230/projects/ \n/about # \u82e5\u8bbf\u95ee/about/\u4f1a\u4ea7\u751f\"404 Not Found\"  \u5efa\u8bae\u4f7f\u7528\u5e26\u659c\u7ebf\u7684URL\uff0c\u4fdd\u8bc1URL\u552f\u4e00\u6027\uff0c\u907f\u514d\u641c\u7d22\u5f15\u64ce\u7d22\u5f15\u540c\u4e00\u4e2a\u9875\u9762\u4e24\u6b21  \u4f7f\u7528url_for()\u7528\u5904\u7406\u51fd\u6570\u9006\u5411\u6784\u9020URL\uff1a \nurl_for\u7684\u7b2c\u4e00\u4e2a\u53c2\u6570\u662f\u5904\u7406\u51fd\u6570\u7684\u540d\u79f0\uff0c\u540e\u9762\u547d\u540d\u53c2\u6570\u5339\u914d\u7684\u90e8\u5206\u4f1a\u5e94\u7528\u5230url\uff0c\u4e0d\u7b26\u5408\u7684\u90e8\u5206\u4f1a\u4f5c\u4e3a\u67e5\u8be2\u53c2\u6570\u3002    from flask import Flask, url_for\napp = Flask(__name__)\n\n@app.route('/')\ndef index: pass\n\n@app.route('/login')\ndef login(username): pass\n\n@app.route('/user/<username>')\ndef profile(username): pass\n\n# \u4f7f\u7528test_request_context()\u6784\u9020request\nwith app.test_request_context():\n    print(url_for('index')) # \u8f93\u51fa\uff1a/\n    print(url_for('login')) # \u8f93\u51fa\uff1a/login\n    print(url_for('login', next='/') # \u8f93\u51fa\uff1a/login?next=/\n    print(url_for('profile', username='John Doe')) # \u8f93\u51fa\uff1a/user/John%20Doe\n\n    # url_for\u9ed8\u8ba4\u751f\u6210\u76f8\u5bf9\u5730\u5740\uff0c\u5916\u90e8\u94fe\u63a5\u9700\u8981\u4f7f\u7528\u7edd\u5bf9\u5730\u5740\n    print(url_or('index', _external=True)) # \u8f93\u51fa http://host:port/  \u4f7f\u7528\u9006\u5411\u6784\u9020URL\u7684\u7528\u9014\uff1a \n- \u53ef\u4ee5\u81ea\u52a8\u5728Flask\u5de5\u7a0b\u4e2d\u67e5\u8be2URL \n- Flask\u4f1a\u81ea\u52a8\u8f6c\u8bd1\u7279\u6b8a\u5b57\u7b26\u548cUnicode \n- \u5982\u679c\u5e94\u7528\u4e0d\u4f4d\u4e8eURL\u6839\u8def\u5f84\uff0curl_for\u4f1a\u81ea\u52a8\u5904\u7406  HTTP\u65b9\u6cd5\uff1a \n\u9ed8\u8ba4\u5904\u7406\u4e3aGET\u8bf7\u6c42\uff0c\u4f7f\u7528route\u88c5\u9970\u5668\u7684methods\u6307\u5b9aHTTP\u65b9\u6cd5    @app.route('/login', methods=['GET', 'POST'])\ndef login():\n    if request.method == 'POST':\n        do_the_login()\n    else:\n        show_the_login_form()  GET # \u83b7\u53d6\u9875\u9762 \nHEAD # \u83b7\u53d6\u4fe1\u606f\uff0c\u53ea\u5173\u5fc3\u6d88\u606f\u5934\uff0cFlask\u4f1a\u81ea\u52a8\u6309GET\u5904\u7406 \nPOST # \u53d1\u9001\u4fe1\u606f\uff0c\u53d1\u9001\u8868\u5355 \nPUT # \u7c7b\u4f3cPOST\uff0c\u4f46\u53ef\u4ee5\u591a\u6b21\u8986\u76d6\u65e7\u6570\u636e\uff0cPOST\u53ea\u80fd\u89e6\u53d1\u4e00\u6b21 \nDELETE # \u5220\u9664 \nOPTIONS # \u67e5\u8be2URL\u652f\u6301\u54ea\u4e9bHTTP\u65b9\u6cd5\uff0cFlask\u4f1a\u81ea\u52a8\u5904\u7406 \nHTTP4\u548cXHTML1\u53ea\u652f\u6301GET\u548cPOST\uff0c\u4f46\u662fJavaScript\u548cHTML5\u652f\u6301\u5176\u4ed6\u65b9\u6cd5",
+            "title": "URL\u8def\u7531"
+        },
+        {
+            "location": "/flask/#_6",
+            "text": "\u6587\u4ef6\u8def\u5f84\uff1a\u5305\u6216\u8005\u6a21\u5757\u7684\u6240\u5728\u76ee\u5f55\u4e2dstatic\u6587\u4ef6\u5939 \n\u4f7f\u7528URL\uff1a/static \n\u751f\u6210URL\uff1aurl_for('static', filename='style.css')\uff0cstatic\u662f\u7279\u6b8a\u53c2\u6570",
+            "title": "\u9759\u6001\u6587\u4ef6"
+        },
+        {
+            "location": "/flask/#_7",
+            "text": "",
+            "title": "\u6a21\u677f\u6e32\u67d3"
+        },
+        {
+            "location": "/flask/#_8",
+            "text": "\u6a21\u5757\u8def\u5f84\uff1a  /application.py\n/templates\n    /hello.html  \u5305\u8def\u5f84\uff1a  /application\n    /__init__.py\n    /templates\n        /hello.html  \u6e32\u67d3\uff1a  from flask import render_template\n@app.route('/hello/')\n@app.route('/hello/<name>')\ndef hello(name=None)\n    return render_template('hello.html', name=name)  <!doctype html>\n<title>Hello from Flask</title>\n{% if name %}\n    <h1>Hello {{name}}!</h1>\n{% else %}\n    <h1>Hello World!</h1>\n{% endif %}  \u5728\u6a21\u677f\u91cc\u53ef\u4ee5\u8ba9\u95eerequest\u3001session\u548cg\u5bf9\u8c61\u4ee5\u53caget_flashed_message()   \n\u6a21\u677f\u7ee7\u627f\u53ef\u4ee5\u4f7f\u6bcf\u4e2a\u9875\u9762\u7684header\u3001navigation\u548cfooter\u4fdd\u6301\u4e00\u81f4\u3002 \n\u53d8\u91cf\u4e2d\u5305\u542bHTML\u4f1a\u88ab\u8f6c\u8bd1\uff0c\u4f8b\u5982\u4ee5\u4e0a\u4ee3\u7801{{name}}\u4e2d\u5305\u542b\u7684HTML\u4f1a\u88ab\u81ea\u52a8\u8f6c\u8bd1\u3002 \n\u81ea\u52a8\u8f6c\u8bd1\u662f\u9ed8\u8ba4\u5bf9.html .htm .xml .html\u6a21\u677f\u6587\u4ef6\u5f00\u542f\uff0c\u6a21\u677f\u5b57\u7b26\u4e32\u81ea\u52a8\u8f6c\u8bd1\u662f\u5173\u95ed\u7684\u3002 \n\u4f7f\u7528|safe\u8fc7\u6ee4\u5668\u6216flask.Markup\u53ef\u4ee5\u6807\u8bb0\u5b57\u7b26\u4e32\u4e3a\u5b89\u5168\u3002  from flask import Markup\n\n# \u6807\u8bb0\u4e3a\u5b89\u5168\u5b57\u7b26\u4e32\nMarkup('<strong>Hello %s!</strong>') % '<blink>hacker</blink>'\n# \u8f93\u51faMarkup(u'<strong>Hello &lt;blink&gt;hacker&lt;/blink&gt;!</strong>')\n\n# \u624b\u52a8\u8f6c\u8bd1\nMarkup.escape('<blink>hacker</blink>')\n# \u8f93\u51fa Markup(u'&lt;blink&gt;hacker&lt;/blink&gt;')\n\n# \u6e05\u9664HTML TAG\nMarkup('<em>Marked up</em> &raquo; HTML').striptags()\n# \u8f93\u51fa u'Marked up \\xbb HTML'",
+            "title": "\u6a21\u677f\u8def\u5f84"
+        },
+        {
+            "location": "/flask/#request",
+            "text": "",
+            "title": "\u8bbf\u95eeRequest\u6570\u636e"
+        },
+        {
+            "location": "/flask/#request_1",
+            "text": "Request\u4f7f\u7528\u65f6\u770b\u8d77\u6765\u662f\u5168\u5c40\u7684\uff0c\u5176\u5b9eRequest\u662f\u7ebf\u7a0b\uff08\u6216\u534f\u7a0b\uff09\u672c\u5730\u7684 \n\u5355\u5143\u6d4b\u8bd5\u65f6\u6ca1\u6709\u8bf7\u6c42\uff0c\u6240\u4ee5\u6ca1\u6709Request\u5bf9\u8c61    \u4f7f\u7528test_request_context()\u73af\u5883\u7ba1\u7406\u5668\uff1a  from flask import request\n\nwith app.test_request_context('/hello', method='POST')\n    assert request.path == '/hello'\n    assert request.method = 'POST'  \u6216\u5c06\u6574\u4e2aWSGI\u73af\u5883\u4f20\u9012\u7ed9request_context()\u65b9\u6cd5  from flask import request\nwith app.request_context(environ):\n    assert request.method == 'POST'",
+            "title": "Request\u4e0a\u4e0b\u6587\u4e0e\u5355\u5143\u6d4b\u8bd5"
+        },
+        {
+            "location": "/flask/#reqeust",
+            "text": "\u4ecePOST\u65b9\u6cd5\u7684form\u4e2d\u83b7\u53d6\u4fe1\u606f request.form\uff1a  from flask import request\n\n@app.route('/login', methods=['POST', 'GET'])\ndef login():\n    error = None\n    if request.method == 'POST':\n        if valid_login(request.form['username'], request.form['password']):\n            return log_the_user_in(request.form['username'])\n        else:\n            error = 'Invalid username/password'\n\n    return render_template('login.html', error=error)  \u83b7\u53d6\u67e5\u8be2\u5b57\u7b26\u4e32 request.args\uff1a    # ?key=value\nsearchword = request.args.get('q', '')  \u83b7\u53d6json\u5b57\u6bb5\uff1arequest.args  \u83b7\u53d6header\u5b57\u6bb5\uff1arequest.headers",
+            "title": "\u4f7f\u7528Reqeust\u5bf9\u8c61"
+        },
+        {
+            "location": "/flask/#_9",
+            "text": "\u82e5form\u4e2d\u5c5e\u6027\u4e0d\u5b58\u5728\u5219\u4f1a\u629b\u51faKeyError\u5f02\u5e38\u3002\u4e0d\u5904\u7406KeyError\u5f02\u5e38\u4f1a\u663e\u793a\u4e00\u4e2a\"HTTP 400 Bad Request\u9519\u8bef\u9875\u9762\u201d\u3002",
+            "title": "\u5f02\u5e38\u5904\u7406"
+        },
+        {
+            "location": "/flask/#requestfiles",
+            "text": "from flask import request \n\n@app.route('/upload', methods=['GET', 'POST'])\ndef upload_file():\n    if request.method == 'POST':\n        f = request.files['the_file']\n        f.save('/var/www/uploads/uploaded_file.txt')\n        # \u83b7\u53d6\u6587\u4ef6\u540d\n        f.save('/var/www/uploads/' + secure_filename(f.filename))  \u4e0a\u4f20\u6587\u4ef6\u9700\u8981HTML\u8868\u5355\u4e2d\u8bbe\u7f6e enctype=\"multipart/form-data\"",
+            "title": "\u4e0a\u4f20\u6587\u4ef6 request.files"
+        },
+        {
+            "location": "/flask/#cookies",
+            "text": "from flask import request\n\n# \u83b7\u53d6cookie\n@app.route('/')\ndef index():\n    username = request.cookies.get('username')\n    username = request.cookies.get['username']\n\n# \u8bbe\u7f6ecookie\n@app.route('/')\ndef index():\n    # \u5982\u679c\u4e0d\u8bbe\u7f6ecookie\u53ea\u9700\u8981\u8fd4\u56de\u5b57\u7b26\u4e32\uff0c\u82e5\u8981\u8bbe\u7f6ecookie\u9700\u8981\u81ea\u884c\u6784\u9020response\n    # \u82e5\u4e0d\u60f3\u81ea\u884c\u6784\u9020response\uff0c\u53ef\u4ee5\u4f7f\u7528\u201c\u5ef6\u8fdf\u8bf7\u6c42\u56de\u8c03\u201d\n    resp = make_response(render_template(...))\n    resp.set_cookie('username', 'the username')\n    return resp",
+            "title": "Cookies \u8bfb\u53d6\u4e0e\u5b58\u50a8"
+        },
+        {
+            "location": "/flask/#_10",
+            "text": "redirect() # \u91cd\u5b9a\u5411\u5230\u5176\u4ed6url    from flask import abort, redirect, url_for\n\n@app.route('/')\ndef index():\n    return redirect(url_for('login'))  abort() # \u53d1\u9001\u9519\u8bef  @app.route('/login')\ndef login():\n    abort(401)\n    this_is_never_executed()  \u5b9a\u5236\u9519\u8bef\u9875\u9762\uff1a  from flask import render_template\n\n# \u8fd4\u56de\u6a21\u677f\n@app.errorhandler(404)\ndef page_not_found(error):\n    return render_templete('page_not_found.html'), 404",
+            "title": "\u91cd\u5b9a\u5411\u4e0e\u9519\u8bef"
+        },
+        {
+            "location": "/flask/#response",
+            "text": "url\u5904\u7406\u51fd\u6570\u7684\u8fd4\u56de\u503c\u4f1a\u88ab\u81ea\u52a8\u8f6c\u6362\u4e3aresponse\u5bf9\u8c61\u3002 \n\u5982\u679c\u8fd4\u56de\u503c\u662f\u5b57\u7b26\u4e32\uff0c\u4f1a\u88ab\u8f6c\u6362\u4e3a\u5b57\u7b26\u4e32\u4e3abody\u3001\u72b6\u6001\u7801\u4e3a200 OK\u3001MIME\u662ftext/html\u7684response\u3002 \nFlask\u8fd4\u56de\u503c\u5904\u7406\u903b\u8f91\uff1a \n1. \u5982\u679c\u8fd4\u56de\u7684\u662f\u4e00\u4e2a\u5408\u6cd5\u7684response\u5bf9\u8c61\uff0c\u5219\u4eceurl\u5904\u7406\u51fd\u6570\u76f4\u63a5\u8fd4\u56de\u3002 \n2. \u5982\u679c\u8fd4\u56de\u7684\u662f\u4e00\u4e2a\u5b57\u7b26\u4e32\uff0cFlask\u4f1a\u7528\u5b57\u7b26\u4e32\u548c\u9ed8\u8ba4\u53c2\u6570\u521b\u5efaresponse\u3002 \n3. \u5982\u679c\u8fd4\u56de\u4e00\u4e2atuple\uff0c\u683c\u5f0f\u4e3a(response, status, headers)\uff0cFlask\u4f1a\u7528tuple\u8986\u76d6\u9ed8\u8ba4\u8bbe\u7f6e\u3002tuple\u81f3\u5c11\u8981\u6709\u4e00\u4e2a\u503c\u3002headers\u662f\u4e00\u4e2alist\u6216dict\u3002 \n4. \u5982\u679c\u4ee5\u4e0a\u90fd\u4e0d\u662f\uff0cFlask\u4f1a\u5047\u8bbe\u8fd4\u56de\u503c\u662f\u4e00\u4e2aWSGi\u5e94\u7528\u7a0b\u5e8f\uff0c\u5e76\u53d1\u8d77\u8bf7\u6c42\u3002  \u5982\u679c\u4e0d\u60f3\u8ba9Flask\u81ea\u52a8\u5904\u7406\uff0c\u53ef\u4ee5\u4f7f\u7528make_response\u81ea\u884c\u5904\u7406\u3002  # \u8fd4\u56detuple\n@app.errorhandler(404)\ndef not_found(error):\n    return render_template('error.html'), 404\n\n# \u81ea\u884c\u5904\u7406\n@app.errorhandler(404)\ndef not_found(error):\n    resp = make_response(render_template('error.html'), 404)\n    resp.headers['X-Something'] = 'A value'\n    return resp",
+            "title": "response"
+        },
+        {
+            "location": "/flask/#session",
+            "text": "\u4f1a\u8bdd\u662f\u5728\u4e0d\u540c\u8bf7\u6c42\u95f4\u5b58\u50a8\u7279\u5b9a\u7528\u6237\u7684\u4fe1\u606f\u3002 \nFlask\u4f7f\u7528Cookies\u5b57\u6bb5\u5b58\u50a8Session\uff0c\u5e76\u5bf9Cookies\u5b57\u6bb5\u505a\u4e86Hash\u6821\u9a8c\uff0c\u7528\u6237\u53ea\u80fd\u67e5\u770bCookies\u5185\u5bb9\u4f46\u4e0d\u80fd\u4fee\u6539\u3002  from flask import Flask, session, redirect, url_for, escape, request\napp = Flask(__name__)\napp.secret_key = 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAA'\n\n# \u67e5\u8be2session\n@app.route('/')\ndef index():\n    if 'username' in session:\n        return 'Logged in as %s' % escape(session['username'])\n    return 'You are not logged in'\n\n# \u63d2\u5165session\n@app.route('/login', methods=['GET', 'POSt'])\ndef login():\n    if request.method == 'POST':\n        session['username'] = request.form['username']\n        return redirect(url_for('index'))\n    return '''\n        <form action=\"\" method=\"post\">\n            <p><input type=text name=username/></p>\n            <p><intpu type=submit value=Login></p>\n        </form>\n    '''\n\n# \u5220\u9664session\n@app.route('/logout')\ndef logout():\n    session.pop('username', None)\n    return redirect(url_for('index'))  \u751f\u6210\u5bc6\u94a5\uff1a  import os\nos.urandom(24)",
+            "title": "\u4f1a\u8bdd session"
+        },
+        {
+            "location": "/flask/#flashing",
+            "text": "\u95ea\u73b0\u6d88\u606f\u662f\u5728\u8bf7\u6c42\u7ed3\u675f\u65f6\u54cd\u5e94\u7ed9\u5ba2\u6237\u7aef\u7684\u4e00\u79cd\u6d88\u606f\u3002 \n\u5f53\u4e14\u4ec5\u5f53\u4e0b\u4e00\u6761\u8bf7\u6c42\u65f6\u8bbf\u95ee\u4fe1\u606f\u3002 \n\u4f7f\u7528flask()\u8bb0\u5f55\u6d88\u606f\u3002 \n\u5728\u4e0b\u4e00\u6761\u8bf7\u6c42\u6216\u6a21\u7248\u4e2d\u4f7f\u7528get_flashed_messages()\u83b7\u53d6\u6d88\u606f\u3002",
+            "title": "\u95ea\u73b0\u6d88\u606f(Flashing)"
+        },
+        {
+            "location": "/flask/#_11",
+            "text": "app.logger.debug('')\napp.logger.warning('', 42)\napp.logger.error('')\n# logger\u662f\u6807\u51c6\u7684python Logger",
+            "title": "\u65e5\u5fd7\u8bb0\u5f55"
+        },
+        {
+            "location": "/flask/#wsgi",
+            "text": "\u4f7f\u7528Werkzeug\u7684\u4e2d\u95f4\u4ef6\u907f\u514dlighttpd\u7684bugs  from werkzeug.contrib.fixers import LighttpdCGIRootFix\napp.wsgi_app = LighttpdCGIRootFix(app.wsgi_app)",
+            "title": "\u6574\u5408WSGI\u4e2d\u95f4\u4ef6"
+        },
+        {
+            "location": "/flask/#flask",
+            "text": "\u89c1\u6269\u5c55",
+            "title": "\u4f7f\u7528Flask\u6269\u5c55"
+        },
+        {
+            "location": "/flask/#web",
+            "text": "\u89c1\u90e8\u7f72",
+            "title": "\u90e8\u7f72\u5230Web\u670d\u52a1\u5668"
+        },
+        {
+            "location": "/flask/#_12",
+            "text": "",
+            "title": "\u7b80\u5355\u5b8c\u6574\u793a\u4f8b\u6559\u7a0b"
+        },
+        {
+            "location": "/flask/#_13",
+            "text": "\u5355\u7528\u6237\u8bc4\u8bba\u7cfb\u7edf \n\u4f7f\u7528sqlite\u4f5c\u4e3a\u6570\u636e\u5e93 \n\u5012\u53d9\u663e\u793a\u6240\u6709\u8bc4\u8bba  \n\u8bc4\u8bba\u5185\u5bb9HTTP\u4e0d\u5b89\u5168",
+            "title": "\u793a\u4f8b\u529f\u80fd"
+        },
+        {
+            "location": "/flask/#_14",
+            "text": "static\u5b58\u653e\u9759\u6001\u6587\u4ef6 \ntemplate\u5b58\u653ejinja2\u6a21\u677fhtml  /flaskr\n    /static\n    /templates",
+            "title": "\u5de5\u7a0b\u76ee\u5f55"
+        },
+        {
+            "location": "/flask/#_15",
+            "text": "schema.sql \n\u5b58\u653e\u8bc4\u8bba\u7684id\uff0c\u6807\u9898\uff0c\u5185\u5bb9  drop table if exists entries;\ncreate table entries (\n    id integer primary key autoincrement,\n    title string not null,\n    text string not null\n);  \u521b\u5efa\u6570\u636e\u5e93\u65b9\u6cd5\u4e00\uff1a\u4f7f\u7528shell  sqlite3 /tmp/flaskr.db < schema.sql  \u521b\u5efa\u6570\u636e\u5e93\u65b9\u6cd5\u4e8c\uff1apython  def init_db():\n    # \u5728\u6ca1\u6709\u8bf7\u6c42\u7684\u65f6\u5019\uff0cflask.g\u5168\u5c40\u53d8\u91cf\u65e0\u6cd5\u5f97\u77e5\u5e94\u7528\u4fe1\u606f\uff0c\u4f7f\u7528app_context()\u521b\u5efa\u73af\u5883\u3002\n    with app.app_context():\n        db = get_db()\n        # open_resource\u4eceflask\u5e94\u7528\u76ee\u5f55\u6253\u5f00\u6587\u4ef6\u3002\n        with app.open_resource('schema.sql', mode='r') as f:\n            # \u8bfb\u53d6sql\u811a\u672c\u5e76\u6267\u884c\n            db.cursor().executescript(f.read())\n        db.commit()\n\n@app.cli.command('initdb')\ndef initdb_command():\n    init_db()\n    print('Initialized the database.')",
+            "title": "\u6570\u636e\u5e93"
+        },
+        {
+            "location": "/flask/#flask_1",
+            "text": "",
+            "title": "Flask\u5e94\u7528\u542f\u52a8\u3001\u914d\u7f6e\u3001\u6570\u636e\u5e93\u8fde\u63a5"
+        },
+        {
+            "location": "/flask/#_16",
+            "text": "Flask\u6ca1\u6709\u5f53\u524d\u5de5\u4f5c\u76ee\u5f55\u7684\u6982\u5ff5\uff0c\u56e0\u4e3a\u4e00\u4e2a\u8fdb\u7a0b\u4e2d\u53ef\u80fd\u4f1a\u8fd0\u884c\u591a\u4e2a\u5e94\u7528\u3002 \n\u53ef\u4ee5\u4f7f\u7528app.root_path\u83b7\u53d6\u5e94\u7528\u8def\u5f84\uff0c\u7528os.path\u8f85\u52a9\u3002 \n\u53ef\u4ee5\u4f7f\u7528app.config.from_envvar(\"FLASKR_SETTINGS\", silent=True)\u4ece\u73af\u5883\u53d8\u91cf\u4e2d\u83b7\u53d6\u914d\u7f6e\u3002",
+            "title": "\u4ece\u73af\u5883\u53d8\u91cf\u5bfc\u5165\u8def\u5f84"
+        },
+        {
+            "location": "/flask/#_17",
+            "text": "request\u662f\u5f53\u524d\u8bf7\u6c42\u7684\u73af\u5883\u53d8\u91cf \ng\u662f\u5f53\u524drequest\u5171\u4eab\u4fe1\u606f\u7684\u53d8\u91cf",
+            "title": "\u4f7f\u7528\u73af\u5883\u53d8\u91cf\u4f20\u9012\u4fe1\u606f"
+        },
+        {
+            "location": "/flask/#_18",
+            "text": "import os\nimport sqlite3\nfrom flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash\n\napp = Flask(__name__)\n\n# \u9ed8\u8ba4\u914d\u7f6e\uff0c\u914d\u7f6e\u5fc5\u987b\u4f7f\u7528\u5927\u5199\napp.config.update(dict(\n    DATABASE=os.path.join(app.root_path, 'flaskr.db'),\n    DEBUG=True,\n    SECRET_KEY='development key',\n    USERNAME='admin',\n    PASSWORD='default'\n))\n\n# \u4ece\u73af\u5883\u53d8\u91cf\u8986\u76d6\u914d\u7f6e\napp.config.from_envvar('FLASKR_SETTINGS', silent=True)\n\ndef connect_db():\n    '''\u6839\u636e\u914d\u7f6e\u6587\u4ef6\u8fde\u63a5\u6570\u636e\u5e93'''\n    rv = sqlite3.connect(app.config['DATABASE'])\n    rv.row_factory = sqlite3.Row\n    return rv\n\ndef get_db():\n    '''\u4fdd\u5b58\u6570\u636e\u5e93\u8fde\u63a5'''\n    if not hasattr(g, 'sqlite_db'):\n        g.sqlite_db = connect_db()\n    return g.sqlite_db\n\n# \u4f7fFlask\u5e94\u7528\u7ed3\u675f\u65f6\u9500\u6bc1\u7684\u88c5\u9970\u5668\n@app.teardown_appcontext\ndef close_db(error):\n    if hasattr(g, 'sqlite_db'):\n        g.sqlite_db.close()\n\nif __name__ == '__main__':\n    app.run()",
+            "title": "\u6570\u636e\u5e93\u8fde\u63a5\u4ee3\u7801"
+        },
+        {
+            "location": "/flask/#flaskurl",
+            "text": "",
+            "title": "flask\u5e94\u7528\uff0curl\u5904\u7406"
+        },
+        {
+            "location": "/flask/#_19",
+            "text": "@app.route('/')\ndef show_entries():\n    db = get_db()\n    # \u4ece\u6570\u636e\u5e93\u4e2d\u8bfb\u53d6\u6240\u6709\u8bc4\u8bba\n    cur = db.execute('select title, text from entries order by id desc')\n    entries = [dict(title=row[0], text=row[1]) for row in cur.fetchall()]\n    # \u6e32\u67d3\u9875\u9762\n    return render_template('show_entries.html', entries=entries)",
+            "title": "\u663e\u793a\u8bc4\u8bba"
+        },
+        {
+            "location": "/flask/#_20",
+            "text": "@app.route('/add', methods=['POST'])\ndef add_entry():\n    # \u5728session\u4e2d\u67e5\u8be2\n    if not session.get('logged_in'):\n        abort(401)\n\n    # \u5199\u5165\u6570\u636e\u5e93\n    db = get_db()\n    db.execute('insert into entries (title, text) values (?, ?)', \n        [request.form['title'], request.form['text']])\n    db.commit()\n\n    # \u53d1\u9001falsh\u6d88\u606f\n    flash('New entry was successfully posted')\n\n    # \u91cd\u5b9a\u5411\u5230\u8bc4\u8bba\u663e\u793a\u9875\u9762\n    return redirect(url_for('show_entries'))",
+            "title": "\u6dfb\u52a0\u8bc4\u8bba"
+        },
+        {
+            "location": "/flask/#post",
+            "text": "@app.route('/login', methods=['GET', 'POST'])\ndef login():\n    error = None\n    if request.method == 'POST':\n        # \u767b\u5f55\u9a8c\u8bc1\n        if request.form['username'] != app.config['USERNAME']:\n            error = 'Invalid username'\n        elif request.form['password'] != app.config['PASSWORD']:\n            error = 'Invalid password'\n        # \u767b\u5f55\u6210\u529f\u5199\u5165session\n        else:\n            session['logged_in'] = True\n            flash('You were logged in')\n            return redirect(url_for('show_entries'))\n    # GET\u8bf7\u6c42\u8fd4\u56de\u767b\u5f55\u9875\n    return render_template('login.html', error=error)",
+            "title": "\u767b\u5f55\u9875\u9762\u53ca\u767b\u5f55POST"
+        },
+        {
+            "location": "/flask/#_21",
+            "text": "@app.route('/logout')\ndef logout():\n    # \u4eceSession\u4e2d\u5220\u9664\n    session.pop('logged_in', None)\n    flash('You were logged out')\n    return redirect(url_for('show_entries'))",
+            "title": "\u9000\u51fa"
+        },
+        {
+            "location": "/flask/#html",
+            "text": "",
+            "title": "HTML\u6a21\u677f"
+        },
+        {
+            "location": "/flask/#layouthtml",
+            "text": "<!doctype html>\n<title>Flaskr</title>\n<link rel=stylesheet type=text/css href=\"{{url_for('static', filename='style.css')}}\">\n<div class=page>\n    <h1>Flaskr</h1>\n    <div class=metanav>\n        {% if not session.logged_in %}\n            <a href=\"{{url_for('login')}}\">log in</a>\n        {% else %}\n            <a href=\"{{url_for('logout')}}\">log out</a>\n        {% endif %}\n    </div>\n\n    {% for message in get_flashed_messages() %}\n        <div class=flash>{{ message }}</div>\n    {% endfor %}\n\n    {% block body %}\n    {% endblock %}\n</div>",
+            "title": "layout.html"
+        },
+        {
+            "location": "/flask/#show_entrieshtml",
+            "text": "\u4f7f\u7528safe\u8fc7\u6ee4\u5668\u662fjajin2\u4e0d\u505a\u5b89\u5168\u8f6c\u6362  {% extends \"layout.html\" %}\n{% block body %}\n    {% if session.logged_in %}\n        <form action=\"{{ url_for('add_entry') }}\" method=post class=add-entry>\n            <dl>\n                <dt>Title:</dt>\n                <dd><input type=text size=30 name=title></dd>\n                <dt>Text:</dt>\n                <dd><textarea name=text rows=5 clos=40></textarea></dd>\n                <dd><input type=submit value=Share></dd>\n            <dl>\n        </form>\n    {% endif %}\n\n    <ul class=entires>\n        {% for entry in entries %}\n            <li><h2>{{ entry.title }}</h2>{{ entry.text | safe }}</li>\n        {% else %}\n            <li><em>Unbelievable. No entries here so far</em></li>\n        {% endfor %}\n    </ul>\n{% endblock %}",
+            "title": "show_entries.html"
+        },
+        {
+            "location": "/flask/#loginhtml",
+            "text": "{% extends \"layout.html\" %}\n{% block body %}\n    <h2>Login</h2>\n    {% if error %}\n        <p class=error><strong>Error:</strong>{{ error }}</p>\n    {% endif %}\n\n    <form action=\"\" method=post>\n        <dl>\n            <dt>Username:</dt>\n            <dd><input type=text name=username></dd>\n            <dt>Passwrod:</dt>\n            <dd><input type=password name=password></dd>\n            <dd><input type=submit value=Login></dd>\n        </dl>\n    </form>\n{% endblock %}",
+            "title": "login.html"
+        },
+        {
+            "location": "/flask/#css",
+            "text": "",
+            "title": "CSS\u6837\u5f0f"
+        },
+        {
+            "location": "/flask/#stylecss",
+            "text": "body {font-family: sans-serif; background: #eee;}\na, h1, h2 {color: #377BA8;}\nh1, h2 {font-family: 'Georgia', serif; margin:0;}\nh1 {border-bottom: 2px solid #eee;}\nh2 {font-size: 1.2em;}\n\n.page {margin: 2em auto; width: 35em; border: 5px solid #ccc; padding:0.8em; background: white;}\n.entries {list-style: none; margin: 0; padding: 0;}\n.entries li {margin: 0.8em 1.2em;}\n.entries li h2 {margin-left: -1em;}\n.add-entry {font-size: 0.9em; border-bottom: 1px solid #ccc;}\n.add-entry dl {font-weight: bold;}\n.metanav {text-align: right; font-size: 0.8em; padding: 0.3em; margin-bottom: 1em; background: #fafafa;}\n.flash {background: #CEE5F5; padding: 0.5em; border: 1px solid #AACBE2;}\n.error {background: #F0D6D6; padding: 0.5em;}",
+            "title": "style.css"
+        },
+        {
+            "location": "/flask/#_22",
+            "text": "",
+            "title": "\u5355\u5143\u6d4b\u8bd5"
+        },
+        {
+            "location": "/flask/#_23",
+            "text": "flaskr/\n    flaskr/\n        __init__.py\n        static/\n        templates/\n    tests/\n        test_flaskr.py\n    setup.py\n    MANIFEST.in",
+            "title": "\u6d4b\u8bd5\u5de5\u7a0b\u7ed3\u6784"
+        },
+        {
+            "location": "/flask/#_24",
+            "text": "",
+            "title": "\u8fd0\u884c\u6d4b\u8bd5"
+        },
+        {
+            "location": "/flask/#_25",
+            "text": "",
+            "title": "\u6d4b\u8bd5\u7684\u5927\u6846\u67b6"
+        },
+        {
+            "location": "/flask/#_26",
+            "text": "",
+            "title": "\u7b2c\u4e00\u4e2a\u6d4b\u8bd5"
+        },
+        {
+            "location": "/flask/#_27",
+            "text": "",
+            "title": "\u767b\u5f55\u548c\u767b\u51fa"
+        },
+        {
+            "location": "/flask/#_28",
+            "text": "",
+            "title": "\u6d4b\u8bd5\u6d88\u606f\u7684\u6dfb\u52a0"
+        },
+        {
+            "location": "/flask/#_29",
+            "text": "",
+            "title": "\u5176\u4ed6\u6d4b\u8bd5\u6280\u5de7"
+        },
+        {
+            "location": "/flask/#_30",
+            "text": "",
+            "title": "\u4f2a\u9020\u8d44\u6e90\u548c\u4e0a\u4e0b\u6587"
+        },
+        {
+            "location": "/flask/#_31",
+            "text": "",
+            "title": "\u4fdd\u5b58\u4e0a\u4e0b\u6587"
+        },
+        {
+            "location": "/flask/#sessions",
+            "text": "",
+            "title": "\u8bbf\u95ee\u548c\u4fee\u6539Sessions"
+        },
+        {
+            "location": "/flask/#_32",
+            "text": "",
+            "title": "\u6a21\u677f"
+        },
+        {
+            "location": "/flask/#jinja",
+            "text": "\u9ed8\u8ba4\u914d\u7f6e\uff1a \n\u6240\u6709\u6269\u5c55\u540d\u4e3a.html .htm .xml .xhtml\u7684\u6728\u677f\u4f1a\u5f00\u542f\u81ea\u52a8\u8f6c\u8bd1 \n\u5728\u6a21\u677f\u4e2d\u53ef\u4ee5\u5229\u7528{% autoescape false %}\u6807\u7b7e\u9009\u62e9\u8f6c\u8bd1\u662f\u5426\u5f00\u542f\u3002 \nFlask\u5728Jinja2\u4e0a\u4e0b\u6587\u4e2d\u63d2\u5165\u4e86\u51e0\u4e2a\u5168\u5c40\u51fd\u6570\u548c\u52a9\u624b\uff0c\u53e6\u5916\u8fd8\u6709\u4e00\u4e9b\u76ee\u524d\u9ed8\u8ba4\u7684\u503c\u3002",
+            "title": "Jinja\u914d\u7f6e"
+        },
+        {
+            "location": "/flask/#jinja2",
+            "text": "",
+            "title": "\u6807\u51c6\u4e0a\u4e0b\u6587\uff0c\u9ed8\u8ba4\u5728Jinja2\u6a21\u677f\u4e2d\u53ef\u7528\u7684\u503c"
+        },
+        {
+            "location": "/flask/#_33",
+            "text": "Flask\u5185\u7f6e\u53d8\u91cf\u53ca\u65b9\u6cd5\uff1a    config\uff1aflask.config  \nrequest\uff1aflask.request  \nsession\uff1aflask.session  \ng\uff1aflask.g  \nurl_for()\uff1aflask.url_for()  \nget_flasked_message()\uff1aflask.get_flashed_message()    python\u53d8\u91cf\uff1a    <p>Dict item: {{ my_dict['key'] }}</p>\n<p>List item: {{ my_list[3] }}</p>\n<p>List with a variable index: {{ my_list[my_index] }}</p>\n<p>Object's method {{ my_object.method() }}</p>",
+            "title": "\u53ef\u4ee5\u4f7f\u7528\u7684\u53d8\u91cf\u548c\u65b9\u6cd5"
+        },
+        {
+            "location": "/flask/#jinja2_1",
+            "text": "\u7531\u4e8e\u4ee5\u4e0a\u53d8\u91cf\u662f\u88ab\u6dfb\u52a0\u5230request\u4e2d\u7684\uff0c\u800c\u4e14\u4e0d\u662f\u5168\u5c40\u53d8\u91cf\uff0c\u6240\u4ee5\u60f3\u8981\u5bfc\u5165\u4e00\u4e2a\u9700\u8981\u8bbf\u95eerequest\u7684\u5b8f\uff0c\u9700\u8981\u663e\u5f0f\u5730\u4f20\u5165request\u6216\u53d8\u91cf\u4f5c\u4e3a\u5b8f\u7684\u53c2\u6570\u3002 \n\u6216\u8005\u5bfc\u5165\u5b8f\u65f6\u624b\u52a8\u5e26\u4e0acontext\uff1a    {% from '_helpers.html' import my_macro with context %}",
+            "title": "\u5bfc\u5165\u5b8f\uff08Jinja2\u7684\u5b8f\uff09\u7684\u65b9\u6cd5"
+        },
+        {
+            "location": "/flask/#jinja2_2",
+            "text": "tojson():    <script type=text/javascript>\n    doSomethingWith({{ user.username | tojson | safe }});\n</script>  safe\uff1a\u6e32\u67d3\u65f6\u4e0d\u8f6c\u8bd1 \ncapitalize\uff1a\u53e5\u5b50\u9996\u5b57\u6bcd\u5927\u5199   \nlower\uff1a\u5168\u90e8\u5c0f\u5199 \nupper\uff1a\u5168\u90e8\u5927\u5199 \ntitle\uff1a\u53e5\u5b50\u4e2d\u6240\u6709\u8bcd\u9996\u5b57\u6bcd\u5927\u5199 \ntrim\uff1a\u53bb\u6389\u9996\u4f4d\u7a7a\u683c \nstriptags\uff1a\u53d6\u6d88\u6240\u6709HTML\u6807\u7b7e \n\u5176\u4ed6\u5185\u7f6e\u8fc7\u6ee4\u5668\uff1a http://jinja.pocoo.org/docs/templates/#builtin-filters",
+            "title": "\u6807\u51c6\u8fc7\u6ee4\u5668\uff0cJinja2\u81ea\u5e26\u7684\u8fc7\u6ee4\u5668"
+        },
+        {
+            "location": "/flask/#_34",
+            "text": "Jinja2\u4f1a\u81ea\u52a8\u8f6c\u8bd1HTML\u4e2d\u7684\u7279\u6b8a\u5b57\u7b26\uff0c\u5982\uff1a & > < \" ' \u3002 \n\u4f46\u662f\u6709\u65f6\u4f1a\u9700\u8981\u63d2\u5165HTML\uff0c\u4f8b\u5982\u63d2\u5165markdown\u8f6c\u6362\u6210\u7684HTML\uff0c\u6709\u4ee5\u4e0b\u4e09\u79cd\u65b9\u6cd5\u3002 \n1. \u5728\u4f20\u9012\u5230\u6a21\u677f\u4e4b\u524d\uff0c\u5c06HTML\u5b57\u7b26\u4e32\u8f6c\u6362\u6210Markup\u5bf9\u8c61\u3002\u63a8\u8350\u4f7f\u7528\u8fd9\u79cd\u65b9\u6cd5\u3002 \n2. \u5728\u6a21\u7248\u4e2d\u4f7f\u7528|safe\u8fc7\u6ee4\u5668\u5c06\u53d8\u91cf\u6807\u8bb0\u4e3a\u5b89\u5168\uff0c\u5982 {{ var | safe }} \u3002 \n3. \u4e34\u65f6\u5b8c\u5168\u7981\u7528\u81ea\u52a8\u8f6c\u8bd1\u5982  {% autoescape false %}\n    <p>autoescaping is disabled here</p>\n    <p>{{ will_not_be_escaped_var }}</p>\n{% endautoescape %}",
+            "title": "\u63a7\u5236\u81ea\u52a8\u8f6c\u8bd1"
+        },
+        {
+            "location": "/flask/#_35",
+            "text": "",
+            "title": "\u6ce8\u518c\u8fc7\u6ee4\u5668"
+        },
+        {
+            "location": "/flask/#jinja2_3",
+            "text": "@app.template_filter('reverse')\ndef reverse_filter(s):\n    return s[::-1]",
+            "title": "\u4f7f\u7528\u88c5\u9970\u5668\u6807\u8bb0\u81ea\u5b9a\u4e49Jinja2\u8fc7\u6ee4\u5668"
+        },
+        {
+            "location": "/flask/#jinja2_4",
+            "text": "def reverse_filter(s):\n    return s[::-1]\napp.jinja_env.filters['reverse'] = reverse_filter",
+            "title": "\u624b\u52a8\u6dfb\u52a0\u8fc7\u6ee4\u5668\u5230Jinja2"
+        },
+        {
+            "location": "/flask/#_36",
+            "text": "{% for x in mylist | reverse %}\n{% endfor %}",
+            "title": "\u5728\u6a21\u677f\u4e2d\u4f7f\u7528\u8fc7\u6ee4\u5668"
+        },
+        {
+            "location": "/flask/#context_processor",
+            "text": "context_processor\u662f\u4e00\u4e2a\u8fd4\u56dedict\u7684\u51fd\u6570\uff0cdict\u4e2d\u7684\u503c\u53ef\u4ee5\u662f\u53d8\u91cf\u4e5f\u53ef\u4ee5\u662f\u51fd\u6570  @app.context_processor\ndef inject_user():\n    return dict(user=g.user)  @app.context_processor\ndef utility_processor():\n    def format_price(amount, currency=u'$'):\n        return u'{0:.2f}{1}.format(amount, currency)\n    return dict(format_price=format_price)  {{ format_price(0.33) }}",
+            "title": "\u4f7f\u7528context_processor\u6dfb\u52a0\u53d8\u91cf\u3001\u51fd\u6570\u6dfb\u52a0\u5230\u6a21\u677f\u4e0a\u4e0b\u6587"
+        },
+        {
+            "location": "/flask/#_37",
+            "text": "",
+            "title": "\u6a21\u677f\u7ed3\u6784\u63a7\u5236"
+        },
+        {
+            "location": "/flask/#_38",
+            "text": "{% if user %}\n    Hello, {{ user }}!\n{% else %}\n    Hello, Stranger!\n{% endif %}",
+            "title": "\u6761\u4ef6"
+        },
+        {
+            "location": "/flask/#_39",
+            "text": "<ul>\n    {% for comment in comments %}\n        <li>{{ comment }}</li>\n    {% endfor %}\n</ul>",
+            "title": "\u5faa\u73af"
+        },
+        {
+            "location": "/flask/#_40",
+            "text": "\u5b9a\u4e49\uff1a  {% macro render_comment(comment) %}\n    <li>{{ comment }}</li>\n{% endmacro %}  \u4f7f\u7528\uff1a  <ul>\n    {% for comment in comments %}\n        {{ render_comment(comment) }}\n    {% endfor %}\n</ul>  \u4ece\u5176\u4ed6\u6587\u4ef6\u4e2d\u5bfc\u5165\uff1a  {% import 'macros.html' as macros %}\n<ul>\n    {% for comment in comments %}\n        {{ macros.render_comment(comment) }}\n    {% endfor %}\n</ul>",
+            "title": "\u5b8f"
+        },
+        {
+            "location": "/flask/#_41",
+            "text": "\u7236\u6a21\u677fbase.html\uff1a  <html>\n<head>\n    {% block head %}\n    <title>{% block title %}{% endblock %} - My Application</title>\n    {% endblock %}\n</head>\n<body>\n    {% block body %}\n    {% endblock %}\n</body>\n</html>  \u5b50\u6a21\u677f\uff1a  {% extends \"base.html\" %}\n{% block title %}Index{% endblock %}\n{% block head %}\n    {{ super() }}\n    <style>\n    </style>\n{% endblock %}\n{% block body %}\n<h1>Hello, World!</h1>\n{% endblock %}  \u4f7f\u7528 super() \u5f15\u7528\u539f\u6a21\u677f\u5185\u5bb9\uff0c\u7528\u4e8e\u5411\u539f\u6709\u5757\u4e2d\u6dfb\u52a0\u65b0\u5185\u5bb9",
+            "title": "\u7ee7\u627f"
+        },
+        {
+            "location": "/flask/#_42",
+            "text": "Flask\u9ed8\u8ba4\u4e0d\u4f1a\u5199\u4efb\u4f55\u65e5\u5fd7\u3002",
+            "title": "\u65e5\u5fd7\u3001\u90ae\u4ef6\u3001\u8c03\u8bd5\u6a21\u5f0f"
+        },
+        {
+            "location": "/flask/#flask_2",
+            "text": "ADMINS = ['yourname@example.com']\nif not app.debug:\n    import logging\n    from logging.handlers import SMTPHandler\n    mail_handler = SMTPHandler('127.0.0.1', 'server-error@example.com', ADMINS, 'YourApplication Failed')\n    mail_handler.setLevel(logging.ERROR)\n    app.logger.addHandler(mail_handler)",
+            "title": "\u914d\u7f6eFlask\u53d1\u9001\u9519\u8bef\u90ae\u4ef6"
+        },
+        {
+            "location": "/flask/#_43",
+            "text": "\u65e5\u5fd7\u8bb0\u5f55\u5668\uff1a \n- FileHandler \u8bb0\u5f55\u6587\u4ef6\u65e5\u5fd7 \n- RotatingFileHandler \u5faa\u73af\u8986\u76d6\u8bb0\u5f55\u65e5\u5fd7 \n- NTEventLogHandler \u8bb0\u5f55\u65e5\u5fd7\u5230Windows\u7cfb\u7edf\u4e8b\u4ef6 \n- SysLogHandler \u8bb0\u5f55\u65e5\u5fd7\u5230Unix\u7cfb\u7edf\u65e5\u5fd7  if not app.debug:\n    import logging\n    from themodule import TheHandlerYouWant\n    file_handler = TheHandlerYouWant(...)\n    file_handler.setLevel(logging.WARNING)\n    app.logger.addHandler(file_handler)",
+            "title": "\u8bb0\u5f55\u5230\u6587\u4ef6"
+        },
+        {
+            "location": "/flask/#_44",
+            "text": "",
+            "title": "\u63a7\u5236\u65e5\u5fd7\u683c\u5f0f"
+        },
+        {
+            "location": "/flask/#_45",
+            "text": "from logging import Formatter\nmail_handler.setFormatter(Formatter('''\nMessage type:       %(levelname)s\nLocation:           %(pathname)s:%(lineno)d\nModule:             %(module)s\nFunction:           %(funcName)s\nTime:               %(asctime)s\n\nMessage:\n\n%(message)s\n'''))",
+            "title": "\u90ae\u4ef6\u683c\u5f0f"
+        },
+        {
+            "location": "/flask/#_46",
+            "text": "from logging import Formatter\nfile_handler.setFormatter(Formatter(\n    '%(asctime)s %(levelname)s: %(message)s '\n    '[in %(pathname)s:%(lineno)d]'\n))",
+            "title": "\u65e5\u5fd7\u683c\u5f0f"
+        },
+        {
+            "location": "/flask/#_47",
+            "text": "\u683c\u5f0f  \u63cf\u8ff0      %(levelname)s  \u6d88\u606f\u6587\u672c\u7684\u8bb0\u5f55\u7b49\u7ea7 ('DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL').    %(pathname)s  \u53d1\u8d77\u65e5\u5fd7\u8bb0\u5f55\u8c03\u7528\u7684\u6e90\u6587\u4ef6\u7684\u5b8c\u6574\u8def\u5f84\uff08\u5982\u679c\u53ef\u7528\uff09    %(filename)s  \u8def\u5f84\u4e2d\u7684\u6587\u4ef6\u540d\u90e8\u5206    %(module)s  \u6a21\u5757\uff08\u6587\u4ef6\u540d\u7684\u540d\u79f0\u90e8\u5206\uff09    %(funcName)s  \u5305\u542b\u65e5\u5fd7\u8c03\u7528\u7684\u51fd\u6570\u540d    %(lineno)d  \u65e5\u5fd7\u8bb0\u5f55\u8c03\u7528\u6240\u5728\u7684\u6e90\u6587\u4ef6\u884c\u7684\u884c\u53f7\uff08\u5982\u679c\u53ef\u7528\uff09    %(asctime)s  LogRecord \u521b\u5efa\u65f6\u7684\u4eba\u7c7b\u53ef\u8bfb\u7684\u65f6\u95f4\u3002    %(message)s  \u8bb0\u5f55\u7684\u6d88\u606f\uff0c\u89c6\u4e3a msg % args     \u9ed8\u8ba4\u60c5\u51b5\u4e0b\uff0casctime\u683c\u5f0f\u4e3a \"2003-07-08 16:49:45,896\" \uff08\u9017\u53f7\u540e\u7684\u6570\u5b57\u65f6\u95f4\u7684\u6beb\u79d2\u90e8\u5206\uff09\u3002\u8fd9\u53ef\u4ee5\u901a\u8fc7\u7ee7\u627f :class:~logging.Formatter\uff0c\u5e76\u91cd\u8f7d formatTime() \u6539\u53d8\u3002  format(): \u5904\u7406\u5b9e\u9645\u683c\u5f0f\uff0c\u8f93\u5165LogRecord\uff0c\u8f93\u51fa\u683c\u5f0f\u5316\u540e\u7684\u5b57\u7b26\u4e32\u3002 \nformatTime(): \u63a7\u5236asctime\u683c\u5f0f\u3002 \nformatException(): \u63a7\u5236\u5f02\u5e38\u7684\u683c\u5f0f\uff0c\u8f93\u5165exc_info\uff0c\u8f93\u51fa\u5b57\u7b26\u4e32\u3002",
+            "title": "\u5e38\u7528\u65e5\u5fd7\u53d8\u91cf"
+        },
+        {
+            "location": "/flask/#_48",
+            "text": "\u4e0d\u5efa\u8bae\u4f7f\u7528Flask.logging\u7edf\u4e00\u914d\u7f6e\u6240\u6709\u65e5\u5fd7\uff0c\u56e0\u4e3a\u8fd9\u6837\u8fd0\u884c\u591a\u4e2a\u5e94\u7528\u65f6\u4e0d\u80fd\u5206\u522b\u914d\u7f6e\u3002 \n\u5efa\u8bae\u4f7f\u7528getLogger\u83b7\u53d6\u65e5\u5fd7\u8bb0\u5f55\uff0c\u7136\u540e\u904d\u5386\u65e5\u5fd7\u8bb0\u5f55\u5668\uff1a  from logging import getLogger\nlogger = [app.logger, getLogger('sqlalchemy'), getLogger('otherlibrary']\nfrom logger in loggers:\n    logger.addHandler(mail_handler)\n    logger.addHandler(file_handler)",
+            "title": "\u5176\u4ed6\u7684\u5e93"
+        },
+        {
+            "location": "/flask/#debug",
+            "text": "app.debug = True\n\u6216\nrun(debug=True)",
+            "title": "\u5f00\u542fDebug"
+        },
+        {
+            "location": "/flask/#_49",
+            "text": "Flask\u9ed8\u8ba4\u8c03\u8bd5\u5668\u53ef\u80fd\u4f1a\u4e0e\u5176\u4ed6\u8c03\u8bd5\u5668\u51b2\u7a81\u3002 \n- debug: \u662f\u5426\u5f00\u542f\u8c03\u8bd5 \n- use_debugger: \u662f\u5426\u4f7f\u7528\u5185\u90e8Flask\u8c03\u8bd5\u5668 \n- use_reloader: \u662f\u5426\u5728\u5f02\u5e38\u65f6\u91cd\u65b0\u518d\u5982\u5e76\u521b\u5efa\u5b50\u8fdb\u7a0b  \u5f00\u542f\u5916\u90e8\u8c03\u8bd5\u5668\uff08Aptana/Eclipse\uff09\u914d\u7f6e\u793a\u4f8b\uff1a \nconfig.yaml  Flask:\n    DEBUG: True\n    DEBUG_WITH_APTANA: True  if __name__ == '__main__':\n    app = create_app(config='config.yaml')\n\n    if app.debug:\n        # \u9ed8\u8ba4\u4f7f\u7528Flask\u5185\u90e8\u8c03\u8bd5\u5668\n        use_debugger = True\n    try:\n        # \u5f53\u5916\u90e8\u8c03\u8bd5\u5668\u5f00\u542f\u65f6\uff0c\u5173\u95edFlask\u5185\u90e8\u8c03\u8bd5\u5668\n        use_debugger = not(app.config.get('DEBUG_WITH_APTANA'))\n    except:\n        pass\n    app.run(use_debugger=use_debugger, debug=app.debug, use_reloader=use_debugger, host='0.0.0.0')",
+            "title": "\u8c03\u8bd5\u5668\u914d\u7f6e"
+        },
+        {
+            "location": "/flask/#_50",
+            "text": "",
+            "title": "\u914d\u7f6e\u5904\u7406"
+        },
+        {
+            "location": "/flask/#_51",
+            "text": "",
+            "title": "\u914d\u7f6e\u57fa\u7840"
+        },
+        {
+            "location": "/flask/#_52",
+            "text": "",
+            "title": "\u5185\u7f6e\u7684\u914d\u7f6e\u503c"
+        },
+        {
+            "location": "/flask/#_53",
+            "text": "",
+            "title": "\u4ece\u6587\u4ef6\u914d\u7f6e"
+        },
+        {
+            "location": "/flask/#_54",
+            "text": "",
+            "title": "\u914d\u7f6e\u7684\u6700\u4f73\u5b9e\u8df5"
+        },
+        {
+            "location": "/flask/#_55",
+            "text": "",
+            "title": "\u5f00\u53d1/\u751f\u4ea7"
+        },
+        {
+            "location": "/flask/#_56",
+            "text": "",
+            "title": "\u5b9e\u4f8b\u6587\u4ef6\u5939"
+        },
+        {
+            "location": "/flask/#_57",
+            "text": "",
+            "title": "\u4fe1\u53f7"
+        },
+        {
+            "location": "/flask/#_58",
+            "text": "",
+            "title": "\u8ba2\u9605\u4fe1\u53f7"
+        },
+        {
+            "location": "/flask/#_59",
+            "text": "",
+            "title": "\u521b\u5efa\u4fe1\u53f7"
+        },
+        {
+            "location": "/flask/#_60",
+            "text": "",
+            "title": "\u53d1\u9001\u4fe1\u53f7"
+        },
+        {
+            "location": "/flask/#flask_3",
+            "text": "",
+            "title": "\u4fe1\u53f7\u4e0eFlask\u7684\u8bf7\u6c42\u4e0a\u4e0b\u6587"
+        },
+        {
+            "location": "/flask/#_61",
+            "text": "",
+            "title": "\u57fa\u4e8e\u88c5\u9970\u5668\u7684\u4fe1\u53f7\u8ba2\u9605"
+        },
+        {
+            "location": "/flask/#_62",
+            "text": "",
+            "title": "\u6838\u5fc3\u4fe1\u53f7"
+        },
+        {
+            "location": "/flask/#pluggable-views",
+            "text": "",
+            "title": "Pluggable Views"
+        },
+        {
+            "location": "/flask/#_63",
+            "text": "",
+            "title": "\u57fa\u672c\u539f\u5219"
+        },
+        {
+            "location": "/flask/#_64",
+            "text": "",
+            "title": "\u65b9\u6cd5\u63d0\u793a"
+        },
+        {
+            "location": "/flask/#_65",
+            "text": "",
+            "title": "\u57fa\u4e8e\u8c03\u5ea6\u7684\u65b9\u6cd5"
+        },
+        {
+            "location": "/flask/#_66",
+            "text": "",
+            "title": "\u88c5\u9970\u8bd5\u56fe"
+        },
+        {
+            "location": "/flask/#api",
+            "text": "",
+            "title": "\u57fa\u4e8eAPI\u7684\u65b9\u6cd5\u89c6\u56fe"
+        },
+        {
+            "location": "/flask/#_67",
+            "text": "",
+            "title": "\u5e94\u7528\u4e0a\u4e0b\u6587"
+        },
+        {
+            "location": "/flask/#_68",
+            "text": "\u5728\u4e00\u4e2aPython\u8fdb\u7a0b\u4e2d\u53ef\u4ee5\u8fd0\u884c\u591a\u4e2aFlask\u5e94\u7528\u3002 \n\u4e3a\u4e86\u4e0d\u4f7f\u7528\u53c2\u6570\u5c42\u5c42\u4f20\u9012context\uff0cFlask\u4f7f\u7528current_app\u6307\u5411\u5f53\u524d\u8bf7\u6c42\u6240\u5c5e\u7684\u5e94\u7528\u3002",
+            "title": "\u5e94\u7528\u4e0a\u4e0b\u6587\u7684\u4f5c\u7528"
+        },
+        {
+            "location": "/flask/#_69",
+            "text": "\u5f53\u4e00\u4e2arequest\u7684context\u88ab\u653e\u5165\u5904\u7406\u6808\u65f6\uff0c\u5982\u679c\u6709\u9700\u8981\uff0c\u5e94\u7528context\u5c31\u4f1a\u88ab\u4e00\u8d77\u521b\u5efa\u3002 \n\u663e\u793a\u8c03\u7528app_context()\u65b9\u6cd5\u53ef\u4ee5\u521b\u5efa\u5e94\u7528context\uff0c\u5982\uff1a    from flask import Flask, current_app\n\napp = Flask(__name__)\nwith app.app_context():\n    # \u5728\u8fd9\u91cc\u5c31\u53ef\u4ee5\u901a\u8fc7current_app\u8bbf\u95ee\u5e94\u7528context\n    print current_app.name\n    print current_app.url_map",
+            "title": "\u521b\u5efa\u5e94\u7528\u4e0a\u4e0b\u6587"
+        },
+        {
+            "location": "/flask/#_70",
+            "text": "flask.current_app # \u7a0b\u5e8f\u4e0a\u4e0b\u6587\uff0c\u5f53\u524d\u7a0b\u5e8f \nflask.g # \u5b58\u50a8\u5728\u7a0b\u5e8f\u4e0a\u4e0b\u6587\uff0c\u5904\u7406\u8bf7\u6c42\u65f6\u7528\u4f5c\u4e34\u65f6\u5b58\u50a8\u5bf9\u8c61\uff0c\u6bcf\u6b21\u8bf7\u6c42\u4f1a\u91cd\u8bbe \nflask.request # \u8bf7\u6c42\u4e0a\u4e0b\u6587\uff0c\u8bf7\u6c42\u5bf9\u8c61 \nflask.session # \u8bf7\u6c42\u4e0a\u4e0b\u6587\uff0c\u7528\u6237\u4f1a\u8bdd",
+            "title": "\u5e94\u7528\u4e0a\u4e0b\u6587\u5c40\u90e8\u53d8\u91cf"
+        },
+        {
+            "location": "/flask/#_71",
+            "text": "",
+            "title": "\u4e0a\u4e0b\u6587\u7528\u6cd5"
+        },
+        {
+            "location": "/flask/#_72",
+            "text": "\u53ef\u4ee5\u5728\u4e0a\u4e0b\u6587\u4e2d\u7f13\u5b58\u6570\u636e\u5e93\u8fde\u63a5\u3002    import sqlite3\nfrom flask import g\n\ndef get_db():\n    db = getattr(g, '_database', None)\n    if db is None:\n        db = g._database = connect_to_database()\n    return db\n\n@app.teardown_appcontext\ndef teardown_db(exception):\n    db = getattr(g, '_database', None)\n    if db is not None:\n        db.close()",
+            "title": "\u663e\u5f0f\u521b\u5efa\u4f7f\u7528\u8d44\u6e90"
+        },
+        {
+            "location": "/flask/#_73",
+            "text": "\u4f7f\u7528LocalProxy\u5b58\u50a8\u53d8\u91cf  from werkzeug.local import LocalProxy\ndb = LocalProxy(get_db)\n\n# \u7528\u6237\u53ef\u4ee5\u76f4\u63a5\u901a\u8fc7db\u8bbf\u95ee\u6570\u636e\uff0cdb\u5df2\u7ecf\u5728\u5185\u90e8\u5b8c\u6210get_db\u8c03\u7528",
+            "title": "\u9690\u5f0f\u521b\u5efa\u4f7f\u7528\u8d44\u6e90"
+        },
+        {
+            "location": "/flask/#_74",
+            "text": "",
+            "title": "\u8bf7\u6c42\u4e0a\u4e0b\u6587"
+        },
+        {
+            "location": "/flask/#_75",
+            "text": "\u8bf7\u6c42context\u4ec5\u5728\u5904\u7406\u8bf7\u6c42\u65f6\u5b58\u5728\u3002\u4f8b\u5982\u4ee5\u4e0b\u4ee3\u7801\u5728\u6ca1\u6709\u8bf7\u6c42\u65f6\u8c03\u7528\u4f1a\u53d1\u751f\u9519\u8bef\uff1a    from flask import reqeust, url_for\n\ndef redirect_url():\n    return request.args.get('next') or request.referrer or url_for('index')  \u53ef\u4ee5\u4f7f\u7528 text_request_context('/?next=http://example.com/' \u6a21\u62df\u8bf7\u6c42\u3002 \n\u4f7f\u7528with\u7684\u65b9\u5f0f\uff1a  with app.text_request_context('/?next=http://example.com/')\n    redirect_url()  \u624b\u52a8\u5165\u6808\u8bf7\u6c42\u7684\u65b9\u5f0f\uff1a  ctx = app.text_request_context('/?next=http://example.com/')\n# \u5165\u6808\nctx.push()\n# \u5904\u7406\u8bf7\u6c42\nredirect_url()\n# \u51fa\u6808\nctx.pop()",
+            "title": "\u4e0a\u4e0b\u6587\u4f5c\u7528\u57df"
+        },
+        {
+            "location": "/flask/#flaskcontext",
+            "text": "def wsgi_app(self, environ):\n    with self.request_context(environ):\n        try:\n            response = self.full_dispatch_request()\n        except Exception, e:\n            response = self.make_response(self.handle_exception(e))\n        return response(environ, start_response)",
+            "title": "Flask\u8bf7\u6c42context\u5185\u90e8\u5904\u7406"
+        },
+        {
+            "location": "/flask/#_76",
+            "text": "\u5728\u6240\u6709\u8bf7\u6c42\u524d\u8c03\u7528 before_first_request() \u3002  \u6bcf\u4e2a\u8bf7\u6c42\u4e4b\u524d\uff0c\u6267\u884c before_request() \u4e0a\u7ed1\u5b9a\u7684\u51fd\u6570\uff0c\u82e5\u67d0\u4e2a\u51fd\u6570\u8fd4\u56de\u4e86\u4e00\u4e2a response \u5219\u5176\u4ed6\u51fd\u6570\u5c06\u4e0d\u4f1a\u88ab\u8c03\u7528\u3002  \u5982\u679c before_request() \u7ed1\u5b9a\u7684\u51fd\u6570\u6ca1\u6709\u8fd4\u56de response \uff0c\u5219url\u5904\u7406\u51fd\u6570\u88ab\u6b63\u5e38\u8c03\u7528\u3002  url\u5904\u7406\u51fd\u6570\u8fd4\u56de\u540e\u88ab\u8f6c\u5316\u6210 response \u5bf9\u8c61\uff0c\u4e4b\u540e\u4f1a\u8c03\u7528 after_request()  \u6700\u540e\u4f1a\u8c03\u7528 teardown_request() \u4e0a\u7ed1\u5b9a\u7684\u51fd\u6570\uff0c\u5373\u4f7f\u53d1\u751f\u5f02\u5e38\u4e5f\u4f1a\u88ab\u6267\u884c\u3002",
+            "title": "\u56de\u8c03\u548c\u9519\u8bef"
+        },
+        {
+            "location": "/flask/#teardown_request",
+            "text": "@app.teardown_request\ndef teardown():\n    pass\n\nwith app.text_client() as client:\n    resp = client.get('/foo')\n\n# teardown_request()\u5728\u8fd9\u91cc\u88ab\u8c03\u7528",
+            "title": "teardown_request()"
+        },
+        {
+            "location": "/flask/#_77",
+            "text": "",
+            "title": "\u7559\u610f\u4ee3\u7406"
+        },
+        {
+            "location": "/flask/#_78",
+            "text": "",
+            "title": "\u9519\u8bef\u65f6\u7684\u4e0a\u4e0b\u6587\u4fdd\u62a4"
+        },
+        {
+            "location": "/flask/#_79",
+            "text": "",
+            "title": "\u7528\u84dd\u56fe\u5b9e\u73b0\u6a21\u5757\u5316"
+        },
+        {
+            "location": "/flask/#_80",
+            "text": "\u628a\u4e00\u4e2a\u5e94\u7528\u5206\u6210\u51e0\u4e2a\u6a21\u5757\u3002  \u7528URL\u524d\u7f00\u6216\u5b50\u57df\u540d\u6a21\u5757\u5316\u7ba1\u7406URL\u3002  \u53ef\u4ee5\u4f7f\u4e00\u4e2a\u6a21\u5757\u83b7\u5f97\u591a\u79cdURL\u89c4\u5219\u3002  \u53ef\u4ee5\u4f7f\u7528\u84dd\u56fe\u6a21\u5757\u5316\u9759\u6001\u6587\u4ef6\u3001\u6a21\u5757\u5316\u6a21\u677f\u3001\u6a21\u677f\u5316\u8fc7\u6ee4\u5668\u3002  \u5728Flask\u6269\u5c55\u4e2d\u4f7f\u7528\u3002",
+            "title": "\u4e3a\u4ec0\u4e48\u4f7f\u7528\u84dd\u56fe"
+        },
+        {
+            "location": "/flask/#_81",
+            "text": "\u6ce8\u518c\u5f0f\u5730\u96c6\u6210\u5230\u5e94\u7528\u3002  \u6309\u6a21\u5757\u5206\u914d\u8bf7\u6c42\u548c\u5904\u7406URL\u3002",
+            "title": "\u84dd\u56fe\u7684\u8bbe\u60f3"
+        },
+        {
+            "location": "/flask/#_82",
+            "text": "from flask import Blueprint, render_template, abort\nfrom jinja2 import TemplateNotFound\n\nsimple_page = Blueprint('simple_page', __name__, template_folder='templates')\n\n@simple_page.route('/', defaults={'page': 'index'})\n@simple_page.route('/<page>')\ndef show(page):\n    try:\n        return render_template('pages/%s.html' % page)\n    except TemplateNotFound:\n        abort(404)  \u84dd\u56fe\u7ed1\u5b9a\u5230app\u65f6\uff0c @simple_page.route \u4f1a\u5c06 show \u6ce8\u518c\u4e3a simple_page.show",
+            "title": "\u521b\u5efa\u84dd\u56fe\uff08\u6a21\u5757\uff09"
+        },
+        {
+            "location": "/flask/#_83",
+            "text": "from flask import Flask\nfrom yourapplication.simple_page import simple_page\n\napp = Flask(__name__)\n\n# \u6302\u8f7d\u5728\u6839\u76ee\u5f55\napp.register_blueprint(simple_page)\n\n# \u6302\u8f7d\u5230/pages\napp.register_blueprint(simple_page, url_prefix='/pages')",
+            "title": "\u6ce8\u518c\uff08\u4f7f\u7528\uff09\u84dd\u56fe\uff08\u6a21\u5757\uff09"
+        },
+        {
+            "location": "/flask/#_84",
+            "text": "",
+            "title": "\u84dd\u56fe\u4f7f\u7528\uff08\u6a21\u5757\uff09\u8d44\u6e90"
+        },
+        {
+            "location": "/flask/#_85",
+            "text": "\u84dd\u56fe\u82e5\u4f7f\u7528\u5355\u72ec\u6587\u4ef6\u5939\uff08Python\u5305\uff09\uff0c\u8fd9\u4e2a\u6587\u4ef6\u5939\u5c31\u662f\u84dd\u56fe\u7684\u8d44\u6e90\u6587\u4ef6\u5939\u3002 \n\u84dd\u56fe\u82e5\u5171\u7528\u6587\u4ef6\u5939\uff08Python\u6a21\u5757\uff09\uff0c\u6a21\u5757\u6240\u5728\u6587\u4ef6\u5939\u5c31\u662f\u8d44\u6e90\u6587\u4ef6\u5939\u3002 \n\u53ef\u4ee5\u4f7f\u7528 simple_page.root_path \u83b7\u53d6\u8d44\u6e90\u8def\u5f84\u3002  \n\u53ef\u4ee5\u4f7f\u7528 simple_page.open_resource() \u4ece\u6587\u4ef6\u5939\u6253\u5f00\u6587\u4ef6\u3002\u5982\uff1a  with simple_page.open_resource('static/style.css') as f:\n    code = f.read()",
+            "title": "\u84dd\u56fe\u8d44\u6e90\u6587\u4ef6\u5939"
+        },
+        {
+            "location": "/flask/#_86",
+            "text": "\u53ef\u4ee5\u4f7f\u7528 static_folder \u53c2\u6570\u6307\u5b9a\u9759\u6001\u6587\u4ef6\u5939\u8def\u5f84\uff0c\u5982\uff1a  admin = Blueprint('admin', __name__, static_folder='static')  \u82e5admin\u6a21\u5757\u52a0\u8f7d\u5728\u6839\u8def\u5f84'/'\uff0c\u9759\u6001\u8d44\u6e90\u8def\u5f84\u5c31\u662f'/static/xxx'  \n\u82e5admin\u6a21\u5757\u52a0\u8f7d\u5728'/admin'\uff0c\u9759\u6001\u8d44\u6e90\u8def\u5f84\u5c31\u662f'/admin/static/xxx'  \n\u53ef\u4ee5\u4f7f\u7528admin.static\u8bbf\u95eestatic\u53c2\u6570\uff0c\u5982\uff1a  url_for('admin.static', filename='style.css')",
+            "title": "\u9759\u6001\u6587\u4ef6"
+        },
+        {
+            "location": "/flask/#_87",
+            "text": "admin = Blueprint('admin', __name__, template_folder='templates')",
+            "title": "\u6a21\u677f\u8def\u5f84"
+        },
+        {
+            "location": "/flask/#url_1",
+            "text": "# \u4e0d\u540c\u6a21\u5757\u6784\u9020url\nurl_for('admin.index')\n\n# \u76f8\u540c\u6a21\u5757\u6784\u9020url\nurl_for('.index')",
+            "title": "\u6784\u9020URL"
+        },
+        {
+            "location": "/flask/#flask_4",
+            "text": "",
+            "title": "Flask\u6269\u5c55"
+        },
+        {
+            "location": "/flask/#_88",
+            "text": "",
+            "title": "\u5bfb\u627e\u6269\u5c55"
+        },
+        {
+            "location": "/flask/#_89",
+            "text": "",
+            "title": "\u4f7f\u7528\u6269\u5c55"
+        },
+        {
+            "location": "/flask/#flask-08",
+            "text": "",
+            "title": "Flask 0.8\u4ee5\u524d"
+        },
+        {
+            "location": "/flask/#flask-script",
+            "text": "\u547d\u4ee4\u4ea4\u4e92\u5f0f\u64cd\u4f5cFlask  from flask import Flask\n# \u5e9f\u5f03\nfrom flask.ext.script import Manager\n# \u5efa\u8bae\nfrom flask_script import Manager\n\napp = Flask(__name__)\nmanager = Manager(app)\n\nif __name__ == '__main__':\n    manager.run()  py -3 hello.py --help\npy -3 hello.py shell --help\npy -3 hello.py runserver --help  \u81ea\u52a8\u5bfc\u5165\u4e0a\u4e0b\u6587\uff1a  from flask_script import Shell\n\ndef make_shell_context():\n    return dict(app=app, db=db, User=User, Role=Role)\nmanager.add_command('shell', Shell(make_context=make_shell_context))",
+            "title": "Flask-Script"
+        },
+        {
+            "location": "/flask/#flask-bootstrap",
+            "text": "flask_bootstrap\u63d0\u4f9bbootstrap\uff0cgoogle analytics\uff0cWTForm\u5b9a\u4e49\u7b49\u6a21\u677f",
+            "title": "Flask-Bootstrap"
+        },
+        {
+            "location": "/flask/#basehtml",
+            "text": "\u5757\u540d  \u8bf4\u660e      doc  \u6574\u4e2aHTML\u6587\u6863    html_attribs  \u6807\u7b7e\u7684\u5c5e\u6027    html  \u6807\u7b7e\u4e2d\u7684\u5185\u5bb9    head  \u6807\u7b7e\u4e2d\u7684\u5185\u5bb9    title  \u6807\u7b7e\u4e2d\u7684\u5185\u5bb9    metas  \u4e00\u7ec4 \u6807\u7b7e    styles  \u5c42\u53e0\u6837\u5f0f\u8868\u5b9a\u4e49    body_attribs  \u6807\u7b7e\u7684\u5c5e\u6027    body  \u6807\u7b7e\u4e2d\u7684\u5185\u5bb9    navbar  \u7528\u6237\u5b9a\u4e49\u7684\u5bfc\u822a\u6761    content  \u7528\u6237\u5b9a\u4e49\u7684\u9875\u9762\u5185\u5bb9    scripts  \u6587\u6863\u5e95\u90e8\u7684Javascript\u58f0\u660e     \u907f\u514d\u8986\u76d6\u6a21\u677f\u539f\u6709\u5185\u5bb9\uff1a  {% block scripts %}\n{{ super() }}\n<script type=\"text/javascript\" src=\"my-script.js\"></script>\n{% endblock %}",
+            "title": "base.html\u5b9a\u4e49\u7684\u5757"
+        },
+        {
+            "location": "/flask/#python",
+            "text": "from flask import app\nfrom flask_bootstrap import Bootstrap\n\napp = Flask(__name__)\nbootstrap = Bootstrap(app)\n\napp.run()",
+            "title": "python\u521d\u59cb\u5316"
+        },
+        {
+            "location": "/flask/#_90",
+            "text": "{% extends \"bootstrap/base.html\" %}\n\n{% block title %}Flasky{% endblock %}\n\n{% block navbar %}\n<div class=\"navbar navbar-inverse\" role=\"navigation\">\n    <div class=\"container\">\n        <div class=\"navbar-header\">\n            <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-collapse\">\n                <span class=\"sr-only\">Toggle navigation</span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n                <span class=\"icon-bar\"></span>\n            </button>\n            <a class=\"navbar-brand\" href=\"/\">Flasky</a>\n        </div>\n        <div class=\"navbar-collapse collapse\">\n            <ul class=\"nav navbar-nav\">\n                <li><a href=\"/\">Home</a></li>\n            </ul>\n        </div>\n    </div>\n</div>\n{% endblock %}\n\n{% block content %}\n<div class=\"container\">\n    <div class=\"page-header\">\n        <h1>Hello, {{ name }}!</h1>\n    </div>\n</div>\n{% endblock %}",
+            "title": "\u6a21\u677f\u7ee7\u627f"
+        },
+        {
+            "location": "/flask/#flask-moment",
+            "text": "moment.js\u63d0\u4f9b\u672c\u5730\u5316\u65f6\u95f4 \nhttp://momentjs.com/docs/#/displaying/  \u5b89\u88c5\uff1a  pip install flask-moment  python\uff1a  from datetime import datetime\nfrom flask.ext.moment import Moment\nmoment = Moment(app)\n\n@app.route('/')\ndef index():\n    return render_template('index.html', current_time=datetime.utcnow())  moment\u9700\u8981\u8f93\u5165\u4e0d\u5e26\u65f6\u533a\u7684utc\u65f6\u95f4  \u6a21\u677f\uff1a  {% block scripts %}\n{{ super() }}\n{{ moment.include_moment() }}\n{% endblock %}\n\n\n{% block page_content %}\n<p>The local date and time is {{ moment(current_time).format('LLL') }}.</p>\n<p>That was {{ moment(current_time).fromNow(refresh=True) }}.</p>\n{% endblock %}  moment.format\u663e\u793a\u65f6\u95f4  moment.fromNow\u663e\u793a\u8ddd\u79bb\u5f53\u524d\u591a\u4e45\uff0c\u52a8\u6001\u5237\u65b0     \u8bed\u8a00\u672c\u5730\u5316\uff1a  {{ moment.lang('es') }}\n{{ moment.lang('zh-cn') }}",
+            "title": "Flask-Moment"
+        },
+        {
+            "location": "/flask/#flask-wtf",
+            "text": "flask-wtf\u9ed8\u8ba4\u5f00\u542f\u9632\u6b62csrf\u653b\u51fb\uff0c\u5373\u53d1\u9001\u8868\u5355\u65f6\u53d1\u9001\u4e00\u4e2akey\u8981\u6c42\u54cd\u5e94\u65f6\u5e26\u56de\uff0ckey\u9519\u8bef\u65f6\u4e3a\u4f2a\u9020\u54cd\u5e94\u3002  \u5b89\u88c5\uff1a  pip install flask-wtf  \u542f\u52a8:  app = Flask(__name__)\napp.config['SECRET_KEY'] = 'flask-wtf\u9700\u8981\u4f7f\u7528secret_key'  \u5b9a\u4e49\uff1a  from flask_wtf import Form\nfrom wtforms import StringField, SubmitField\nfrom wtforms.validators import Required\n\nclass NameForm(Form):\n    name = StringField('What is your name?', validators=[Required()])\n    submit = SubmitField('Submit')  wtf\u624b\u52a8\u751f\u6210\u8868\u5355\uff1a  <form method=\"POST\">\n    {{ form.hidden_tag() }}\n    {{ form.name.label }} {{ form.name() }}\n    {{ form.name.label }} {{ form.name(id='my-text-field') }} # \u6307\u5b9aID\u7b49\u7528\u4e8e\u6837\u5f0f\u8868\n    {{ form.submit() }}\n</form>  flask-bootstrap + flask-wtf\u81ea\u52a8\u751f\u6210\u8868\u5355\uff1a  {% import \"bootstrap/wtf.html\" as wtf %}\n{{ wtf.quick_form(form) }}  \u8868\u5355\u9a8c\u8bc1\uff1a  @app.route('/', methods=['GET', 'POST'])\ndef index():\n    name = None\n    form = NameForm()\n    if form.validate_on_submit():\n        name = form.name.data\n        form.name.date = ''\n    return render_template('index.html', form=form, name=name)  GET POST\u4e8c\u5408\u4e00\uff0cPOST\u65f6\u901a\u8fc7validate_on_submit\u5224\u65ad\u83b7\u53d6\u8f93\u5165  POST\u540e\u5237\u65b0\u5904\u7406\uff1a \nPOST\u540e\u5237\u65b0\uff0c\u6d4f\u89c8\u5668\u4f1a\u91cd\u590dPOST\uff0c\u53ef\u4ee5\u901a\u8fc7POST\u54cd\u5e94URL\u91cd\u5b9a\u5411\u907f\u514d\u3002    from flask import Flask, render_template, session, redirect, url_for\n\n@app.route('/', methods=['GET', 'POST'])\ndef index():\n    form = NameForm()\n    if form.validate_on_submit():\n        session['name'] = form.name.data\n        return redirect(url_for('index'))\n    return render_template('index.html', form=form, name=session.get('name'))  \u5b57\u6bb5\uff1a \n\u5b57\u6bb5\u7c7b\u578b | \u8bf4\u660e \n---------|----- \nStringField | \u6587\u672c\u5b57\u6bb5 \nTextAreaField | \u591a\u884c\u6587\u672c\u5b57\u6bb5 \nPasswordField | \u5bc6\u7801\u6587\u672c\u5b57\u6bb5 \nHiddenField | \u9690\u85cf\u6587\u672c\u5b57\u6bb5 \nDateField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3adatetime.date\u683c\u5f0f \nDateTimeField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3adatetime.datetime\u683c\u5f0f \nIntegerField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3a\u6574\u6570 \nDecimalField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3adecimal.Decimal \nFloatField | \u6587\u672c\u5b57\u6bb5\uff0c\u503c\u4e3a\u6d6e\u70b9\u6570 \nBooleanField | \u590d\u9009\u6846\uff0c\u503c\u4e3aTrue\u548cFalse \nRadioField | \u4e00\u7ec4\u5355\u9009\u6846 \nSelectField | \u4e0b\u62c9\u5217\u8868 \nSelectMultipliField | \u4e0b\u62c9\u5217\u8868\uff0c\u53ef\u9009\u62e9\u591a\u4e2a\u503c \nFileField | \u6587\u4ef6\u4e0a\u4f20\u5b57\u6bb5 \nSubmitField | \u8868\u5355\u63d0\u4ea4\u6309\u94ae \nFormField | \u628a\u8868\u5355\u4f5c\u4e3a\u5b57\u6bb5\u5d4c\u5165\u53e6\u4e00\u4e2a\u8868\u5355 \nFieldList | \u4e00\u7ec4\u6307\u5b9a\u7c7b\u578b\u7684\u5b57\u6bb5  \u9a8c\u8bc1\uff1a \n\u9a8c\u8bc1\u51fd\u6570 | \u8bf4\u660e \n---------|----- \nEmail | \u9a8c\u8bc1\u7535\u5b50\u90ae\u4ef6\u5730\u5740  \nEqualTo | \u6bd4\u8f83\u4e24\u4e2a\u5b57\u6bb5\u7684\u503c\uff0c\u5e38\u7528\u4e8e\u8981\u6c42\u8f93\u5165\u4e24\u6b21\u5bc6\u7801\u8fdb\u884c\u786e\u8ba4 \nIPAddress | \u9a8c\u8bc1IPv4\u7f51\u7edc\u5730\u5740 \nLength | \u9a8c\u8bc1\u8f93\u5165\u5b57\u7b26\u4e32\u7684\u957f\u5ea6 \nNumberRange | \u9a8c\u8bc1\u8f93\u5165\u7684\u503c\u5728\u6570\u5b57\u8303\u56f4\u5185 \nOptional | \u65e0\u8f93\u5165\u65f6\u8df3\u8fc7\u5176\u4ed6\u9a8c\u8bc1\u51fd\u6570  \nRequired | \u786e\u4fdd\u5b57\u6bb5\u4e2d\u6709\u6570\u636e  \nRegexp | \u4f7f\u7528\u6b63\u5219\u8868\u8fbe\u5f0f\u9a8c\u8bc1\u8f93\u5165\u503c \nURL | \u9a8c\u8bc1URL \nAnyOf | \u786e\u4fdd\u8f93\u5165\u503c\u5728\u5217\u8868\u4e2d \nNoneOf | \u786e\u4fdd\u8f93\u5165\u503c\u4e0d\u5728\u5217\u8868\u4e2d",
+            "title": "Flask-WTF"
+        },
+        {
+            "location": "/flask/#flask-sqlalchemy",
+            "text": "\u5b89\u88c5\uff1a  pip install flask-sqlalchemy  \u6570\u636e\u5e93URI\u914d\u7f6e\uff1a  export SQLALCHEMY_DATABASE_URI=mysql://username:password@hostname/database     \u6570\u636e\u5e93\u5f15\u64ce  URL      MySQL  mysql://username:password@hostnmae/database    Postgres  postgresql://username:password@hostname/database    SQLite(*nix)  sqlite:///absolute/path/to/database    SQLite(win)  sqlite:///c:/absolute/path/to/database     \u521d\u59cb\u5316:  from flask_salalchemy import SQLAlchemy\n\nbasedir = os.path.abspath(os.path.dirname(__file__))\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')\n# \u81ea\u52a8\u63d0\u4ea4\napp.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True\n# \u8ddf\u8e2a\u6570\u636e\u5e93\u53d8\u66f4\napp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False\n\ndb = SQLAlchemy(app)  \u6a21\u578b\u5b9a\u4e49\uff1a  class Role(db.Model):\n    __tablename__ = 'roles'\n    id = db.Column(db.Integer, primary_key=True)\n    name = db.Column(db.String(64), unique=True)\n\n    def __repr__(self):\n        return '<Role %r>' % self.name\n\nclass User(db.Model):\n    __tablename__ = 'users'\n    id = db.Column(db.Integer, primary_key=True)\n    username = db.Column(db.String(64), unique=True, index=True)\n\n    def __repr__(self):\n        return '<User %r>' % self.username  __repr()__\u8fd4\u56de\u4e00\u4e2a\u53ef\u8bfb\u6027\u5b57\u7b26\u4e32\u8868\u793a\u6a21\u578b\uff0c\u7528\u4e8e\u8c03\u8bd5  \u64cd\u4f5c\uff1a  from app.py import db, Role, User\n\n# \u4e0d\u5b58\u5728\u5219\u521b\u5efa\u6570\u636e\u5e93\ndb.create_all()\n\n# \u5220\u9664\ndb.drop_all()\n\n# \u521b\u5efa\u5bf9\u8c61\nadmin_role = Role(name='Admin')\nmod_role = Role(name='Moderator')\nuser_role=Role(name='User')\nuser_john=User(username='john', role=admin_role)\nuser_susan = User(username='susan', role=user_role)\nuser_david = User(username='david', role=user_role)\n\n# \u63d2\u5165\u6570\u636e\u5e93\ndb.session.add(admin_role)\ndb.session.add(mod_role)\ndb.session.add(user_role)\ndb.session.add(user_john)\ndb.session.add(user_susan)\ndb.session.add(user_david)\n\n# \u6279\u91cf\u63d2\u5165\u6570\u636e\u5e93\ndb.session.add_all([admin_role, mod_role, user_role, user_john, user_susan, user_david])\n\n# \u63d0\u4ea4\uff0csession\u662f\u539f\u5b50\u64cd\u4f5c\uff0c\u907f\u514d\u4e0d\u4e00\u81f4\u6027\ndb.session.commit()\n\n# \u56de\u9000\ndb.session.rollback()\n\n# \u4fee\u6539\nadmin_role.name = 'Administrator'\ndb.session.add(admin_role)\ndb.session.commit()\n\n# \u5220\u9664\ndb.session.delete(mod_role)\ndb.session.commit()\n\n# \u67e5\u8be2\nRole.query.all()\nUser.query.all()\nUser.query.filter_by(role=user_role)\nRole.query.filter_by(name='User').first()\n\n# \u663e\u793aSQL\u8bed\u53e5\nstr(User.query.filter_by(role=user_role))\n\n# \u6392\u5e8f\nuser_role.users.order_by(User.username).all()\n\n# \u7edf\u8ba1\nuser_role.users.count()  \u6570\u636e\u7c7b\u578b\uff1a \n\u7c7b\u578b\u540d | Python\u7c7b\u578b | \u8bf4\u660e \n-------|------------|------ \nInteger | int | \u666e\u901a\u6574\u6570\uff0c\u4e00\u822c\u662f32\u4f4d \nSmallInteger | int | \u53d6\u503c\u8303\u56f4\u5c0f\u7684\u6574\u6570\uff0c\u4e00\u822c\u662f16\u4f4d \nBigInteger | int\u6216long | \u4e0d\u9650\u5236\u7cbe\u5ea6\u7684\u6574\u6570 \nFloat | float | \u6d6e\u70b9\u6570 \nNumeric | decimal.Decimal | \u5b9a\u70b9\u6570 \nString | str | \u53d8\u957f\u5b57\u7b26\u4e32 \nText | str | \u53d8\u957f\u5b57\u7b26\u4e32\uff0c\u5bf9\u8f83\u957f\u6216\u4e0d\u9650\u957f\u5ea6\u7684\u5b57\u7b26\u4e32\u505a\u4e86\u4f18\u5316 \nUnicode | unicode | \u53d8\u957fUnicode\u5b57\u7b26\u4e32 \nUnicodeText | unicode | \u53d8\u957fUnicode\u5b57\u7b26\u4e32\uff0c\u5bf9\u8f83\u957f\u6216\u4e0d\u9650\u957f\u5ea6\u7684\u5b57\u7b26\u4e32\u505a\u4e86\u4f18\u5316 \nBoolean | bool | \u5e03\u5c14\u503c \nDate | datetime.date | \u65e5\u671f \nTime | datetime.time | \u65f6\u95f4 \nDateTime | datetime.datetime | \u65e5\u671f\u548c\u4e16\u754c \nInterval | datetime.timedelta | \u65f6\u95f4\u95f4\u9694 \nEnum | str | \u4e00\u7ec4\u5b57\u7b26\u4e32 \nPickleType | \u4efb\u4f55Python\u5bf9\u8c61 | \u81ea\u52a8\u4f7f\u7528Pickle\u5e8f\u5217\u5316 \nLargeBinary | str | \u4e8c\u8fdb\u5236\u6587\u4ef6  \u5217\u9009\u9879\uff1a \n\u9009\u9879\u540d | \u8bf4\u660e \n-------|----- \nprimary_key | \u4e3b\u952e \nunique | \u4e0d\u5141\u8bb8\u91cd\u590d \nindex | \u521b\u5efa\u7d22\u5f15 \nnullable | \u5141\u8bb8\u4f7f\u7528\u7a7a\u503c \ndefault | \u5b9a\u4e49\u9ed8\u8ba4\u503c  \u4e00\u5bf9\u591a\u5173\u7cfb\uff1a  class Role(db.Model):\n    users = db.relationship('User', backref='role')\n\nclass User(db.Model):\n    role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))  db.relationship\u5b9a\u4e49\u4e00\u79cd\u7279\u6b8a\u5c5e\u6027users\uff0c\u8bbf\u95eeusers\u5c5e\u6027\u8fd4\u56de\u5bf9\u5e94\u7684User\u5217\u8868  backref\u5728User\u6a21\u578b\u4e2d\u6dfb\u52a0\u4e00\u4e2arole\u5c5e\u6027\uff0c\u8bbf\u95eerole\u8bbf\u95ee\u7684\u662f\u5bf9\u8c61\uff0c\u8bbf\u95eerole_id\u53ea\u80fd\u8bbf\u95ee\u5916\u952e\u7684\u503c     relationship()\u9009\u9879\uff1a \n\u9009\u9879\u540d | \u8bf4\u660e \n-------|----- \nbackref | \u5728\u5173\u7cfb\u7684\u53e6\u4e00\u4e2a\u6a21\u578b\u4e2d\u6dfb\u52a0\u53cd\u5411\u4f5c\u7528 \nprimaryjoin | \u660e\u786e\u6307\u5b9a\u4e24\u4e2a\u6a21\u578b\u4e4b\u95f4\u4f7f\u7528\u7684\u8054\u7ed3\u6761\u4ef6\u3002\u53ea\u5728\u6a21\u68f1\u4e24\u53ef\u7684\u5173\u7cfb\u4e2d\u9700\u8981\u5b9a\u4e49\u3002 \nlazy | \u52a0\u8f7d\u65b9\u5f0f: \n... | select\uff1a\u9996\u6b21\u8bbf\u95ee\u65f6\u6309\u9700\u52a0\u8f7d \n... | immediate\uff1a\u6e90\u5bf9\u8c61\u52a0\u8f7d\u5219\u52a0\u8f7d \n... | join\uff1a\u4f7f\u7528\u8054\u7ed3\u52a0\u8f7d \n... | subquery\uff1a\u7acb\u5373\u52a0\u8f7d\uff0c\u4f7f\u7528\u5b50\u67e5\u8be2 \n... | noload\uff1a\u6c38\u4e0d\u52a0\u8f7d \n... | dynamic\uff1a\u4e0d\u52a0\u8f7d\uff0c\u63d0\u4f9b\u67e5\u8be2 \nuselist | True\u4f7f\u7528\u5217\u8868\uff0cFalse\u4e00\u5bf9\u4e00\u4e0d\u4f7f\u7528\u5217\u8868 \norder_by | \u6307\u5b9a\u5173\u7cfb\u4e2d\u8bb0\u5f55\u7684\u6392\u5e8f\u65b9\u5f0f \nsecondary | \u6307\u5b9a\u591a\u5bf9\u591a\u5173\u7cfb\u4e2d\u5173\u7cfb\u8868\u7684\u540d\u79f0 \nsecondaryjoin | SQLAlchemy\u65e0\u6cd5\u51b3\u5b9a\u65f6\uff0c\u6307\u5b9a\u591a\u5bf9\u591a\u5173\u7cfb\u4e2d\u7684\u4e8c\u7ea7\u8054\u7ed3\u6761\u4ef6  \u67e5\u8be2\u8fc7\u6ee4\u5668\uff1a \n\u8fc7\u6ee4\u5668 | \u8bf4\u660e \n-------|----- \nfilter() | \u628a\u8fc7\u6ee4\u5668\u6dfb\u52a0\u5230\u539f\u67e5\u8be2\u4e0a\uff0c\u8fd4\u56de\u4e00\u4e2a\u65b0\u67e5\u8be2 \nfilter_by() | \u628a\u7b49\u503c\u8fc7\u6ee4\u5668\u6dfb\u52a0\u5230\u539f\u67e5\u8be2\u4e0a\uff0c\u8fd4\u56de\u4e00\u4e2a\u65b0\u67e5\u8be2 \nlimit() | \u9650\u5236\u67e5\u8be2\u7ed3\u679c\u6570\u91cf\uff0c\u8fd4\u56de\u4e00\u4e2a\u65b0\u67e5\u8be2 \noffset() | \u4fbf\u5b9c\u67e5\u8be2\u7ed3\u679c\uff0c\u8fd4\u56de\u4e00\u4e2a\u65b0\u67e5\u8be2 \norder_by() | \u6392\u5e8f\uff0c\u8fd4\u56de\u65b0\u67e5\u8be2 \ngroup_by() | \u5206\u7ec4\uff0c\u8fd4\u56de\u65b0\u67e5\u8be2  \u67e5\u8be2\u6267\u884c\u51fd\u6570\uff1a \n\u65b9\u6cd5 | \u8bf4\u660e \n-----|----- \nall() | \u8fd4\u56de\u6240\u6709\u7ed3\u679clist \nfirst() | \u8fd4\u56de\u7b2c\u4e00\u4e2a\u7ed3\u679c\u6216None \nfirst_or_404() | \u8fd4\u56de\u7b2c\u4e00\u4e2a\u7ed3\u679c\u6216404 \nget() | \u8fd4\u56de\u6307\u5b9a\u4e3b\u952e\u5bf9\u5e94\u884c\u6216None \nget_or_404() | \u8fd4\u56de\u6307\u5b9a\u4e3b\u952e\u5bf9\u5e94\u884c\u6216404 \ncount() | \u8fd4\u56de\u67e5\u8be2\u7ed3\u679c\u7684\u6570\u91cf \npaginate() | \u8fd4\u56de\u4e00\u4e2aPaginate\u5bf9\u8c61\uff0c\u5305\u542b\u8303\u56f4\u5185\u7684\u7ed3\u679c",
+            "title": "Flask-SQLAlchemy"
+        },
+        {
+            "location": "/flask/#_91",
+            "text": "SQLAlchemy Alembic: https://alembic.readthedocs.org/en/latest/index.html \nFlask-Migrate(Alembic\u8f7b\u91cf\u7ea7\u5305\u88c5): http://flask-migrate.readthedocs.org/en/latest/ \uff0c\u4f9d\u8d56Flask-Script\u64cd\u4f5c\u3002  \u5b89\u88c5\uff1a  pip install flask-migrate  \u542f\u52a8\u4ee3\u7801\uff1a  from flask_migrate import Migrate, MigrateCommand\n\napp = Flask(__name__)\ndb = SQLAlchemy(app)\nmigrate = Migrate(app, db)\n\nmanager.add_command('db', MigrateCommand)  \u521d\u59cb\u5316\u547d\u4ee4\uff1a  python hello.py db init  \u624b\u52a8\u521b\u5efa\u8fc1\u79fb\uff08\u81ea\u884c\u5b9e\u73b0 upgrade() \u548c downgrade() \uff09\uff1a  python hello.py db revision  \u81ea\u52a8\u521b\u5efa\u8fc1\u79fb\uff08\u9700\u8981\u68c0\u67e5\uff09  python hello.py db migrate -m \"initial migration\"  \u5347\u7ea7\u6570\u636e\u5e93  python hello.py db upgrade",
+            "title": "\u6570\u636e\u5e93\u8fc1\u79fb"
+        },
+        {
+            "location": "/flask/#flask-mail",
+            "text": "\u5305\u88c5python\u6807\u51c6smtplib  \u5b89\u88c5\uff1a  pip install flask-mail  \u914d\u7f6e\u9879\uff1a \n\u914d\u7f6e | \u9ed8\u8ba4\u503c | \u8bf4\u660e \n-----|--------|----- \nMAIL_SERVER | localhost | \u7535\u5b50\u90ae\u4ef6\u670d\u52a1\u5668\u57df\u540d\u6216IP \nMAIL_PORT | 25 | \u7535\u5b50\u90ae\u4ef6\u670d\u52a1\u5668\u7aef\u53e3 \nMAIL_USE_TLS | False | \u542f\u7528TLS \nMAIL_USE_SSL | False | \u542f\u7528SSL \nMAIL_USERNAME | None | \u90ae\u4ef6\u8d26\u6237\u7684\u7528\u6237\u540d \nMAIL_PASSWORD | None | \u90ae\u4ef6\u8d26\u6237\u7684\u5bc6\u7801  \u914d\u7f6e\u542f\u52a8\uff1a  import os\nfrom flask import Flask\nfrom flask_mail import Mail\n\napp = Flask(__name__)\n\napp.config['MAIL_SERVER'] = 'smtp.googlemail.com'\napp.config['MAIL_PORT'] = 587\napp.config['MAIL_USE_TLS'] = True\napp.config['MAIL_USERNAME'] = os.evviron.get('MAIL_USERNAME')\napp.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')\n\nmail = Mail(app)  \u53d1\u9001\u90ae\u4ef6\uff1a  from flask.ext.mail import Message\nmsg = Message('test subject', sender='you@example.com', recipients=['you@example.com'])\nmsg.body = 'text body'\nmsg.html = '<b>HTML</b> body'\nmail.send(msg)  \u53d1\u9001\u90ae\u4ef6\uff08\u6a21\u677f\u6e32\u67d3\uff09\uff1a  from flask.ext.mail import Message\nmsg = Message('test subject', sender='you@example.com', recipients=['you@example.com'])\nmsg.body = render_template(template + '.txt', parm1, parm2)\nmsg.html = render_template(template + '.html', parm1, parm2)\nmail.send(msg)",
+            "title": "Flask-Mail"
+        },
+        {
+            "location": "/flask/#celery",
+            "text": "",
+            "title": "Celery\u4efb\u52a1\u961f\u5217"
+        },
+        {
+            "location": "/flask/#_92",
+            "text": "Brokers(\u6d88\u606f\u4e22\u5217\uff0c\u4ee3\u7406): RabbitMQ, Redis, Amazon SQS \nResult Stores(\u7ed3\u679c\u5b58\u50a8): AMQP, Redis, Memcached, SQLAlchemy, Django ORM, Apache Cassandra, Elasticsearch \nConcurrency(\u5e76\u53d1): prefork(multiprocessing), Eventlet, gevent, solo(single threaded) \nSerialization(\u5e8f\u5217\u5316): pickle, json, yaml, msgpack. zlib, bzip2, \u6d88\u606f\u7b7e\u540d  Monitoring: worker\u5b9e\u65f6\u76d1\u63a7\u4e8b\u4ef6 \nWork-flows: \u5de5\u4f5c\u6d41\u652f\u6301\uff0c\u5206\u7ec4\u3001\u6570\u636e\u94fe\u3001\u5757 \nTime & Rate Limits: \u6309\u65f6\u95f4\u3001\u5904\u7406\u65f6\u957f\u8fdb\u884c\u6d41\u63a7 \nScheduling: \u8ba1\u5212\u4efb\u52a1\uff0c\u76f8\u5bf9\u65f6\u95f4\u3001\u65f6\u95f4\u95f4\u9694\u3001\u5b9a\u65f6\u4efb\u52a1",
+            "title": "\u7279\u6027"
+        },
+        {
+            "location": "/flask/#_93",
+            "text": "pip install celery\npip install celery[redis]\n\n# \u5176\u4ed6Broker\npip install celery[librabbitmq, redis, auth, msgpack]",
+            "title": "\u5b89\u88c5"
+        },
+        {
+            "location": "/flask/#_94",
+            "text": "task.py  from celery import Celery\n\n# redis url \u683c\u5f0f:'redis://:password@hostname:port/db_number'\n# \u9ed8\u8ba4port\u4e3a6379\uff0c\u6570\u636e\u5e93id\u4e3a0\n\n# redis socket \u683c\u5f0f:  'redis+socket:///path/to/redis.sock?virtual_host=db_number'\n\n# \u53ea\u6267\u884c\u4e0d\u8fd4\u56de\u7ed3\u679c\n# app = Celery('tasks', broker='redis://localhost')\n\n# \u914d\u7f6ebackend\u4fdd\u5b58\u7ed3\u679c\napp = Celery('tasks', backend='redis://localhost', broker='redis://localhost')\n\n@app.task()\ndef add(x, y)\n    return x + y",
+            "title": "\u5b9a\u4e49\u4efb\u52a1"
+        },
+        {
+            "location": "/flask/#worker",
+            "text": "celery -A task worker # \u542f\u52a8\u4efb\u52a1\ncelery -A task worker --loglevel=info # \u5e26\u65e5\u5fd7\u9009\u9879\u542f\u52a8\u4efb\u52a1\ncelery worker --help # \u67e5\u770bworker\u9009\u9879\u5e2e\u52a9\ncelery help # \u5e2e\u52a9",
+            "title": "\u542f\u52a8Worker\u4efb\u52a1"
+        },
+        {
+            "location": "/flask/#_95",
+            "text": "client.py  from task import add\n\nresult = add.delay(1, 2) # \u8fd4\u56de\u4e00\u4e2aAsyncResult\u5bf9\u8c61\uff0c\u7528\u4e8e\u68c0\u67e5\u72b6\u6001\u3001\u83b7\u53d6\u7ed3\u679c\u6216\u5f02\u5e38\nresult = add.apply_async((1, 2))\n\n# \u68c0\u67e5\u72b6\u6001\nresult.ready()\n\n# \u83b7\u53d6\u7ed3\u679c\nresult.get() # \u5fc5\u987b\u8bbe\u7f6ebackend\u4fdd\u5b58\u53ca\u8bf6\u8fc7\n\n# \u5173\u95ed\u5f02\u5e38\u91cd\u73b0\uff0c\u9ed8\u8ba4\u82e5\u51fa\u73b0\u5f02\u5e38get\u4f1a\u91cd\u65b0\u629b\u51fa\u5f02\u5e38\nresult.get(propagate=False)\n\n# \u8bbf\u95ee\u5f02\u5e38\u8c03\u7528\u6808\nresult.traceback",
+            "title": "\u53d1\u9001\u4efb\u52a1"
+        },
+        {
+            "location": "/flask/#celery-flower",
+            "text": "https://flower.readthedocs.io/en/latest/  \u7279\u6027\uff1a \n- \u5b9e\u65f6\u4efb\u52a1\u6267\u884c\u76d1\u63a7\u5de5\u5177web\u754c\u9762 \n- \u8fdc\u7a0b\u63a7\u5236 \n- Broker\u76d1\u63a7 \n- HTTP API \n- \u57fa\u672c\u7528\u6237\u8ba4\u8bc1\uff0c\u652f\u6301Google OpenID  pip install flower\nflower -A proj --port=5555\ncurl http://localhost:5555/",
+            "title": "Celery Flower"
+        },
+        {
+            "location": "/flask/#flask-admin",
+            "text": "",
+            "title": "Flask-Admin"
+        },
+        {
+            "location": "/flask/#shell",
+            "text": "",
+            "title": "\u4e0eShell\u5171\u821e"
+        },
+        {
+            "location": "/flask/#_96",
+            "text": "",
+            "title": "\u521b\u5efa\u4e00\u4e2a\u8bf7\u6c42\u4e0a\u4e0b\u6587"
+        },
+        {
+            "location": "/flask/#_97",
+            "text": "",
+            "title": "\u6fc0\u53d1\u8bf7\u6c42\u53d1\u9001\u524d\u540e\u7684\u8c03\u7528"
+        },
+        {
+            "location": "/flask/#flask_5",
+            "text": "",
+            "title": "Flask\u4ee3\u7801\u6a21\u5f0f"
+        },
+        {
+            "location": "/flask/#url_2",
+            "text": "",
+            "title": "\u5927\u578b\u5e94\u7528\uff08\u6279\u91cf\u5bfc\u5165url\u5904\u7406\u7c7b)"
+        },
+        {
+            "location": "/flask/#_98",
+            "text": "/application\n    /application.py\n    /static\n        /style.css\n    /templates\n        /layout.html\n        /index.html\n        /login.html\n        ...",
+            "title": "\u4fee\u6539\u524d\u76ee\u5f55\u7ed3\u6784"
+        },
+        {
+            "location": "/flask/#_99",
+            "text": "/application\n    /runserver.py\n    /application\n        /__init__.py\n        /views.py\n        /static\n        /templates  \u6dfb\u52a0runserver.py  from application import app\napp.run(debug=True)  \u6dfb\u52a0 init .py  from flask import Flask\napp = Flask(__name__)\n\n# \u5728Flask\u751f\u6210\u540e\u5bfc\u5165\u6a21\u5757\u4e2d\u6240\u6709view\nimport application.views  \u6dfb\u52a0views.py  from application import app\n\n@app.route('/')\ndef index():\n    return 'Hello World!'  \u4fee\u6539\u6b65\u9aa4\uff1a \n1. \u4f7f\u7528python\u5305\uff08\u76ee\u5f55\uff09\u66ff\u6362python\u6a21\u5757\uff08py\u6587\u4ef6\uff09\u7ba1\u7406\u4ee3\u7801 \n2. \u6dfb\u52a0\u542f\u52a8\u4ee3\u7801runserver.py \n3. \u5728\u5305 init .py\u4e2d\u521b\u5efaFlask\u5e94\u7528\uff0c\u5bfc\u5165\u6a21\u5757\u6240\u6709view\u3002 \n4. \u5728views\u4e2d\u5f15\u7528app\uff0c\u5b9e\u73b0url\u5904\u7406\u7a0b\u5e8f\u3002    \u8fd9\u6837\u4fee\u6539\u6709\u5faa\u73af\u4f9d\u8d56\u7684\u5acc\u7591\uff0c\u5176\u5b9e\u5728__init__.py\u4e2d\u53ea\u5bfc\u5165\u5e76\u6ca1\u6709\u4f7f\u7528\uff0c\u5e76\u4e14\u5b9e\u5728\u6587\u4ef6\u672b\u5c3e\u5bfc\u5165\u7684",
+            "title": "\u4fee\u6539\u540e\u76ee\u5f55\u7ed3\u6784"
+        },
+        {
+            "location": "/flask/#_100",
+            "text": "",
+            "title": "\u5e94\u7528\u7a0b\u5e8f\u7684\u5de5\u5382\u51fd\u6570"
+        },
+        {
+            "location": "/flask/#_101",
+            "text": "",
+            "title": "\u5e94\u7528\u8c03\u5ea6"
+        },
+        {
+            "location": "/flask/#api_1",
+            "text": "",
+            "title": "\u5b9e\u73b0API\u5f02\u5e38\u5904\u7406"
+        },
+        {
+            "location": "/flask/#url_3",
+            "text": "",
+            "title": "\u4f7f\u7528URL\u5904\u7406\u5668"
+        },
+        {
+            "location": "/flask/#setuptools",
+            "text": "",
+            "title": "\u4f7f\u7528Setuptools\u90e8\u7f72\u3001\u5206\u53d1"
+        },
+        {
+            "location": "/flask/#fabric",
+            "text": "",
+            "title": "\u4f7f\u7528Fabric\u90e8\u7f72"
+        },
+        {
+            "location": "/flask/#flasksqlite3",
+            "text": "",
+            "title": "\u5728Flask\u4e2d\u4f7f\u7528sqlite3"
+        },
+        {
+            "location": "/flask/#flasksqlalchemy",
+            "text": "",
+            "title": "\u5728Flask\u4e2d\u4f7f\u7528sqlalchemy"
+        },
+        {
+            "location": "/flask/#_102",
+            "text": "",
+            "title": "\u4e0a\u4f20\u6587\u4ef6"
+        },
+        {
+            "location": "/flask/#_103",
+            "text": "",
+            "title": "\u7f13\u5b58"
+        },
+        {
+            "location": "/flask/#_104",
+            "text": "",
+            "title": "\u89c6\u56fe\u88c5\u9970\u5668"
+        },
+        {
+            "location": "/flask/#wtforms",
+            "text": "",
+            "title": "\u4f7f\u7528WTForms\u8fdb\u884c\u8868\u5355\u9a8c\u8bc1"
+        },
+        {
+            "location": "/flask/#_105",
+            "text": "",
+            "title": "\u6a21\u677f\u7ee7\u627f"
+        },
+        {
+            "location": "/flask/#_106",
+            "text": "",
+            "title": "\u6d88\u606f\u95ea\u73b0"
+        },
+        {
+            "location": "/flask/#jqueryajax",
+            "text": "",
+            "title": "\u7528jQuery\u5b9e\u73b0Ajax"
+        },
+        {
+            "location": "/flask/#_107",
+            "text": "",
+            "title": "\u81ea\u5b9a\u4e49\u9519\u8bef\u9875\u9762"
+        },
+        {
+            "location": "/flask/#_108",
+            "text": "",
+            "title": "\u5ef6\u8fdf\u52a0\u8f7d\u89c6\u56fe"
+        },
+        {
+            "location": "/flask/#flaskmongokit",
+            "text": "",
+            "title": "\u5728Flask\u4e2d\u4f7f\u7528MongoKit"
+        },
+        {
+            "location": "/flask/#favicon",
+            "text": "",
+            "title": "\u6dfb\u52a0Favicon"
+        },
+        {
+            "location": "/flask/#_109",
+            "text": "16*16\u50cf\u7d20\u7684ICO\u6587\u4ef6",
+            "title": "\u7279\u6027"
+        },
+        {
+            "location": "/flask/#_110",
+            "text": "<link rel=\"shortcut icon\" href=\"{{ url_for('static', filename='favicon.ico') }}\">",
+            "title": "\u65b0\u6807\u51c6"
+        },
+        {
+            "location": "/flask/#_111",
+            "text": "\u653e\u5728root\u8def\u5f84\u4e0b\u7684favicon.ico  app.add_url_rule('/favicon.ico', redirect_to=url_for('static', filename='favicon.ico'))  \u6216\u8005  import os\nfrom flask import send_from_directory\n\n@app.route('/favicon.ico')\ndef favicon():\n    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon,ico', mimetype='image/vnd.microsoft.icon')",
+            "title": "\u65e7\u6807\u51c6"
+        },
+        {
+            "location": "/flask/#_112",
+            "text": "templates/base.html  {% block head %}\n{{ super() }}\n<link rel=\"shortcut icon\" href=\"{{ url_for('static', filename='favicon.ico') }}\" type=\"image/x-icon\">\n<link rel=\"icon\" href=\"{{ url_for('static', filename='favicon.ico') }} type=\"image/x-icon\">\n{% endblock %}",
+            "title": "\u6a21\u677f"
+        },
+        {
+            "location": "/flask/#_113",
+            "text": "",
+            "title": "\u6570\u636e\u6d41"
+        },
+        {
+            "location": "/flask/#_114",
+            "text": "",
+            "title": "\u5ef6\u8fdf\u8bf7\u6c42\u56de\u8c03"
+        },
+        {
+            "location": "/flask/#http-method-overrides",
+            "text": "",
+            "title": "\u6dfb\u52a0HTTP Method Overrides"
+        },
+        {
+            "location": "/flask/#_115",
+            "text": "",
+            "title": "\u8bf7\u6c42\u5185\u5bb9\u6821\u9a8c\u7801"
+        },
+        {
+            "location": "/flask/#celery_1",
+            "text": "",
+            "title": "\u57fa\u4e8eCelery\u7684\u540e\u53f0\u4efb\u52a1"
+        },
+        {
+            "location": "/flask/#flask_6",
+            "text": "",
+            "title": "\u7ee7\u627fFlask"
+        },
+        {
+            "location": "/flask/#_116",
+            "text": "",
+            "title": "\u90e8\u7f72\u9009\u62e9"
+        },
+        {
+            "location": "/flask/#_117",
+            "text": "",
+            "title": "\u6258\u7ba1\u914d\u7f6e"
+        },
+        {
+            "location": "/flask/#_118",
+            "text": "",
+            "title": "\u4e3b\u673a\u914d\u7f6e"
+        },
+        {
+            "location": "/flask/#mod_wsgiapache",
+            "text": "",
+            "title": "mod_wsgi\uff08Apache\uff09"
+        },
+        {
+            "location": "/flask/#wsgi_1",
+            "text": "Gunicorn:    Gevent:    Twisted Web:    Proxy Setups:",
+            "title": "\u72ec\u7acbWSGI\u5bb9\u5668"
+        },
+        {
+            "location": "/flask/#uwsgi",
+            "text": "",
+            "title": "uWSGI"
+        },
+        {
+            "location": "/flask/#fastcgi",
+            "text": "",
+            "title": "FastCGI"
+        },
+        {
+            "location": "/flask/#cgi",
+            "text": "",
+            "title": "CGI"
+        },
+        {
+            "location": "/flask/#_119",
+            "text": "",
+            "title": "\u5927\u578b\u5de5\u7a0b"
+        },
+        {
+            "location": "/flask/#_120",
+            "text": "",
+            "title": "\u9605\u8bfb\u6e90\u7801"
+        },
+        {
+            "location": "/flask/#_121",
+            "text": "",
+            "title": "\u94a9\u5b50\uff0c\u7ee7\u627f"
+        },
+        {
+            "location": "/flask/#_122",
+            "text": "",
+            "title": "\u7ee7\u627f"
+        },
+        {
+            "location": "/flask/#_123",
+            "text": "",
+            "title": "\u7528\u4e2d\u95f4\u4ef6\u5305\u88c5"
+        },
+        {
+            "location": "/flask/#_124",
+            "text": "",
+            "title": "\u5206\u652f"
+        },
+        {
+            "location": "/flask/#_125",
+            "text": "",
+            "title": "\u50cf\u4e13\u5bb6\u4e00\u6837\u6269\u5927\u89c4\u6a21"
+        },
+        {
+            "location": "/flask/#_126",
+            "text": "",
+            "title": "\u4e0e\u793e\u533a\u5bf9\u8bdd"
+        },
+        {
+            "location": "/flask/#api_2",
+            "text": "",
+            "title": "API"
+        },
+        {
+            "location": "/flask/#_127",
+            "text": "",
+            "title": "\u5e94\u7528\u5bf9\u8c61"
+        },
+        {
+            "location": "/flask/#_128",
+            "text": "",
+            "title": "\u84dd\u56fe\u5bf9\u8c61"
+        },
+        {
+            "location": "/flask/#_129",
+            "text": "",
+            "title": "\u8fdb\u5165\u7684\u8bf7\u6c42\u5bf9\u8c61"
+        },
+        {
+            "location": "/flask/#_130",
+            "text": "",
+            "title": "\u54cd\u5e94\u5bf9\u8c61"
+        },
+        {
+            "location": "/flask/#_131",
+            "text": "",
+            "title": "\u4f1a\u8bdd"
+        },
+        {
+            "location": "/flask/#_132",
+            "text": "",
+            "title": "\u4f1a\u8bdd\u63a5\u53e3"
+        },
+        {
+            "location": "/flask/#_133",
+            "text": "",
+            "title": "\u6d4b\u8bd5\u5ba2\u6237\u7aef"
+        },
+        {
+            "location": "/flask/#_134",
+            "text": "",
+            "title": "\u5e94\u7528\u5168\u5c40\u53d8\u91cf"
+        },
+        {
+            "location": "/flask/#_135",
+            "text": "",
+            "title": "\u6709\u7528\u7684\u51fd\u6570\u548c\u7c7b"
+        },
+        {
+            "location": "/flask/#_136",
+            "text": "",
+            "title": "\u6d88\u606f\u95ea\u73b0"
+        },
+        {
+            "location": "/flask/#json",
+            "text": "",
+            "title": "JSON\u652f\u6301"
+        },
+        {
+            "location": "/flask/#_137",
+            "text": "",
+            "title": "\u6a21\u677f\u6e32\u67d3"
+        },
+        {
+            "location": "/flask/#_138",
+            "text": "",
+            "title": "\u914d\u7f6e"
+        },
+        {
+            "location": "/flask/#_139",
+            "text": "",
+            "title": "\u6269\u5c55"
+        },
+        {
+            "location": "/flask/#_140",
+            "text": "",
+            "title": "\u6d41\u7684\u8f85\u52a9\u51fd\u6570"
+        },
+        {
+            "location": "/flask/#_141",
+            "text": "",
+            "title": "\u6709\u7528\u7684\u5185\u6784\u4ef6"
+        },
+        {
+            "location": "/flask/#_142",
+            "text": "",
+            "title": "\u4fe1\u53f7"
+        },
+        {
+            "location": "/flask/#_143",
+            "text": "",
+            "title": "\u57fa\u4e8e\u7c7b\u7684\u89c6\u56fe"
+        },
+        {
+            "location": "/flask/#url_4",
+            "text": "",
+            "title": "URL\u8def\u7531\u6ce8\u518c"
+        },
+        {
+            "location": "/flask/#_144",
+            "text": "",
+            "title": "\u89c6\u56fe\u51fd\u6570\u9009\u9879"
+        },
+        {
+            "location": "/flask/#_145",
+            "text": "",
+            "title": "\u5176\u4ed6\u8bf4\u660e"
+        },
+        {
+            "location": "/flask/#flask_7",
+            "text": "",
+            "title": "Flask\u4e2d\u7684\u8bbe\u8ba1\u51b3\u7b56"
+        },
+        {
+            "location": "/flask/#htmlxhtml",
+            "text": "",
+            "title": "HTML/XHTML\u5e38\u89c1\u95ee\u9898"
+        },
+        {
+            "location": "/flask/#_146",
+            "text": "",
+            "title": "\u5b89\u5168\u6ce8\u610f\u4e8b\u9879"
+        },
+        {
+            "location": "/flask/#flaskunicode",
+            "text": "",
+            "title": "Flask\u4e2d\u7684Unicode"
+        },
+        {
+            "location": "/flask/#flask_8",
+            "text": "",
+            "title": "Flask\u6269\u5c55\u5f00\u53d1"
+        },
+        {
+            "location": "/flask/#pocoo",
+            "text": "",
+            "title": "Pocoo\u98ce\u683c\u6307\u5f15"
+        },
+        {
+            "location": "/flask/#python3",
+            "text": "",
+            "title": "Python3\u652f\u6301"
         },
         {
             "location": "/pyqt/",
