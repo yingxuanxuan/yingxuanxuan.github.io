@@ -2648,18 +2648,24 @@ apt-get install kaltura-nginx</code></pre>
 <h2 id="url">URL结构<a class="headerlink" href="#url" title="Permanent link">&para;</a></h2>
 <h3 id="url_1">基本URL结构<a class="headerlink" href="#url_1" title="Permanent link">&para;</a></h3>
 <h4 id="_14">结构<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
-<p>http://<domain>/<location>/<fileuri>/<filename>  </p>
+<pre class="codehilite"><code>http://&lt;domain&gt;/&lt;location&gt;/&lt;fileuri&gt;/&lt;filename&gt;  </code></pre>
+
+
 <h4 id="fileuri">fileuri<a class="headerlink" href="#fileuri" title="Permanent link">&para;</a></h4>
 <p>local模式：根目录root /的相对路径<br />
 mapped模式：根据从upstream /收到的JSON确定<br />
 remote模式：读取chunks的mp4文件路径  </p>
 <h3 id="url_2">多文件合一URL结构<a class="headerlink" href="#url_2" title="Permanent link">&para;</a></h3>
 <h4 id="_15">多合一<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
-<p>http://<domain>/<location>/<prefix>,<middle1>,<middle2>,<middle3>,<postfix>.urlset/<filename>  </p>
+<pre class="codehilite"><code>http://&lt;domain&gt;/&lt;location&gt;/&lt;prefix&gt;,&lt;middle1&gt;,&lt;middle2&gt;,&lt;middle3&gt;,&lt;postfix&gt;.urlset/&lt;filename&gt;  </code></pre>
+
+
 <h4 id="_16">分解<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
-<p>http://<domain>/<location><prefix><middle1><postfix>/<filename><br />
-http://<domain>/<location><prefix><middle2><postfix>/<filename><br />
-http://<domain>/<location><prefix><middle3><postfix>/<filename>  </p>
+<pre class="codehilite"><code>http://&lt;domain&gt;/&lt;location&gt;&lt;prefix&gt;&lt;middle1&gt;&lt;postfix&gt;/&lt;filename&gt;  
+http://&lt;domain&gt;/&lt;location&gt;&lt;prefix&gt;&lt;middle2&gt;&lt;postfix&gt;/&lt;filename&gt;  
+http://&lt;domain&gt;/&lt;location&gt;&lt;prefix&gt;&lt;middle3&gt;&lt;postfix&gt;/&lt;filename&gt;  </code></pre>
+
+
 <h4 id="_17">注意<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
 <p>The suffix .urlset (can be changed with vod_multi_uri_suffix) indicates that the URL should be treated as a multi URL.  </p>
 <h3 id="url_3">URL路径参数<a class="headerlink" href="#url_3" title="Permanent link">&para;</a></h3>
@@ -2668,7 +2674,9 @@ clipTo: 播放结束时间毫秒 例如 .../clipTo/60000/...<br />
 tracks: 音视频轨道 例如 .../tracks/v1-a1/...  </p>
 <h3 id="_18">文件名结构<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
 <h4 id="_19">结构<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h4>
-<p><basename>[<seqparams>][<fileparams>][<trackparams>][<langparams>].<extension>  </p>
+<pre class="codehilite"><code>&lt;basename&gt;[&lt;seqparams&gt;][&lt;fileparams&gt;][&lt;trackparams&gt;][&lt;langparams&gt;].&lt;extension&gt;  </code></pre>
+
+
 <h4 id="basename">basename<a class="headerlink" href="#basename" title="Permanent link">&para;</a></h4>
 <p>dash - manifest.mpd<br />
 hds - manifest.f4m<br />
