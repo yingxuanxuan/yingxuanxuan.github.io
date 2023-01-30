@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-30T03:47:17.323Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="fF0fHhe284D6f4Vh4wjb" version="20.8.13" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-30T03:53:23.731Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="NesLHUqlQfjjtXI-xUzZ" version="20.8.13" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
-    <mxGraphModel dx="1969" dy="911" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2391" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -135,14 +135,8 @@
         <mxCell id="77e6c97f196da883-11" value="采集机台状态" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="77e6c97f196da883-3" vertex="1">
           <mxGeometry x="42" y="70" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="77e6c97f196da883-3" source="hsNV3JfmAN6WM8ltQ2-S-27" target="hsNV3JfmAN6WM8ltQ2-S-88">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-27" value="库管状态" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="77e6c97f196da883-3">
-          <mxGeometry x="40" y="710" width="150" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-88" value="机台状态通知" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="77e6c97f196da883-3">
-          <mxGeometry x="40" y="120" width="150" height="30" as="geometry" />
+        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-27" value="维护库管状态" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="77e6c97f196da883-3">
+          <mxGeometry x="40" y="700" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="77e6c97f196da883-4" value="MCS调度" style="swimlane;html=1;startSize=20;" parent="77e6c97f196da883-1" vertex="1">
           <mxGeometry x="930" y="20" width="450" height="930" as="geometry" />
@@ -190,7 +184,7 @@
           <mxGeometry x="146" y="326" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="hsNV3JfmAN6WM8ltQ2-S-25" value="修改库管状态" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="77e6c97f196da883-4">
-          <mxGeometry x="156" y="710" width="150" height="30" as="geometry" />
+          <mxGeometry x="146" y="700" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="hsNV3JfmAN6WM8ltQ2-S-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="77e6c97f196da883-4">
           <mxGeometry relative="1" as="geometry">
@@ -209,8 +203,36 @@
         <mxCell id="hsNV3JfmAN6WM8ltQ2-S-83" value="上报消息处理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="77e6c97f196da883-4">
           <mxGeometry x="146" y="420" width="150" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="77e6c97f196da883-4" source="hsNV3JfmAN6WM8ltQ2-S-86" target="hsNV3JfmAN6WM8ltQ2-S-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-94" value="是" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hsNV3JfmAN6WM8ltQ2-S-91">
+          <mxGeometry x="-0.2119" y="4" relative="1" as="geometry">
+            <mxPoint x="10" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="77e6c97f196da883-4" source="hsNV3JfmAN6WM8ltQ2-S-86" target="hsNV3JfmAN6WM8ltQ2-S-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="541" />
+              <mxPoint x="350" y="660" />
+              <mxPoint x="221" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-95" value="否" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hsNV3JfmAN6WM8ltQ2-S-92">
+          <mxGeometry x="-0.7743" y="2" relative="1" as="geometry">
+            <mxPoint x="-12" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="hsNV3JfmAN6WM8ltQ2-S-86" value="涉及库位是否是机台" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="77e6c97f196da883-4">
           <mxGeometry x="151" y="508" width="140" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="77e6c97f196da883-4" source="hsNV3JfmAN6WM8ltQ2-S-88" target="hsNV3JfmAN6WM8ltQ2-S-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-88" value="机台料架到位通知" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" vertex="1" parent="77e6c97f196da883-4">
+          <mxGeometry x="22" y="590" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="77e6c97f196da883-5" value="RCS" style="swimlane;html=1;startSize=20;" parent="77e6c97f196da883-1" vertex="1">
           <mxGeometry x="1380" y="20" width="230" height="930" as="geometry" />
@@ -245,8 +267,13 @@
         <mxCell id="hsNV3JfmAN6WM8ltQ2-S-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="77e6c97f196da883-1" source="hsNV3JfmAN6WM8ltQ2-S-25" target="hsNV3JfmAN6WM8ltQ2-S-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="77e6c97f196da883-1" source="hsNV3JfmAN6WM8ltQ2-S-88" target="77e6c97f196da883-8">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="hsNV3JfmAN6WM8ltQ2-S-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="77e6c97f196da883-1" source="hsNV3JfmAN6WM8ltQ2-S-88" target="77e6c97f196da883-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="625" />
+              <mxPoint x="730" y="113" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
